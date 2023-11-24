@@ -74,15 +74,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 1.5rem;
+  font-size: 25px;
   margin: 0;
-  margin-left: -50px;
+  margin-left: -65px;
   color: rgb(0, 1, 5);
 
   padding: 0;
   line-height: 1;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 #header #logo h1 a {
@@ -99,7 +99,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 74px;
   }
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 20px;
+    margin-left: -7px;
+
   }
   #header #logo img {
     max-height: 40px;
