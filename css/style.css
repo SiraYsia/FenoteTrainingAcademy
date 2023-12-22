@@ -148,17 +148,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro .intro-content .btn-get-started { 
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 32px;
-  border-radius: 2px;
-  transition: 0.5s;
-  margin: 10px;
-}
 
 #intro .intro-content .btn-projects {
   font-family: "Raleway", sans-serif;
@@ -170,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   transition: 0.5s;
   margin: 10px;
+  margin-left: 10px;
 }
 
 #intro .intro-content .btn-get-started {
