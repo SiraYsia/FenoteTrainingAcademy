@@ -61,11 +61,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
-  padding: 20px 0;
+  padding: 15px 0;
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
@@ -73,16 +70,18 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
-#header #logo h1 {
-  font-size: 25px;
-  margin: 0;
-  margin-left: -65px;
-  color: rgb(0, 1, 5);
+#header #logo {
+  display: flex;
+  align-items: center;
+  margin-left: -10px; /* Adjust margin for better spacing with the logo */
 
-  padding: 0;
-  line-height: 1;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 550;
+}
+
+#header #logo h1 {
+  font-size: 24px;
+  color: #021e65;
+  margin-left: 10px; /* Adjust margin for better spacing with the logo */
+
 }
 
 #header #logo h1 a {
@@ -91,22 +90,273 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-
+#logo img {
+  max-width: 70px;
+}
 
 @media (max-width: 768px) {
   #header {
     padding: 20px 0;
     height: 74px;
   }
+  
   #header #logo h1 {
     font-size: 20px;
-    margin-left: -7px;
-
+    margin-left: 10px;
   }
+
   #header #logo img {
     max-height: 40px;
   }
 }
+
+
+/*--INTRO 2 ---*/
+
+
+#intro2 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/clients/cpr22.jpg");
+  background-size: cover;
+}
+
+#intro2 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro2 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro2 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro2 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro2 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro2 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro2 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro2 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro2 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro2 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro2 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+/* WHO WE SERVE INTRO*/
+
+
+#intro4 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/community.jpeg");
+  background-size: cover;
+}
+
+#intro4 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro4 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro4 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro4 .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro4 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro4 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro4 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro4 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro4 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro4 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro4 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro4 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -213,6 +463,132 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
+
+
+
+
+
+
+
+
+
+#intro3 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/11.jpg");
+  background-size: cover;
+}
+
+#intro3 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro3 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro3 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro3 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro3 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro3 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro2 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro3 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro3 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro3 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro3 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -376,18 +752,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 30px;
 }
 
-#mobile-nav ul .menu-has-children i {
+/* #mobile-nav ul .menu-has-children i {
   position: absolute;
   right: 0;
   z-index: 99;
   padding: 15px;
   cursor: pointer;
   color: #fff;
-}
+} */
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
+/* #mobile-nav ul .menu-has-children i.fa-chevron-up {
   color: #50d8af;
-}
+} */
 
 #mobile-nav ul .menu-item-active {
   color: #50d8af;
@@ -739,3 +1115,491 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form button[type="submit"]:hover {
   background: #024836;
 }
+
+
+.certified-logos {
+  display: flex;
+  justify-content: space-between; /* Adjust the spacing between logos */
+  align-items: center;
+  margin-bottom: 30px; /* Increase the vertical margin as needed */
+
+  /* Responsive spacing for smaller screens (e.g., phones) */
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.certified-logos img {
+  max-width: 100px; /* Set a maximum width for the logos */
+  height: auto;
+  margin-bottom: 20px; /* Increase the vertical margin between logos */
+
+  /* Responsive spacing for smaller screens (e.g., phones) */
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 30px; /* Increase the vertical margin between logos on smaller screens */
+  }
+
+
+  /**/
+
+
+/* #mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+} */
+
+/* #mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #50d8af;
+} */
+
+.nav-menu ul {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.nav-menu li:hover > ul {
+  display: block;
+}
+
+#nav-menu-container ul {
+  position: relative;
+}
+
+#nav-menu-container ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+
+}
+
+.menu-has-children {
+  position: relative; /* Set the parent to relative positioning */
+}
+
+.menu-has-children ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the parent */
+  left: 0; /* Center the dropdown menu */
+  background-color: white; /* Set background color to white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for better visibility */
+}
+
+.menu-has-children:hover > ul {
+  display: block;
+}
+.nav-menu ul li a:hover {
+  color: blue;
+}
+
+
+
+.service-image {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* This property ensures the image covers the entire container */
+}
+
+
+
+  /* Additional styles for the button container */
+  .button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+    margin-bottom: 20px; /* Adjust margin-bottom as needed */
+  }
+
+  /* Additional styles for the button */
+  .btn-send-message {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-send-message:hover {
+    background-color: #218838;
+  }
+
+
+
+  /* CORPRATIONS INTRO */
+
+
+
+#intro5 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/healthcare.jpeg");
+  background-size: cover;
+}
+
+#intro5 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro5 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro5 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro5 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro5 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro5 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro5 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro5 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro5 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro5 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro5 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+/*TEACHERS ITNRO */
+
+
+
+#intro6 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/healthcare2.jpeg");
+  background-size: cover;
+}
+
+#intro6 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro6 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro6 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro6 .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro6 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro6 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro6 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro6 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro6 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro6 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro6 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro6 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/*HEALTHCARE*/
+
+
+
+
+#intro7 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/heallthcare3.jpeg");
+  background-size: cover;
+}
+
+#intro7 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro7 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro7 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro6 .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro7 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro7 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro7 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro7 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro7 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro7 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro7 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro7 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+

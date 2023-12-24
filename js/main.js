@@ -166,3 +166,31 @@ jQuery(document).ready(function( $ ) {
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var menuItemsWithChildren = document.querySelectorAll('.menu-has-children');
+
+  menuItemsWithChildren.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function (event) {
+      event.stopPropagation();
+      toggleDropdown(this);
+    });
+  });
+
+  document.addEventListener('click', function () {
+    closeAllDropdowns();
+  });
+
+  function toggleDropdown(menuItem) {
+    var subMenu = menuItem.querySelector('ul');
+    closeAllDropdowns();
+    subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function closeAllDropdowns() {
+    document.querySelectorAll('.nav-menu ul').forEach(function (subMenu) {
+      subMenu.style.display = 'none';
+    });
+  }
+});
