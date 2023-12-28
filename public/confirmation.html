@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <!-- Add your styles here -->
+</head>
+
+<body>
+
+    <h1>Confirmation</h1>
+
+    <div id="confirmation-details">
+        <!-- Selected course details will be displayed here -->
+    </div>
+
+    <div id="description">
+        <!-- Display the description here -->
+    </div>
+
+    <script>
+        // Function to parse query parameters from the URL
+        function getQueryParameters() {
+            const queryString = window.location.search.substring(1);
+            const parameters = {};
+            queryString.split("&").forEach(param => {
+                const [key, value] = param.split("=");
+                parameters[key] = decodeURIComponent(value);
+            });
+            return parameters;
+        }
+
+        // Function to display confirmation details
+        function displayConfirmationDetails() {
+            const confirmationDetailsDiv = document.getElementById("confirmation-details");
+            const descriptionDiv = document.getElementById("description");
+            const parameters = getQueryParameters();
+
+            // Display selected course details
+            confirmationDetailsDiv.innerHTML = `
+                <h2>${parameters.course}</h2>
+                <p><strong>Price:</strong> $${parameters.price}</p>
+                <p><strong>Date/Time:</strong> ${parameters.date}</p>
+                <!-- Add other details as needed -->
+            `;
+
+            // Load and display description from HTML file
+            fetch(`schedule_folder/descriptions/${parameters.descriptionFile}`)
+                .then(response => response.text())
+                .then(descriptionHtml => {
+                    descriptionDiv.innerHTML = descriptionHtml;
+                })
+                .catch(error => console.error("Error loading description:", error));
+        }
+
+        // Initial display of confirmation details
+        displayConfirmationDetails();
+    </script>
+
+</body>
+
+</html>

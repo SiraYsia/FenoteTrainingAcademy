@@ -397,9 +397,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
+.red-cross-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .red-cross-logo img {
-  width: 100px; /* Set the desired width for the images */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
 }
 
 
@@ -2120,3 +2128,99 @@ select {
 }
 
 
+
+
+/*DESCRIPTIONS SCHEULDE */
+
+
+h1, h2, h3 {
+  color: #333;
+}
+
+#description,
+#course-selection,
+#date-selection,
+#course-description,
+#selected-course,
+#confirmation-details {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select,
+button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#date-selection button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+#description p,
+#description ul {
+  margin-bottom: 10px;
+}
+
+#description li {
+  margin-bottom: 5px;
+}
+
+#course-description p {
+  margin-bottom: 10px;
+}
+
+#confirmation-details {
+  text-align: center;
+}
+
+#confirmation-details h2 {
+  color: #4CAF50;
+}
+
+
+#course-selection select {
+  width: 400px; /* Set the width of the select element */
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+/* SECTION FOR INDEX*/
+
+
+
+
+
+.classes-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.partnership-divider {
+  height: 2px;
+  width: 2%;
+  height: 4px;
+  background-color: #000;
+  margin: 10px 0; /* Adjust margin as needed */
+}

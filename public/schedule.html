@@ -95,200 +95,42 @@
   
     </div>
   </header>
-  
-    <!--==========================
-      Intro Section
-    ============================-->
-    <section id="intro4">
-  
-      <div class="intro-content">
-        <h2> Book A Course </h2>
-        <div>
-          <br> 
-        </div>
-      </div>
-  
-      <div id="intro-carousel" class="owl-carousel" >
-        <div class="item" style="background-image: url('img/intro-carousel/1.jpeg');"></div>
-      </div>
-  
-    </section>
+  <br>
+  <br>
+    <!--Display the description-->
+    <div id="description">
+    </div>
 
+    <div id="course-selection">
+        <label for="course">Select a Course:</label>
+        <select id="course">
+          <option value="ars_bls_classroom">ARC Basic Life Support (BLS) - CLASSROOM</option>
+          <option value="ars_bls_blended">ARC Basic Life Support (BLS) - BLENDED</option>
+          <option value="ars_instructor">ARC First Aid/CPR/AED Instructor</option>
+          <option value="ars_adult_pediatric_blended">ARC Adult & Pediatric First Aid/CPR/AED - BLENDED</option>
+          <option value="aha_bls_blended">AHA Basic Life Support (BLS) - BLENDED</option>
+          <option value="aha_bls_instructor">AHA BLS Instructor Course</option>
+        </select>
+    </div>
 
-
-    <br>
-    <br>
-    <br> 
     
-    <section id="our-services">
-      <div class="container">
-        <div class="section-header">
-          <h2><strong> Book A Course </strong></h2>
-          <span class="section-divider"></span>
-        </div>
-        
+    <div id="date-selection">
+        <!-- Date buttons will be dynamically added here based on user selection -->
+    </div>
 
-        <p> We provide American Heart Association (AHA) and American Red Cross (ARC) certifications at our locations. Course Formats: 
-          BLENDED: Courses where students complete the cognitive part of the course online and then complete an in-person skills (hands-on) session. Blended students receive the same exact certification as students who take the fully in-person course. The online part is self-paced and must be complete before the in-person skills session.  
-          CLASSROOM: Courses where students complete the whole course in person.
-          Click on the class name for more information and to register.</p>
+    <div id="course-description">
+        <!-- Course description and details will be displayed here based on user selection -->
+    </div>
 
-
-        <!-- Main Content Section -->
-        <div class="content-container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="course-dropdowns">
-                <div class="course-dropdown">
-                  <label for="cpr">ARC Basic Life Support (BLS) - CLASSROOM: </label>
-                  <select id="cpr">
-                    <option value="cpr-monday">Monday - 10:00 AM</option>
-                    <option value="cpr-wednesday">Wednesday - 2:00 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('cpr')">Show Info</button>
-                  <div id="cpr-info" class="course-info"></div>
-                </div>
-                
-                <div class="course-dropdown">
-                  <label for="bls"> ARC Basic Life Support (BLS) - BLENDED: </label>
-                  <select id="bls">
-                    <option value="bls-tuesday">Tuesday - 11:30 AM</option>
-                    <option value="bls-thursday">Thursday - 3:30 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('bls')">Show Info</button>
-                  <div id="bls-info" class="course-info"></div>
-                </div>
-    
-                <div class="course-dropdown">
-                  <label for="babysitting">ARC Wilderness First Aid:</label>
-                  <select id="babysitting">
-                    <option value="babysitting-monday">Monday - 1:00 PM</option>
-                    <option value="babysitting-friday">Friday - 4:00 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('babysitting')">Show Info</button>
-                  <div id="babysitting-info" class="course-info"></div>
-                </div>
-    
-                <div class="course-dropdown">
-                  <label for="stopTheBleed">ARC First Aid/CPR/AED Instructor:</label>
-                  <select id="stopTheBleed">
-                    <option value="stopTheBleed-wednesday">Wednesday - 11:00 AM</option>
-                    <option value="stopTheBleed-saturday">Saturday - 2:30 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('stopTheBleed')">Show Info</button>
-                  <div id="stopTheBleed-info" class="course-info"></div>
-                </div>
-    
-                <div class="course-dropdown">
-                  <label for="antiPoison">ARC Adult & Pediatric First Aid/CPR/AED - BLENDED:</label>
-                  <select id="antiPoison">
-                    <option value="antiPoison-tuesday">Tuesday - 2:00 PM</option>
-                    <option value="antiPoison-thursday">Thursday - 5:00 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('antiPoison')">Show Info</button>
-                  <div id="antiPoison-info" class="course-info"></div>
-                </div>
-    
-                <div class="course-dropdown">
-                  <label for="consultancy">AHA Basic Life Support (BLS) - BLENDED:</label>
-                  <select id="consultancy">
-                    <option value="consultancy-monday">Monday - 3:30 PM</option>
-                    <option value="consultancy-friday">Friday - 1:00 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('consultancy')">Show Info</button>
-                  <div id="consultancy-info" class="course-info"></div>
-                </div>
+    <div id="selected-course">
+        <!-- Selected course details will be displayed here when a date button is clicked -->
+    </div>
 
 
-                <div class="course-dropdown">
-                  <label for="consultancy"> AHA BLS Instructor Course: </label>
-                  <select id="consultancy">
-                    <option value="consultancy-monday">Monday - 3:30 PM</option>
-                    <option value="consultancy-friday">Friday - 1:00 PM</option>
-                  </select>
-                  <button class="info-button" onclick="showCourseInfo('consultancy')">Show Info</button>
-                  <div id="consultancy-info" class="course-info"></div>
-                </div>
-    
-              </div> <!-- Close .course-dropdowns div -->
-            </div>
-    
-            <!-- Sidebar Section -->
-            <div class="col-md-4">
-              <div class="sidebar">
-                <h3>Secure Site</h3>
-                <p>Please be assured that your information is protected and secure. We value your privacy and do not provide customer information to any third parties.</p>
-                <p> Don’t Be Fooled by Online-Only CPR, First Aid, BLS, ACLS, or PALS Certification Scams.
-                  There are numerous websites and organizations that offer “instant” CPR or First Aid certifications without students performing hands-on skills with an authorized instructor or approved VAM. Currently, the AHA, ARC, and ASHI do not endorse such curriculums.  
-                  
-                  The American Heart Association (AHA), The American Red Cross (ARC), and The American Safety & Health Institute (ASHI) strongly promote knowledge & proficiency in BLS, ACLS, and PALS and has developed instructional materials for this purpose.  Use of these materials in an educational course does not represent course sponsorship by the AHA, ARC, ASHI or any other organization.  Any fees charged for such a course, except for a portion of fees needed for AHA, ASHI, ARC, and other course material, do not represent income to the AHA, ARC, ASHI, etc.
-                  Read our privacy policy <a href="privacy.html">here. </a>
+  <br>
+  <br>
+  <br>
 
-                </p>
-                <!-- Add more privacy-related content as needed -->
-              </div>
-            </div>
-    
-          </div> <!-- Close .row div -->
-        </div> <!-- Close .content-container div -->
-      </div> <!-- Close .container div -->
-    </section>
-</body></html>
-  
-
-
-
-
-
-
-
-
-
-  <script>
-    function showCourseInfo(course) {
-      // Retrieve the selected course dropdown value
-      const selectedValue = document.getElementById(course).value;
-  
-      // Display the information in the corresponding course-info div
-      document.getElementById(course + '-info').innerHTML = `
-        <h4>${course.toUpperCase()} Schedule</h4>
-        <p>${selectedValue}</p>
-        <p>Additional information about the ${course} course goes here.</p>
-      `;
-    }
-
-
-    function showCourseInfo(course) {
-  const selectedValue = document.getElementById(course).value;
-  const courseInfoDiv = document.getElementById(course + '-info');
-
-  if (courseInfoDiv.innerHTML === '') {
-    // Display course information
-    courseInfoDiv.innerHTML = `
-      <h4>${course.toUpperCase()} Schedule</h4>
-      <p>${selectedValue}</p>
-      <p>Additional information about the ${course} course goes here.</p>
-      <button class="hide-button" onclick="hideCourseInfo('${course}')">Hide Info</button>
-    `;
-  } else {
-    // Hide course information
-    hideCourseInfo(course);
-  }
-}
-
-function hideCourseInfo(course) {
-  document.getElementById(course + '-info').innerHTML = '';
-}
-
-
-  </script>
-  
-
-  
-
-
-   
-    
   <footer id="footer">
     <!-- Load the footer content using jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -299,10 +141,6 @@ function hideCourseInfo(course) {
       });
     </script>
   </footer>
-
-
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -321,9 +159,7 @@ function hideCourseInfo(course) {
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="schedule_folder/js/main.js"></script>
 
-
-
-
-
+</body>
+</html>
