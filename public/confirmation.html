@@ -4,60 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation</title>
-    <!-- Add your styles here -->
+    <title>Course Confirmation</title>
+
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 30px;
+            font-size: 32px;
+        }
+
+        #confirmation-details {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        #confirmation-details h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #confirmation-details p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 16px;
+        }
+
+        #description {
+            margin-top: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        #description h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #description p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .confirm-button {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .back-button {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        #cancellation-info {
+            max-height: 150px;
+            overflow: auto;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .agreement-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .agreement-container label {
+            margin-left: 5px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Confirmation</h1>
+    <h1>Payment Confirmation</h1>
 
     <div id="confirmation-details">
         <!-- Selected course details will be displayed here -->
     </div>
 
-    <div id="description">
-        <!-- Display the description here -->
+
+
+    <div class="button-container">
+        <button class="button confirm-button">Confirm and Pay</button>
+        <button class="button back-button">Go Back to Schedule</button>
     </div>
 
-    <script>
-        // Function to parse query parameters from the URL
-        function getQueryParameters() {
-            const queryString = window.location.search.substring(1);
-            const parameters = {};
-            queryString.split("&").forEach(param => {
-                const [key, value] = param.split("=");
-                parameters[key] = decodeURIComponent(value);
-            });
-            return parameters;
-        }
+    <!-- Cancellation Information -->
+    <div id="cancellation-info">
+        <!-- Cancellation information will be displayed here -->
+    </div>
+    <div class="agreement-container">
+        <input type="checkbox" id="agreementCheckbox">
+        <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
+    </div>
 
-        // Function to display confirmation details
-        function displayConfirmationDetails() {
-            const confirmationDetailsDiv = document.getElementById("confirmation-details");
-            const descriptionDiv = document.getElementById("description");
-            const parameters = getQueryParameters();
-
-            // Display selected course details
-            confirmationDetailsDiv.innerHTML = `
-                <h2>${parameters.course}</h2>
-                <p><strong>Price:</strong> $${parameters.price}</p>
-                <p><strong>Date/Time:</strong> ${parameters.date}</p>
-                <!-- Add other details as needed -->
-            `;
-
-            // Load and display description from HTML file
-            fetch(`schedule_folder/descriptions/${parameters.descriptionFile}`)
-                .then(response => response.text())
-                .then(descriptionHtml => {
-                    descriptionDiv.innerHTML = descriptionHtml;
-                })
-                .catch(error => console.error("Error loading description:", error));
-        }
-
-        // Initial display of confirmation details
-        displayConfirmationDetails();
-    </script>
+    <script src="js/confirm.js"></script>
 
 </body>
 

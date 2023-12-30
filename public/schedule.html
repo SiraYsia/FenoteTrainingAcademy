@@ -80,10 +80,10 @@
 
 
           <li class="menu-has-children">
-            <a href="marketing.html"> Marketing/Advisory </a>
+            <a> Marketing/Advisory </a>
             <ul>
-              <li><a href="child_care.html"> Child Care Providers </a></li>
-              <li><a href="parents_child_care.html"> Parents who need child care providers </a></li>
+              <li><a href="child_care_provider.html"> Child Care Providers </a></li>
+              <li><a href="child_care.html"> Parents who need child care providers </a></li>
             </ul>
           </li>
 
@@ -101,17 +101,27 @@
     <div id="description">
     </div>
 
-    <div id="course-selection">
-        <label for="course">Select a Course:</label>
-        <select id="course">
-          <option value="ars_bls_classroom">ARC Basic Life Support (BLS) - CLASSROOM</option>
-          <option value="ars_bls_blended">ARC Basic Life Support (BLS) - BLENDED</option>
-          <option value="ars_instructor">ARC First Aid/CPR/AED Instructor</option>
-          <option value="ars_adult_pediatric_blended">ARC Adult & Pediatric First Aid/CPR/AED - BLENDED</option>
-          <option value="aha_bls_blended">AHA Basic Life Support (BLS) - BLENDED</option>
-          <option value="aha_bls_instructor">AHA BLS Instructor Course</option>
-        </select>
+
+    <div id="certificate-selection">
+      <label for="certificateOption">Select the certificate provider: </label>
+      <select id="certificateOption" onchange="updateMainOptions()">
+        <option> </option>
+        <option value="red_cross">American Red Cross</option>
+        <option value="heart_association">American Heart Association</option>
+      </select>
     </div>
+    
+
+    <div id="main-option-selection">
+      <label for="mainOption">Select the course type: </label>
+      <select id="mainOption" onchange="updateCourseOptions()"></select>
+    </div>
+    
+
+    <div id="course-selection">
+      <label for="courseOption">Select a Course:</label>
+      <select id="courseOption" onchange="updateCourseAndDate()"></select>
+  </div>
 
     
     <div id="date-selection">

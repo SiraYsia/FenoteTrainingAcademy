@@ -33,12 +33,17 @@ app.get('/', (req, res) => {
 app.get('/contactus', (req, res) => {
   res.sendFile(__dirname + '/public/contactus.html');
 });
-
 // Handle form submission
 app.post('/submit-form', (req, res) => {
   // Extract form data from the request body
   const { name, email, subject, message } = req.body;
 
+  if (!name || !email || !subject || !message) {
+    // Return a 400 Bad Request status for validation failure
+    return res.status(400).send('Invalid form data. All fields are required.');
+  }
+
+  
   // Log the form data to the console
   console.log('Form submitted:', { name, email, subject, message });
 
@@ -57,7 +62,13 @@ app.post('/submit-form', (req, res) => {
       res.status(500).send('Error sending email');
     } else {
       console.log('Email sent:', info.response);
-      res.send('Form submitted successfully!');
+
+      // Render a thank-you message and link to go back home
+      res.send(`
+        <h1>Thank you for your message!</h1>
+        <p>We will get back to you as soon as we can.</p>
+        <a href="/">Go back home</a>
+      `);
     }
   });
 });

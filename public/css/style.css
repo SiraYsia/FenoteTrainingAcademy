@@ -2206,6 +2206,116 @@ button:hover {
 
 
 
+/* Main Option Dropdown Styles */
+#main-option-selection {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mainOption {
+  width: 400px; /* Set the width of the dropdown */
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#main-option-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+
+
+/* Certificate Selection Styles */
+#certificate-selection {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#certificateOption {
+  width: 400px; /* Set the width of the dropdown */
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Add styling for consistency with the rest of the page */
+#certificate-selection label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Add styling for consistency with the rest of the page */
+#certificate-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+
+
 /* SECTION FOR INDEX*/
 
 
@@ -2223,4 +2333,21 @@ button:hover {
   height: 4px;
   background-color: #000;
   margin: 10px 0; /* Adjust margin as needed */
+}
+
+
+
+/* Add this media query for smaller screens, adjust the max-width as needed */
+/* Add this media query for smaller screens, adjust the max-width as needed */
+@media only screen and (max-width: 767px) {
+  .certified-logos img {
+    display: none; /* Hide the Red Cross image on smaller screens */
+  }
+}
+
+
+#important{
+  color: red;
+  font-weight: bold;
+
 }
