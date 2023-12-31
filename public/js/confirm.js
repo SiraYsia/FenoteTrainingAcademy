@@ -9,21 +9,30 @@ function getQueryParameters() {
         parameters[key] = decodeURIComponent(value);
     });
     return parameters;
-}
 
+}
 // Function to display confirmation details
 function displayConfirmationDetails() {
     const confirmationDetailsDiv = document.getElementById("confirmation-details");
-    const descriptionDiv = document.getElementById("description");
     const parameters = getQueryParameters();
+
+    console.log("HERE")
+    console.log(parameters)
+
+    const formattedDate = parameters.date
+    const formattedStartTime = parameters.startTime;
+    const formattedEndTime = parameters.endTime;
 
     // Display selected course details
     confirmationDetailsDiv.innerHTML = `
         <h2>${parameters.course}</h2>
         <p><strong>Price:</strong> $${parameters.price}</p>
-        <p><strong>Date/Time:</strong> ${parameters.date}</p>
+        <p><strong>Date:</strong> ${formattedDate} </p>
+        <p><strong>Time:</strong> ${formattedStartTime} - ${formattedEndTime}</p>
+
     `;
 }
+
 
 function loadCancellationInfo() {
     const cancellationInfoDiv = document.getElementById("cancellation-info");
@@ -59,3 +68,6 @@ document.querySelector(".back-button").addEventListener("click", function() {
     // Redirect to schedule.html
     window.location.href = "schedule.html";
 });
+
+
+

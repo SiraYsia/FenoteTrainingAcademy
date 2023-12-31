@@ -4,8 +4,38 @@ const courseDetails = {
         price: 70.00,
         descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
         dates: [
-            "2024-02-15T10:00:00",
-            "2024-02-20T11:30:00",
+            { start: "2024-01-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-01-31", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-01", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-03", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-08", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-10", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-13", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-16", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-19", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-22", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-24", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-02-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-02", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-05", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-07", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-26", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-28", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+            { start: "2024-03-30", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
         ],
     },
     cpr_blended_first_aid: {
@@ -13,8 +43,38 @@ const courseDetails = {
         price: 89.00,
         descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
         dates: [
-            "2024-02-15T10:00:00",
-            "2024-02-20T11:30:00",
+            { start: "2024-01-06", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-09", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-12", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-15", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-18", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-20", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-23", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-27", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-01-31", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-01", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-03", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-06", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-08", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-10", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-13", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-16", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-19", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-22", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-24", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-02-27", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-02", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-05", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-07", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-09", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-12", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-15", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-18", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-20", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-23", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-26", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-28", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
+            { start: "2024-03-30", end: "2024-03-30", startTime: "10:00", endTime: "11:30" },
         ],
     },
     cpr_blended_pediatric: {
@@ -22,35 +82,67 @@ const courseDetails = {
         price: 99.00,
         descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
         dates: [
-            "2024-02-15T10:00:00",
-            "2024-02-20T11:30:00",
+            { start: "2024-01-06", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-09", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-12", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-15", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-18", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-20", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-23", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-27", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-01-31", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-01", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-03", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-06", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-08", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-10", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-13", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-16", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-19", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-22", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-24", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-02-27", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-02", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-05", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-07", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-09", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-12", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-15", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-18", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-20", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-23", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-26", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-28", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
+            { start: "2024-03-30", end: "2024-03-30", startTime: "10:00", endTime: "12:15" },
         ],
     },
+
+    
     cpr_classroom_adult: {
         name: "Adult CPR/AED-R.21",
         price: 75.00,
         descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_adult.html",
         dates: [
-            "2024-03-10T13:00:00",
-            "2024-03-15T15:30:00",
+            // "2024-03-10T13:00:00",
+            // "2024-03-15T15:30:00",
         ],
     },
     cpr_classroom_first_aid: {
         name: "Adult First Aid/CPR/AED-R.21",
-        price: 95.00,
+        price: 98.00,
         descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
         dates: [
-            "2024-03-10T13:00:00",
-            "2024-03-15T15:30:00",
+            // "2024-03-10T13:00:00",
+            // "2024-03-15T15:30:00",
         ],
     },
     cpr_classroom_pediatric: {
         name: "Adult And Pediatric First Aid/CPR/AED-R.21",
-        price: 105.00,
+        price: 110.00,
         descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_pediatric.html",
         dates: [
-            "2024-03-10T13:00:00",
-            "2024-03-15T15:30:00",
+            // "2024-03-10T13:00:00",
+            // "2024-03-15T15:30:00",
         ],
     },
     cpr_sessions_adult: {
@@ -64,7 +156,7 @@ const courseDetails = {
     },
     cpr_sessions_first_aid: {
         name: "Adult And Pediatric First Aid/CPR/AED Skills Session-R.21",
-        price: 62.00,
+        price: 55.00,
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
         dates: [
             "2024-03-22T09:00:00",
@@ -85,8 +177,14 @@ const courseDetails = {
         price: 85.00,
         descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
         dates: [
-            "2024-04-05T10:30:00",
-            "2024-04-10T12:00:00",
+            { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
         ],
     },
     bls_classroom: {
@@ -94,23 +192,63 @@ const courseDetails = {
         price: 90.00,
         descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
         dates: [
-            "2024-04-15T14:00:00",
-            "2024-04-20T16:30:00",
+            { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
         ],
     },
 
     babysitter_classroom: {
         name: "Basic Life Support-R.21",
-        price: 130.00,
+        price: 150.00,
         descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
         dates: [
-            "2024-04-15T14:00:00",
-            "2024-04-20T16:30:00",
+            { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+        ],
+    },
+
+
+    babysitter_training: {
+        name: "Babysitters Training",
+        price: 90.00,
+        descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
+        dates: [
+            { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
         ],
     },
 };
 
-// ... your courseDetails object ...
+
+function getFormattedDateInET(dateString) {
+    // Parse the input date string
+    const date = new Date(dateString);
+
+    // Adjust for Eastern Time (New York) offset
+    const etOffset = -5 * 60; // Eastern Time offset in minutes
+    date.setMinutes(date.getMinutes() - etOffset);
+
+    // Format the adjusted date
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+}
+
+
+
+
+
 function updateDateButtons() {
     const selectedCourse = document.getElementById("courseOption").value;
     const dateSelectionDiv = document.getElementById("date-selection");
@@ -118,21 +256,48 @@ function updateDateButtons() {
     // Clear existing buttons
     dateSelectionDiv.innerHTML = '';
 
-    // Add new buttons based on the selected course's dates
-    courseDetails[selectedCourse].dates.forEach(date => {
-        const button = document.createElement("button");
-        button.innerHTML = new Date(date).toLocaleString();
+    // Get the current date
+    const currentDate = new Date();
 
-        // Attach an event listener to each date button
-        button.addEventListener("click", () => {
-            // Call redirectToConfirmation when the button is clicked
-            redirectToConfirmation(selectedCourse, date);
-        });
+    // Add new buttons based on the selected course's dates, filtering out past dates
+    courseDetails[selectedCourse].dates.forEach(dateObj => {
+        const courseDate = new Date(dateObj.start);
+        const startTime = dateObj.startTime;
+        const endTime = dateObj.endTime;
 
-        dateSelectionDiv.appendChild(button);
+
+        // Check if the date has not passed
+        if (courseDate >= currentDate) {
+            const button = document.createElement("button");
+
+            // Convert to Eastern Time (ET)
+            const options = { timeZone: 'America/New_York' };
+
+            const formattedDate = getFormattedDateInET(courseDate)
+
+            const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
+            const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
+
+            console.log(formattedStartTime)
+
+            button.innerHTML = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+
+            // Attach an event listener to each date button
+            button.addEventListener("click", () => {
+                // Call redirectToConfirmation when the button is clicked
+                console.log(selectedCourse)
+                console.log(formattedDate)
+                console.log(formattedStartTime)
+                console.log(formattedEndTime)
+
+                redirectToConfirmation(selectedCourse, formattedDate, formattedStartTime, formattedEndTime);
+            });
+
+            dateSelectionDiv.appendChild(button);
+        }
     });
 }
-// ... rest of your code ...
+
 
 
 // Function to update course description based on user selection
@@ -192,11 +357,119 @@ fetch('schedule_folder/descriptions/description.html')
 
 
 
-// Set American Red Cross as the default certificate option
-document.getElementById('certificateOption').value = '';
 
-// Initial population of courses based on the default certificate option
-populateCourses('');
+
+
+
+
+
+    function populateAllCoursesAndDates() {
+        const scheduleDiv = document.getElementById("schedule");
+    
+        // Add title for all courses
+        const allCoursesTitle = document.createElement("h2");
+        allCoursesTitle.innerHTML = "ALL COURSES";
+        scheduleDiv.appendChild(allCoursesTitle);
+    
+        // Iterate over all courses and display their names, description files, and dates
+        Object.keys(courseDetails).forEach(course => {
+            const courseDetail = courseDetails[course];
+    
+            // Display course name
+            const courseNameHeading = document.createElement("h3");
+            courseNameHeading.innerHTML = courseDetail.name;
+            scheduleDiv.appendChild(courseNameHeading);
+    
+            // Display description file content
+            const descriptionDiv = document.createElement("div");
+            fetch(courseDetail.descriptionFile)
+                .then(response => response.text())
+                .then(descriptionHtml => {
+                    descriptionDiv.innerHTML = descriptionHtml;
+                })
+                .catch(error => console.error("Error loading description:", error));
+    
+            scheduleDiv.appendChild(descriptionDiv);
+
+
+            const separatorDiv = document.createElement("div");
+            separatorDiv.classList.add("separator"); // Add a class for styling
+            scheduleDiv.appendChild(separatorDiv);
+
+
+    
+            // Display dates for the course, including start time and end time, and filter out past dates
+            const currentDate = new Date();
+            courseDetail.dates.forEach(dateObj => {
+                const courseDate = new Date(dateObj.start);
+                const startTime = dateObj.startTime;
+                const endTime = dateObj.endTime;
+
+                
+   
+
+                // Check if the date has not passed
+                if (courseDate >= currentDate) {
+                    const button = document.createElement("button");
+
+
+
+                    const options = { timeZone: 'America/New_York' };
+
+                    const formattedDate = getFormattedDateInET(courseDate)
+        
+                    const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
+                    const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
+
+                    
+
+
+                    button.innerHTML = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+    
+                    // Attach an event listener to each date button
+                    button.addEventListener("click", () => {
+                        // Call redirectToConfirmation when the button is clicked
+                        redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+                    });
+    
+
+            
+                    scheduleDiv.appendChild(button);
+                }
+            });
+    
+            // Add a separator between courses
+            const separator = document.createElement("hr");
+            scheduleDiv.appendChild(separator);
+        });
+    }
+    
+    
+    // Set American Red Cross as the default certificate option
+    document.getElementById('certificateOption').value = 'red_cross'; // Set the default certificate provider
+    populateAllCoursesAndDates(); // Populate all courses and their dates initially
+    
+    // Update main options and course options accordingly
+    document.getElementById('certificateOption').addEventListener('change', updateMainOptions);
+    document.getElementById('mainOption').addEventListener('change', updateCourseOptions);
+
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        // Set American Red Cross as the default certificate option
+        document.getElementById('certificateOption').value = 'red_cross'; // Set the default certificate provider
+    
+        // Trigger the initial population of courses based on the default certificate
+        populateCourses('red_cross');
+    
+        // Update main options and course options accordingly
+        updateMainOptions();
+        updateCourseOptions();
+    });
+    
+
+
+
+
 
 
 
@@ -207,8 +480,8 @@ document.getElementById('mainOption').addEventListener('change', updateCourseOpt
 function updateMainOptions() {
     document.getElementById('mainOption').value = '';
     document.getElementById('courseOption').value = '';
-    document.getElementById('date-selection').innerHTML = '';
-    document.getElementById('course-description').innerHTML = '';
+    document.getElementById('date-selection').innerHTML = 'Available dates will appear here';
+    document.getElementById('course-description').innerHTML = 'Course description and details will appear here';
     var certificateOption = document.getElementById('certificateOption').value;
     populateCourses(certificateOption);
 
@@ -217,8 +490,8 @@ function updateMainOptions() {
 
 function updateCourseOptions() {
     document.getElementById('courseOption').value = '';
-    document.getElementById('date-selection').innerHTML = '';
-    document.getElementById('course-description').innerHTML = '';
+    document.getElementById('date-selection').innerHTML = 'Available dates will appear here';
+    document.getElementById('course-description').innerHTML = 'Course description and details will appear here';
     var selectedCourse = document.getElementById('mainOption').value;
     populateFinalOption(selectedCourse);
 
@@ -353,7 +626,9 @@ function getFinalOptionsForCourse(course) {
 
         case 'Babysitter Classroom':
             finalOptions = [
-                { id: 'babysitter_classroom', name: "Babysitter's Training And Pediatric First Aid/CPR" }
+                { id: 'babysitter_classroom', name: "Babysitter's Training And Pediatric First Aid/CPR" },
+                { id: 'babysitter_training', name: "Babysitters Training" }
+
             ];
             break;
 
@@ -381,14 +656,16 @@ document.getElementById("course").addEventListener("change", () => {
 
 
 
-function redirectToConfirmation(course, date) {
+function redirectToConfirmation(course, date, startTime, endTime) {
     const selectedCourse = courseDetails[course];
     const confirmationDetails = {
         course: selectedCourse.name,
         price: selectedCourse.price.toFixed(2),
-        date: new Date(date).toLocaleString(),
+        date: date,
+        startTime: startTime,
+        endTime: endTime,
     };
-
+    console.log(confirmationDetails)
     // Redirect to confirmation page with selected course details as query parameters
     const queryString = Object.entries(confirmationDetails)
         .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
@@ -396,3 +673,7 @@ function redirectToConfirmation(course, date) {
 
     window.location.href = `confirmation.html?${queryString}`;
 }
+
+
+
+
