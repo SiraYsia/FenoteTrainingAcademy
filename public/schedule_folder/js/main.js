@@ -158,8 +158,19 @@ const courseDetails = {
         ],
     },
 
+
+    cpr_sessions_pediatric: {
+        name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-r.21",
+        price: 77.00,
+        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
+        dates: [
+            "None"
+
+        ],
+    },
+
     cpr_sessions_first_aid: {
-        name: "ARC Adult And Pediatric First Aid/CPR/AED Skills Session-R.21",
+        name: "ARC Adult First Aid/CPR/AED Skills Session-r.21",
         price: 55.00,
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
         dates: [
@@ -168,17 +179,9 @@ const courseDetails = {
         ],
     },
 
-    cpr_sessions_pediatric: {
-        name: "ARC Pediatric First Aid/CPR/AED Skills Session-R.21",
-        price: 77.00,
-        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
-        dates: [
-            "None"
 
-        ],
-    },
     cpr_sessions_adult: {
-        name: "ARC Adult CPR/AED Skills Session-R.21",
+        name: "ARC Adult CPR/AED Skills Session-r.21",
         price: 37.00,
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
         dates: [
@@ -186,6 +189,8 @@ const courseDetails = {
 
         ],
     },
+
+
 
 
     bls_blended: {
@@ -390,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isNaN(courseDate)) {
                     // If date is invalid, set button text to "Please contact us" and add a click event to redirect to the contact us page
                     const dateButton = document.createElement("button");
-                    dateButton.innerHTML = "Please contact us";
+                    dateButton.innerHTML = "Please contact us to register.";
                     dateButton.style.backgroundColor = "transparent";
                     dateButton.style.color = "red";
                     dateButton.style.padding = "8px 12px";
