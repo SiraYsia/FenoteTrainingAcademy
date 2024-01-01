@@ -395,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isNaN(courseDate)) {
                     // If date is invalid, set button text to "Please contact us" and add a click event to redirect to the contact us page
                     const dateButton = document.createElement("button");
-                    dateButton.innerHTML = "Please contact us to register.";
+                    dateButton.innerHTML = "Please contact us to schedule a class.";
                     dateButton.style.backgroundColor = "transparent";
                     dateButton.style.color = "red";
                     dateButton.style.padding = "8px 12px";
