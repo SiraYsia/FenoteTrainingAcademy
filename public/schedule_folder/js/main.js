@@ -9,7 +9,7 @@ const courseDetails = {
     },
 
     cpr_blended_pediatric: {
-        name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21",
+        name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
         price: 99.00,
         descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
         dates: [
@@ -49,7 +49,7 @@ const courseDetails = {
     },
 
     cpr_blended_first_aid: {
-        name: "ARC Adult First Aid/CPR/AED-BL-R.21",
+        name: "ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED",
         price: 89.00,
         descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
         dates: [
@@ -90,7 +90,7 @@ const courseDetails = {
 
 
     cpr_blended_adult: {
-        name: "ARC Adult CPR/AED-BL-R.21",
+        name: "ARC Adult CPR/AED-BL-R.21  - BLENDED",
         price: 70.00,
         descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
         dates: [
@@ -129,8 +129,48 @@ const courseDetails = {
         ],
     },
 
+    cpr1_virtual:{
+        name:"ARC Adult & Pediatric First Aid/CPR/AED Blended - VIRTUAL" ,
+        price : 50.00,
+        descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
+        dates: [
+            { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:45" },
+            { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:45" },
+        ],
+
+    }, 
+    cpr2_virtual:{
+        name:"ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
+        price : 50.00,
+        descriptionFile: "schedule_folder/descriptions/ara/cpr2_virtual.html",
+        dates: [
+            { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:00" },
+            { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:00" },
+        ],
+
+    },
+
+
+
+
+
+
+
+
     cpr_classroom_pediatric: {
-        name: "ARC Adult And Pediatric First Aid/CPR/AED-R.21",
+        name: "ARC Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
         price: 110.00,
         descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_pediatric.html",
         dates: [
@@ -140,7 +180,7 @@ const courseDetails = {
     },
 
     cpr_classroom_first_aid: {
-        name: "ARC Adult First Aid/CPR/AED-R.21",
+        name: "ARC Adult First Aid/CPR/AED-R.21 - CLASSROOM",
         price: 98.00,
         descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
         dates: [
@@ -149,7 +189,7 @@ const courseDetails = {
         ],
     },
     cpr_classroom_adult: {
-        name: "ARC Adult CPR/AED-R.21",
+        name: "ARC Adult CPR/AED-R.21 - CLASSROOM",
         price: 75.00,
         descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_adult.html",
         dates: [
@@ -165,8 +205,8 @@ const courseDetails = {
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
         dates: [
             "None"
-
         ],
+        
     },
 
     cpr_sessions_first_aid: {
@@ -175,8 +215,8 @@ const courseDetails = {
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
         dates: [
             "None"
-
         ],
+        
     },
 
 
@@ -186,8 +226,8 @@ const courseDetails = {
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
         dates: [
             "None"
-
         ],
+        
     },
 
 
@@ -252,7 +292,7 @@ const courseDetails = {
     },
 
     aha_course1: {
-        name: "American Heart Association (AHA) Courses:",
+        name: "American Heart Association (AHA) Courses",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
         dates: [
@@ -260,25 +300,27 @@ const courseDetails = {
     },
 
     aha_course2: {
-        name: "AHA BLS Provider:",
+        name: "AHA Basic Life Support (BLS) Provider - BLENDED",
         price: 0.00,
-        descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+        descriptionFile: "schedule_folder/descriptions/aha_bls_blended_description.html",
         dates: [
+            "None"
         ],
     },
 
 
     aha_course3: {
-        name: "AHA Heartsaver CPR/AED:        ",
+        name: "AHA Heartsaver CPR/AED",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
         dates: [
+
         ],
     },
 
 
     aha_course4: {
-        name: "AHA Heartsaver First Aid CPR/AED:",
+        name: "AHA Heartsaver First Aid CPR/AED",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
         dates: [
@@ -287,7 +329,7 @@ const courseDetails = {
 
 
     aha_course5: {
-        name: "AHA HeartSaver Pediatric First Aid CPR/AED:",
+        name: "AHA HeartSaver Pediatric First Aid CPR/AED",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
         dates: [
@@ -295,21 +337,21 @@ const courseDetails = {
     },
 
     aha_course6: {
-        name: "AHA Heartsaver for K-12 Schools:",
+        name: "AHA Heartsaver for K-12 Schools",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
         dates: [
         ],
     },
     aha_course7: {
-        name: "AHA Heartsaver First Aid Only: ",
+        name: "AHA Heartsaver First Aid Only",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
         dates: [
         ],
     },
     aha_course8: {
-        name: "AHA Heartsaver Bloodborne Pathogens:",
+        name: "AHA Heartsaver Bloodborne Pathogens",
         price: 0.00,
         descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
         dates: [
@@ -391,11 +433,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
             courseDetail.dates.forEach(dateObj => {
                 const courseDate = new Date(dateObj.start);
+
+                if (courseDate < new Date()) {
+                    // Skip dates that have already passed
+                    return;
+                }
+    
     
                 if (isNaN(courseDate)) {
                     // If date is invalid, set button text to "Please contact us" and add a click event to redirect to the contact us page
                     const dateButton = document.createElement("button");
-                    dateButton.innerHTML = "Please contact us to schedule a class.";
+                    dateButton.innerHTML = "To schedule a class please contact us.";
                     dateButton.style.backgroundColor = "transparent";
                     dateButton.style.color = "red";
                     dateButton.style.padding = "8px 12px";
