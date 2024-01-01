@@ -119,7 +119,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #007bff; /* Set your desired hover color */
+  color: #0d73e8; /* Set your desired hover color */
 }
 
 @media (max-width: 768px) {
@@ -185,6 +185,7 @@ nav {
 }
 .nav-menu ul li {
   min-width: 180px;
+  background-color: #f8f8f8;
 }
 
 /* Nav Menu Arrows */
@@ -354,6 +355,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+
+
+ 
 
 
 
@@ -1183,7 +1187,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: space-between; /* Adjust the spacing between logos */
   align-items: center;
   margin-bottom: 30px; /* Increase the vertical margin as needed */
-
   /* Responsive spacing for smaller screens (e.g., phones) */
   @media (max-width: 767px) {
     flex-wrap: wrap;
@@ -1206,18 +1209,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   /**/
 
 
-/* #mobile-nav ul .menu-has-children i {
+  
+#mobile-nav ul .menu-has-children i {
   position: absolute;
   right: 0;
   z-index: 99;
   padding: 15px;
   cursor: pointer;
   color: #fff;
-} */
+} 
 
-/* #mobile-nav ul .menu-has-children i.fa-chevron-up {
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
   color: #50d8af;
-} */
+} 
 
 .nav-menu ul {
   display: none;
@@ -1228,7 +1232,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .nav-menu li:hover > ul {
-  display: block;
 }
 
 #nav-menu-container ul {
@@ -1248,21 +1251,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative; /* Set the parent to relative positioning */
 }
 
-.menu-has-children ul {
-  display: none;
-  position: absolute;
-  top: 100%; /* Position the dropdown below the parent */
-  left: 0; /* Center the dropdown menu */
-  background-color: white; /* Set background color to white */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for better visibility */
-}
 
-.menu-has-children:hover > ul {
-  display: block;
-}
-.nav-menu ul li a:hover {
-  color: blue;
-}
 
 
 
@@ -2202,8 +2191,13 @@ h1, h2, h3 {
 /* Add this media query for smaller screens, adjust the max-width as needed */
 @media only screen and (max-width: 767px) {
   .certified-logos img {
-    display: none; /* Hide the Red Cross image on smaller screens */
+    display: none;
+
   }
+}
+
+certified-logos2 img{
+  display: none;
 }
 
 
@@ -2220,7 +2214,13 @@ h1, h2, h3 {
 
 
 
+certified-logos2 img{
+  display: none;
+}
 
 
+certified-logos2 img{
+  display: none;
+}
 
 

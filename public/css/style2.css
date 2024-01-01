@@ -3,7 +3,6 @@
 /*CONSOLUTANCY*/
 
 
-
 /* Consultancy Section styles */
 #consultancy {
     background-color: #dbdbdb;
@@ -332,2357 +331,2224 @@
   /*HEADER*/
 
 
-
 body {
-    background: #fff;
-    color: #444;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  a {
-    color: #ff001e;
-    transition: 0.5s;
-  }
-  
-  a:hover, a:active, a:focus {
-    color: rgb(50, 0, 16);
-    outline: none;
-    text-decoration: none;
-  }
-  
-  p {
-    padding: 0;
-    margin: 0 0 30px 0;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
-  
-  /* Back to top button */
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #ff001e;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: rgb(50, 0, 16);
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #000000;
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
   .back-to-top {
-    position: fixed;
-    display: none;
-    background: #000000;
-    color: #fff;
-    padding: 6px 12px 9px 12px;
-    font-size: 16px;
-    border-radius: 2px;
-    right: 15px;
     bottom: 15px;
-    transition: background 0.5s;
   }
-  
-  @media (max-width: 768px) {
-    .back-to-top {
-      bottom: 15px;
-    }
-  }
-  
-  .back-to-top:focus {
-    color: #000a07;
-    color: #fff;
-  }
-  
-  .back-to-top:hover {
-    color: #fff;
-  }
-  
-  
-  
-  
-  /*HEADER*/
+}
+
+.back-to-top:focus {
+  color: #000a07;
+  color: #fff;
+}
+
+.back-to-top:hover {
+  color: #fff;
+}
+
+
+
+
+/*HEADER*/
+header {
+  background-color: rgb(255, 255, 255); /* Set your desired background color */
+  box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition for a smooth effect */
+}
+
+/* Add this style for the scrolled state */
+header.scrolled {
+  background-color: rgb(255, 255, 255); /* Set your desired background color */
+}
+
+/* Other styles remain unchanged */
+
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h1 {
+  font-size: 24px; /* Set your desired font size for the company name */
+  margin: 0;
+  margin-left: 10px; /* Adjust margin for better spacing with the logo */
+  color: #021e65; /* Set your desired color for the company name */
+}
+
+#logo img {
+  max-width: 70px; /* Set your desired max width for the logo */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Set your desired text color */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Set your desired hover color */
+}
+
+@media (max-width: 768px) {
   header {
-    background-color: rgb(255, 255, 255); /* Set your desired background color */
-    box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s ease; /* Add transition for a smooth effect */
+    padding: 20px 0;
+    height: 74px;
   }
-  
-  /* Add this style for the scrolled state */
-  header.scrolled {
-    background-color: rgb(255, 255, 255); /* Set your desired background color */
-  }
-  
-  /* Other styles remain unchanged */
-  
-  
-  #logo {
-    display: flex;
-    align-items: center;
-  }
-  
+
   #logo h1 {
-    font-size: 24px; /* Set your desired font size for the company name */
-    margin: 0;
-    margin-left: 10px; /* Adjust margin for better spacing with the logo */
-    color: #021e65; /* Set your desired color for the company name */
+    font-size: 20px;
+    margin-left: 10px;
   }
-  
+
   #logo img {
-    max-width: 70px; /* Set your desired max width for the logo */
+    max-height: 40px;
   }
-  
+}
+
+
+
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+nav {
+  max-width: 100%; /* Adjust for responsiveness */
+}
+.nav-menu ul li {
+  min-width: 180px;
+  background-color: #f8f8f8;
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 2px 8px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(219, 52, 52); /* Set your desired underline color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+/* Style for the active menu item */
+.nav-menu .menu-active a::after,
+.nav-menu a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-menu .menu-active a {
+  color: rgb(188, 108, 11); /* Set your desired active text color */
+}
+
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #262626;
+}
+
+@media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display:inline-flex;
+    margin-right: 5px;
+  }
+
   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    flex-direction: column; /* Stack list items vertically */
+    align-items: stretch; /* Stretch items to full width */
   }
-  
-  nav ul li {
-    margin-right: 20px;
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+} 
+
+ #mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #50d8af;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #50d8af;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+/*--INTRO 2 ---*/
+
+
+#intro2 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/clients/cpr22.jpg");
+  background-size: cover;
+}
+
+#intro2 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro2 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro2 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.red-cross-logo img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
   }
+}
+
+
+#intro2 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro2 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro2 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro2 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro2 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro2 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro2 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro2 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+/* WHO WE SERVE INTRO*/
+
+
+#intro4 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/community.jpeg");
+  background-size: cover;
+}
+
+#intro4 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro4 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro4 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro4 .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro4 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro4 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro4 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro4 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro4 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro4 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro4 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro4 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/cpr.jpeg");
+  background-size: cover;
+}
+
+#intro .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+
+#intro .intro-content h5 {
+  color: rgb(218, 230, 0)
+} 
+#intro .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+
+
+
+
+
+
+#intro3 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/11.jpg");
+  background-size: cover;
+}
+
+#intro3 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro3 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro3 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro3 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro3 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro3 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro2 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro3 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro3 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro3 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro3 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: #ff0000;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #000000;
+  bottom: 0;
+  left: 0;
+}
+
+.section-header p {
+  padding: 0;
+  margin: 0;
+}
+
+/* About Section
+--------------------------------*/
+#about {
+  padding: 60px 0 30px 0;
+}
+
+#about .about-img {
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about .content h2 {
+  color: #650303;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about .content h3 {
+  color: #000000;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Services Section
+--------------------------------*/
+#services {
+  padding: 30px 0 0 0;
+}
+
+#services .box {
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: #fff;
+  transition: 0.4s;
+}
+
+#services .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+
+#services .box .icon {
+  float: left;
+}
+
+#services .box .icon i {
+  color: #444;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+
+#services .box .icon i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #000000 0%, #ca0000 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#services .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#services .box h4 a {
+  color: #0a0a0a;
+}
+
+#services .box p {
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+
+
+@media (max-width: 767px) {
+  #services .box .box {
+    margin-bottom: 20px;
+  }
+  #services .box .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #services .box h4, #services .box p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+
+
+
+/* HOW WE TEACH Section */
+#Services {
+  padding: 60px 0;
+}
+
+#Services .section-header h2 {
+  color: #ca0000; /* Black text color */
+  font-weight: bold; /* Bold font */
+}
+
+#Services .box {
+  background: #fff; /* White background for boxes */
+  margin: 0 0 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#Services .title {
+  color: #000; /* Black text color */
+}
+
+#Services .description {
+  margin-bottom: 20px;
+}
+
+#Services ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Services ul li {
+  position: relative;
+  padding-left: 30px; /* Space for checkmark */
+}
+
+#Services ul li::before {
+  content: '\2713'; /* Checkmark character */
+  color: #065d1d; /* Checkmark color */
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+}
+
+
+#contact {
+  padding: 30px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #8b0000;
+}
+
+#contact .contact-info address, #contact .contact-info p {
+  margin-bottom: 0;
+  color: #000;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+#contact .contact-info a {
+  color: #000;
+}
+
+
+
+#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+#contact #google-map {
+  height: 290px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  #contact #google-map {
+    margin-top: 20px;
+  }
+}
+
+#contact .form #sendmessage {
+  color: #000000;
+  border: 1px solid #000000;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: rgb(25, 22, 22);
+  display: none;
+  border: 1px solid rgb(12, 1, 59);
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contact .form button[type="submit"] {
+  background: #222222;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #024836;
+}
+
+
+.certified-logos {
+  display: flex;
+  justify-content: space-between; /* Adjust the spacing between logos */
+  align-items: center;
+  margin-bottom: 30px; /* Increase the vertical margin as needed */
+
+  /* Responsive spacing for smaller screens (e.g., phones) */
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.certified-logos img {
+  max-width: 100px; /* Set a maximum width for the logos */
+  height: auto;
+  margin-bottom: 20px; /* Increase the vertical margin between logos */
+
+  /* Responsive spacing for smaller screens (e.g., phones) */
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 30px; /* Increase the vertical margin between logos on smaller screens */
+  }
+
+
+  /**/
+
+
   
-  nav ul li:last-child {
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+} 
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #50d8af;
+} 
+
+.nav-menu ul {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.nav-menu li:hover > ul {
+}
+
+#nav-menu-container ul {
+  position: relative;
+}
+
+#nav-menu-container ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+
+}
+
+.menu-has-children {
+  position: relative; /* Set the parent to relative positioning */
+}
+
+
+
+
+
+.service-image {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* This property ensures the image covers the entire container */
+}
+
+
+
+  /* Additional styles for the button container */
+  .button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+    margin-bottom: 20px; /* Adjust margin-bottom as needed */
+  }
+
+  /* Additional styles for the button */
+  .btn-send-message {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-send-message:hover {
+    background-color: #218838;
+  }
+
+
+
+  /* CORPRATIONS INTRO */
+
+
+
+#intro5 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/healthcare.jpeg");
+  background-size: cover;
+}
+
+#intro5 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro5 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro5 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro5 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro5 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro5 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro5 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro5 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro5 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro5 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro5 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+/*TEACHERS ITNRO */
+
+
+
+#intro6 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/healthcare2.jpeg");
+  background-size: cover;
+}
+
+#intro6 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro6 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro6 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro6 .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro6 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro6 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro6 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro6 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro6 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro6 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro6 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro6 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/*HEALTHCARE*/
+
+
+
+
+#intro7 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/heallthcare3.jpeg");
+  background-size: cover;
+}
+
+#intro7 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro7 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro7 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro6 .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+#intro7 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro7 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro7 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro7 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro7 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro7 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro7 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro7 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+
+
+
+/*schedule */
+
+/* Add this CSS to your existing style.css file or create a new one */
+
+/* Main Content Container */
+.content-container {
+  margin-top: 30px;
+}
+
+/* Course Dropdown Styles */
+.course-dropdowns {
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+}
+
+.course-dropdown {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.info-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Course Info Styles */
+.course-info {
+  margin-top: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+.hide-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.hide-button:hover {
+  background-color: #bd2130;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .course-dropdown {
     margin-right: 0;
   }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333; /* Set your desired text color */
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #007bff; /* Set your desired hover color */
-  }
-  
-  @media (max-width: 768px) {
-    header {
-      padding: 20px 0;
-      height: 74px;
-    }
-  
-    #logo h1 {
-      font-size: 20px;
-      margin-left: 10px;
-    }
-  
-    #logo img {
-      max-height: 40px;
-    }
-  }
-  
-  
-  
-  .nav-menu, .nav-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  
-  }
-  
-  .nav-menu ul {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    z-index: 99;
-  }
-  
-  
-  .nav-menu > li {
-    float: left;
-  }
-  
-  .nav-menu li:hover > ul,
-  .nav-menu li.sfHover > ul {
-    display: block;
-  }
-  
-  .nav-menu ul ul {
-    top: 0;
-    left: 100%;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    white-space: nowrap; /* Prevent text from wrapping */
-  }
-  
-  
-  nav {
-    max-width: 100%; /* Adjust for responsiveness */
-  }
-  .nav-menu ul li {
-    min-width: 180px;
-  }
-  
-  /* Nav Menu Arrows */
-  .sf-arrows .sf-with-ul {
-    padding-right: 22px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  @media (max-width: 768px) {
-    #nav-menu-container {
-      display: none;
-    }
-  }
-  
-  /* Nav Meu Styling */
-  .nav-menu a {
-    padding: 2px 8px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  
-  
-  .nav-menu a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(219, 52, 52); /* Set your desired underline color */
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  /* Style for the active menu item */
-  .nav-menu .menu-active a::after,
-  .nav-menu a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .nav-menu .menu-active a {
-    color: rgb(188, 108, 11); /* Set your desired active text color */
-  }
-  
-  
-  /* Mobile Nav Toggle */
-  #mobile-nav-toggle {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 999;
-    margin: 20px 20px 0 0;
-    border: 0;
-    background: none;
-    font-size: 24px;
-    display: none;
-    transition: all 0.4s;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  #mobile-nav-toggle i {
-    color: #555;
-  }
-  
-  @media (max-width: 768px) {
-    #mobile-nav-toggle {
-      display: inline;
-    }
-  
-    nav ul {
-      flex-direction: column; /* Stack list items vertically */
-      align-items: stretch; /* Stretch items to full width */
-    }
-  
-  }
-  
-  /* Mobile Nav Styling */
-  #mobile-nav {
-    position: fixed;
-    top: 0;
-    padding-top: 18px;
-    bottom: 0;
-    z-index: 998;
-    background: rgba(52, 59, 64, 0.9);
-    left: -260px;
-    width: 260px;
-    overflow-y: auto;
-    transition: 0.4s;
-  }
-  
-  #mobile-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  #mobile-nav ul li {
-    position: relative;
-  }
-  
-  #mobile-nav ul li a {
-    color: #fff;
-    font-size: 16px;
-    overflow: hidden;
-    padding: 10px 22px 10px 15px;
-    position: relative;
-    text-decoration: none;
-    width: 100%;
-    display: block;
-    outline: none;
-  }
-  
-  #mobile-nav ul li a:hover {
-    color: #fff;
-  }
-  
-  #mobile-nav ul li li {
-    padding-left: 30px;
-  }
-  
-  #mobile-nav ul .menu-has-children i {
-    position: absolute;
-    right: 0;
-    z-index: 99;
-    padding: 15px;
-    cursor: pointer;
-    color: #fff;
-  } 
-  
-   #mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #50d8af;
-  }
-  
-  #mobile-nav ul .menu-item-active {
-    color: #50d8af;
-  }
-  
-  #mobile-body-overly {
-    width: 100%;
-    height: 100%;
-    z-index: 997;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgba(52, 59, 64, 0.9);
-    display: none;
-  }
-  
-  /* Mobile Nav body classes */
-  body.mobile-nav-active {
-    overflow: hidden;
-  }
-  
-  body.mobile-nav-active #mobile-nav {
-    left: 0;
-  }
-  
-  body.mobile-nav-active #mobile-nav-toggle {
-    color: #fff;
-  }
-  
-  
-  
-  
-  /*--INTRO 2 ---*/
-  
-  
-  #intro2 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/clients/cpr22.jpg");
-    background-size: cover;
-  }
-  
-  #intro2 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro2 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro2 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .red-cross-logo img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 10px;
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro2 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro2 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro2 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro2 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro2 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro2 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro2 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro2 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  /* WHO WE SERVE INTRO*/
-  
-  
-  #intro4 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/community.jpeg");
-    background-size: cover;
-  }
-  
-  #intro4 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro4 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro4 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    #intro4 .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro4 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro4 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro4 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro4 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro4 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro4 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro4 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro4 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  
-  /*--------------------------------------------------------------
-  # Intro Section
-  --------------------------------------------------------------*/
-  #intro {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/cpr.jpeg");
-    background-size: cover;
-  }
-  
-  #intro .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  
-  #intro .intro-content h5 {
-    color: rgb(218, 230, 0)
-  } 
-  #intro .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  #intro3 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/11.jpg");
-    background-size: cover;
-  }
-  
-  #intro3 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro3 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro3 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro3 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro3 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro3 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro2 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro3 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro3 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro3 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro3 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Nav Menu Essentials */
-  
-  
-  /*--------------------------------------------------------------
-  # Sections
-  --------------------------------------------------------------*/
-  /* Sections Header
-  --------------------------------*/
-  .section-header {
-    margin-bottom: 30px;
-  }
-  
-  .section-header h2 {
-    font-size: 32px;
-    color: #ff0000;
-    text-transform: uppercase;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 20px;
-  }
-  
-  .section-header h2::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #000000;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .section-header p {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* About Section
-  --------------------------------*/
-  #about {
-    padding: 60px 0 30px 0;
-  }
-  
-  #about .about-img {
-    overflow: hidden;
-  }
-  
-  #about .about-img img {
-    margin-left: -15px;
-    max-width: 100%;
-  }
-  
-  @media (max-width: 768px) {
-    #about .about-img {
-      height: auto;
-    }
-    #about .about-img img {
-      margin-left: 0;
-      padding-bottom: 30px;
-    }
-  }
-  
-  #about .content h2 {
-    color: #650303;
-    font-weight: 700;
-    font-size: 32px;
-    font-family: "Raleway", sans-serif;
-  }
-  
-  #about .content h3 {
-    color: #000000;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 26px;
-  }
-  
-  #about .content p {
-    line-height: 26px;
-  }
-  
-  #about .content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  
-  /* Services Section
-  --------------------------------*/
-  #services {
-    padding: 30px 0 0 0;
-  }
-  
-  #services .box {
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-    background: #fff;
-    transition: 0.4s;
-  }
-  
-  #services .box:hover {
-    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-  }
-  
-  #services .box .icon {
-    float: left;
-  }
-  
-  #services .box .icon i {
-    color: #444;
-    font-size: 64px;
-    transition: 0.5s;
-    line-height: 0;
-    margin-top: 34px;
-  }
-  
-  #services .box .icon i:before {
-    background: #0c2e8a;
-    background: linear-gradient(45deg, #000000 0%, #ca0000 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  #services .box h4 {
-    margin-left: 100px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 22px;
-  }
-  
-  #services .box h4 a {
-    color: #0a0a0a;
-  }
-  
-  #services .box p {
-    font-size: 14px;
-    margin-left: 100px;
-    margin-bottom: 0;
-    line-height: 24px;
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #services .box .box {
-      margin-bottom: 20px;
-    }
-    #services .box .icon {
-      float: none;
-      text-align: center;
-      padding-bottom: 15px;
-    }
-    #services .box h4, #services .box p {
-      margin-left: 0;
-      text-align: center;
-    }
-  }
-  
-  
-  
-  
-  
-  /* HOW WE TEACH Section */
-  #Services {
-    padding: 60px 0;
-  }
-  
-  #Services .section-header h2 {
-    color: #ca0000; /* Black text color */
-    font-weight: bold; /* Bold font */
-  }
-  
-  #Services .box {
-    background: #fff; /* White background for boxes */
-    margin: 0 0 30px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  #Services .title {
-    color: #000; /* Black text color */
-  }
-  
-  #Services .description {
-    margin-bottom: 20px;
-  }
-  
-  #Services ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #Services ul li {
-    position: relative;
-    padding-left: 30px; /* Space for checkmark */
-  }
-  
-  #Services ul li::before {
-    content: '\2713'; /* Checkmark character */
-    color: #065d1d; /* Checkmark color */
-    font-size: 18px;
-    position: absolute;
-    left: 0;
-  }
-  
-  
-  #contact {
-    padding: 30px 0;
-  }
-  
-  #contact .contact-info {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  #contact .contact-info i {
-    font-size: 48px;
-    display: inline-block;
-    margin-bottom: 10px;
-    color: #8b0000;
-  }
-  
-  #contact .contact-info address, #contact .contact-info p {
-    margin-bottom: 0;
-    color: #000;
-  }
-  
-  #contact .contact-info h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #999;
-  }
-  
-  #contact .contact-info a {
-    color: #000;
-  }
-  
-  
-  
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
-    margin-bottom: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    #contact .contact-address, #contact .contact-phone, #contact .contact-email {
-      padding: 20px 0;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #contact .contact-phone {
-      border-left: 1px solid #ddd;
-      border-right: 1px solid #ddd;
-    }
-  }
-  
-  #contact #google-map {
-    height: 290px;
-    margin-bottom: 20px;
-  }
-  
-  @media (max-width: 576px) {
-    #contact #google-map {
-      margin-top: 20px;
-    }
-  }
-  
-  #contact .form #sendmessage {
-    color: #000000;
-    border: 1px solid #000000;
-    display: none;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
-  
-  #contact .form #errormessage {
-    color: rgb(25, 22, 22);
-    display: none;
-    border: 1px solid rgb(12, 1, 59);
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
-  
-  #contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
-    display: block;
-  }
-  
-  #contact .form .validation {
-    color: red;
-    display: none;
-    margin: 0 0 20px;
-    font-weight: 400;
-    font-size: 13px;
-  }
-  
-  #contact .form input, #contact .form textarea {
-    padding: 10px 14px;
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 15px;
-  }
-  
-  #contact .form button[type="submit"] {
-    background: #222222;
-    border: 0;
-    border-radius: 3px;
-    padding: 10px 30px;
-    color: #fff;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-  
-  #contact .form button[type="submit"]:hover {
-    background: #024836;
-  }
-  
-  
-  .certified-logos {
-    display: flex;
-    justify-content: space-between; /* Adjust the spacing between logos */
-    align-items: center;
-    margin-bottom: 30px; /* Increase the vertical margin as needed */
-  
-    /* Responsive spacing for smaller screens (e.g., phones) */
-    @media (max-width: 767px) {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  
-  .certified-logos img {
-    max-width: 100px; /* Set a maximum width for the logos */
-    height: auto;
-    margin-bottom: 20px; /* Increase the vertical margin between logos */
-  
-    /* Responsive spacing for smaller screens (e.g., phones) */
-    @media (max-width: 767px) {
-      margin-right: 0;
-      margin-bottom: 30px; /* Increase the vertical margin between logos on smaller screens */
-    }
-  
-  
-    /**/
-  
-  
-  /* #mobile-nav ul .menu-has-children i {
-    position: absolute;
-    right: 0;
-    z-index: 99;
-    padding: 15px;
-    cursor: pointer;
-    color: #fff;
-  } */
-  
-  /* #mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #50d8af;
-  } */
-  
-  .nav-menu ul {
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    padding: 10px;
-    background-color: #fff;
-  }
-  
-  .nav-menu li:hover > ul {
-    display: block;
-  }
-  
-  #nav-menu-container ul {
-    position: relative;
-  }
-  
-  #nav-menu-container ul ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-  
-  
-  }
-  
-  .menu-has-children {
-    position: relative; /* Set the parent to relative positioning */
-  }
-  
-  .menu-has-children ul {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position the dropdown below the parent */
-    left: 0; /* Center the dropdown menu */
-    background-color: white; /* Set background color to white */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for better visibility */
-  }
-  
-  .menu-has-children:hover > ul {
-    display: block;
-  }
-  .nav-menu ul li a:hover {
-    color: blue;
-  }
-  
-  
-  
-  .service-image {
-    width: 100%;
-    height: 200px; /* Adjust the height as needed */
-    object-fit: cover; /* This property ensures the image covers the entire container */
-  }
-  
-  
-  
-    /* Additional styles for the button container */
-    .button-container {
-      text-align: center;
-      margin-top: 20px; /* Adjust margin-top as needed */
-      margin-bottom: 20px; /* Adjust margin-bottom as needed */
-    }
-  
-    /* Additional styles for the button */
-    .btn-send-message {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: 600;
-      text-align: center;
-      text-decoration: none;
-      background-color: #28a745;
-      color: #fff;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-  
-    .btn-send-message:hover {
-      background-color: #218838;
-    }
-  
-  
-  
-    /* CORPRATIONS INTRO */
-  
-  
-  
-  #intro5 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/healthcare.jpeg");
-    background-size: cover;
-  }
-  
-  #intro5 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro5 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro5 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro5 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro5 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro5 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro5 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro5 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro5 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro5 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro5 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  /*TEACHERS ITNRO */
-  
-  
-  
-  #intro6 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/healthcare2.jpeg");
-    background-size: cover;
-  }
-  
-  #intro6 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro6 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro6 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro6 .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro6 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro6 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro6 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro6 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro6 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro6 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro6 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro6 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  /*HEALTHCARE*/
-  
-  
-  
-  
-  #intro7 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/heallthcare3.jpeg");
-    background-size: cover;
-  }
-  
-  #intro7 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro7 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro7 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro6 .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro7 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro7 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro7 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro7 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro7 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro7 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro7 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro7 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  
-  
-  
-  /*schedule */
-  
-  /* Add this CSS to your existing style.css file or create a new one */
-  
-  /* Main Content Container */
-  .content-container {
-    margin-top: 30px;
-  }
-  
-  /* Course Dropdown Styles */
-  .course-dropdowns {
-    display: flex;
-    flex-direction: column; /* Change to column to stack items vertically */
-  }
-  
-  .course-dropdown {
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
+
   select {
-    width: 200px;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .info-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Course Info Styles */
-  .course-info {
-    margin-top: 10px;
-  }
-  
-  /* Sidebar Styles */
-  .sidebar {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  .hide-button {
-    background-color: #dc3545;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-  }
-  
-  .hide-button:hover {
-    background-color: #bd2130;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .course-dropdown {
-      margin-right: 0;
-    }
-  
-    select {
-      width: 100%;
-    }
-  }
-  
-  
-  /*AED INTRO */
-  
-  
-  
-  #intro9 {
     width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/aed.jpg");
-    background-size: cover;
   }
-  
-  #intro9 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+}
+
+
+/*AED INTRO */
+
+
+
+#intro9 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/aed.jpg");
+  background-size: cover;
+}
+
+#intro9 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro9 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro9 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
   }
-  
-  #intro9 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  #intro9 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
-  }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro9 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro9 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro9 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro9 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro9 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro9 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro9 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro9 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  /**/
-  
-  
-  
-  #intro10 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/scouts.jpeg");
-    background-size: cover;
-  }
-  
-  #intro10 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro10 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
+}
+
+
+#intro9 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro9 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro9 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro9 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro9 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro9 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro9 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro9 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+/**/
+
+
+
+#intro10 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/scouts.jpeg");
+  background-size: cover;
+}
+
+#intro10 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro10 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+#intro10 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
   #intro10 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
+    font-size: 34px;
   }
-  
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 767px) {
+  #intro10 .intro-content h2 {
+    font-size: 34px;
   }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro10 .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    #intro10 .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro10 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro10 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro10 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro10 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro10 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro10 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro10 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro10 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*ABOUT US*/
-  
-  
-  
-  #intro12 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("../img/intro-carousel/abouus.jpg");
-    background-size: cover;
-  }
-  
-  #intro12 .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #intro12 .intro-content h5 {
-    color: rgb(218, 230, 0)
-  }
-  
-  
-  
+}
+
+
+#intro10 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro10 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro10 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro10 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro10 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro10 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro10 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro10 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ABOUT US*/
+
+
+
+#intro12 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/abouus.jpg");
+  background-size: cover;
+}
+
+#intro12 .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro12 .intro-content h5 {
+  color: rgb(218, 230, 0)
+}
+
+
+
+#intro12 .intro-content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+
+
+.red-cross-logo img {
+  width: 100px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 767px) {
   #intro12 .intro-content h2 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 700;
-  
+    font-size: 34px;
   }
+}
+
+
+#intro12 .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+#intro12 .intro-content .btn-get-started {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+#intro12 .intro-content .btn-projects {
+  background: #fff9f9;
+  border: 2px solid #0c0c0d;
+}
+
+
+#intro12 .intro-content .btn-get-started:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+#intro12 .intro-content .btn-projects:hover {
+  background: none;
+  color: #ededed;
+}
+
+
+
+#intro12 #intro-carousel {
+  z-index: 8;
+}
+
+/*background for the home page */
+#intro12 #intro-carousel::before {
+  content: '';
+  background-color: rgba(24, 15, 15, 0.7);
+  position: absolute;
+  height: 133.5%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro12 #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+
+
+/*DESCRIPTIONS SCHEULDE */
+
+
+h1, h2, h3 {
+  color: #333;
+}
+
+#description {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#course-buttons-container{
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+#description p,
+#description ul {
+  margin-bottom: 10px;
+}
+
+#description li {
+  margin-bottom: 5px;
+}
+
+/* #j{
   
-  
-  
-  .red-cross-logo img {
-    width: 100px; /* Set the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
+} */
+
+
+
+
+
+
+
+
+
+/* SECTION FOR INDEX*/
+
+
+
+
+
+.classes-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.partnership-divider {
+  height: 2px;
+  width: 2%;
+  height: 4px;
+  background-color: #000;
+  margin: 10px 0; /* Adjust margin as needed */
+}
+
+
+
+/* Add this media query for smaller screens, adjust the max-width as needed */
+/* Add this media query for smaller screens, adjust the max-width as needed */
+@media only screen and (max-width: 767px) {
+  .certified-logos img {
+    display: none; /* Hide the Red Cross image on smaller screens */
   }
-  
-  
-  
-  @media (max-width: 767px) {
-    #intro12 .intro-content h2 {
-      font-size: 34px;
-    }
-  }
-  
-  
-  #intro12 .intro-content .btn-projects {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 2px;
-    transition: 0.5s;
-    margin: 10px;
-    margin-left: 10px;
-  }
-  
-  #intro12 .intro-content .btn-get-started {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  #intro12 .intro-content .btn-projects {
-    background: #fff9f9;
-    border: 2px solid #0c0c0d;
-  }
-  
-  
-  #intro12 .intro-content .btn-get-started:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  #intro12 .intro-content .btn-projects:hover {
-    background: none;
-    color: #ededed;
-  }
-  
-  
-  
-  #intro12 #intro-carousel {
-    z-index: 8;
-  }
-  
-  /*background for the home page */
-  #intro12 #intro-carousel::before {
-    content: '';
-    background-color: rgba(24, 15, 15, 0.7);
-    position: absolute;
-    height: 133.5%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 7;
-  }
-  
-  #intro12 #intro-carousel .item {
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  
-  
-  
-  
-  /*DESCRIPTIONS SCHEULDE */
-  
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  #description,
-  #course-selection,
-  #date-selection,
-  #course-description,
-  #selected-course,
-  #confirmation-details {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  select,
-  button {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
-  button {
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #date-selection button {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-  
-  #description p,
-  #description ul {
-    margin-bottom: 10px;
-  }
-  
-  #description li {
-    margin-bottom: 5px;
-  }
-  
-  #course-description p {
-    margin-bottom: 10px;
-  }
-  
-  #confirmation-details {
-    text-align: center;
-  }
-  
-  #confirmation-details h2 {
-    color: #4CAF50;
-  }
-  
-  
-  #course-selection select {
-    width: 400px; /* Set the width of the select element */
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  
-  
-  /* Main Option Dropdown Styles */
-  #main-option-selection {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #mainOption {
-    width: 400px; /* Set the width of the dropdown */
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #main-option-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  
-  
-  
-  /* Certificate Selection Styles */
-  #certificate-selection {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #certificateOption {
-    width: 400px; /* Set the width of the dropdown */
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #certificate-selection label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* Add styling for consistency with the rest of the page */
-  #certificate-selection select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  
-  
-  
-  /* SECTION FOR INDEX*/
-  
-  
-  
-  
-  
-  .classes-info {
-    margin-top: 20px;
-    font-size: 16px;
-  }
-  
-  .partnership-divider {
-    height: 2px;
-    width: 2%;
-    height: 4px;
-    background-color: #000;
-    margin: 10px 0; /* Adjust margin as needed */
-  }
-  
-  
-  
-  /* Add this media query for smaller screens, adjust the max-width as needed */
-  /* Add this media query for smaller screens, adjust the max-width as needed */
-  @media only screen and (max-width: 767px) {
-    .certified-logos img {
-      display: none; /* Hide the Red Cross image on smaller screens */
-    }
-  }
-  
-  
-  #important{
-    color: red;
-    font-weight: bold;
-  
-  }
-  
+}
+
+
+#important{
+  color: red;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

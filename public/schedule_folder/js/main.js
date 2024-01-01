@@ -129,8 +129,101 @@ const courseDetails = {
         ],
     },
 
+ 
+    cpr_sessions_pediatric: {
+        name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-r.21",
+        price: 77.00,
+        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
+        dates: [
+            "None"
+        ],
+        
+    },
+
+    cpr_sessions_first_aid: {
+        name: "ARC Adult First Aid/CPR/AED Skills Session-r.21",
+        price: 55.00,
+        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
+        dates: [
+            "None"
+        ],
+        
+    },
+
+
+    cpr_sessions_adult: {
+        name: "ARC Adult CPR/AED Skills Session-r.21",
+        price: 37.00,
+        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
+        dates: [
+            "None"
+        ],
+        
+    },
+
+
+
+
+    bls_blended: {
+        name: "ARC Basic Life Support-BL R.21",
+        price: 85.00,
+        descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
+        dates: [
+            { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+            { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
+        ],
+    },
+    bls_classroom: {
+        name: "ARC Basic Life Support-R.21 - CLASSROOM",
+        price: 90.00,
+        descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
+        dates: [
+            { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+            { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+        ],
+    },
+
+    babysitter_classroom: {
+        name: "ARC Babysitter's Training And Pediatric First Aid/CPR",
+        price: 150.00,
+        descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
+        dates: [
+            { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+            { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+        ],
+    },
+
+
+    babysitter_training: {
+        name: "ARC Babysitters Training",
+        price: 90.00,
+        descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
+        dates: [
+            { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+            { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+        ],
+    },
+
     cpr1_virtual:{
-        name:"ARC Adult & Pediatric First Aid/CPR/AED Blended - VIRTUAL" ,
+        name:"ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,
         price : 50.00,
         descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
         dates: [
@@ -198,98 +291,6 @@ const courseDetails = {
         ],
     },
 
-
-    cpr_sessions_pediatric: {
-        name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-r.21",
-        price: 77.00,
-        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
-        dates: [
-            "None"
-        ],
-        
-    },
-
-    cpr_sessions_first_aid: {
-        name: "ARC Adult First Aid/CPR/AED Skills Session-r.21",
-        price: 55.00,
-        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
-        dates: [
-            "None"
-        ],
-        
-    },
-
-
-    cpr_sessions_adult: {
-        name: "ARC Adult CPR/AED Skills Session-r.21",
-        price: 37.00,
-        descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
-        dates: [
-            "None"
-        ],
-        
-    },
-
-
-
-
-    bls_blended: {
-        name: "ARC Basic Life Support-BL R.21",
-        price: 85.00,
-        descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
-        dates: [
-            { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-            { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
-        ],
-    },
-    bls_classroom: {
-        name: "ARC Basic Life Support-R.21",
-        price: 90.00,
-        descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
-        dates: [
-            { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-            { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        ],
-    },
-
-    babysitter_classroom: {
-        name: "ARC Babysitter's Training And Pediatric First Aid/CPR",
-        price: 150.00,
-        descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
-        dates: [
-            { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-            { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-            { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-            { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-            { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-        ],
-    },
-
-
-    babysitter_training: {
-        name: "ARC Babysitters Training",
-        price: 90.00,
-        descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
-        dates: [
-            { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-            { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-            { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-            { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-            { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-        ],
-    },
 
     aha_course1: {
         name: "American Heart Association (AHA) Courses",
@@ -443,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isNaN(courseDate)) {
                     // If date is invalid, set button text to "Please contact us" and add a click event to redirect to the contact us page
                     const dateButton = document.createElement("button");
-                    dateButton.innerHTML = "To schedule a class please contact us.";
+                    dateButton.innerHTML = "please contact us to schedule a class.";
                     dateButton.style.backgroundColor = "transparent";
                     dateButton.style.color = "red";
                     dateButton.style.padding = "8px 12px";
