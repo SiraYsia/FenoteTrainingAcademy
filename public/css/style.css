@@ -2137,13 +2137,8 @@ h1, h2, h3 {
   color: #333;
 }
 
-#description,
-#course-selection,
-#date-selection,
-#course-description,
-#selected-course,
-#confirmation-details {
-  max-width: 600px;
+#description {
+  max-width: 650px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -2151,33 +2146,16 @@ h1, h2, h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-select,
-button {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 16px;
-}
 
-button {
-  background-color: #068d0d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  text-align: center; /* Optional: Center the text inside the button */
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
-  width: 100%; /* Set the desired width */
-
-
+#course-buttons-container{
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
-
-
-#date-selection button {
-  display: block;
-  width: 100%;
-  text-align: left;
-}
-
 #description p,
 #description ul {
   margin-bottom: 10px;
@@ -2187,133 +2165,14 @@ button {
   margin-bottom: 5px;
 }
 
-#course-description p {
-  margin-bottom: 10px;
-}
-
-#confirmation-details {
-  text-align: center;
-}
-
-#confirmation-details h2 {
-  color: #4CAF50;
-}
-
-
-#course-selection select {
-  width: 400px; /* Set the width of the select element */
-  padding: 10px;
-  font-size: 16px;
-}
-
-
-
-/* Main Option Dropdown Styles */
-#main-option-selection {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#mainOption {
-  width: 400px; /* Set the width of the dropdown */
-  padding: 10px;
-  font-size: 16px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#main-option-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
+section j{
+  background-color: #000a07;
 }
 
 
 
 
-/* Certificate Selection Styles */
-#certificate-selection {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-#certificateOption {
-  width: 400px; /* Set the width of the dropdown */
-  padding: 10px;
-  font-size: 16px;
-}
-
-/* Add styling for consistency with the rest of the page */
-#certificate-selection label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
-}
-
-/* Add styling for consistency with the rest of the page */
-#certificate-selection select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-}
 
 
 
@@ -2360,93 +2219,8 @@ button {
 
 
 
-/*SCHULE DIV*/
 
 
 
 
-
-/* Add this style for the schedule div */
-
-
-#schedule h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-#schedule h3 {
-  color: #555;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-#schedule p {
-  color: #777;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-#schedule button {
-  margin: 5px;
-  padding: 8px 12px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#schedule button:hover {
-  background-color: #45a049;
-}
-
-#schedule hr {
-  border: 80;
-  border: 1px dashed #ccc; /* Example styling for the styled hr */
-  margin-top: 20px; /* Adjust as needed */
-  height: 2px;
-  background: rgb(1, 21, 104);
-  margin: 50px 0;
-}
-
-#section_schedule {
-  text-align: center;
-  padding: 20px;
-}
-
-section h1 {
-  color: #333;
-  font-size: 36px;
-  margin-bottom: 20px;
-  position: relative; /* Position relative for absolute positioning of the line */
-}
-
-section h1::after {
-  content: "";
-  display: block;
-  width: 50px; /* Adjust the width of the line */
-  height: 3px; /* Adjust the height and thickness of the line */
-  background-color: #4CAF50; /* Line color */
-  position: absolute;
-  bottom: -10px; /* Adjust the distance from the text */
-  left: 50%; /* Center the line under the text */
-  transform: translateX(-50%); /* Center the line under the text */
-}
-
-#schedule {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #b2aeae;
-}
-
-
-.separator {
-  border-top: 2px solid #c0bcbc; /* Example styling for the separator */
-  margin-top: 30px; /* Adjust as needed */
-  margin-bottom: 30px; /* Adjust as needed */
-
-}
 
