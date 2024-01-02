@@ -2474,6 +2474,12 @@ h1, h2, h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.col-md-4 {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
 
 #course-buttons-container{
   max-width: 650px;

@@ -131,7 +131,7 @@ const courseDetails = {
 
  
     cpr_sessions_pediatric: {
-        name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-r.21",
+        name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
         price: 77.00,
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
         dates: [
@@ -141,7 +141,7 @@ const courseDetails = {
     },
 
     cpr_sessions_first_aid: {
-        name: "ARC Adult First Aid/CPR/AED Skills Session-r.21",
+        name: "ARC Adult First Aid/CPR/AED Skills Session-R.21",
         price: 55.00,
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
         dates: [
@@ -152,7 +152,7 @@ const courseDetails = {
 
 
     cpr_sessions_adult: {
-        name: "ARC Adult CPR/AED Skills Session-r.21",
+        name: "ARC Adult CPR/AED Skills Session-R.21",
         price: 37.00,
         descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
         dates: [
