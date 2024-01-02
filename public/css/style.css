@@ -60,303 +60,18 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*HEADER*/
-header {
-  background-color: rgb(255, 255, 255); /* Set your desired background color */
-  box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease; /* Add transition for a smooth effect */
+#mie{
+  display:hide;
+  width: 0;
 }
 
-/* Add this style for the scrolled state */
-header.scrolled {
-  background-color: rgb(255, 255, 255); /* Set your desired background color */
-}
+@media only screen and (max-width: 767px) {
+  #mie {
+    display: block;
+    width: fit-content;
 
-/* Other styles remain unchanged */
-
-
-#logo {
-  display: flex;
-  align-items: center;
-}
-
-#logo h1 {
-  font-size: 24px; /* Set your desired font size for the company name */
-  margin: 0;
-  margin-left: 10px; /* Adjust margin for better spacing with the logo */
-  color: #021e65; /* Set your desired color for the company name */
-}
-
-#logo img {
-  max-width: 70px; /* Set your desired max width for the logo */
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333; /* Set your desired text color */
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #0d73e8; /* Set your desired hover color */
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 20px 0;
-    height: 74px;
-  }
-
-  #logo h1 {
-    font-size: 20px;
-    margin-left: 10px;
-  }
-
-  #logo img {
-    max-height: 40px;
   }
 }
-
-
-
-.nav-menu, .nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-}
-
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
-}
-
-
-.nav-menu > li {
-  float: left;
-}
-
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 18px;
-  transition: color 0.3s ease;
-  white-space: nowrap; /* Prevent text from wrapping */
-}
-
-
-nav {
-  max-width: 100%; /* Adjust for responsiveness */
-}
-.nav-menu ul li {
-  min-width: 180px;
-  background-color: #f8f8f8;
-}
-
-/* Nav Menu Arrows */
-.sf-arrows .sf-with-ul {
-  padding-right: 22px;
-}
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  #nav-menu-container {
-    display: none;
-  }
-}
-
-/* Nav Meu Styling */
-.nav-menu a {
-  padding: 2px 8px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-
-
-.nav-menu a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(219, 52, 52); /* Set your desired underline color */
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-/* Style for the active menu item */
-.nav-menu .menu-active a::after,
-.nav-menu a:hover::after {
-  transform: scaleX(1);
-}
-
-.nav-menu .menu-active a {
-  color: rgb(188, 108, 11); /* Set your desired active text color */
-}
-
-
-/* Mobile Nav Toggle */
-#mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 20px 20px 0 0;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
-  cursor: pointer;
-}
-
-#mobile-nav-toggle i {
-  color: #262626;
-}
-
-@media (max-width: 768px) {
-  #mobile-nav-toggle {
-    display:inline-flex;
-    margin-right: 5px;
-  }
-
-  nav ul {
-    flex-direction: column; /* Stack list items vertically */
-    align-items: stretch; /* Stretch items to full width */
-  }
-}
-
-/* Mobile Nav Styling */
-#mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
-  left: -260px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
-}
-
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#mobile-nav ul li {
-  position: relative;
-}
-
-#mobile-nav ul li a {
-  color: #fff;
-  font-size: 16px;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  outline: none;
-}
-
-#mobile-nav ul li a:hover {
-  color: #fff;
-}
-
-#mobile-nav ul li li {
-  padding-left: 30px;
-}
-
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
-} 
-
- #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #50d8af;
-}
-
-#mobile-nav ul .menu-item-active {
-  color: #50d8af;
-}
-
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(52, 59, 64, 0.9);
-  display: none;
-}
-
-/* Mobile Nav body classes */
-body.mobile-nav-active {
-  overflow: hidden;
-}
-
-body.mobile-nav-active #mobile-nav {
-  left: 0;
-}
-
-body.mobile-nav-active #mobile-nav-toggle {
-  color: #fff;
-}
-
-
-
  
 
 
@@ -1100,12 +815,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+#contact .contact-address2, #contact .contact-phone2, #contact .contact-email2 {
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+  #contact .contact-address2, #contact .contact-phone2, #contact .contact-email2 {
     padding: 20px 0;
   }
 }
@@ -1209,51 +924,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   /**/
 
 
-  
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
-} 
-
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #50d8af;
-} 
-
-.nav-menu ul {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  padding: 10px;
-  background-color: #fff;
-}
-
-.nav-menu li:hover > ul {
-}
-
-#nav-menu-container ul {
-  position: relative;
-}
-
-#nav-menu-container ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
 
 
 }
-
-.menu-has-children {
-  position: relative; /* Set the parent to relative positioning */
-}
-
-
-
-
 
 .service-image {
   width: 100%;
@@ -2222,5 +1895,400 @@ certified-logos2 img{
 certified-logos2 img{
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-nav {
+  display: none;
+}
+.navbar a{
+  display: flex;
+}
+
+
+
+.navbar {
+  
+  background-color: #6c6c6c;
+  border-bottom: 2px solid #9e6565;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 70px;
+        
+  }
+
+
+
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+
+    width: 100%; /* Make the navigation links span the entire width */
+    justify-content: space-around; /* Distribute the space evenly */
+    top: 100px;
+  }
+
+
+  .navbar-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+
+
+  .navbar-links a:hover {
+    border-bottom: 2px solid #007bff;
+  }
+
+  .menu-has-children {
+    position: relative; /* Add this line */
+  }
+
+
+
+  .menu-has-children:hover .dropdown {
+  display: block;
+  position: absolute;
+  top: 100%;
+  margin: 0; /* Remove any margin to ensure text starts from the very left */
+
+  background-color: #ffffff;
+  border: 1px solid #d7e4f1; /* Add border styling */
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  .dropdown{
+    display: none;
+    list-style: none;
+    min-width: 80%;
+    text-decoration: none;
+    margin: 0; /* Remove any margin to ensure text starts from the very left */
+    margin-left: -30;
+    
+  }
+
+
+    .dropdown a:hover {
+        border-bottom: 2px solid #007bff;
+    }
+
+
+    .navbar-links.mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust as needed based on your header height */
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: 1;
+}
+
+.navbar-links.mobile.active {
+  display: flex;
+}
+/* ... (your existing styles) ... */
+
+/* Add a class to handle the mobile navigation state */
+.navbar-links.mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust as needed based on your header height */
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: 1;
+}
+
+.navbar-links.mobile.active {
+  display: flex;
+}
+
+/* Toggle button styles */
+#navbar-toggle {
+  display: none; /* Initially hide the toggle button */
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ... (your existing styles) ... */
+
+/* Media query to show the toggle button on smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+
+  #navbar-toggle {
+    display: block; /* Show the toggle button for smaller screens */
+  }
+
+  .mobile-nav {
+    display: block; /* Show the separate navigation for smaller screens */
+    background-color: #393939; /* Updated background color */
+    padding: 15px; /* Increased padding for better spacing */
+  }
+
+  .mobile-nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+
+  .mobile-nav a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    padding: 10px 0; /* Adjusted padding */
+    display: block; /* Make links appear as block elements for better touch interactions */
+    border-bottom: 1px solid #555; /* Slightly lighter border */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Added color transition */
+  }
+
+  .mobile-nav a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #007bff; /* Hover color */
+    border-bottom: 1px solid transparent; /* Remove border on hover */
+  }
+}
+
+
+
+
+/*HEADER*/
+.company-name {
+    margin-right: 50px;
+    margin-left: 30px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e9e5e5;
+    box-shadow: 0 2px 5px rgba(158, 137, 137, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.logo-container img {
+  max-height: 190px; /* Adjust the logo size */
+  margin-left: 10px;
+}
+
+
+.company-name h1 {
+    font-size: 35px;
+    margin: 0;
+    color: #012e5e;
+}
+
+.col-md-4 {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.contact-address {
+    margin-bottom: 300px; /* Increase the margin for address */
+
+}
+
+
+
+.contact-address,
+.contact-phone,
+.contact-email {
+    color: black;
+    margin-bottom: 2px;
+    padding: 15px;
+    border-radius: 0px;
+
+  }
+
+/* Ensure that the last item does not have a border-right to avoid a double line */
+
+
+.contact-address:hover,
+.contact-phone:hover,
+.contact-email:hover {
+    background-color: #ffffff; /* Darken the background on hover */
+}
+
+.contact-address i,
+.contact-phone i,
+.contact-email i {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: rgb(0, 42, 87);
+    transition: color 0.3s ease;
+}
+
+.contact-address h3,
+.contact-phone h3,
+.contact-email h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Darken the heading color */
+    transition: color 0.3s ease;
+}
+
+.contact-address:hover i,
+.contact-phone:hover i,
+.contact-email:hover i,
+.contact-address:hover h3,
+.contact-phone:hover h3,
+.contact-email:hover h3 {
+    color: #0056b3; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
+/* Add this style for the fixed navigation bar */
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Set a higher z-index for the dropdown */
+.navbar .dropdown {
+  z-index: 1000;
+}
+
+/* Add a transparent background to make sure dropdown is clickable outside its borders */
+.navbar .dropdown:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999; /* Set this value lower than the dropdown z-index */
+  background: transparent;
+  pointer-events: none;
+}
+
+/* Style the dropdown links */
+.navbar .dropdown li {
+  display: block;
+  width: 100%; /* Make dropdown links full width */
+  box-sizing: border-box;
+}
+
+/* Style other dropdown elements as needed */
+.navbar .dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Set your desired text color */
+}
+
+/* Hover effect on dropdown links */
+.navbar .dropdown a:hover {
+  background-color: #f0f0f0; /* Set your desired background color on hover */
+}
+
+
+/* Navbar styling */
+.navbar {
+  background-color: #313030;
+  border-bottom: 2px solid #9e6565;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 70px;
+  align-items: center; /* Align items vertically in the center */
+}
+
+/* Optional: Style for navigation links */
+.navbar a {
+  color: #fff; /* Set text color to white */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Style for navigation links on hover */
+.navbar a:hover {
+  background-color: #e8e8e8; /* Darken the background color on hover */
+  color: black;
+}
+
+/* Optional: Style for dropdown */
+.navbar .dropdown {
+  position: relative;
+}
+
+/* Optional: Style for dropdown links */
+.navbar .dropdown a {
+  color: #333; /* Set text color for dropdown links */
+}
+
+/* Optional: Style for dropdown links on hover */
+.navbar .dropdown a:hover {
+  background-color: #f0f0f0; /* Set background color for dropdown links on hover */
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+
+
+
+/* Media query for screens up to 768 pixels wide (typical tablet size) */
+@media (max-width: 767px) {
+  /* Apply styles only for screens with a width of 767 pixels or less */
+
+  .contact-address{
+    display: none; /* Hide the entire column for smaller screens */
+  }
+}
+
 
 

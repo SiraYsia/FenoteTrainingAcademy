@@ -11,7 +11,6 @@
   <link href="img/clients/Fenote Training Academy.jpg" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,72 +32,136 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-  
-      <!-- New Container for Logo and Company Name -->
-      <div id="logo-container" class="pull-left">
-        <div id="logo">
-          <img src="img/clients/logo_ex.png" alt="Website Logo">  
-        </div>
-      </div>
-  
-      <nav id="nav-menu-container">
-
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-
-          <li class="menu-has-children">
-            <a href="training.html">Training and Certification </a>
-            <ul>
-              <li><a href="cpr.html">CPR</a></li>
-              <li><a href="aed.html">AED</a></li>
-              <li><a href="firstaid.html">First Aid</a></li>
-              <li><a href="bls.html">BLS</a></li>
-
-            </ul>
-          </li>
-          <li><a href="schedule.html">Book A Course</a></li>
-
-
-          <li class="menu-has-children"><a href="who_we_serve.html"> Who we serve </a>
-            <ul>
-              <li><a href="corporations.html">Corporations</a></li>
-              <li><a href="healthcare_workers.html">Health Care Workers</a></li>
-              <li><a href="educators.html">Educators</a></li>
-              <li><a href="individuals.html">Indviduals</a></li>
-              <li><a href="scouts.html">Scouts</a></li>
-
-            </ul>
-          </li>
-
-
-          <li class="menu-has-children">
-            <a href="consultancy.html"> Consultancy/Training </a>
-            <ul>
-              <li><a href="career.html">Health Care Career Developement</a></li>
-              <li><a href="public_health.html"> Public Health/Epidomolgy</a></li>
-            </ul>
-          </li>
-
-
-          <li class="menu-has-children">
-            <a> Marketing/Advisory </a>
-            <ul>
-              <li><a href="child_care_provider.html"> Child Care Providers </a></li>
-              <li><a href="child_care.html"> Parents seeking child care </a></li>
-            </ul>
-          </li>
-
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-
-        </ul>
-      </nav>
-  
+  <header class="header">
+    <div class="logo-container">
+        <img src="img/clients/logo_ex.png" alt="Company Logo">
     </div>
-  </header>
+    <div class="company-name">
+        <h1>Fenote Training Academy  </h1> 
+    </div>
+
+
+
+    <div class="col-md-4">
+      <div class="contact-address">
+        <i class="ion-ios-location-outline"></i>
+        <h3>Address</h3>
+        <address id = "apc">1904 Carters Grove Dr. Silver Spring MD 20904, USA</address>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="contact-address" >
+        <i class="ion-ios-telephone-outline"></i>
+        <h3>Phone Number</h3>
+        <p ><a href="tel:+155895548855">+1 (310) - 988 - 0673</a></p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="contact-address">
+        <i class="ion-ios-email-outline"></i>
+        <h3>Email</h3>
+        <p id="apc" style="color: black;">
+          <a href="mailto:ftrainingacademy21@gmail.com">ftrainingacademy21@gmail.com</a>
+        </p>
+              </div>
+    </div>
+
+
+</header>
+
+<nav class="navbar">
+  <a id="navbar-toggle" class="navbar-toggle" onclick="toggleNav()">☰</a>
+
+
+<ul class="navbar-links">
+  <li><a href="index.html">Home</a></li>
+
   
+
+  <li class="menu-has-children">
+    <a href="training.html"> Training and Certification</a>
+    
+    <ul class="dropdown">
+      <li><a href="cpr.html">CPR</a></li>
+      <li><a href="aed.html">AED</a></li>
+      <li><a href="firstaid.html">First Aid</a></li>
+      <li><a href="bls.html">BLS</a></li>
+    </ul>
+  </li>
+
+  <li><a href="schedule.html">Book A Course</a></li>
+
+  <li class="menu-has-children">
+    <a href="who_we_serve.html">Who we serve</a>
+    <ul class="dropdown">
+      <li><a href="corporations.html">Corporations</a></li>
+      <li><a href="healthcare_workers.html">Health Care Workers</a></li>
+      <li><a href="educators.html">Educators</a></li>
+      <li><a href="individuals.html">Indviduals</a></li>
+      <li><a href="scouts.html">Scouts</a></li>
+    </ul>
+  </li>
+
+  <li class="menu-has-children">
+    <a href="consultancy.html">Consultancy/Training </a>
+    <ul class="dropdown">
+      <li><a href="career.html">Health Care Career Developement</a></li>
+      <li><a href="public_health.html">Public Health/Epidomolgy</a></li>
+    </ul>
+  </li>
+
+  <li class="menu-has-children">
+    <a href="">Marketing Advisory</a>
+    <ul class="dropdown">
+      <li><a href="child_care.html">Child Care Providers</a></li>
+      <li><a href="child_care_provider.html">Parents seeking child care</a></li>
+    </ul>
+  </li>
+
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</nav>
+
+
+
+<a id="navbar-toggle" class="navbar-toggle" onclick="toggleNav()">☰</a>
+
+
+
+<nav class="mobile-nav">
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="training.html">Training and Certification</a></li>
+    <li><a href="cpr.html">CPR</a></li>
+    <li><a href="aed.html">AED</a></li>
+    <li><a href="firstaid.html">First Aid</a></li>
+    <li><a href="bls.html">BLS</a></li>
+    <li><a href="schedule.html">Book A Course</a></li>
+    <li><a href="who_we_serve.html">Who we serve</a></li>
+
+    <li><a href="corporations.html">Corporations</a></li>
+    <li><a href="healthcare_workers.html">Health Care Workers</a></li>
+    <li><a href="educators.html">Educators</a></li>
+    <li><a href="individuals.html">Indviduals</a></li>
+    <li><a href="scouts.html">Scouts</a></li>
+
+  
+    <li><a href="consultancy.html">Consultancy/Training</a></li>
+
+    <li><a href="career.html">Health Care Career Developement</a></li>
+    <li><a href="public_health.html">Public Health/Epidomolgy</a></li>
+
+    <li><a href="child_care.html">Child Care Providers</a></li>
+    <li><a href="parents_child_care.html">Parents seeking child care</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+    <!-- Add any other links you need for smaller screens -->
+  </ul>
+</nav>
   <!--==========================
     Intro Section
   ============================-->
@@ -129,7 +192,8 @@
         <p>Explore our certified courses recognized by the Occupational Safety and Health Administration (OSHA).</p>
       </div>
 
-      
+      <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+
       <div class="certified-logos">
         <img src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
 

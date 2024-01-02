@@ -205,3 +205,38 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+
+
+
+
+    // JavaScript to handle mobile navigation toggle
+// JavaScript to handle mobile navigation toggle and submenu visibility
+function toggleNav() {
+  var navLinks = document.querySelector('.navbar-links');
+  navLinks.classList.toggle('active');
+
+  var mobileNav = document.querySelector('.mobile-nav');
+  mobileNav.style.display = (mobileNav.style.display === 'none' || mobileNav.style.display === '') ? 'block' : 'none';
+}
+
+
+
+  // Get the navigation bar element
+  var navbar = document.querySelector('.navbar');
+
+  // Get the offset position of the navigation bar
+  var navbarOffset = navbar.offsetTop;
+
+  // Function to handle scroll events
+  function handleScroll() {
+    if (window.pageYOffset >= navbarOffset) {
+      // Add the 'fixed' class when scrolling down
+      navbar.classList.add('fixed');
+    } else {
+      // Remove the 'fixed' class when scrolling back to the top
+      navbar.classList.remove('fixed');
+    }
+  }
+
+  // Listen for scroll events and call the handleScroll function
+  window.addEventListener('scroll', handleScroll);
