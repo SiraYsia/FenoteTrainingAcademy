@@ -60,314 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*HEADER*/
-header {
-  background-color: rgb(255, 255, 255); /* Set your desired background color */
-  box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease; /* Add transition for a smooth effect */
-}
 
-/* Add this style for the scrolled state */
-header.scrolled {
-  background-color: rgb(255, 255, 255); /* Set your desired background color */
-}
-
-/* Other styles remain unchanged */
-
-
-#logo {
-  display: flex;
-  align-items: center;
-}
-
-#logo h1 {
-  font-size: 18px; /* Set your desired font size for the company name */
-  margin: 0;
-  color: #021e65; /* Set your desired color for the company name */
-  font-weight: bold;
-  margin-right: 250px
-}
-
-#logo img {
-  max-width: 70px; /* Set your desired max width for the logo */
-  margin-left: -92px;
-  margin-right: 10px;
-
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333; /* Set your desired text color */
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #0d73e8; /* Set your desired hover color */
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 20px 0;
-    height: 74px;
-  }
-
-  #logo h1 {
-    font-size: 20px;
-    margin-left: 10px;
-
-  }
-
-  #logo img {
-    max-height: 500px;
-    margin-left: auto;
-
-  }
-}
-
-
-
-.nav-menu, .nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-}
-
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
-}
-
-
-.nav-menu > li {
-  float: left;
-}
-
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 18px;
-  transition: color 0.3s ease;
-  white-space: nowrap; /* Prevent text from wrapping */
-}
-
-
-nav {
-  max-width: 100%; /* Adjust for responsiveness */
-}
-.nav-menu ul li {
-  min-width: 180px;
-  background-color: #f8f8f8;
-}
-
-/* Nav Menu Arrows */
-.sf-arrows .sf-with-ul {
-  padding-right: 22px;
-}
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-  #nav-menu-container {
-    display: none;
-  }
-}
-
-/* Nav Meu Styling */
-.nav-menu a {
-  padding: 2px 8px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: 500;
-  
-  font-size: 14px;
-}
-
-
-
-.nav-menu a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(219, 52, 52); /* Set your desired underline color */
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-/* Style for the active menu item */
-.nav-menu .menu-active a::after,
-.nav-menu a:hover::after {
-  transform: scaleX(1);
-}
-
-.nav-menu .menu-active a {
-  color: rgb(188, 108, 11); /* Set your desired active text color */
-}
-
-
-/* Mobile Nav Toggle */
-#mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 20px 20px 0 0;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
-  cursor: pointer;
-}
-
-#mobile-nav-toggle i {
-  color: #262626;
-}
-
-@media (max-width: 1200px) {
-  #mobile-nav-toggle {
-    display:inline-flex;
-    margin-right: 5px;
-  }
-
-  nav ul {
-    flex-direction: column; /* Stack list items vertically */
-    align-items: stretch; /* Stretch items to full width */
-  }
-}
-
-/* Mobile Nav Styling */
-#mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
-  left: -260px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
-}
-/*JK*/
-#nav-menu-container {
-  background-color: #fff0f0; /* Set a background color for the navigation menu */
-  padding: 17px; /* Add padding to create space around the navigation menu */
-  border-radius: 5px; /* Add rounded corners for a neat appearance */
-}
-
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#mobile-nav ul li {
-  position: relative;
-}
-
-#mobile-nav ul li a {
-  color: #fff;
-  font-size: 16px;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  outline: none;
-}
-
-#mobile-nav ul li a:hover {
-  color: #fff;
-}
-
-#mobile-nav ul li li {
-  padding-left: 30px;
-}
-
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
-} 
-
- #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #50d8af;
-}
-
-#mobile-nav ul .menu-item-active {
-  color: #50d8af;
-}
-
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(52, 59, 64, 0.9);
-  display: none;
-}
-
-/* Mobile Nav body classes */
-body.mobile-nav-active {
-  overflow: hidden;
-}
-
-body.mobile-nav-active #mobile-nav {
-  left: 0;
-}
-
-body.mobile-nav-active #mobile-nav-toggle {
-  color: #fff;
-}
 
 
 
@@ -2246,3 +1939,337 @@ certified-logos2 img{
 
 
 
+#mie{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+header {
+  background-color: rgb(255, 255, 255); /* Set your desired background color */
+  box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition for a smooth effect */
+}
+
+/* Add this style for the scrolled state */
+header.scrolled {
+  background-color: rgb(255, 255, 255); /* Set your desired background color */
+}
+
+/* Other styles remain unchanged */
+
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h1 {
+  font-size: 18px; /* Set your desired font size for the company name */
+  margin: 0;
+  color: #021e65; /* Set your desired color for the company name */
+  font-weight: bold;
+}
+
+#logo img {
+  max-width: 70px; /* Set your desired max width for the logo */
+  margin-left: -92px;
+  margin-right: 10px;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Set your desired text color */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0d73e8; /* Set your desired hover color */
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 0;
+    height: 74px;
+  }
+
+  #logo h1 {
+    font-size: 20px;
+    margin-left: 10px;
+
+  }
+
+  #logo img {
+    max-height: 500px;
+    margin-left: auto;
+
+  }
+}
+
+
+
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+nav {
+  max-width: 100%; /* Adjust for responsiveness */
+}
+.nav-menu ul li {
+  min-width: 180px;
+  background-color: #f8f8f8;
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 2px 8px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  
+  font-size: 14px;
+}
+
+
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(219, 52, 52); /* Set your desired underline color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+/* Style for the active menu item */
+.nav-menu .menu-active a::after,
+.nav-menu a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-menu .menu-active a {
+  color: rgb(188, 108, 11); /* Set your desired active text color */
+}
+
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #262626;
+}
+
+@media (max-width: 1200px) {
+  #mobile-nav-toggle {
+    display:inline-flex;
+    margin-right: 5px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack list items vertically */
+    align-items: stretch; /* Stretch items to full width */
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+/*JK*/
+#nav-menu-container {
+  background-color: #ffffff; /* Set a background color for the navigation menu */
+  padding: 17px; /* Add padding to create space around the navigation menu */
+  border-radius: 5px; /* Add rounded corners for a neat appearance */
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+} 
+
+ #mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #50d8af;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #50d8af;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}

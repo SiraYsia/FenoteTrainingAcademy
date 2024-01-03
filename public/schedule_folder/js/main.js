@@ -166,7 +166,7 @@ const courseDetails = {
 
     bls_blended: {
         name: "ARC Basic Life Support-BL R.21",
-        price: 85.00,
+        price: 83.00,
         descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
         dates: [
             { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "13:00" },
@@ -181,7 +181,7 @@ const courseDetails = {
     },
     bls_classroom: {
         name: "ARC Basic Life Support-R.21 - CLASSROOM",
-        price: 90.00,
+        price: 88.00,
         descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
         dates: [
             { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
@@ -196,7 +196,7 @@ const courseDetails = {
     },
 
     babysitter_classroom: {
-        name: "ARC Babysitter's Training And Pediatric First Aid/CPR",
+        name: "ARC Babysitter Training And Pediatric First Aid/CPR",
         price: 150.00,
         descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
         dates: [
