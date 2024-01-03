@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
         const cancellationInfoDiv = document.getElementById("cancellation-info");
 
         // Fetch cancellation.html content
-        fetch('cancelation.html')
+        fetch('cancelation')
             .then(response => response.text())
             .then(html => {
                 // Set the fetched HTML as the inner HTML of the cancellation-info div
@@ -66,7 +66,7 @@ window.addEventListener('load', function() {
 
     document.querySelector(".back-button").addEventListener("click", function() {
         // Redirect to schedule.html
-        window.location.href = "schedule.html";
+        window.location.href = "./schedule";
     });
 
 // Add event listener for "Confirm and Pay" button click
@@ -93,6 +93,6 @@ function redirectToConfirmation(course, price, date, startTime, endTime) {
         .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
         .join("&");
 
-    window.location.href = `pay.html?${queryString}`;
+    window.location.href = `./pay?${queryString}`;
 }
 });
