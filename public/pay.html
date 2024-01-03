@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Confirmation</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 30px;
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #confirmation-details {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        #confirmation-details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #confirmation-details p {
+            margin: 10px 0;
+            color: #232323;
+            font-size: 16px;
+        }
+
+        .payment-options-section {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .payment-options-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #303030;
+        }
+
+        .payment-options-section p {
+            margin: 10px 0;
+            color: #292929;
+            font-size: 16px;
+        }
+
+        #please-note {
+            color: red;
+            font-weight: bold;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .confirm-button {
+            background-color: #4CAF50;
+        }
+
+        .back-button {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Selection</h1>
+
+    <div class="container">
+        <div id="confirmation-details">
+            <!-- Selected course details will be displayed here -->
+        </div>
+
+        <div class="payment-options-section">
+            <h2>Payment Options</h2>
+            <p>If you'd like to pay with either <strong> Zelle, ACH, or eCheck </strong>, please contact us at <strong>(240)-863-2331</strong>. If you prefer to use a credit card or other payment methods, click the button below.</p>
+            <p id="please-note">Please note:  There will be an additional $3 processing fee for other payment options; however, the mentioned options do not have a processing fee and are easy to complete.</p>
+        </div>
+
+        <div class="button-container">
+            <button class="button confirm-button">Pay with Other Option</button>
+            <button class="button back-button">Return to Schedule</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+
+
+window.addEventListener('load', function() {
+    // Function to parse query parameters from the URL
+    function getQueryParameters() {
+        const queryString = window.location.search.substring(1);
+        const parameters = {};
+        queryString.split("&").forEach(param => {
+            const [key, value] = param.split("=");
+            parameters[key] = decodeURIComponent(value);
+        });
+        return parameters;
+    }
+
+    // Function to display confirmation details
+    function displayConfirmationDetails() {
+        const confirmationDetailsDiv = document.getElementById("confirmation-details");
+        const parameters = getQueryParameters();
+
+        console.log("HERE");
+        console.log(parameters);
+
+        const formattedDate = parameters.date;
+        const formattedStartTime = parameters.startTime;
+        const formattedEndTime = parameters.endTime;
+
+        // Display selected course details
+        confirmationDetailsDiv.innerHTML = `
+            <h2>${parameters.course}</h2>
+            <p><strong>Price:</strong> $${parameters.price}</p>
+            <p><strong>Date:</strong> ${formattedDate} </p>
+            <p><strong>Time:</strong> ${formattedStartTime} - ${formattedEndTime}</p>
+        `;
+    }
+
+    // Initial display of confirmation details and cancellation information
+    displayConfirmationDetails();
+
+    document.querySelector(".back-button").addEventListener("click", function() {
+        // Redirect to schedule.html
+        window.location.href = "schedule.html";
+    });
+
+    // Add event listener for "Confirm and Pay" button click
+    document.querySelector(".confirm-button").addEventListener("click", function() {
+        console.log("clicked on other options")
+        const parameters = getQueryParameters();
+        handleConfirmAndPay(parameters.course);
+
+    });
+
+
+
+    // Function to handle "Confirm and Pay" button click
+    function handleConfirmAndPay(course) {
+        console.log("got here?")
+
+        let redirectLink;
+
+        switch (course) {
+            case 'ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED':
+                redirectLink = courseSquareLinks['adult_pediatric_bl'];
+                break;
+            case 'ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED':
+                redirectLink = courseSquareLinks['adult_bl'];
+                break;
+            case 'ARC Adult CPR/AED-BL-R.21  - BLENDED':
+                redirectLink = courseSquareLinks['ault_cpr_bl'];
+                break;
+            case 'ARC Basic Life Support-BL R.21':
+                redirectLink = courseSquareLinks['basic_life_bl'];
+                break;
+            case 'ARC Basic Life Support-R.21 - CLASSROOM':
+                redirectLink = courseSquareLinks['basic_life_cl'];
+                break;
+            case 'ARC Babysitter Training And Pediatric First Aid/CPR':
+                redirectLink = courseSquareLinks['baby_sitting_firstaid'];
+                break;
+            case 'ARC Babysitters Training':
+                redirectLink = courseSquareLinks['baby_sitting_training'];
+                break;
+            case 'ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL':
+                redirectLink = courseSquareLinks['virtual_pediatriic'];
+                break;
+            case 'ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL':
+                redirectLink = courseSquareLinks['virtual_firstaid'];
+                break;
+            default:
+                //course not found
+                alert('Please try again. ');
+                return;
+        }
+
+        // Redirect to the selected Square checkout link
+        window.location.href = redirectLink;
+    }
+
+    // Object mapping course names to Square checkout links
+    const courseSquareLinks = {
+        'adult_pediatric_bl': 'https://square.link/u/Hj5zV6BQ',
+        'adult_bl': 'https://square.link/u/2XtYoreg',
+        'ault_cpr_bl': 'https://square.link/u/CJuMDBVP',
+        'basic_life_bl': 'https://square.link/u/CgkOFvEF',
+        'basic_life_cl': 'https://square.link/u/t0O5fekL',
+        'baby_sitting_firstaid': 'https://square.link/u/Y1VohNP2',
+        'baby_sitting_training': 'https://square.link/u/fnw6K2M0',
+        'virtual_pediatriic': 'https://square.link/u/pM929NrY',
+        'virtual_firstaid': 'https://square.link/u/nzf6MeHE',
+    };
+});
+
+
+
+
+
+</script>
