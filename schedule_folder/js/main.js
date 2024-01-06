@@ -234,7 +234,7 @@ const courseDetails = {
 
   cpr1_virtual:{
       name:"ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,
-      price : 50.00,
+      price : 95.00,
       descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
       dates: [
           { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:45" },
@@ -250,7 +250,7 @@ const courseDetails = {
   }, 
   cpr2_virtual:{
       name:"ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
-      price : 50.00,
+      price : 86.00,
       descriptionFile: "schedule_folder/descriptions/ara/cpr2_virtual.html",
       dates: [
           { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:00" },
