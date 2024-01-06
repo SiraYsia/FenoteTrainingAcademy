@@ -1952,6 +1952,12 @@ certified-logos2 img{
 }
 
 
+.about-img img {
+  border: 2px solid #ccc; /* Add a 2px solid border with a light gray color */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+
 
 
 
