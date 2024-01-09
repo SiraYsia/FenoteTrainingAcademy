@@ -10,7 +10,7 @@ const courseDetails = {
 
   cpr_blended_pediatric: {
       name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
-      price: 95.00,
+      price: 105.00,
       descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
       dates: [
         { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "15:15" },
@@ -52,7 +52,7 @@ const courseDetails = {
 
   cpr_blended_first_aid: {
       name: "ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED",
-      price: 86.00,
+      price: 95.00,
       descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
       dates: [
         { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "14:30" },
