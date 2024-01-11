@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro2 .intro-content h2 {
   color: #ffffff;
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
 
 }
@@ -366,6 +366,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+  
+}
+
+
+
 #intro .intro-content .btn-projects {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -473,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro3 .intro-content h2 {
   color: #ffffff;
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
 
 }
@@ -1479,7 +1488,7 @@ select {
 #intro9 .intro-content h2 {
   color: #ffffff;
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
 
 }
@@ -1978,7 +1987,7 @@ certified-logos2 img{
 
 /*HEADER*/
 header {
-  background-color: rgb(255, 255, 255); /* Set your desired background color */
+  background-color: rgba(255, 255, 255, 0.446); /* Set your desired background color */
   box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   display: flex;
@@ -2206,7 +2215,7 @@ nav {
 }
 /*JK*/
 #nav-menu-container {
-  background-color: #faf4f4; /* Set a background color for the navigation menu */
+  background-color: #f7f4fa; /* Set a background color for the navigation menu */
   padding: 2px; /* Add padding to create space around the navigation menu */
   border-radius: 5px; /* Add rounded corners for a neat appearance */
 
