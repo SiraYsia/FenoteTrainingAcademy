@@ -1,99 +1,6 @@
 const courseDetails = {
 
   
-  hsi_course: {
-    name: "HSI Courses",
-    price: 0.0,
-    descriptionFile: "schedule_folder/descriptions/hsi/hsi_course.html",
-    dates: [
-    ],
-}, 
-
-  hsi_advanced: {
-    name: "HSI Advanced First Aid",
-    price: 100.00,
-    descriptionFile: "schedule_folder/descriptions/hsi/1.advanced_first_aid.html",
-    dates: [
-        "None"
-
-    ],
-},
-  
-
-hsi_bls: {
-  name: "HSI BLS",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/2.bls.html",
-  dates: [
-      "None"
-
-  ],
-},
-
-hsi_bls: {
-  name: "HSI Adult First Aid | CPR AED  ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
-  dates: [
-      "None"
-
-  ],
-},
-
-  
-hsi_bls: {
-  name: "HSI Wilderness First Aid   ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/4.wilderness_first_aid.html",
-  dates: [
-      "None"
-
-  ],
-},
-  
-
-  
-hsi_blood: {
-  name: "HSI Bloodborne Pathogens    ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/5.blood_pathogen.html",
-  dates: [
-      "None"
-
-  ],
-},
-
-hsi_emergencey: {
-  name: "HSI Emergency Use of Medical Oxygen ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/6.emergencey.html",
-  dates: [
-      "None"
-
-  ],
-},
-
-
-
-hsi_baby: {
-  name: "HSI Child and Babysitting Safety (CABS)   ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/7.baby.html",
-  dates: [
-      "None"
-
-  ],
-},
-
-hsi_baby: {
-  name: "HSI Pediatric First Aid | CPR AED ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
-  dates: [
-      "None"
-
-  ],
-},
   
   
   amr_course: {
@@ -407,6 +314,112 @@ hsi_baby: {
   },
 
 
+
+
+
+
+
+
+
+  hsi_course: {
+    name: "HSI Courses",
+    price: 0.0,
+    descriptionFile: "schedule_folder/descriptions/hsi/hsi_course.html",
+    dates: [
+    ],
+}, 
+
+  hsi_advanced: {
+    name: "HSI Advanced First Aid",
+    price: 100.00,
+    descriptionFile: "schedule_folder/descriptions/hsi/1.advanced_first_aid.html",
+    dates: [
+        "None"
+
+    ],
+},
+  
+
+hsi_bls: {
+  name: "HSI BLS",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/2.bls.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+hsi_bls: {
+  name: "HSI Adult First Aid | CPR AED  ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+  
+hsi_bls: {
+  name: "HSI Wilderness First Aid   ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/4.wilderness_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+  
+
+  
+hsi_blood: {
+  name: "HSI Bloodborne Pathogens    ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/5.blood_pathogen.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+hsi_emergencey: {
+  name: "HSI Emergency Use of Medical Oxygen ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/6.emergencey.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+
+hsi_baby: {
+  name: "HSI Child and Babysitting Safety (CABS)   ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/7.baby.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+hsi_baby: {
+  name: "HSI Pediatric First Aid | CPR AED ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+
+
+
+
   aha_course1: {
       name: "American Heart Association (AHA) Courses",
       price: 0.00,
@@ -657,12 +670,12 @@ document.addEventListener("DOMContentLoaded", function () {
       courseButton.style.fontWeight = "bold";
 
       if (index === 0) {
-          courseButton.style.color = "purple";
+          courseButton.style.color = "red";
       }
-      if (index === 6) {
-        courseButton.style.color = "red";
-    }
       if (index === 16) {
+        courseButton.style.color = "purple";
+    }
+      if (index === 22) {
           courseButton.style.color = "blue";
       }
 
