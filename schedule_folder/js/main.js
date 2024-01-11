@@ -320,7 +320,6 @@ const courseDetails = {
 
 
 
-
   hsi_course: {
     name: "HSI Courses",
     price: 0.0,
@@ -329,29 +328,10 @@ const courseDetails = {
     ],
 }, 
 
-  hsi_advanced: {
-    name: "HSI Advanced First Aid",
-    price: 100.00,
-    descriptionFile: "schedule_folder/descriptions/hsi/1.advanced_first_aid.html",
-    dates: [
-        "None"
+//cant find right descrption
 
-    ],
-},
-  
-
-hsi_bls: {
-  name: "HSI BLS",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/2.bls.html",
-  dates: [
-      "None"
-
-  ],
-},
-
-hsi_bls: {
-  name: "HSI Adult First Aid | CPR AED  ",
+hsi_adult_pediatric: {
+  name: "HSI Adult and Pediatric  First Aid, CPR/AED or All ages   ",
   price: 100.00,
   descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
   dates: [
@@ -360,9 +340,73 @@ hsi_bls: {
   ],
 },
 
-  
-hsi_bls: {
-  name: "HSI Wilderness First Aid   ",
+hsi_adult_adult_cpr: {
+  name: "HSI Adult First aid,  CPR/AED",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+//cant find exact description
+
+hsi_adult_adult_cprw: {
+  name: "HSI Adult CR/AED",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+hsi_pediatric_cpr: {
+  name: "HSI Pediatric First Aid, CPR/AED",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
+  dates: [
+      "None"
+
+  ],
+},
+//cant find exact description
+hsi_pediatric_aed_cpr: {
+  name: "HSI Pediatric CPR/AED",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+//cant find exact
+hsi_adult_firstaid: {
+  name: "HSI Adult First Aid",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+hsi_ped_firstaid: {
+  name: "HSI Pediatric First Aid ",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/10.pediatric_firstaid.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+
+hsi_wild: {
+  name: "HSI Wilderness First Aid(WFA) ",
   price: 100.00,
   descriptionFile: "schedule_folder/descriptions/hsi/4.wilderness_first_aid.html",
   dates: [
@@ -370,9 +414,8 @@ hsi_bls: {
 
   ],
 },
-  
 
-  
+
 hsi_blood: {
   name: "HSI Bloodborne Pathogens    ",
   price: 100.00,
@@ -382,17 +425,6 @@ hsi_blood: {
 
   ],
 },
-
-hsi_emergencey: {
-  name: "HSI Emergency Use of Medical Oxygen ",
-  price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/6.emergencey.html",
-  dates: [
-      "None"
-
-  ],
-},
-
 
 
 hsi_baby: {
@@ -405,15 +437,65 @@ hsi_baby: {
   ],
 },
 
-hsi_baby: {
-  name: "HSI Pediatric First Aid | CPR AED ",
+hsi_bls: {
+  name: "HSI Stop Life Threatening Bleeding ",
   price: 100.00,
-  descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
+  descriptionFile: "schedule_folder/descriptions/hsi/9.stop_lifethreaten.html",
   dates: [
       "None"
 
   ],
 },
+
+
+
+
+
+hsi_bls: {
+  name: "HSI BLS",
+  price: 100.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/2.bls.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+  hsi_advanced: {
+    name: "HSI Advanced First Aid",
+    price: 100.00,
+    descriptionFile: "schedule_folder/descriptions/hsi/1.advanced_first_aid.html",
+    dates: [
+        "None"
+
+    ],
+},
+  
+
+
+
+
+
+  
+
+
+  
+
+
+// hsi_emergencey: {
+//   name: "HSI Emergency Use of Medical Oxygen ",
+//   price: 100.00,
+//   descriptionFile: "schedule_folder/descriptions/hsi/6.emergencey.html",
+//   dates: [
+//       "None"
+
+//   ],
+// },
+
+
+
+
+
 
 
 
@@ -675,7 +757,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index === 16) {
         courseButton.style.color = "purple";
     }
-      if (index === 22) {
+      if (index === 29) {
           courseButton.style.color = "blue";
       }
 
