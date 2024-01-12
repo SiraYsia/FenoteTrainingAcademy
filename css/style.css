@@ -1987,7 +1987,7 @@ certified-logos2 img{
 
 /*HEADER*/
 header {
-  background-color: rgba(255, 255, 255, 0.446); /* Set your desired background color */
+  background-color: rgba(49, 101, 204, 0.768); /* Set your desired background color */
   box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   display: flex;
@@ -2007,6 +2007,7 @@ header.scrolled {
 #logo {
   display: flex;
   align-items: center;
+  
 }
 
 #logo h1 {
@@ -2014,6 +2015,7 @@ header.scrolled {
   margin: 0;
   color: #021e65; /* Set your desired color for the company name */
   font-weight: bold;
+  margin-left: 10px;
 }
 
 #logo img {
