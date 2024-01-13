@@ -1906,14 +1906,7 @@ h1, h2, h3 {
 
 
 
-/* Add this media query for smaller screens, adjust the max-width as needed */
-/* Add this media query for smaller screens, adjust the max-width as needed */
-@media only screen and (max-width: 767px) {
-  .certified-logos img {
-    display: none;
 
-  }
-}
 
 certified-logos2 img{
   display: none;
@@ -1955,8 +1948,8 @@ certified-logos2 img{
 }
 
 @media only screen and (max-width: 767px) {
-  .certified-logos img  {
-    display:inline-flex; /* or any other display property you want */
+  .certified-logos img {
+    display: none;
   }
 }
 
@@ -2226,7 +2219,7 @@ nav {
 }
 /*JK*/
 #nav-menu-container {
-  background-color: #20c200; /* Set a background color for the navigation menu */
+  background-color: #a8d59f; /* Set a background color for the navigation menu */
   padding: 2px; /* Add padding to create space around the navigation menu */
   border-radius: 5px; /* Add rounded corners for a neat appearance */
 
