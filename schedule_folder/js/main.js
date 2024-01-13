@@ -321,7 +321,7 @@ const courseDetails = {
 
 
   hsi_course: {
-    name: "HSI Courses",
+    name: "Health & Safety (HSI) Courses",
     price: 0.0,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_course.html",
     dates: [
@@ -755,7 +755,7 @@ document.addEventListener("DOMContentLoaded", function () {
           courseButton.style.color = "red";
       }
       if (index === 16) {
-        courseButton.style.color = "purple";
+        courseButton.style.color = "green";
     }
       if (index === 29) {
           courseButton.style.color = "blue";

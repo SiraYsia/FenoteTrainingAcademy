@@ -1987,7 +1987,7 @@ certified-logos2 img{
 
 /*HEADER*/
 header {
-  background-color: rgba(49, 101, 204, 0.768); /* Set your desired background color */
+  background-color: rgba(49, 101, 204, 1); /* Set your desired background color */
   box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   display: flex;
@@ -2013,7 +2013,7 @@ header.scrolled {
 #logo h1 {
   font-size: 14px; /* Set your desired font size for the company name */
   margin: 0;
-  color: #021e65; /* Set your desired color for the company name */
+  color: #ffffff; /* Set your desired color for the company name */
   font-weight: bold;
   margin-left: 10px;
 }
@@ -2028,6 +2028,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  
 }
 
 nav ul li {
@@ -2037,6 +2038,8 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
 }
+
+
 
 nav ul li a {
   text-decoration: none;
@@ -2075,6 +2078,7 @@ nav ul li a:hover {
   margin: 0;
   padding: 0;
   list-style: none;
+  
 
 }
 
@@ -2084,11 +2088,14 @@ nav ul li a:hover {
   top: 100%;
   left: 0;
   z-index: 99;
+  
+  
 }
 
 
 .nav-menu > li {
   float: left;
+  color: rgb(0, 0, 0);
 }
 
 .nav-menu li:hover > ul,
@@ -2099,6 +2106,7 @@ nav ul li a:hover {
 .nav-menu ul ul {
   top: 0;
   left: 100%;
+  
 }
 
 nav ul li a {
@@ -2108,6 +2116,7 @@ nav ul li a {
   font-size: 18px;
   transition: color 0.3s ease;
   white-space: nowrap; /* Prevent text from wrapping */
+  
 }
 
 
