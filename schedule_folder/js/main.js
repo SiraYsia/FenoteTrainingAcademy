@@ -411,6 +411,20 @@ hsi_pediatric_aed_cpr: {
 
 
 
+cpr_blended: {
+  name: "First Aid & CPR Blended",
+  price: 85.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/blended_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+
+
+
 
 
 
@@ -767,7 +781,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index === 16) {
         courseButton.style.color = "purple";
     }
-      if (index === 30) {
+      if (index === 31) {
           courseButton.style.color = "blue";
       }
 
