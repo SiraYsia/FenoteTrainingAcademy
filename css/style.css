@@ -2004,11 +2004,12 @@ header.scrolled {
 }
 
 #logo h1 {
-  font-size: 14px; /* Set your desired font size for the company name */
+  font-size: 15px; /* Set your desired font size for the company name */
   margin: 0;
   color: #ffffff; /* Set your desired color for the company name */
   font-weight: bold;
   margin-left: 10px;
+
 }
 
 #logo img {
