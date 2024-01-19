@@ -2145,7 +2145,7 @@ nav {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
   
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -2220,9 +2220,10 @@ nav {
 }
 /*JK*/
 #nav-menu-container {
-  background-color: #a8d59f; /* Set a background color for the navigation menu */
+  background-color: #ffffff; /* Set a background color for the navigation menu */
   padding: 2px; /* Add padding to create space around the navigation menu */
   border-radius: 5px; /* Add rounded corners for a neat appearance */
+  margin-left: 90px;
 
 }
 
