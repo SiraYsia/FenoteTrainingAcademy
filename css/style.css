@@ -78,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/clients/cpr22.jpg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
+
 }
 
 #intro2 .intro-content {
@@ -206,6 +208,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/intro-carousel/community.jpeg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
+
 }
 
 #intro4 .intro-content {
@@ -334,7 +338,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/intro-carousel/cpr.jpeg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
 }
+
+#intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 33, 162, 0.5); /* Light purple background */
+  filter: contrast(70%); /* Adjust the percentage as needed */
+}
+
+
 
 #intro .intro-content {
   position: absolute;
@@ -458,6 +476,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/intro-carousel/11.jpg");
   background-size: cover;
+
 }
 
 #intro3 .intro-content {
@@ -1019,7 +1038,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/intro-carousel/healthcare.jpeg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
+
 }
+
+#intro5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 33, 229, 0.5); /* Light purple background */
+  filter: contrast(70%); /* Adjust the percentage as needed */
+}
+
 
 #intro5 .intro-content {
   position: absolute;
@@ -1141,6 +1174,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/intro-carousel/healthcare2.jpeg");
   background-size: cover;
+  background-position: center 50%; /* Start a little below the center */
+
+
 }
 
 #intro6 .intro-content {
@@ -1262,6 +1298,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: url("../img/intro-carousel/heallthcare3.jpeg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
+
 }
 
 #intro7 .intro-content {
@@ -1464,6 +1502,9 @@ select {
   position: relative;
   background: url("../img/intro-carousel/aed.jpg");
   background-size: cover;
+  background-position: center 68%; /* Start a little below the center */
+
+
 }
 
 #intro9 .intro-content {
@@ -1586,6 +1627,8 @@ select {
   position: relative;
   background: url("../img/intro-carousel/scouts.jpeg");
   background-size: cover;
+  background-position: center 40%; /* Start a little below the center */
+
 }
 
 #intro10 .intro-content {
@@ -1724,6 +1767,8 @@ select {
   position: relative;
   background: url("../img/intro-carousel/abouus.jpg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
+
 }
 
 #intro12 .intro-content {
@@ -2004,12 +2049,11 @@ header.scrolled {
 }
 
 #logo h1 {
-  font-size: 15px; /* Set your desired font size for the company name */
+  font-size: 14px; /* Set your desired font size for the company name */
   margin: 0;
   color: #ffffff; /* Set your desired color for the company name */
   font-weight: bold;
   margin-left: 10px;
-
 }
 
 #logo img {
@@ -2145,7 +2189,7 @@ nav {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
   
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -2223,7 +2267,6 @@ nav {
   background-color: #ffffff; /* Set a background color for the navigation menu */
   padding: 2px; /* Add padding to create space around the navigation menu */
   border-radius: 5px; /* Add rounded corners for a neat appearance */
-  margin-left: 90px;
 
 }
 
@@ -2306,6 +2349,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   background: url("../img/intro-carousel/serving_childcareproviders.jpg");
   background-size: cover;
+  background-position: center bottom; /* Start from the center and show to the very bottom */
+
 }
 
 #intro17 .intro-content {
