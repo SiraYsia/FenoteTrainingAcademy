@@ -494,7 +494,29 @@ hsi_bls2: {
 
     ],
 },
-  
+
+
+hsi_acls: {
+  name: "HSI Advanced Cardiac Life Support (ACLS)",
+  price: 85.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/acls.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+
+hsi_pals: {
+  name: "HSI ASHI Pediatric Advanced Life Support (PALS)",
+  price: 85.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/pals.html",
+  dates: [
+      "None"
+
+  ],
+},
 
 
 
@@ -781,7 +803,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index === 16) {
         courseButton.style.color = "purple";
     }
-      if (index === 31) {
+      if (index === 33) {
           courseButton.style.color = "blue";
       }
 
