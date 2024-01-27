@@ -648,6 +648,13 @@ fetch('schedule_folder/descriptions/description.html')
 
 
 
+  fetch('schedule_folder/scams.html')
+  .then(response => response.text())
+  .then(html => {
+      document.getElementById('scams').innerHTML = html;
+  })
+  .catch(error => console.error('Error fetching scams.html:', error));
+
 
 function redirectToConfirmation(course, date, startTime, endTime) {
   const selectedCourse = courseDetails[course];
