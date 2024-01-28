@@ -2506,3 +2506,64 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   font-weight: lighter;
 }
+
+
+
+
+.banner-container {
+  position: fixed;
+  top: 50%; /* Position the banner 50% from the top of the screen */
+  left: 50%; /* Position the banner 50% from the left of the screen */
+  transform: translate(-50%, -50%); /* Center the banner horizontally and vertically */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px; /* Adjust the padding as needed */
+  text-align: center;
+  z-index: 1000;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px; /* Adjust the top position of the close button */
+  right: 17px; /* Adjust the right position of the close button */
+  font-size: 18px; /* Reduced font size */
+  cursor: pointer;
+  background-color: #337ab7; /* Background color for the close button */
+  color: #fff; /* Text color for the close button */
+  padding: 0px 6px; /* Adjust padding for better appearance */
+  border: none;
+  outline: none; /* Remove the default outline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth color transitions on hover */
+  border-radius: 3px; /* Rounded corners for a square appearance */
+}
+
+.close-button:hover {
+  background-color: #23527c; /* Darker background color on hover */
+}
+
+/* Style for the banner image */
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .banner-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0px; /* Adjust the top position of the close button */
+    right: 5px; /* Adjust the right position of the close button */
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #ff0000; /* Red color for the close button */
+    padding: 5px;
+    outline: none; /* Remove the default outline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+
+
+  }
+}

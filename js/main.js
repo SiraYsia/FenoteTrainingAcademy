@@ -240,3 +240,19 @@ function toggleNav() {
 
   // Listen for scroll events and call the handleScroll function
   window.addEventListener('scroll', handleScroll);
+
+
+
+
+    // Function to close the banner
+    function closeBanner() {
+        document.getElementById('bannerContainer').style.display = 'none';
+    }
+
+    // Function to show the banner
+    function showBanner() {
+        document.getElementById('bannerContainer').style.display = 'block';
+    }
+
+    // Call the showBanner function on page load
+    window.onload = showBanner;
