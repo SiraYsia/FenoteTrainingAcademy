@@ -1101,3 +1101,18 @@ function handleScroll() {
 
 // Listen for scroll events and call the handleScroll function
 window.addEventListener('scroll', handleScroll);
+
+
+
+    // Function to close the banner
+    function closeBanner2() {
+      document.getElementById('bannerContainer2').style.display = 'none';
+  }
+
+  // Function to show the banner
+  function showBanner2() {
+      document.getElementById('bannerContainer2').style.display = 'block';
+  }
+
+  // Call the showBanner function on page load
+  window.onload = showBanner2;

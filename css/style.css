@@ -2512,7 +2512,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-container {
   position: fixed;
-  top: 50%; /* Position the banner 50% from the top of the screen */
+  top: 58%; /* Position the banner 50% from the top of the screen */
   left: 50%; /* Position the banner 50% from the left of the screen */
   transform: translate(-50%, -50%); /* Center the banner horizontally and vertically */
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
@@ -2567,3 +2567,42 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   }
 }
+
+
+
+
+
+
+
+/* Style for the banner container */
+.banner-container2 {
+  position: fixed;
+  top: 110px; /* Adjust the top position */
+  left: 10px; /* Adjust the left position */
+  z-index: 1000;
+  
+}
+
+/* Style for the close button */
+/* Style for the close button */
+.close-button2 {
+  position: absolute;
+  top: -8px; /* Adjust the top position of the close button */
+  right: 1px; /* Adjust the right position of the close button */
+  font-size: 16px; /* Reduced font size */
+  color: #ef0707; /* Text color for the close button */
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+.close-button2:hover {
+  color: brown;
+}
+/* Hover effect for the close button */
+
+/* Style for the banner image */
+.banner-image2 {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
