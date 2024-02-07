@@ -16,8 +16,14 @@ hsi_adult_pediatric: {
   price: 70.00,
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
   dates: [
-      "None"
+    { "start": "2024-02-08", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-02-10", "end": "", "startTime": "10:00", "endTime": "12:30" },
+    { "start": "2024-02-11", "end": "", "startTime": "15:00", "endTime": "17:30" },
 
+    { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "15:15" }
   ],
 },
 
@@ -230,12 +236,6 @@ cpr_blended_pediatric: {
     { "start": "2024-02-01", "end": "", "startTime": "13:00", "endTime": "15:15" },
     { "start": "2024-02-03", "end": "", "startTime": "10:00", "endTime": "12:15" },
     { "start": "2024-02-06", "end": "", "startTime": "13:00", "endTime": "15:15" },
-    { "start": "2024-02-08", "end": "", "startTime": "13:00", "endTime": "15:15" },
-    { "start": "2024-02-10", "end": "", "startTime": "14:00", "endTime": "16:15" },
-    { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "12:15" },
-    { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "12:15" },
-    { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "12:15" },
-    { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "15:15" },
     { "start": "2024-02-24", "end": "", "startTime": "10:00", "endTime": "12:15" },
     { "start": "2024-02-27", "end": "", "startTime": "13:00", "endTime": "15:15" },
     { "start": "2024-02-29", "end": "", "startTime": "13:00", "endTime": "15:15" },
@@ -379,11 +379,7 @@ bls_blended: {
   price: 83.00,
   descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
   dates: [
-      { "start": "2024-01-17", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-01-22", "end": "", "startTime": "13:00", "endTime": "15:00" },
-      { "start": "2024-01-25", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-01-29", "end": "", "startTime": "13:00", "endTime": "15:00" },
-      { "start": "2024-02-05", "end": "", "startTime": "13:00", "endTime": "15:00" },
+   
       { "start": "2024-02-12", "end": "", "startTime": "13:00", "endTime": "15:00" },
       { "start": "2024-02-17", "end": "", "startTime": "14:00", "endTime": "16:00" },
       { "start": "2024-02-23", "end": "", "startTime": "10:00", "endTime": "12:00" },

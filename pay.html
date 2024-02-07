@@ -193,9 +193,15 @@ window.addEventListener('load', function() {
         let redirectLink;
 
         switch (course) {
+
+            case 'HSI Adult and Pediatric  First Aid, CPR/AED or All ages':
+                redirectLink = courseSquareLinks['hsi_adult_pediatric'];
+                break;
+
             case 'ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED':
                 redirectLink = courseSquareLinks['adult_pediatric_bl'];
                 break;
+
             case 'ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED':
                 redirectLink = courseSquareLinks['adult_bl'];
                 break;
@@ -232,6 +238,7 @@ window.addEventListener('load', function() {
 
     // Object mapping course names to Square checkout links
     const courseSquareLinks = {
+        'hsi_adult_pediatric' : 'https://square.link/u/8x49c9rA',
         'adult_pediatric_bl': 'https://square.link/u/Hj5zV6BQ',
         'adult_bl': 'https://square.link/u/2XtYoreg',
         'ault_cpr_bl': 'https://square.link/u/CJuMDBVP',
