@@ -1,324 +1,6 @@
 const courseDetails = {
 
   
-  
-  
-  amr_course: {
-      name: "American Red Cross (ARC) Courses:",
-      price: 0.0,
-      descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
-      dates: [
-      ],
-  }, 
-
-  cpr_blended_pediatric: {
-      name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
-      price: 110.00,
-      descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
-      dates: [
-        { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-01-13", "end": "", "startTime": "10:15", "endTime": "12:30" },
-        { "start": "2024-01-15", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-01-18", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-01-20", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-01-23", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-01-27", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-01-31", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-02-01", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-02-03", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-02-06", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-02-08", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-02-10", "end": "", "startTime": "14:00", "endTime": "16:15" },
-        { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-02-24", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-02-27", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-02-29", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-03-02", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-03-05", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-03-07", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-03-09", "end": "", "startTime": "14:00", "endTime": "16:15" },
-        { "start": "2024-03-12", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-03-15", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-03-18", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-03-20", "end": "", "startTime": "10:00", "endTime": "12:15" },
-        { "start": "2024-03-23", "end": "", "startTime": "11:00", "endTime": "13:15" },
-        { "start": "2024-03-26", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-03-28", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-03-30", "end": "", "startTime": "11:00", "endTime": "13:15" },
-        { "start": "2024-04-02", "end": "", "startTime": "13:00", "endTime": "15:15" },
-        { "start": "2024-04-06", "end": "", "startTime": "10:00", "endTime": "12:15" }
-      ],
-  },
-
-  cpr_blended_first_aid: {
-      name: "ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED",
-      price: 95.00,
-      descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
-      dates: [
-        { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-01-13", "end": "", "startTime": "10:15", "endTime": "11:45" },
-        { "start": "2024-01-15", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-01-18", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-01-20", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-01-23", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-01-27", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-01-31", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-02-01", "end": "", "startTime": "11:00", "endTime": "12:30" },
-        { "start": "2024-02-03", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-02-06", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-02-08", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-02-10", "end": "", "startTime": "14:00", "endTime": "15:30" },
-        { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-02-24", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-02-27", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-02-29", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-03-02", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-03-05", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-03-07", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-03-09", "end": "", "startTime": "14:00", "endTime": "15:30" },
-        { "start": "2024-03-12", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-03-15", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-03-18", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-03-20", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-03-23", "end": "", "startTime": "11:00", "endTime": "12:30" },
-        { "start": "2024-03-26", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-03-28", "end": "", "startTime": "10:00", "endTime": "11:30" },
-        { "start": "2024-03-30", "end": "", "startTime": "11:00", "endTime": "12:30" },
-        { "start": "2024-04-02", "end": "", "startTime": "13:00", "endTime": "14:30" },
-        { "start": "2024-04-06", "end": "", "startTime": "10:00", "endTime": "11:30" }
-      ],
-  },
-
-
-  cpr_blended_adult: {
-      name: "ARC Adult CPR/AED-BL-R.21  - BLENDED",
-      price: 70.00,
-      descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
-      dates: [
-          { start: "2024-01-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-01-31", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-01", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-03", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-08", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-10", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-13", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-16", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-19", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-22", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-24", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-02-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-02", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-05", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-07", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-26", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-28", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-          { start: "2024-03-30", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-      ],
-  },
-
-
-  cpr_sessions_pediatric: {
-      name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
-      price: 77.00,
-      descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
-      dates: [
-          "None"
-      ],
-      
-  },
-
-  cpr_sessions_first_aid: {
-      name: "ARC Adult First Aid/CPR/AED Skills Session-R.21",
-      price: 55.00,
-      descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
-      dates: [
-          "None"
-      ],
-      
-  },
-
-
-  cpr_sessions_adult: {
-      name: "ARC Adult CPR/AED Skills Session-R.21",
-      price: 37.00,
-      descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
-      dates: [
-          "None"
-      ],
-      
-  },
-
-
-
-
-  bls_blended: {
-      name: "ARC Basic Life Support-BL R.21",
-      price: 83.00,
-      descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
-      dates: [
-          { "start": "2024-01-17", "end": "", "startTime": "10:00", "endTime": "12:00" },
-          { "start": "2024-01-22", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-01-25", "end": "", "startTime": "10:00", "endTime": "12:00" },
-          { "start": "2024-01-29", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-02-05", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-02-12", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-02-17", "end": "", "startTime": "14:00", "endTime": "16:00" },
-          { "start": "2024-02-23", "end": "", "startTime": "10:00", "endTime": "12:00" },
-          { "start": "2024-02-26", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-03-04", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-03-11", "end": "", "startTime": "13:00", "endTime": "15:00" },
-          { "start": "2024-03-16", "end": "", "startTime": "14:00", "endTime": "16:00" },
-          { "start": "2024-03-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
-          { "start": "2024-03-27", "end": "", "startTime": "13:00", "endTime": "15:00" }
-      ],
-  },
-  bls_classroom: {
-      name: "ARC Basic Life Support-R.21 - CLASSROOM",
-      price: 88.00,
-      descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
-      dates: [
-          { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-          { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-      ],
-  },
-
-
-
-
-
-
-
-
-
-
-  babysitter_classroom: {
-      name: "ARC Babysitter Training And Pediatric First Aid/CPR",
-      price: 150.00,
-      descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
-      dates: [
-          { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-          { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-          { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-          { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-          { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-      ],
-  },
-
-
-  babysitter_training: {
-      name: "ARC Babysitters Training",
-      price: 90.00,
-      descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
-      dates: [
-          { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-          { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-          { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-          { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-          { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-      ],
-  },
-
-  cpr1_virtual:{
-      name:"ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,
-      price : 95.00,
-      descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
-      dates: [
-          { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:45" },
-          { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:45" },
-      ],
-
-  }, 
-  cpr2_virtual:{
-      name:"ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
-      price : 86.00,
-      descriptionFile: "schedule_folder/descriptions/ara/cpr2_virtual.html",
-      dates: [
-          { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:00" },
-          { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:00" },
-      ],
-
-  },
-
-
-
-
-
-
-
-
-  cpr_classroom_pediatric: {
-      name: "ARC Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
-      price: 110.00,
-      descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_pediatric.html",
-      dates: [
-          "None"
-
-      ],
-  },
-
-  cpr_classroom_first_aid: {
-      name: "ARC Adult First Aid/CPR/AED-R.21 - CLASSROOM",
-      price: 98.00,
-      descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
-      dates: [
-          "None"
-
-      ],
-  },
-  cpr_classroom_adult: {
-      name: "ARC Adult CPR/AED-R.21 - CLASSROOM",
-      price: 75.00,
-      descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_adult.html",
-      dates: [
-          "None"
-
-      ],
-  },
-
-
-
-
-
-
-
 
   hsi_course: {
     name: "Health & Safety Institute (HSI) Courses",
@@ -328,21 +10,26 @@ const courseDetails = {
     ],
 }, 
 
-//cant find right descrption
 
 hsi_adult_pediatric: {
   name: "HSI Adult and Pediatric  First Aid, CPR/AED or All ages ",
-  price: 110.00,
+  price: 70.00,
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
   dates: [
-      "None"
+    { "start": "2024-02-08", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-02-10", "end": "", "startTime": "10:00", "endTime": "12:30" },
+    { "start": "2024-02-11", "end": "", "startTime": "15:00", "endTime": "17:30" },
 
+    { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "15:15" }
   ],
 },
 
 hsi_adult_adult_cpr: {
   name: "HSI Adult First aid,  CPR/AED",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
   dates: [
       "None"
@@ -355,7 +42,7 @@ hsi_adult_adult_cpr: {
 //cant find exact
 hsi_adult_firstaid: {
   name: "HSI Adult First Aid",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_adult_firstaid.html",
   dates: [
       "None"
@@ -366,7 +53,7 @@ hsi_adult_firstaid: {
 
 hsi_adult_adult_cprw: {
   name: "HSI Adult CPR/AED",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_ault_cpr.html",
   dates: [
       "None"
@@ -379,7 +66,7 @@ hsi_adult_adult_cprw: {
 
 hsi_pediatric_cpr: {
   name: "HSI Pediatric First Aid, CPR/AED",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
   dates: [
       "None"
@@ -389,7 +76,7 @@ hsi_pediatric_cpr: {
 
 hsi_ped_firstaid: {
   name: "HSI Pediatric First Aid ",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/10.pediatric_firstaid.html",
   dates: [
       "None"
@@ -400,7 +87,7 @@ hsi_ped_firstaid: {
 //cant find exact description
 hsi_pediatric_aed_cpr: {
   name: "HSI Pediatric CPR/AED",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_pediatric_cpr.html",
   dates: [
       "None"
@@ -413,7 +100,7 @@ hsi_pediatric_aed_cpr: {
 
 cpr_blended: {
   name: "First Aid & CPR Blended",
-  price: 85.00,
+  price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/blended_first_aid.html",
   dates: [
       "None"
@@ -521,26 +208,318 @@ hsi_pals: {
 
 
 
+  
+amr_course: {
+  name: "American Red Cross (ARC) Courses:",
+  price: 0.0,
+  descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
+  dates: [
+  ],
+}, 
+
+
+
+
+cpr_blended_pediatric: {
+  name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
+  price: 105.00,
+  descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
+  dates: [
+    { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-01-13", "end": "", "startTime": "10:15", "endTime": "12:30" },
+    { "start": "2024-01-15", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-01-18", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-01-20", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-01-23", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-01-27", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-01-31", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-02-01", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-02-03", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-06", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-02-24", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-02-27", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-02-29", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-03-02", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-05", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-03-07", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-03-09", "end": "", "startTime": "14:00", "endTime": "16:15" },
+    { "start": "2024-03-12", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-15", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-18", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-03-20", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-23", "end": "", "startTime": "11:00", "endTime": "13:15" },
+    { "start": "2024-03-26", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-03-28", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-03-30", "end": "", "startTime": "11:00", "endTime": "13:15" },
+    { "start": "2024-04-02", "end": "", "startTime": "13:00", "endTime": "15:15" },
+    { "start": "2024-04-06", "end": "", "startTime": "10:00", "endTime": "12:15" }
+  ],
+},
+
+cpr_blended_first_aid: {
+  name: "ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED",
+  price: 95.00,
+  descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
+  dates: [
+    { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-01-13", "end": "", "startTime": "10:15", "endTime": "11:45" },
+    { "start": "2024-01-15", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-01-18", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-01-20", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-01-23", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-01-27", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-01-31", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-02-01", "end": "", "startTime": "11:00", "endTime": "12:30" },
+    { "start": "2024-02-03", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-02-06", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-02-08", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-02-10", "end": "", "startTime": "14:00", "endTime": "15:30" },
+    { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-02-24", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-02-27", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-02-29", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-03-02", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-03-05", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-03-07", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-03-09", "end": "", "startTime": "14:00", "endTime": "15:30" },
+    { "start": "2024-03-12", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-03-15", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-03-18", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-03-20", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-03-23", "end": "", "startTime": "11:00", "endTime": "12:30" },
+    { "start": "2024-03-26", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-03-28", "end": "", "startTime": "10:00", "endTime": "11:30" },
+    { "start": "2024-03-30", "end": "", "startTime": "11:00", "endTime": "12:30" },
+    { "start": "2024-04-02", "end": "", "startTime": "13:00", "endTime": "14:30" },
+    { "start": "2024-04-06", "end": "", "startTime": "10:00", "endTime": "11:30" }
+  ],
+},
+
+
+cpr_blended_adult: {
+  name: "ARC Adult CPR/AED-BL-R.21  - BLENDED",
+  price: 70.00,
+  descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
+  dates: [
+      { start: "2024-01-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-01-31", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-01", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-03", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-08", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-10", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-13", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-16", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-19", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-22", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-24", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-02-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-02", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-05", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-07", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-26", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-28", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      { start: "2024-03-30", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+  ],
+},
+
+
+cpr_sessions_pediatric: {
+  name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
+  price: 77.00,
+  descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
+  dates: [
+      "None"
+  ],
+  
+},
+
+cpr_sessions_first_aid: {
+  name: "ARC Adult First Aid/CPR/AED Skills Session-R.21",
+  price: 55.00,
+  descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
+  dates: [
+      "None"
+  ],
+  
+},
+
+
+cpr_sessions_adult: {
+  name: "ARC Adult CPR/AED Skills Session-R.21",
+  price: 37.00,
+  descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
+  dates: [
+      "None"
+  ],
+  
+},
+
+
+
+
+bls_blended: {
+  name: "ARC Basic Life Support-BL R.21",
+  price: 83.00,
+  descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
+  dates: [
+   
+      { "start": "2024-02-12", "end": "", "startTime": "13:00", "endTime": "15:00" },
+      { "start": "2024-02-17", "end": "", "startTime": "14:00", "endTime": "16:00" },
+      { "start": "2024-02-23", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-02-26", "end": "", "startTime": "13:00", "endTime": "15:00" },
+      { "start": "2024-03-04", "end": "", "startTime": "13:00", "endTime": "15:00" },
+      { "start": "2024-03-11", "end": "", "startTime": "13:00", "endTime": "15:00" },
+      { "start": "2024-03-16", "end": "", "startTime": "14:00", "endTime": "16:00" },
+      { "start": "2024-03-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-03-27", "end": "", "startTime": "13:00", "endTime": "15:00" }
+  ],
+},
+bls_classroom: {
+  name: "ARC Basic Life Support-R.21 - CLASSROOM",
+  price: 88.00,
+  descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
+  dates: [
+      { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+  ],
+},
+
+
+
+
+
+
+
+
+
+
+babysitter_classroom: {
+  name: "ARC Babysitter Training And Pediatric First Aid/CPR",
+  price: 150.00,
+  descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
+  dates: [
+      { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+      { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+      { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+      { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+      { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+  ],
+},
+
+
+babysitter_training: {
+  name: "ARC Babysitters Training",
+  price: 90.00,
+  descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
+  dates: [
+      { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+      { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+      { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+      { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+      { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+  ],
+},
+
+cpr1_virtual:{
+  name:"ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,
+  price : 95.00,
+  descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
+  dates: [
+      { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:45" },
+      { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:45" },
+  ],
+
+}, 
+cpr2_virtual:{
+  name:"ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
+  price : 86.00,
+  descriptionFile: "schedule_folder/descriptions/ara/cpr2_virtual.html",
+  dates: [
+      { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:00" },
+      { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:00" },
+  ],
+
+},
+
+
+
+
+
+
+
+
+cpr_classroom_pediatric: {
+  name: "ARC Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
+  price: 110.00,
+  descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_pediatric.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+cpr_classroom_first_aid: {
+  name: "ARC Adult First Aid/CPR/AED-R.21 - CLASSROOM",
+  price: 98.00,
+  descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
+  dates: [
+      "None"
+
+  ],
+},
+cpr_classroom_adult: {
+  name: "ARC Adult CPR/AED-R.21 - CLASSROOM",
+  price: 75.00,
+  descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_adult.html",
+  dates: [
+      "None"
+
+  ],
+},
+
+
+
+
 
   
 
 
   
-
-
-// hsi_emergencey: {
-//   name: "HSI Emergency Use of Medical Oxygen ",
-//   price: 100.00,
-//   descriptionFile: "schedule_folder/descriptions/hsi/6.emergencey.html",
-//   dates: [
-//       "None"
-
-//   ],
-// },
-
-
-
-
 
 
 
@@ -805,10 +784,10 @@ document.addEventListener("DOMContentLoaded", function () {
       courseButton.style.fontWeight = "bold";
 
       if (index === 0) {
-          courseButton.style.color = "red";
+          courseButton.style.color = "purple";
       }
-      if (index === 16) {
-        courseButton.style.color = "purple";
+      if (index === 17) {
+        courseButton.style.color = "red";
     }
       if (index === 33) {
           courseButton.style.color = "blue";
