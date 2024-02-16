@@ -222,7 +222,7 @@ amr_course: {
 
 cpr_blended_pediatric: {
   name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
-  price: 98.00,
+  price: 80.00,
   descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
   dates: [
 
