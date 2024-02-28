@@ -44,8 +44,39 @@ hsi_adult_pediatric: {
       "end": "",
       "startTime": "18:00",
       "endTime": "20:00"
-    }
-  ],
+    },
+
+  {
+    "start": "2024-03-06",
+    "end": "2024-03-06",
+    "startTime": "18:00",
+    "endTime": "20:00"
+  },
+  {
+    "start": "2024-03-07",
+    "end": "2024-03-07",
+    "startTime": "18:00",
+    "endTime": "20:00"
+  },
+  {
+    "start": "2024-03-08",
+    "end": "2024-03-08",
+    "startTime": "18:00",
+    "endTime": "20:00"
+  },
+  {
+    "start": "2024-03-09",
+    "end": "2024-03-09",
+    "startTime": "10:00",
+    "endTime": "12:00"
+  }, 
+  {
+    "start": "2024-03-10",
+    "end": "2024-03-10",
+    "startTime": "10:00",
+    "endTime": "12:00"
+  }
+],
 },
 
 hsi_adult_adult_cpr: {
