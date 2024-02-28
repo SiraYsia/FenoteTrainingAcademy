@@ -30,6 +30,20 @@ hsi_adult_pediatric: {
       "end": "",
       "startTime": "08:30",
       "endTime": "10:30"
+    },
+
+    {
+      "start": "2024-03-03",
+      "end": "",
+      "startTime": "15:00",
+      "endTime": "17:00"
+    },
+
+    {
+      "start": "2024-03-05",
+      "end": "",
+      "startTime": "18:00",
+      "endTime": "20:00"
     }
   ],
 },
