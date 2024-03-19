@@ -13,7 +13,7 @@ const courseDetails = {
 
 hsi_adult_pediatric: {
   name: "HSI Adult and Pediatric First Aid, CPR/AED or All ages",
-  price: 65.00,
+  price: 85.00,
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
   dates: [
     // { "start": "2024-02-08", "end": "", "startTime": "13:00", "endTime": "15:15" },
@@ -25,57 +25,7 @@ hsi_adult_pediatric: {
     // { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "12:15" },
     // { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "15:15" }
 
-    {
-      "start": "2024-03-02",
-      "end": "",
-      "startTime": "08:30",
-      "endTime": "10:30"
-    },
 
-    {
-      "start": "2024-03-03",
-      "end": "",
-      "startTime": "15:00",
-      "endTime": "17:00"
-    },
-
-    {
-      "start": "2024-03-05",
-      "end": "",
-      "startTime": "18:00",
-      "endTime": "20:00"
-    },
-
-  {
-    "start": "2024-03-06",
-    "end": "2024-03-06",
-    "startTime": "18:00",
-    "endTime": "20:00"
-  },
-  {
-    "start": "2024-03-07",
-    "end": "2024-03-07",
-    "startTime": "18:00",
-    "endTime": "20:00"
-  },
-  {
-    "start": "2024-03-08",
-    "end": "2024-03-08",
-    "startTime": "18:00",
-    "endTime": "20:00"
-  },
-  {
-    "start": "2024-03-09",
-    "end": "2024-03-09",
-    "startTime": "10:00",
-    "endTime": "12:00"
-  }, 
-  {
-    "start": "2024-03-10",
-    "end": "2024-03-10",
-    "startTime": "10:00",
-    "endTime": "12:00"
-  }
 ],
 },
 
