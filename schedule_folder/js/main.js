@@ -24,7 +24,14 @@ hsi_adult_pediatric: {
     // { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "12:15" },
     // { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "12:15" },
     // { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "15:15" }
-
+    { "start": "2024-03-18", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-20", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-23", "end": "", "startTime": "10:00", "endTime": "13:15" },
+    { "start": "2024-03-26", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-28", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-03-30", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-04-02", "end": "", "startTime": "10:00", "endTime": "12:15" },
+    { "start": "2024-04-06", "end": "", "startTime": "10:00", "endTime": "12:15" }
 
 ],
 },
