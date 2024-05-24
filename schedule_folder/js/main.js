@@ -17,7 +17,12 @@ hsi_adult_pediatric: {
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
   dates: [
 
-    { "start": "2024-04-09", "end": "", "startTime": "15:00", "endTime": "17:15" },
+    {
+      "start": "2024-04-09",
+      "end": "",
+      "startTime": "14:00",
+      "endTime": "16:15"
+    },    
     { "start": "2024-04-10", "end": "", "startTime": "15:00", "endTime": "17:15" },
     { "start": "2024-04-11", "end": "", "startTime": "15:00", "endTime": "17:15" },
     { "start": "2024-04-12", "end": "", "startTime": "15:00", "endTime": "17:15" },
@@ -63,7 +68,8 @@ hsi_adult_pediatric: {
     { "start": "2024-05-22", "end": "", "startTime": "15:00", "endTime": "17:15" },
     { "start": "2024-05-23", "end": "", "startTime": "15:00", "endTime": "17:15" },
     { "start": "2024-05-24", "end": "", "startTime": "15:00", "endTime": "17:15" },
-    { "start": "2024-05-25", "end": "", "startTime": "10:00", "endTime": "12:15"  },
+    
+    { "start": "2024-05-25", "end": "", "startTime": "14:00", "endTime": "16:15"  },
     { "start": "2024-05-26", "end": "", "startTime": "15:00", "endTime": "17:15"  },
     { "start": "2024-05-27", "end": "", "startTime": "15:00", "endTime": "17:15" },
     { "start": "2024-05-28", "end": "", "startTime": "15:00", "endTime": "17:15" },
