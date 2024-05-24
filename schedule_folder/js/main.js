@@ -129,7 +129,7 @@ hsi_adult_adult_cpr: {
 //cant find exact
 hsi_adult_firstaid: {
   name: "HSI Adult First Aid",
-  price: 65.00,
+  price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_adult_firstaid.html",
   dates: [
       "None"
@@ -140,7 +140,7 @@ hsi_adult_firstaid: {
 
 hsi_adult_adult_cprw: {
   name: "HSI Adult CPR/AED",
-  price: 65.00,
+  price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_ault_cpr.html",
   dates: [
       "None"
@@ -153,7 +153,7 @@ hsi_adult_adult_cprw: {
 
 hsi_pediatric_cpr: {
   name: "HSI Pediatric First Aid, CPR/AED",
-  price: 65.00,
+  price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
   dates: [
       "None"
@@ -163,7 +163,7 @@ hsi_pediatric_cpr: {
 
 hsi_ped_firstaid: {
   name: "HSI Pediatric First Aid ",
-  price: 65.00,
+  price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/10.pediatric_firstaid.html",
   dates: [
       "None"
@@ -174,7 +174,7 @@ hsi_ped_firstaid: {
 //cant find exact description
 hsi_pediatric_aed_cpr: {
   name: "HSI Pediatric CPR/AED",
-  price: 65.00,
+  price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_pediatric_cpr.html",
   dates: [
       "None"
