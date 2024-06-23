@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-header h2 {
   font-size: 32px;
-  color: #ff0000;
+  color: #ad0101;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -763,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #Services .section-header h2 {
-  color: #ca0000; /* Black text color */
+  color: #880303; /* Black text color */
   font-weight: bold; /* Bold font */
 }
 
@@ -2686,4 +2686,117 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .owl-dot.active {
   background-color: #1a1a1a;
+}
+
+
+
+#locations {
+  background: #f9f9f9;
+  padding: 60px 0;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 40px;
+}
+
+#locations .section-header {
+  margin-bottom: 40px;
+}
+
+#locations .section-header h2 {
+  font-size: 32px;
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#locations .location-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#locations .location-column {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 45%;
+}
+
+#locations .location-column h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0051a7;
+}
+
+#locations .location-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#locations .location-column li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #363636;
+  position: relative;
+  padding-left: 20px;
+}
+
+#locations .location-column li::before {
+  content: '\f0a9';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #005cbe;
+  position: absolute;
+  left: 0;
+}
+
+/* Media Queries for better responsiveness */
+@media (max-width: 992px) {
+  #locations .location-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #locations {
+    padding: 40px 10px;
+  }
+
+  #locations .section-header h2 {
+    font-size: 28px;
+  }
+
+  #locations .location-columns {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #locations {
+    padding: 30px 5px;
+  }
+
+  #locations .section-header h2 {
+    font-size: 24px;
+  }
+
+  #locations .location-column {
+    padding: 15px;
+  }
+
+  #locations .location-column h3 {
+    font-size: 20px;
+  }
+
+  #locations .location-column li {
+    font-size: 14px;
+  }
 }
