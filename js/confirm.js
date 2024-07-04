@@ -69,6 +69,8 @@ window.addEventListener('load', function() {
         window.location.href = "./schedule";
     });
 
+
+
 // Add event listener for "Confirm and Pay" button click
 document.querySelector(".confirm-button").addEventListener("click", function() {
     const parameters = getQueryParameters();
@@ -96,3 +98,5 @@ function redirectToConfirmation(course, price, date, startTime, endTime) {
     window.location.href = `./pay?${queryString}`;
 }
 });
+
+

@@ -114,7 +114,7 @@
         <div class="payment-options-section">
             <h2>Payment Options</h2>
             <ol>
-                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without phwdsdjasdsjrocessing fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay with <strong>(310)-988-0673. </strong> If you are in need of assistance please call us or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
+                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without processing fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay with <strong>(310)-988-0673. </strong> If you are in need of assistance please call us or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
                 </li>
                 <br>
                 <li>If you prefer to pay with a credit card or debit card (with a $3 processing fee), fill out this form <a href="https://form.jotform.com/241825301455148">here</a>, and click the green button below.
@@ -176,6 +176,7 @@ window.addEventListener('load', function() {
 
     // Initial display of confirmation details and cancellation information
     displayConfirmationDetails();
+    console.log("PARAMETER COURSE", parameters.course)
 
     document.querySelector(".back-button").addEventListener("click", function() {
         // Redirect to schedule.html
@@ -199,6 +200,10 @@ window.addEventListener('load', function() {
         let redirectLink;
 
         switch (course) {
+
+            case 'First Aid, CPR, AED Instructor Class (MD)':
+                redirectLink = courseSquareLinks['instructor_course'];
+                break;
 
             case 'HSI Adult and Pediatric First Aid, CPR/AED or All ages':
                 redirectLink = courseSquareLinks['hsi_adult_pediatric'];
@@ -254,6 +259,7 @@ window.addEventListener('load', function() {
         'baby_sitting_training': 'https://square.link/u/fnw6K2M0',
         'virtual_pediatriic': 'https://square.link/u/pM929NrY',
         'virtual_firstaid': 'https://square.link/u/nzf6MeHE',
+        'instructor_course' : 'https://square.link/u/nzf6MeHE'
     };
 });
 

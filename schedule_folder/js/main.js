@@ -783,24 +783,33 @@ fetch('schedule_folder/descriptions/description.html')
   .catch(error => console.error('Error fetching scams.html:', error));
 
 
-function redirectToConfirmation(course, date, startTime, endTime) {
-  const selectedCourse = courseDetails[course];
-  const confirmationDetails = {
-      course: selectedCourse.name,
-      price: selectedCourse.price.toFixed(2),
-      date: date,
-      startTime: startTime,
-      endTime: endTime,
-  };
-  console.log(confirmationDetails)
-  // Redirect to confirmation page with selected course details as query parameters
-  const queryString = Object.entries(confirmationDetails)
-      .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
-      .join("&");
+  function redirectToConfirmation(course, date, startTime, endTime) {
+    const selectedCourse = courseDetails[course];
+    const confirmationDetails = {
+        course: selectedCourse.name,
+        price: selectedCourse.price.toFixed(2),
+        date: date,
+        startTime: startTime,
+        endTime: endTime,
+    };
 
-  window.location.href = `confirmation.html?${queryString}`;
+    // Read the course description file content
+    fetch(selectedCourse.descriptionFile)
+        .then(response => response.text())
+        .then(description => {
+            // Redirect to confirmation page with selected course details and description as query parameters
+            const queryString = Object.entries(confirmationDetails)
+                .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+                .join("&");
+
+            // Include the course description in the query parameters
+            const fullQueryString = `${queryString}&description=${encodeURIComponent(description)}`;
+
+            window.location.href = `confirmation.html?${fullQueryString}`;
+        })
+        .catch(error => console.error('Error fetching course description:', error));
 }
-
+  
 
 document.addEventListener("DOMContentLoaded", function () {
   const courseButtonsContainer = document.getElementById("course-buttons-container");
