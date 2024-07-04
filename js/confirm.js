@@ -17,10 +17,10 @@ window.addEventListener('load', function() {
     // Function to display confirmation details
     function displayConfirmationDetails() {
         const confirmationDetailsDiv = document.getElementById("confirmation-details");
-        const serviceFee = 8;
         const taxRate = 0.03;
         
         const parameters = getQueryParameters();
+        const serviceFee = 0.0265 * parseFloat(parameters.price);
         const totalPrice = parseFloat(parameters.price) + serviceFee + (parseFloat(parameters.price) * taxRate);
 
         console.log("HERE");

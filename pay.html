@@ -165,11 +165,11 @@ window.addEventListener('load', function() {
         const formattedStartTime = parameters.startTime;
         const formattedEndTime = parameters.endTime;
 
-        const serviceFee = 8;
+        const serviceFee = 0.0265 * parseFloat(parameters.price);
         const taxRate = 0.03;
         
         const totalPrice = parseFloat(parameters.price) + serviceFee + (parseFloat(parameters.price) * taxRate);
-
+        const totalPriceWithoutProcessingFee = totalPrice - serviceFee;
         console.log("HERE");
         console.log(parameters);
 
@@ -251,6 +251,10 @@ confirmationDetailsDiv.innerHTML = `
         ">
             <span style="font-weight: bold;">Total Price:</span>
             <span style="color: #e67e22; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
+        </div>
+
+        <span style="font-weight: bold;">Total price without service fee:</span>
+            <span style="color: #e67e22; font-weight: bold;">$${totalPriceWithoutProcessingFee.toFixed(2)}</span>
         </div>
     </div>
 `;

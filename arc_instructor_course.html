@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book Our Courses | Fenote Training Acadamey</title>
+  <title>Fenote Training Acadamey | American Red Cross Instructor Course </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="keywords" content="
   Fenote Training Academy, Fenote Training, Fenote Academy, CPR training, CPR certification, CPR classes, CPR course, CPR instructor, CPR renewal, CPR recertification, CPR training near me, CPR certification near me, CPR classes near me, CPR training Maryland, CPR certification Maryland, CPR classes Maryland, CPR training Virginia, CPR certification Virginia, CPR classes Virginia, CPR training DC, CPR certification DC, CPR classes DC,
@@ -86,7 +86,7 @@
           <li class="menu-has-children"><a href=""> Instructor Courses</a>
             <ul>
               <li><a href="./arc_instructor_course">ARC Instructor Course</a></li>
-              <li><a href="./hsi_instructor_course">HSI Instructor Course</a></li>
+              <li><a href="./hsi_instructor_course.html">HSI Instructor Course</a></li>
 
             </ul>
           </li>
@@ -134,33 +134,205 @@
   
     </div>
   </header>
-  <section id ="j">
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
 
-  <br>
-  <br>
-  <br>
-  <div id="scams"></div>
-
-    <div id="description"></div>
-
-    <div id="instructor_course_direct"></div>
-
-    <div id="course-buttons-container"></div>
-    <br>
+    <div class="intro-content">
+      <h2> FIRST AID, CPR, AED INSTRUCTOR CLASS</h2>
+      <h3 style="font-family: Arial, sans-serif; font-size: 1.75em; color: #fbb5b5; text-align: center; margin-top: 20px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid #000000; padding-bottom: 10px;">American Red Cross</h3>
+      <h5><strong> Instructor : Dr. Melesse Semegne </strong> </h5>
+      <div>
     
-    <br>
-       <br>
-    <br>
+
+      </div>
+    </div>
+
+
+  </section>
+
+<br> 
+<br>
+
+
+  <br>
+ 
+
+
+<section id="prover-training">
+    <div class="container">
+      <div class="section-header">
+        <h2>First Aid, CPR, AED Instructor Class </h2>
+        <p>At Fenote Training Academy, our First Aid, CPR, and AED Instructor Course is designed to equip you with the skills and knowledge needed to teach these essential life-saving techniques. This course will prepare you to instruct the American Red Cross's First Aid, CPR, and AED programs.
+
+        To enroll in this instructor course, participants must hold a current CPR/AED certification (or a higher level) from the American Red Cross. Additionally, participants must be at least 16 years old by the final day of the course. The training spans approximately 5.5 hours, ensuring a comprehensive learning experience.
+    
+        Upon registering, please read and follow the instructions provided in the email attachment that accompanies your confirmation email. Within 24 hours of signing up, you will receive an email with instructions for accessing the online course materials.
+    
+        Please note that fees may apply for appointment cancellations or rescheduling. For further details, kindly refer to our terms and conditions.</p>
+    
+          <br>
+        </div>
+    </div>
 </section>
 
 
-  <br>
-  <br>
-  <br>
+<div id="instructor_dates_container" style="
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+">
+    <h1 style="
+        font-size: 32px;
+        color: #840000;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    ">Select a Date</h1>
+    <div id="course-buttons-container" style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    "></div>
+</div>
+
+<script>
+    const courseDetails = {
+        instructor_course: {
+            name: "First Aid, CPR, AED Instructor Class",
+            price: 314.0,
+            descriptionFile: "schedule_folder/descriptions/instructor_course.html",
+            "dates": [
+                { "start": "2024-07-20", "end": "", "startTime": "10:00", "endTime": "15:30" },
+                { "start": "2024-07-27", "end": "", "startTime": "10:00", "endTime": "15:30" },
+                { "start": "2024-08-03", "end": "", "startTime": "10:00", "endTime": "15:30" },
+                { "start": "2024-08-10", "end": "", "startTime": "10:00", "endTime": "15:30" },
+                { "start": "2024-08-17", "end": "", "startTime": "10:00", "endTime": "15:30" },
+                { "start": "2024-08-24", "end": "", "startTime": "10:00", "endTime": "15:30" },
+                { "start": "2024-08-31", "end": "", "startTime": "10:00", "endTime": "15:30" }
+            ]
+            }
+        };
+
+    const courseButtonsContainer = document.getElementById("course-buttons-container");
+
+    function displayCourseDates(course) {
+        const courseDetail = courseDetails[course];
+        const datesDiv = document.createElement("div");
+        datesDiv.style.width = "100%";
+
+        courseDetail.dates.forEach(dateObj => {
+            const courseDate = new Date(dateObj.start);
+
+            if (courseDate < new Date()) {
+                // Skip dates that have already passed
+                return;
+            }
+
+            const startTime = dateObj.startTime;
+            const endTime = dateObj.endTime;
+
+            const options = { timeZone: 'America/New_York' };
+            const formattedDate = getFormattedDateInET(courseDate);
+            const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
+            const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
+
+            const dateButton = document.createElement("button");
+            dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+
+            // Apply inline styles to date buttons for an elegant look
+            dateButton.classList.add("date-button");
+
+            dateButton.addEventListener("click", () => {
+                redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+            });
+
+            datesDiv.appendChild(dateButton);
+        });
+
+        // Clear previous content and append new dates
+        courseButtonsContainer.innerHTML = "";
+        courseButtonsContainer.appendChild(datesDiv);
+    }
+
+    function redirectToConfirmation(course, date, startTime, endTime) {
+        const selectedCourse = courseDetails[course];
+        const confirmationDetails = {
+            course: selectedCourse.name,
+            price: selectedCourse.price.toFixed(2),
+            date: date,
+            startTime: startTime,
+            endTime: endTime,
+        };
+
+        // Read the course description file content
+        fetch(selectedCourse.descriptionFile)
+            .then(response => response.text())
+            .then(description => {
+                // Redirect to confirmation page with selected course details and description as query parameters
+                const queryString = Object.entries(confirmationDetails)
+                    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+                    .join("&");
+
+                // Include the course description in the query parameters
+                const fullQueryString = `${queryString}&description=${encodeURIComponent(description)}`;
+
+                window.location.href = `confirmation.html?${fullQueryString}`;
+            })
+            .catch(error => console.error('Error fetching course description:', error));
+    }
+
+    // Initial call to display dates when the page loads
+    displayCourseDates('instructor_course');
+
+    function getFormattedDateInET(dateString) {
+        // Parse the input date string
+        const date = new Date(dateString);
+
+        // Adjust for Eastern Time (New York) offset
+        const etOffset = -5 * 60; // Eastern Time offset in minutes
+        date.setMinutes(date.getMinutes() - etOffset);
+
+        // Format the adjusted date
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+</script>
 
 
+<br>
+<br>
+<br>
 
-    
+
+<section id="osha-courses">
+    <div class="container">
+      <div class="section-header">
+        <h2>OSHA APPROVED COURSE</h2>
+        <p>Our courses are certified and recognized by the Occupational Safety and Health Administration (OSHA).</p>
+      </div>
+      <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+
+      <div class="certified-logos">
+        <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+
+        <img src="img/clients/certified2.png" alt="AHA"> <pre>         </pre> <br>
+        <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 50px; margin-left: 11px;" alt="HSI"> <pre>         </pre><br>
+  
+        <br>
+        <img src="img/intro-carousel/medicfirstaid.png" style= "max-width: 100%;" alt="HSI">
+        <img src="img/clients/certified3.png" alt="Safety Training"> <pre>                   </pre><br>
+  
+  
+      </div>
+
+      
+    </div>
+  </section>
+<br>
+<br>
   <footer id="footer">
     <!-- Load the footer content using jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -171,30 +343,30 @@
       });
     </script>
   </footer>
+    
 
-  <!-- JavaScript Librsries -->
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</body>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="lib/sticky/sticky.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
 
-  <!-- Template Main Javascript File -->
-  <!-- Template Main Javascript File -->
-  <script src="schedule_folder/js/main.js"></script>
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
 
 </body>
 </html>
-

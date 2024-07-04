@@ -675,72 +675,72 @@ cpr_classroom_adult: {
 
 
 
-  aha_course1: {
-      name: "American Heart Association (AHA) Courses",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
-      dates: [
-      ],
-  },
+  // aha_course1: {
+  //     name: "American Heart Association (AHA) Courses",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
+  //     dates: [
+  //     ],
+  // },
 
-  aha_course2: {
-      name: "AHA Basic Life Support (BLS) Provider - BLENDED",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/aha_bls_blended_description.html",
-      dates: [
-          "None"
-      ],
-  },
-
-
-  aha_course3: {
-      name: "AHA Heartsaver CPR/AED",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-      dates: [
-
-      ],
-  },
+  // aha_course2: {
+  //     name: "AHA Basic Life Support (BLS) Provider - BLENDED",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/aha_bls_blended_description.html",
+  //     dates: [
+  //         "None"
+  //     ],
+  // },
 
 
-  aha_course4: {
-      name: "AHA Heartsaver First Aid CPR/AED",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-      dates: [
-      ],
-  },
+  // aha_course3: {
+  //     name: "AHA Heartsaver CPR/AED",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+  //     dates: [
+
+  //     ],
+  // },
 
 
-  aha_course5: {
-      name: "AHA HeartSaver Pediatric First Aid CPR/AED",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-      dates: [
-      ],
-  },
+  // aha_course4: {
+  //     name: "AHA Heartsaver First Aid CPR/AED",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+  //     dates: [
+  //     ],
+  // },
 
-  aha_course6: {
-      name: "AHA Heartsaver for K-12 Schools",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-      dates: [
-      ],
-  },
-  aha_course7: {
-      name: "AHA Heartsaver First Aid Only",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-      dates: [
-      ],
-  },
-  aha_course8: {
-      name: "AHA Heartsaver Bloodborne Pathogens",
-      price: 0.00,
-      descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-      dates: [
-      ],
-  },
+
+  // aha_course5: {
+  //     name: "AHA HeartSaver Pediatric First Aid CPR/AED",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+  //     dates: [
+  //     ],
+  // },
+
+  // aha_course6: {
+  //     name: "AHA Heartsaver for K-12 Schools",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+  //     dates: [
+  //     ],
+  // },
+  // aha_course7: {
+  //     name: "AHA Heartsaver First Aid Only",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+  //     dates: [
+  //     ],
+  // },
+  // aha_course8: {
+  //     name: "AHA Heartsaver Bloodborne Pathogens",
+  //     price: 0.00,
+  //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
+  //     dates: [
+  //     ],
+  // },
 };
 
 
