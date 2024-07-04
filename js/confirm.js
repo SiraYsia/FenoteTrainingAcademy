@@ -95,7 +95,7 @@ function redirectToConfirmation(course, price, date, startTime, endTime) {
         .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
         .join("&");
 
-    window.location.href = `./pay?${queryString}`;
+    window.location.href = `./pay.html?${queryString}`;
 }
 });
 
