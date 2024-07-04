@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f7ffff;
+            background-color: #dff7dd;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -125,21 +125,19 @@
     <br>
 
     <h1>Confirm Course Selection</h1>
-    <div id="description">
-        <!-- Course description will be displayed here -->
-    </div>
 
+    <div id="course_details">
+        <!-- Selected course details will be displayed here -->
+    </div>
 
     <div id="confirmation-details">
         <!-- Selected course details will be displayed here -->
     </div>
 
 
-    
 
     <div class="button-container">
         <button class="button confirm-button">Confirm and Pay</button>
-        <button class="button back-button">Return to Schedule</button>
     </div>
 
     <!-- Cancellation Information -->
@@ -158,17 +156,6 @@
     <script src="js/confirm.js"></script>
 
 
-    <script>
-        // Extract course description from query parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const courseDescription = urlParams.get('description');
-    
-        // Display the course description in the description div
-        const descriptionDiv = document.getElementById('description');
-        descriptionDiv.innerHTML = `
-            <p>${decodeURIComponent(courseDescription)}</p>
-        `;
-    </script>
 </body>
 
 </html>

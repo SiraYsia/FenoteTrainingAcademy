@@ -17,7 +17,11 @@ window.addEventListener('load', function() {
     // Function to display confirmation details
     function displayConfirmationDetails() {
         const confirmationDetailsDiv = document.getElementById("confirmation-details");
+        const serviceFee = 8;
+        const taxRate = 0.03;
+        
         const parameters = getQueryParameters();
+        const totalPrice = parseFloat(parameters.price) + serviceFee + (parseFloat(parameters.price) * taxRate);
 
         console.log("HERE");
         console.log(parameters);
@@ -27,13 +31,105 @@ window.addEventListener('load', function() {
         const formattedEndTime = parameters.endTime;
 
         // Display selected course details
-        confirmationDetailsDiv.innerHTML = `
-            <h2>${parameters.course}</h2>
-            <p><strong>Price:</strong> $${parameters.price}</p>
-            <p><strong>Date:</strong> ${formattedDate} </p>
-            <p><strong>Time:</strong> ${formattedStartTime} - ${formattedEndTime}</p>
-        `;
+        // Display selected course details
+// Display selected course details with animations and refined styles
+confirmationDetailsDiv.innerHTML = `
+    <div style="
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        font-family: 'Arial', sans-serif;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.5s forwards;
+    ">
+        <h2 style="
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        ">${parameters.course}</h2>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        ">
+            <span style="font-weight: bold; color: #555;">Date:</span>
+            <span style="color: #333;">${formattedDate}</span>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        ">
+            <span style="font-weight: bold; color: #555;">Time:</span>
+            <span style="color: #333;">${formattedStartTime} - ${formattedEndTime}</span>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        ">
+            <span style="font-weight: bold; color: #555;">Course Price:</span>
+            <span style="color: #e67e22; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        ">
+            <span style="font-weight: bold; color: #555;">Service Fee:</span>
+            <span style="color: #e67e22; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        ">
+            <span style="font-weight: bold; color: #555;">Tax (3%):</span>
+            <span style="color: #e67e22; font-weight: bold;">$${(parseFloat(parameters.price) * taxRate).toFixed(2)}</span>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 2px solid #eee;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #e74c3c;
+        ">
+            <span style="font-weight: bold;">Total Price:</span>
+            <span style="color: #e67e22; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
+        </div>
+    </div>
+`;
+
+// Add the CSS for the fadeInUp animation
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
+`;
+document.head.appendChild(style);
+
+    }
+
 
     function loadCancellationInfo() {
         const cancellationInfoDiv = document.getElementById("cancellation-info");
@@ -63,7 +159,8 @@ window.addEventListener('load', function() {
     // Initial display of confirmation details and cancellation information
     displayConfirmationDetails();
     loadCancellationInfo();
-
+    
+    
     document.querySelector(".back-button").addEventListener("click", function() {
         // Redirect to schedule.html
         window.location.href = "./schedule";
@@ -71,17 +168,17 @@ window.addEventListener('load', function() {
 
 
 
-// Add event listener for "Confirm and Pay" button click
-document.querySelector(".confirm-button").addEventListener("click", function() {
-    const parameters = getQueryParameters();
-    console.log("Confirm and Pay button clicked for course:", parameters.course);
-    if (handleCheckboxChange()){
-        console.log("PRICE", parameters.price)
-        redirectToConfirmation(parameters.course, parameters.price, parameters.date, parameters.startTime, parameters.endTime);
-    } else{
-        alert("You must agree with the terms and policies to proceed.");
-    }
-})
+    // Add event listener for "Confirm and Pay" button click
+    document.querySelector(".confirm-button").addEventListener("click", function() {
+        const parameters = getQueryParameters();
+        console.log("Confirm and Pay button clicked for course:", parameters.course);
+        if (handleCheckboxChange()){
+            console.log("PRICE", parameters.price)
+            redirectToConfirmation(parameters.course, parameters.price, parameters.date, parameters.startTime, parameters.endTime);
+        } else{
+            alert("You must agree with the terms and policies to proceed.");
+        }
+    })
 
 function redirectToConfirmation(course, price, date, startTime, endTime) {
     const confirmationDetails = {

@@ -2834,3 +2834,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: none;
   transition: opacity 0.3s ease;
 }
+
+
+
+.date-button {
+  background-color: #dbf4ff;
+  color: #333;
+  padding: 15px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-button:hover {
+  background-color: #f0f0f0;
+  color: #840000;
+  transform: translateY(-3px);
+}
