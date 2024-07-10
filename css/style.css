@@ -2974,7 +2974,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*background for the home page */
 #intro000 #intro-carousel::before {
   content: '';
-  background-color: rgba(24, 15, 15, 0.7);
+  background-color: rgba(121, 119, 119, 0.7);
   position: absolute;
   height: 133.5%;
   width: 100%;
