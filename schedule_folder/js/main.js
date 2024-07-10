@@ -1,6 +1,15 @@
 const courseDetails = {
 
   
+  phlebotomy: {
+    name: "Phlebotomy",
+    price: 800.00,
+    descriptionFile: "schedule_folder/descriptions/phelebotomy.html",
+    dates: [
+        "None"
+  
+    ],
+  },
 
   hsi_course: {
     name: "Health & Safety Institute (HSI) Courses",
@@ -941,12 +950,15 @@ document.addEventListener("DOMContentLoaded", function () {
       courseButton.style.fontWeight = "bold";
 
       if (index === 0) {
+        courseButton.style.color = "blue";
+    }
+      if (index === 1) {
           courseButton.style.color = "purple";
       }
-      if (index === 17) {
+      if (index === 18) {
         courseButton.style.color = "red";
     }
-      if (index === 33) {
+      if (index === 34) {
           courseButton.style.color = "blue";
       }
 
