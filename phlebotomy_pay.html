@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection</title>
+    <style>
+        body {
+            font-size: 14px;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .payment-breakdown div {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .payment-breakdown .total {
+            border-top: 2px solid #eee;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #e74c3c;
+        }
+        .payment-breakdown .price {
+            color: #e67e22;
+            font-weight: bold;
+        }
+        .payment-options-section ol {
+            padding-left: 20px;
+        }
+        .payment-options-section ol li {
+            margin-bottom: 15px;
+        }
+        .payment-options-section ol a {
+            color: blue;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .button.back-button {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(107, 107, 255); font-size: 24px;">Course Selection</h1> 
+    <div class="container">
+        <div class="section" id="description-section">
+            <!-- Content will be loaded here by JavaScript -->
+        </div>
+        <div class="section" id="payment-breakdown-section">
+            <h2>Payment Breakdown</h2>
+            <!-- Payment breakdown content -->
+            <div class="payment-breakdown">
+                <div>
+                    <span class="bold">Course Price:</span>
+                    <span class="price">$800</span>
+                </div>
+                <div>
+                    <span class="bold">Service Fee:</span>
+                    <span class="price">$24.34</span>
+                </div>
+                <div>
+                    <span class="bold">Tax (3%):</span>
+                    <span class="price">$24.00</span>
+                </div>
+                <div class="total">
+                    <span class="bold">Total Price:</span>
+                    <span class="price">$848.34</span>
+                </div>
+                <div>
+                    <span class="bold">Total price without service fee:</span>
+                    <span class="price">$824</span>
+                </div>
+            </div>
+        </div>
+        <div class="section payment-options-section">
+            <h2>Payment Options</h2>
+            <ol>
+                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay with <strong>(310)-988-0673</strong>. If you are in need of assistance please call us or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</li>
+                <li>If you prefer to pay with a credit card or debit card (with the service fee), fill out this form <a href="https://form.jotform.com/241825301455148">here</a>, and click the green button below. Please read our cancellation policy <a href="./cancelation">here</a>.</li>
+            </ol>
+        </div>
+        <div class="button-container">
+            <button class="button confirm-button" onclick="window.location.href='https://square.link/u/3wVo8Vvj'">Pay</button>
+            <button class="button back-button" onclick="window.location.href='./phlebotomy'">Return to Schedule</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('schedule_folder/descriptions/phelebotomy.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('description-section').innerHTML += data;
+                });
+        });
+    </script>
+
+
+
+</body>
+</html>
