@@ -1,15 +1,7 @@
 const courseDetails = {
 
   
-  phlebotomy: {
-    name: "Phlebotomy",
-    price: 800.00,
-    descriptionFile: "schedule_folder/descriptions/phelebotomy.html",
-    dates: [
-        "None"
-  
-    ],
-  },
+
 
   hsi_course: {
     name: "Health & Safety Institute (HSI) Courses",
