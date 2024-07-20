@@ -15,6 +15,10 @@
             text-align: center;
             color: #333;
         }
+        #confirm_ammount {
+             display: inline;
+        }
+
 
         h1 {
             font-size: 32px;
@@ -104,17 +108,14 @@
     <br>
     <br>
     <br>
-    <h1>Course Selection</h1>
 
     <div class="container">
-        <div id="confirmation-details">
-            <!-- Selected course details will be displayed here -->
-        </div>
+
 
         <div class="payment-options-section">
             <h2>Payment Options</h2>
             <ol>
-                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay with <strong>310-988-0673. </strong> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
+                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay <div id = "confirm_ammount"> </div> with <strong>310-988-0673. </strong> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
                 </li>
                 <br>
                 <li>If you prefer to pay with a credit card or debit card (with the service fee) click the green button below. 
@@ -173,83 +174,91 @@ window.addEventListener('load', function() {
         console.log("HERE");
         console.log(parameters);
 
+     
+     
+     
+     
+     const confirm_ammount = document.getElementById("confirm_ammount");
+     confirm_ammount.innerHTML = "<strong>$" + totalPriceWithoutProcessingFee.toFixed(2) + "</strong>";
+        
+     
         // Display selected course details
         // Display selected course details
 // Display selected course details with animations and refined styles
-confirmationDetailsDiv.innerHTML = `
-    <div style="
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        font-family: 'Arial', sans-serif;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeInUp 0.5s forwards;
-    ">
-        <h2 style="
-            text-align: center;
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 20px;
-        ">${parameters.course}</h2>
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        ">
-            <span style="font-weight: bold; color: #555;">Date:</span>
-            <span style="color: #333;">${formattedDate}</span>
-        </div>
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        ">
-            <span style="font-weight: bold; color: #555;">Time:</span>
-            <span style="color: #333;">${formattedStartTime} - ${formattedEndTime}</span>
-        </div>
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        ">
-            <span style="font-weight: bold; color: #555;">Course Price:</span>
-            <span style="color: #000000; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
-        </div>
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        ">
-            <span style="font-weight: bold; color: #555;">Service Fee:</span>
-            <span style="color: #000000; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
-        </div>
+// confirmationDetailsDiv.innerHTML = `
+//     <div style="
+//         max-width: 600px;
+//         margin: 0 auto;
+//         padding: 20px;
+//         border: 1px solid #ddd;
+//         border-radius: 8px;
+//         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+//         font-family: 'Arial', sans-serif;
+//         opacity: 0;
+//         transform: translateY(20px);
+//         animation: fadeInUp 0.5s forwards;
+//     ">
+//         <h2 style="
+//             text-align: center;
+//             color: #333;
+//             font-size: 24px;
+//             margin-bottom: 20px;
+//         ">${parameters.course}</h2>
+//         <div style="
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 10px 0;
+//             border-bottom: 1px solid #eee;
+//         ">
+//             <span style="font-weight: bold; color: #555;">Date:</span>
+//             <span style="color: #333;">${formattedDate}</span>
+//         </div>
+//         <div style="
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 10px 0;
+//             border-bottom: 1px solid #eee;
+//         ">
+//             <span style="font-weight: bold; color: #555;">Time:</span>
+//             <span style="color: #333;">${formattedStartTime} - ${formattedEndTime}</span>
+//         </div>
+//         <div style="
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 10px 0;
+//             border-bottom: 1px solid #eee;
+//         ">
+//             <span style="font-weight: bold; color: #555;">Course Price:</span>
+//             <span style="color: #000000; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
+//         </div>
+//         <div style="
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 10px 0;
+//             border-bottom: 1px solid #eee;
+//         ">
+//             <span style="font-weight: bold; color: #555;">Service Fee:</span>
+//             <span style="color: #000000; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
+//         </div>
 
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-top: 2px solid #eee;
-            margin-top: 20px;
-            font-size: 18px;
-            color: #000000;
-        ">
-            <span style="font-weight: bold;">Total Price:</span>
-            <span style="color: #000000; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
-        </div>
+//         <div style="
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 10px 0;
+//             border-top: 2px solid #eee;
+//             margin-top: 20px;
+//             font-size: 18px;
+//             color: #000000;
+//         ">
+//             <span style="font-weight: bold;">Total Price:</span>
+//             <span style="color: #000000; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
+//         </div>
 
-        <span style="font-weight: bold;">Total price without service fee:</span>
-            <span style="color: #000000; font-weight: bold;">$${totalPriceWithoutProcessingFee.toFixed(2)}</span>
-        </div>
-    </div>
-`;
+//         <span style="font-weight: bold;">Total price without service fee:</span>
+//             <span style="color: #000000; font-weight: bold;">$${totalPriceWithoutProcessingFee.toFixed(2)}</span>
+//         </div>
+//     </div>
+// `;
 
 // Add the CSS for the fadeInUp animation
 const style = document.createElement('style');
