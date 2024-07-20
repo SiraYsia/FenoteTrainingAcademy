@@ -17,11 +17,11 @@ window.addEventListener('load', function() {
     // Function to display confirmation details
     function displayConfirmationDetails() {
         const confirmationDetailsDiv = document.getElementById("confirmation-details");
-        const taxRate = 0.03;
+        //const taxRate = 0.03;
         
         const parameters = getQueryParameters();
         const serviceFee = 0.0266666667 * parseFloat(parameters.price);
-        const totalPrice = parseFloat(parameters.price) + serviceFee + (parseFloat(parameters.price) * taxRate);
+        const totalPrice = parseFloat(parameters.price) + serviceFee;
 
         console.log("HERE");
         console.log(parameters);
@@ -59,7 +59,7 @@ confirmationDetailsDiv.innerHTML = `
             border-bottom: 1px solid #eee;
         ">
             <span style="font-weight: bold; color: #555;">Date:</span>
-            <span style="color: #333;">${formattedDate}</span>
+            <span style="color: #000000;">${formattedDate}</span>
         </div>
         <div style="
             display: flex;
@@ -68,7 +68,7 @@ confirmationDetailsDiv.innerHTML = `
             border-bottom: 1px solid #eee;
         ">
             <span style="font-weight: bold; color: #555;">Time:</span>
-            <span style="color: #333;">${formattedStartTime} - ${formattedEndTime}</span>
+            <span style="color: #000000;">${formattedStartTime} - ${formattedEndTime}</span>
         </div>
         <div style="
             display: flex;
@@ -77,7 +77,7 @@ confirmationDetailsDiv.innerHTML = `
             border-bottom: 1px solid #eee;
         ">
             <span style="font-weight: bold; color: #555;">Course Price:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
         </div>
         <div style="
             display: flex;
@@ -86,17 +86,9 @@ confirmationDetailsDiv.innerHTML = `
             border-bottom: 1px solid #eee;
         ">
             <span style="font-weight: bold; color: #555;">Service Fee:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
         </div>
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        ">
-            <span style="font-weight: bold; color: #555;">Tax (3%):</span>
-            <span style="color: #e67e22; font-weight: bold;">$${(parseFloat(parameters.price) * taxRate).toFixed(2)}</span>
-        </div>
+
         <div style="
             display: flex;
             justify-content: space-between;
@@ -104,10 +96,10 @@ confirmationDetailsDiv.innerHTML = `
             border-top: 2px solid #eee;
             margin-top: 20px;
             font-size: 18px;
-            color: #e74c3c;
+            color: #000000;
         ">
             <span style="font-weight: bold;">Total Price:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
         </div>
     </div>
 `;

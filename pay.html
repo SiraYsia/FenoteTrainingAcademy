@@ -114,10 +114,10 @@
         <div class="payment-options-section">
             <h2>Payment Options</h2>
             <ol>
-                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay with <strong>(310)-988-0673. </strong> If you are in need of assistance please call us <strong>(310 -988-0673)</strong> or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
+                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay with <strong>310-988-0673. </strong> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
                 </li>
                 <br>
-                <li>If you prefer to pay with a credit card or debit card (with the service fee), fill out this form <a href="https://form.jotform.com/241825301455148">here</a>, and click the green button below. <p id="pay-form-warning" style="color: red; font-weight: bold;">You must fill out the form before paying. </p>
+                <li>If you prefer to pay with a credit card or debit card (with the service fee), fill out this form <a href="https://form.jotform.com/241825301455148">here</a>, and click the green button below. <p id="pay-form-warning" style="color: rgb(0, 102, 255);">You need to fill out the form before payment. </p>
                 </li>
             </ol>
         </div>
@@ -166,9 +166,9 @@ window.addEventListener('load', function() {
         const formattedEndTime = parameters.endTime;
 
         const serviceFee = 0.0266666667 * parseFloat(parameters.price);
-        const taxRate = 0.03;
+        //const taxRate = 0.03;
         
-        const totalPrice = parseFloat(parameters.price) + serviceFee + (parseFloat(parameters.price) * taxRate);
+        const totalPrice = parseFloat(parameters.price) + serviceFee;
         const totalPriceWithoutProcessingFee = totalPrice - serviceFee;
         console.log("HERE");
         console.log(parameters);
@@ -220,7 +220,7 @@ confirmationDetailsDiv.innerHTML = `
             border-bottom: 1px solid #eee;
         ">
             <span style="font-weight: bold; color: #555;">Course Price:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${parseFloat(parameters.price).toFixed(2)}</span>
         </div>
         <div style="
             display: flex;
@@ -229,17 +229,9 @@ confirmationDetailsDiv.innerHTML = `
             border-bottom: 1px solid #eee;
         ">
             <span style="font-weight: bold; color: #555;">Service Fee:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${serviceFee.toFixed(2)}</span>
         </div>
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        ">
-            <span style="font-weight: bold; color: #555;">Tax (3%):</span>
-            <span style="color: #e67e22; font-weight: bold;">$${(parseFloat(parameters.price) * taxRate).toFixed(2)}</span>
-        </div>
+
         <div style="
             display: flex;
             justify-content: space-between;
@@ -247,14 +239,14 @@ confirmationDetailsDiv.innerHTML = `
             border-top: 2px solid #eee;
             margin-top: 20px;
             font-size: 18px;
-            color: #e74c3c;
+            color: #000000;
         ">
             <span style="font-weight: bold;">Total Price:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
         </div>
 
         <span style="font-weight: bold;">Total price without service fee:</span>
-            <span style="color: #e67e22; font-weight: bold;">$${totalPriceWithoutProcessingFee.toFixed(2)}</span>
+            <span style="color: #000000; font-weight: bold;">$${totalPriceWithoutProcessingFee.toFixed(2)}</span>
         </div>
     </div>
 `;
