@@ -37,10 +37,10 @@
             border-top: 2px solid #eee;
             margin-top: 15px;
             font-size: 16px;
-            color: #e74c3c;
+            color: #383838;
         }
         .payment-breakdown .price {
-            color: #e67e22;
+            color: #000000;
             font-weight: bold;
         }
         .payment-options-section ol {
@@ -69,9 +69,41 @@
         .button.back-button {
             background-color: #f44336;
         }
+                .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%; /* Optional: round the image */
+        }
+
+        .text {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Ensure no content overlaps */
+        body {
+            margin: 0;
+            padding: 50px 0 0 0; /* Adjust padding to fit header height */
+        }
     </style>
 </head>
 <body>
+
+    <div class="header">
+        <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
+        <div class="text">Fenote Training Academy</div>
+    </div>
+    
     <h1 style="text-align: center; color: rgb(107, 107, 255); font-size: 24px;">Course Selection</h1> 
     <div class="container">
         <div class="section" id="description-section">

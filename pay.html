@@ -101,6 +101,33 @@
         .back-button {
             background-color: #3498db;
         }
+
+                .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%; /* Optional: round the image */
+        }
+
+        .text {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Ensure no content overlaps */
+        body {
+            margin: 0;
+            padding: 50px 0 0 0; /* Adjust padding to fit header height */
+        }
     </style>
 </head>
 
@@ -110,7 +137,10 @@
     <br>
 
     <div class="container">
-
+        <div class="header">
+            <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
+            <div class="text">Fenote Training Academy</div>
+        </div>
 
         <div class="payment-options-section">
             <h2>Payment Options</h2>

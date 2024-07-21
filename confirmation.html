@@ -115,6 +115,34 @@
         .agreement-container label {
             margin-left: 5px;
         }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%; 
+        }
+
+        .text {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Ensure no content overlaps */
+        body {
+            margin: 0;
+            padding: 50px 0 0 0; /* Adjust padding to fit header height */
+        }
+
     </style>
 </head>
 
@@ -124,6 +152,10 @@
     <br>
     <br>
 
+    <div class="header">
+        <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
+        <div class="text">Fenote Training Academy</div>
+    </div>
     <h1>Confirm Course Selection</h1>
     <div id="description">
         <!-- Course description will be displayed here -->
