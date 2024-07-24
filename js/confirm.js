@@ -17,12 +17,12 @@ window.addEventListener('load', function() {
     // Function to display confirmation details
     function displayConfirmationDetails() {
         const confirmationDetailsDiv = document.getElementById("confirmation-details");
-        //const taxRate = 0.03;
+        const taxRate = 0.03;
         
         const parameters = getQueryParameters();
         const serviceFee = 0.03334 * parseFloat(parameters.price);
-        const totalPrice = parseFloat(parameters.price) + serviceFee;
-
+        const taxAmount = parseFloat(parameters.price)  * taxRate
+        const totalPrice = parseFloat(parameters.price) + serviceFee + taxAmount
         console.log("HERE");
         console.log(parameters);
 
@@ -90,6 +90,17 @@ confirmationDetailsDiv.innerHTML = `
         </div>
 
         <div style="
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        ">
+        <span style="font-weight: bold; color: #555;">Tax (${(taxRate * 100).toFixed(2)}%):</span>
+        <span style="color: #000000; font-weight: bold;">$${taxAmount.toFixed(2)}</span>
+        </div>
+        
+
+        <div style="
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
@@ -98,6 +109,7 @@ confirmationDetailsDiv.innerHTML = `
             font-size: 18px;
             color: #000000;
         ">
+
             <span style="font-weight: bold;">Total Price:</span>
             <span style="color: #000000; font-weight: bold;">$${totalPrice.toFixed(2)}</span>
         </div>
