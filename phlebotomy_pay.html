@@ -69,7 +69,7 @@
         .button.back-button {
             background-color: #f44336;
         }
-                .header {
+        .header {
             position: absolute;
             top: 0;
             left: 0;
@@ -95,6 +95,31 @@
             margin: 0;
             padding: 50px 0 0 0; /* Adjust padding to fit header height */
         }
+
+        #cancellation-info {
+            max-height: 150px;
+            overflow: auto;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .agreement-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .agreement-container label {
+            margin-left: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -143,10 +168,20 @@
             </ol>
         </div>
         <div class="button-container">
-            <button class="button confirm-button" onclick="window.location.href='https://square.link/u/3wVo8Vvj'">Pay</button>
+            <button class="button confirm-button" id="payButton">Pay</button>
             <button class="button back-button" onclick="window.location.href='./phlebotomy'">Return to Schedule</button>
         </div>
     </div>
+
+    <!-- Cancellation Information -->
+    <div id="cancellation-info">
+        <!-- Cancellation information will be displayed here -->
+    </div>
+    <div class="agreement-container">
+        <input type="checkbox" id="agreementCheckbox">
+        <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('schedule_folder/descriptions/phelebotomy.html')
@@ -155,9 +190,36 @@
                     document.getElementById('description-section').innerHTML += data;
                 });
         });
+
+        function loadCancellationInfo() {
+            const cancellationInfoDiv = document.getElementById("cancellation-info");
+
+            // Fetch cancellation.html content
+            fetch('cancelation.html')
+                .then(response => response.text())
+                .then(html => {
+                    // Set the fetched HTML as the inner HTML of the cancellation-info div
+                    cancellationInfoDiv.innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error fetching cancellation information:', error);
+                });
+        }
+
+        loadCancellationInfo();
+
+        document.getElementById('payButton').addEventListener('click', function() {
+            const agreementCheckbox = document.getElementById('agreementCheckbox');
+
+            if (!agreementCheckbox.checked) {
+                alert('You must agree to the cancellation policy before proceeding with payment.');
+                return;
+            }
+
+            // Redirect to payment page
+            window.location.href = 'https://square.link/u/3wVo8Vvj';
+        });
     </script>
-
-
 
 </body>
 </html>
