@@ -947,7 +947,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index === 1) {
           courseButton.style.color = "purple";
       }
-      if (index === 18) {
+      if (index === 17) {
         courseButton.style.color = "red";
     }
       if (index === 34) {
