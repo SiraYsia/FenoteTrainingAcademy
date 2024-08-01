@@ -48,7 +48,6 @@ const courseDetails = {
       { "start": "2024-07-31", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-08-01", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-08-02", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-03", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-08-04", "end": "", "startTime": "10:00", "endTime": "12:15" },
       { "start": "2024-08-05", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-08-06", "end": "", "startTime": "15:00", "endTime": "17:15" },
