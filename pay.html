@@ -211,7 +211,7 @@ window.addEventListener('load', function() {
      const confirm_ammount = document.getElementById("confirm_ammount");
      confirm_ammount.innerHTML = "<strong>$" + totalPriceWithoutProcessingFee.toFixed(2) + "</strong>";
 
-     
+
 // Add the CSS for the fadeInUp animation
 const style = document.createElement('style');
 style.innerHTML = `
@@ -258,10 +258,12 @@ document.head.appendChild(style);
 
         switch (course) {
 
-            case 'First Aid, CPR, AED Instructor Class':
-                redirectLink = courseSquareLinks['instructor_course'];
+            case 'ARC First Aid, CPR, AED Instructor Class':
+                redirectLink = courseSquareLinks['arc_instructor_course'];
                 break;
-
+            case 'HSI First Aid, CPR, AED Instructor Class':
+                redirectLink = courseSquareLinks['hsi_instructor_course'];
+                break;
             case 'HSI Adult and Pediatric First Aid, CPR/AED or All ages':
                 redirectLink = courseSquareLinks['hsi_adult_pediatric'];
                 break;
@@ -316,7 +318,9 @@ document.head.appendChild(style);
         'baby_sitting_training': 'https://square.link/u/fnw6K2M0',
         'virtual_pediatriic': 'https://square.link/u/pM929NrY',
         'virtual_firstaid': 'https://square.link/u/nzf6MeHE',
-        'instructor_course' : 'https://square.link/u/KhV80T4W'
+        'hsi_instructor_course' : 'https://square.link/u/tLf1uMHv',
+        'arc_instructor_course' : 'https://square.link/u/KhV80T4W'
+
     };
 });
 
