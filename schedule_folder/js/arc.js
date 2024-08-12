@@ -12,25 +12,10 @@ const courseDetails = {
   
   
   cpr_blended_pediatric: {
-    name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
+    name: "Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
     price: 96.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
     dates: [
-      { "start": "2024-07-01", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-02", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-04", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-05", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-06", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-07-07", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-07-08", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-09", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-10", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-11", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-12", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-13", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-14", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-07-15", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-07-16", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-07-17", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-07-18", "end": "", "startTime": "15:00", "endTime": "17:15" },
       { "start": "2024-07-19", "end": "", "startTime": "15:00", "endTime": "17:15" },
@@ -110,7 +95,7 @@ const courseDetails = {
   },
   
   cpr_blended_first_aid: {
-    name: "ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED",
+    name: "Adult First Aid/CPR/AED-BL-R.21 - BLENDED",
     price: 95.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
     dates: [
@@ -153,7 +138,7 @@ const courseDetails = {
   
   
   cpr_blended_adult: {
-    name: "ARC Adult CPR/AED-BL-R.21  - BLENDED",
+    name: " Adult CPR/AED-BL-R.21  - BLENDED",
     price: 70.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
     dates: [
@@ -194,7 +179,7 @@ const courseDetails = {
   
   
   cpr_sessions_pediatric: {
-    name: "ARC Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
+    name: " Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
     price: 77.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
     dates: [
@@ -204,7 +189,7 @@ const courseDetails = {
   },
   
   cpr_sessions_first_aid: {
-    name: "ARC Adult First Aid/CPR/AED Skills Session-R.21",
+    name: " Adult First Aid/CPR/AED Skills Session-R.21",
     price: 55.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
     dates: [
@@ -215,7 +200,7 @@ const courseDetails = {
   
   
   cpr_sessions_adult: {
-    name: "ARC Adult CPR/AED Skills Session-R.21",
+    name: " Adult CPR/AED Skills Session-R.21",
     price: 37.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
     dates: [
@@ -246,7 +231,7 @@ const courseDetails = {
     ],
   },
   bls_classroom: {
-    name: "ARC Basic Life Support-R.21 - CLASSROOM",
+    name: " Basic Life Support-R.21 - CLASSROOM",
     price: 88.00,
     descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
     dates: [
@@ -271,7 +256,7 @@ const courseDetails = {
   
   
   babysitter_classroom: {
-    name: "ARC Babysitter Training And Pediatric First Aid/CPR",
+    name: " Babysitter Training And Pediatric First Aid/CPR",
     price: 150.00,
     descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
     dates: [
@@ -285,7 +270,7 @@ const courseDetails = {
   
   
   babysitter_training: {
-    name: "ARC Babysitters Training",
+    name: " Babysitters Training",
     price: 90.00,
     descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
     dates: [
@@ -298,7 +283,7 @@ const courseDetails = {
   },
   
   cpr1_virtual:{
-    name:"ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,
+    name:" Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,
     price : 95.00,
     descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
     dates: [
@@ -314,7 +299,7 @@ const courseDetails = {
   
   }, 
   cpr2_virtual:{
-    name:"ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
+    name:" Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
     price : 86.00,
     descriptionFile: "schedule_folder/descriptions/ara/cpr2_virtual.html",
     dates: [
@@ -338,7 +323,7 @@ const courseDetails = {
   
   
   cpr_classroom_pediatric: {
-    name: "ARC Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
+    name: " Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
     price: 110.00,
     descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_pediatric.html",
     dates: [
@@ -348,7 +333,7 @@ const courseDetails = {
   },
   
   cpr_classroom_first_aid: {
-    name: "ARC Adult First Aid/CPR/AED-R.21 - CLASSROOM",
+    name: " Adult First Aid/CPR/AED-R.21 - CLASSROOM",
     price: 98.00,
     descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
     dates: [
@@ -359,7 +344,7 @@ const courseDetails = {
     ],
   },
   cpr_classroom_adult: {
-    name: "ARC Adult CPR/AED-R.21 - CLASSROOM",
+    name: " Adult CPR/AED-R.21 - CLASSROOM",
     price: 75.00,
     descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_adult.html",
     dates: [
