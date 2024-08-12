@@ -643,7 +643,8 @@ cpr_classroom_first_aid: {
   price: 98.00,
   descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
   dates: [
-      "None"
+    { start: "2024-08-13", end: "", startTime: "9:30", endTime: "13:30" },
+    { start: "2024-08-14", end: "", startTime: "9:30", endTime: "13:30" }
 
   ],
 },

@@ -351,7 +351,9 @@ const courseDetails = {
     price: 98.00,
     descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
     dates: [
-        "None"
+      { start: "2024-08-13", end: "2024-08-13", startTime: "09:30", endTime: "13:30" },
+      { start: "2024-08-14", end: "2024-08-14", startTime: "09:30", endTime: "13:30" }
+        
   
     ],
   },
