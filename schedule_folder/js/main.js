@@ -520,8 +520,8 @@ cpr_sessions_adult: {
 
 
 bls_blended: {
-  name: "ARC Basic Life Support-BL R.21",
-  price: 83.00,
+  name: "Basic Life Support-BL R.21",
+  price: 80.00,
   descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
   dates: [
    
@@ -533,7 +533,8 @@ bls_blended: {
       { "start": "2024-03-11", "end": "", "startTime": "13:00", "endTime": "15:00" },
       { "start": "2024-03-16", "end": "", "startTime": "14:00", "endTime": "16:00" },
       { "start": "2024-03-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-03-27", "end": "", "startTime": "13:00", "endTime": "15:00" }
+      { "start": "2024-03-27", "end": "", "startTime": "13:00", "endTime": "15:00" },
+      { "start": "2024-08-27", "end": "", "startTime": "15:30", "endTime": "17:30" }
   ],
 },
 bls_classroom: {
