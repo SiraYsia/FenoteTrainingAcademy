@@ -654,6 +654,10 @@ const courseDetails = {
         if (index === 1) {
             courseButton.style.color = "purple";
         }
+
+        if (index === 7) {
+          courseButton.style.color = "purple";
+      }
         if (index === 18) {
           courseButton.style.color = "red";
       }
