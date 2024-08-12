@@ -196,7 +196,7 @@ window.addEventListener('load', function() {
         const formattedStartTime = parameters.startTime;
         const formattedEndTime = parameters.endTime;
 
-        const serviceFee = 0.03334 * parseFloat(parameters.price);
+        const serviceFee =  0.0375 * parseFloat(parameters.price);
         const taxRate = 0.03;
         const taxAmount = taxRate *  parseFloat(parameters.price);
         const totalPrice = parseFloat(parameters.price) + serviceFee;

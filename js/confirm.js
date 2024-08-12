@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
         const taxRate = 0.03;
         
         const parameters = getQueryParameters();
-        const serviceFee = 0.03334 * parseFloat(parameters.price);
+        const serviceFee = 0.0375 * parseFloat(parameters.price);
         const taxAmount = parseFloat(parameters.price)  * taxRate
         const totalPrice = parseFloat(parameters.price) + serviceFee + taxAmount
         console.log("HERE");
