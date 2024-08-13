@@ -552,12 +552,12 @@ cpr_classroom_pediatric: {
 },
 
 cpr_classroom_first_aid: {
-  name: " Adult First Aid/CPR/AED-R.21 - CLASSROOM",
+  name: "Adult First Aid/CPR/AED-R.21 - CLASSROOM",
   price: 98.00,
   descriptionFile: "schedule_folder/descriptions/ara/2.cpr_classroom_first_aid.html",
   dates: [
     { start: "2024-08-13", end: "", startTime: "9:30", endTime: "13:30" },
-    { start: "2024-08-14", end: "", startTime: "9:30", endTime: "13:30" }
+    { start: "2024-08-14", end: "", startTime: "09:30", endTime: "13:30" }
 
   ],
 },
