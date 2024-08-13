@@ -12,7 +12,7 @@ const courseDetails = {
   
   
   cpr_blended_pediatric: {
-    name: "Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
+    name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
     price: 96.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
     dates: [
