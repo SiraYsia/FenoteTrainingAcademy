@@ -432,7 +432,7 @@ cpr_sessions_adult: {
 
 
 bls_blended: {
-  name: "Basic Life Support-BL R.21",
+  name: "ARC Basic Life Support-BL R.21",
   price: 80.00,
   descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
   dates: [
