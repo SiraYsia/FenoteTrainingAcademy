@@ -450,7 +450,7 @@ bls_blended: {
   ],
 },
 bls_classroom: {
-  name: " Basic Life Support-R.21 - CLASSROOM",
+  name: "Basic Life Support-R.21 - CLASSROOM",
   price: 88.00,
   descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
   dates: [

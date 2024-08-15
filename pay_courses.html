@@ -197,10 +197,8 @@ window.addEventListener('load', function() {
         const formattedEndTime = parameters.endTime;
 
         const serviceFee =  0.0375 * parseFloat(parameters.price);
-        const taxRate = 0.03;
-        const taxAmount = taxRate *  parseFloat(parameters.price);
         const totalPrice = parseFloat(parameters.price) + serviceFee;
-        const totalPriceWithoutProcessingFee = totalPrice  + taxAmount - serviceFee ;
+        const totalPriceWithoutProcessingFee = totalPrice  - serviceFee ;
         console.log("HERE");
         console.log(parameters);
 
@@ -252,48 +250,43 @@ document.head.appendChild(style);
 
     // Function to handle "Confirm and Pay" button click
     function handleConfirmAndPay(course) {
-        console.log("got here?")
 
         let redirectLink;
 
         switch (course) {
-
-            case 'ARC First Aid, CPR, AED Instructor Class':
-                redirectLink = courseSquareLinks['arc_instructor_course'];
-                break;
-            case 'HSI First Aid, CPR, AED Instructor Class':
-                redirectLink = courseSquareLinks['hsi_instructor_course'];
-                break;
-            case 'HSI Adult and Pediatric First Aid, CPR/AED or All ages':
+            case 'Adult and Pediatric First Aid, CPR/AED or All ages':
                 redirectLink = courseSquareLinks['hsi_adult_pediatric'];
                 break;
 
-            case 'ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED':
+            case 'Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED':
                 redirectLink = courseSquareLinks['adult_pediatric_bl'];
                 break;
 
-            case 'ARC Adult First Aid/CPR/AED-BL-R.21 - BLENDED':
+            case 'Adult First Aid/CPR/AED-BL-R.21 - BLENDED':
                 redirectLink = courseSquareLinks['adult_bl'];
                 break;
-            case 'ARC Adult CPR/AED-BL-R.21  - BLENDED':
+            case 'Adult CPR/AED-BL-R.21  - BLENDED':
                 redirectLink = courseSquareLinks['ault_cpr_bl'];
+                break;
+            case 'Basic Life Support-BL R.21':
+                redirectLink = courseSquareLinks['basic_life_bl'];
                 break;
             case 'ARC Basic Life Support-BL R.21':
                 redirectLink = courseSquareLinks['basic_life_bl'];
                 break;
-            case 'ARC Basic Life Support-R.21 - CLASSROOM':
+            case 'Basic Life Support-R.21 - CLASSROOM':
                 redirectLink = courseSquareLinks['basic_life_cl'];
                 break;
-            case 'ARC Babysitter Training And Pediatric First Aid/CPR':
+            case 'Babysitter Training And Pediatric First Aid/CPR':
                 redirectLink = courseSquareLinks['baby_sitting_firstaid'];
                 break;
-            case 'ARC Babysitters Training':
+            case 'Babysitters Training':
                 redirectLink = courseSquareLinks['baby_sitting_training'];
                 break;
-            case 'ARC Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL':
+            case 'Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL':
                 redirectLink = courseSquareLinks['virtual_pediatriic'];
                 break;
-            case 'ARC Adult First Aid/CPR/AED Blended r.21 - VIRTUAL':
+            case 'Adult First Aid/CPR/AED Blended r.21 - VIRTUAL':
                 redirectLink = courseSquareLinks['virtual_firstaid'];
                 break;
             case 'Adult First Aid/CPR/AED-R.21 - CLASSROOM':
