@@ -228,7 +228,7 @@ const courseDetails = {
   },
   bls_classroom: {
     name: " Basic Life Support-R.21 - CLASSROOM",
-    price: 88.00,
+    price: 85.00,
     descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
     dates: [
         { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
