@@ -7,7 +7,8 @@ const courseDetails = {
     dates: [
     ],
   }, 
-  
+
+
   
   
   
@@ -174,8 +175,19 @@ const courseDetails = {
   },
   
   
+  cpr_session_first_aid_classroom: {
+    name: "Adult First Aid/CPR/AED Classroom-R.21",
+    price: 85.00,
+    descriptionFile: "schedule_folder/descriptions/ara/temp.cpr_sessions_first_aid.html",
+    dates: [
+      { start: "2024-08-19", end: "", startTime: "09:00", endTime: "11:15" }
+        ],
+    
+  },
+  
+  
   cpr_sessions_pediatric: {
-    name: " Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
+    name: "Adult and Pediatric First Aid/CPR/AED Skills Session-R.21",
     price: 77.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
     dates: [
@@ -183,20 +195,12 @@ const courseDetails = {
     ],
     
   },
-  
-  cpr_sessions_first_aid: {
-    name: " Adult First Aid/CPR/AED Skills Session-R.21",
-    price: 55.00,
-    descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_first_aid.html",
-    dates: [
-      "None"  
-    ],
-    
-  },
-  
+
+
+
   
   cpr_sessions_adult: {
-    name: " Adult CPR/AED Skills Session-R.21",
+    name: "Adult CPR/AED Skills Session-R.21",
     price: 37.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
     dates: [
@@ -205,6 +209,7 @@ const courseDetails = {
     
   },
   
+
   
   
   
@@ -226,6 +231,8 @@ const courseDetails = {
         { "start": "2024-08-27", "end": "", "startTime": "15:30", "endTime": "17:30" }
     ],
   },
+
+
   bls_classroom: {
     name: " Basic Life Support-R.21 - CLASSROOM",
     price: 85.00,
@@ -277,6 +284,8 @@ const courseDetails = {
         { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
     ],
   },
+
+
   
   cpr1_virtual:{
     name:" Adult & Pediatric First Aid/CPR/AED Blended r.21 - VIRTUAL" ,

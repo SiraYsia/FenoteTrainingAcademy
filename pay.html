@@ -302,6 +302,10 @@ document.head.appendChild(style);
             case 'Adult First Aid/CPR/AED-R.21 - CLASSROOM':
                 redirectLink = courseSquareLinks['classroom_adult_first_aid'];
                 break;
+
+            case 'Adult First Aid/CPR/AED Classroom-R.21':
+                redirectLink = courseSquareLinks['cpr_session_first_aid_classroom'];
+                break;
             default:
                 //course not found
                 alert(`Course not found. Please try again. The name of the course is: ${course}`);
@@ -326,7 +330,8 @@ document.head.appendChild(style);
         'virtual_firstaid': 'https://square.link/u/nzf6MeHE',
         'hsi_instructor_course' : 'https://square.link/u/tLf1uMHv',
         'arc_instructor_course' : 'https://square.link/u/KhV80T4W',
-        'classroom_adult_first_aid' : 'https://square.link/u/7xDYPl9g'
+        'classroom_adult_first_aid' : 'https://square.link/u/7xDYPl9g',
+        'cpr_session_first_aid_classroom' : 'https://square.link/u/ePWSYPUL'
 
     };
 });
