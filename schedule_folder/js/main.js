@@ -67,11 +67,11 @@ hsi_adult_pediatric: {
 },
 
 hsi_adult_adult_cpr: {
-  name: "HSI Adult First aid,  CPR/AED",
-  price: 75.00,
+  name: "HSI Adult First aid, CPR/AED",
+  price: 85.00,
   descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
   dates: [
-      "None"
+    { "start": "2024-08-19", "end": "", "startTime": "09:00", "endTime": "11:45" }
 
   ],
 },
