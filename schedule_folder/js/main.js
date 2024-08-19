@@ -66,6 +66,17 @@ hsi_adult_pediatric: {
   ],
 },
 
+
+hsi_adult_pediatric_classroom: {
+  name: "HSI Adult and Pediatric First Aid, CPR/AED or All ages - Classroom",
+  price: 85.00,
+  descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
+  dates: [
+    { "start": "2024-08-19", "end": "", "startTime": "16:00", "endTime": "18:15" }
+  ],
+},
+
+
 hsi_adult_adult_cpr: {
   name: "HSI Adult First aid, CPR/AED",
   price: 85.00,
@@ -752,12 +763,24 @@ document.addEventListener("DOMContentLoaded", function () {
           .catch(error => console.error("Error loading description:", error));
 
           courseDetail.dates.forEach(dateObj => {
-              const courseDate = new Date(dateObj.start);
-
-              if (courseDate < new Date()) {
-                  // Skip dates that have already passed
-                  return;
-              }
+            // Combine date and time into a single ISO string
+            const dateTimeString = `${dateObj.start}T${dateObj.startTime}`;
+            
+            // Create a Date object from the combined date-time string
+            const courseDate = new Date(dateTimeString);
+            
+            console.log("Combined DateTime String:", dateTimeString);
+            console.log("courseDate:", courseDate);
+            
+            const now = new Date();
+            console.log("now:", now);
+        
+            // Compare the current time with the course date-time
+            if (now > courseDate) {
+                // Skip dates that have already passed
+                return;
+            }
+                        
   
   
               if (isNaN(courseDate)) {

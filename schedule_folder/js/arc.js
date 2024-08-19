@@ -518,6 +518,7 @@ const courseDetails = {
     
   
     function toggleCourseDetails(course) {
+
         const courseDetail = courseDetails[course];
         const descriptionDiv = document.createElement("div");
         const datesDiv = document.createElement("div");
@@ -530,13 +531,23 @@ const courseDetails = {
             .catch(error => console.error("Error loading description:", error));
   
             courseDetail.dates.forEach(dateObj => {
-                const courseDate = new Date(dateObj.start);
-  
-                if (courseDate < new Date()) {
-                    // Skip dates that have already passed
-                    return;
-                }
-    
+              // Combine date and time into a single ISO string
+              const dateTimeString = `${dateObj.start}T${dateObj.startTime}`;
+              
+              // Create a Date object from the combined date-time string
+              const courseDate = new Date(dateTimeString);
+              
+              console.log("Combined DateTime String:", dateTimeString);
+              console.log("courseDate:", courseDate);
+              
+              const now = new Date();
+              console.log("now:", now);
+          
+              // Compare the current time with the course date-time
+              if (now > courseDate) {
+                  // Skip dates that have already passed
+                  return;
+              }
     
                 if (isNaN(courseDate)) {
                     // If date is invalid, set button text to "Please contact us" and add a click event to redirect to the contact us page
@@ -555,7 +566,7 @@ const courseDetails = {
     
                     dateButton.addEventListener("click", () => {
                         // Redirect to the contact us page
-                        window.location.href = "./contactus"; // Replace with the actual URL of your contact us page
+                        window.location.href = "./contactus"; 
                     });
     
                     datesDiv.appendChild(dateButton);
