@@ -72,7 +72,7 @@ hsi_adult_pediatric_classroom: {
   price: 85.00,
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
   dates: [
-    { "start": "2024-08-19", "end": "", "startTime": "16:00", "endTime": "18:15" }
+    { "start": "2024-08-19", "end": "", "startTime": "15:00", "endTime": "18:15" }
   ],
 },
 
