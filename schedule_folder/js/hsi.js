@@ -1,7 +1,5 @@
 const courseDetails = {
 
-  
-
 
     hsi_course: {
       name: "Health & Safety Institute (HSI) Courses",
@@ -84,11 +82,8 @@ const courseDetails = {
       { "start": "2024-08-19", "end": "", "startTime": "09:00", "endTime": "11:45" }
   
     ],
-  },
-  //cant find exact description
+  },  
   
-  
-  //cant find exact
   hsi_adult_firstaid: {
     name: "HSI Adult First Aid",
     price: 75.00,
@@ -158,13 +153,6 @@ const courseDetails = {
   },
   
   
-  
-  
-  
-  
-  
-  
-  
   hsi_wild: {
     name: "HSI Wilderness First Aid (WFA) ",
     price: 85.00,
@@ -206,9 +194,6 @@ const courseDetails = {
   
     ],
   },
-  
-  
-  
   
   
   hsi_bls2: {
@@ -255,79 +240,6 @@ const courseDetails = {
   },
   
   
-  
-  
-  
-  
-  
-  
-  
-    // aha_course1: {
-    //     name: "American Heart Association (AHA) Courses",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
-    //     dates: [
-    //     ],
-    // },
-  
-    // aha_course2: {
-    //     name: "AHA Basic Life Support (BLS) Provider - BLENDED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/aha_bls_blended_description.html",
-    //     dates: [
-    //         "None"
-    //     ],
-    // },
-  
-  
-    // aha_course3: {
-    //     name: "AHA Heartsaver CPR/AED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-  
-    //     ],
-    // },
-  
-  
-    // aha_course4: {
-    //     name: "AHA Heartsaver First Aid CPR/AED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-  
-  
-    // aha_course5: {
-    //     name: "AHA HeartSaver Pediatric First Aid CPR/AED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-  
-    // aha_course6: {
-    //     name: "AHA Heartsaver for K-12 Schools",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-    // aha_course7: {
-    //     name: "AHA Heartsaver First Aid Only",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-    // aha_course8: {
-    //     name: "AHA Heartsaver Bloodborne Pathogens",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
   };
   
   
@@ -345,11 +257,6 @@ const courseDetails = {
   }
   
   
-  
-  
-  
-  
-  
   fetch('schedule_folder/descriptions/description.html')
     .then(response => response.text())
     .then(descriptionHtml => {
@@ -360,8 +267,7 @@ const courseDetails = {
     .catch(error => console.error("Error loading description:", error));
   
   
-  
-  
+
     fetch('schedule_folder/scams.html')
     .then(response => response.text())
     .then(html => {

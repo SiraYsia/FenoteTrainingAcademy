@@ -8,10 +8,6 @@ const courseDetails = {
     ],
   }, 
 
-
-  
-  
-  
   cpr_blended_pediatric: {
     name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
     price: 96.00,
@@ -96,40 +92,7 @@ const courseDetails = {
     price: 95.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
     dates: [
-      { "start": "2024-01-10", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-01-13", "end": "", "startTime": "10:15", "endTime": "11:45" },
-      { "start": "2024-01-15", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-01-18", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-01-20", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-01-23", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-01-27", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-01-31", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-02-01", "end": "", "startTime": "11:00", "endTime": "12:30" },
-      { "start": "2024-02-03", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-02-06", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-02-08", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-02-10", "end": "", "startTime": "14:00", "endTime": "15:30" },
-      { "start": "2024-02-13", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-02-16", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-02-19", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-02-22", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-02-24", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-02-27", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-02-29", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-03-02", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-03-05", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-03-07", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-03-09", "end": "", "startTime": "14:00", "endTime": "15:30" },
-      { "start": "2024-03-12", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-03-15", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-03-18", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-03-20", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-03-23", "end": "", "startTime": "11:00", "endTime": "12:30" },
-      { "start": "2024-03-26", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-03-28", "end": "", "startTime": "10:00", "endTime": "11:30" },
-      { "start": "2024-03-30", "end": "", "startTime": "11:00", "endTime": "12:30" },
-      { "start": "2024-04-02", "end": "", "startTime": "13:00", "endTime": "14:30" },
-      { "start": "2024-04-06", "end": "", "startTime": "10:00", "endTime": "11:30" }
+      "None"
     ],
   },
   
@@ -139,38 +102,8 @@ const courseDetails = {
     price: 70.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
     dates: [
-        { start: "2024-01-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-01-31", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-01", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-03", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-06", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-08", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-10", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-13", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-16", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-19", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-22", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-24", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-02-27", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-02", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-05", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-07", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-09", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-12", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-15", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-18", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-20", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-23", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-26", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-28", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
-        { start: "2024-03-30", end: "2024-03-30", startTime: "10:00", endTime: "11:15" },
+      "None"
+
     ],
   },
   
@@ -181,7 +114,7 @@ const courseDetails = {
     descriptionFile: "schedule_folder/descriptions/ara/temp.cpr_sessions_first_aid.html",
     dates: [
       { start: "2024-08-19", end: "", startTime: "09:00", endTime: "11:15" }
-        ],
+    ],
     
   },
   
@@ -211,24 +144,13 @@ const courseDetails = {
   
 
   
-  
-  
+
   bls_blended: {
     name: "ARC Basic Life Support-BL R.21",
     price: 80.00,
     descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
     dates: [
-     
-        { "start": "2024-02-12", "end": "", "startTime": "13:00", "endTime": "15:00" },
-        { "start": "2024-02-17", "end": "", "startTime": "14:00", "endTime": "16:00" },
-        { "start": "2024-02-23", "end": "", "startTime": "10:00", "endTime": "12:00" },
-        { "start": "2024-02-26", "end": "", "startTime": "13:00", "endTime": "15:00" },
-        { "start": "2024-03-04", "end": "", "startTime": "13:00", "endTime": "15:00" },
-        { "start": "2024-03-11", "end": "", "startTime": "13:00", "endTime": "15:00" },
-        { "start": "2024-03-16", "end": "", "startTime": "14:00", "endTime": "16:00" },
-        { "start": "2024-03-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
-        { "start": "2024-03-27", "end": "", "startTime": "13:00", "endTime": "15:00" },
-        { "start": "2024-08-27", "end": "", "startTime": "15:30", "endTime": "17:30" }
+      "None"
     ],
   },
 
@@ -238,36 +160,17 @@ const courseDetails = {
     price: 85.00,
     descriptionFile: "schedule_folder/descriptions/ara/4.bls_classroom.html",
     dates: [
-        { start: "2024-01-10", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-01-13", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-01-17", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-01-22", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-01-25", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-01-29", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-02-05", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
-        { start: "2024-02-12", end: "2024-03-30", startTime: "11:00", endTime: "15:00" },
+      "None"
     ],
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   babysitter_classroom: {
     name: " Babysitter Training And Pediatric First Aid/CPR",
     price: 150.00,
     descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
     dates: [
-        { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-        { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-        { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-        { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
-        { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "19:00" },
+      "None"
     ],
   },
   
@@ -277,11 +180,7 @@ const courseDetails = {
     price: 90.00,
     descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_training.html",
     dates: [
-        { start: "2024-01-07", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-        { start: "2024-01-14", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-        { start: "2024-01-21", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-        { start: "2024-01-28", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
-        { start: "2024-02-04", end: "2024-03-30", startTime: "09:00", endTime: "16:30" },
+      "None"
     ],
   },
 
@@ -292,40 +191,21 @@ const courseDetails = {
     price : 95.00,
     descriptionFile: "schedule_folder/descriptions/ara/cpr1_virtual.html",
     dates: [
-        { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:45" },
-        { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:45" },
+      "None"
     ],
   
   }, 
+
+
   cpr2_virtual:{
     name:" Adult First Aid/CPR/AED Blended r.21 - VIRTUAL",
     price : 86.00,
     descriptionFile: "schedule_folder/descriptions/ara/cpr2_virtual.html",
     dates: [
-        { start: "2024-01-09", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-01-12", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-01-16", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-01-19", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-01-23", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-01-26", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-01-30", end: "", startTime: "15:30", endTime: "17:00" },
-        { start: "2024-02-02", end: "", startTime: "15:30", endTime: "17:00" },
+      "None"
     ],
   
   },
-  
-  
-  
-  
-  
-  
-  
   
   cpr_classroom_pediatric: {
     name: " Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
@@ -358,87 +238,7 @@ const courseDetails = {
     ],
   },
   
-  
-  
-  
-  
-    
-  
-  
-    
-  
-  
-  
-  
-  
-  
-  
-    // aha_course1: {
-    //     name: "American Heart Association (AHA) Courses",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/amr_course.html",
-    //     dates: [
-    //     ],
-    // },
-  
-    // aha_course2: {
-    //     name: "AHA Basic Life Support (BLS) Provider - BLENDED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/aha_bls_blended_description.html",
-    //     dates: [
-    //         "None"
-    //     ],
-    // },
-  
-  
-    // aha_course3: {
-    //     name: "AHA Heartsaver CPR/AED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-  
-    //     ],
-    // },
-  
-  
-    // aha_course4: {
-    //     name: "AHA Heartsaver First Aid CPR/AED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-  
-  
-    // aha_course5: {
-    //     name: "AHA HeartSaver Pediatric First Aid CPR/AED",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-  
-    // aha_course6: {
-    //     name: "AHA Heartsaver for K-12 Schools",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-    // aha_course7: {
-    //     name: "AHA Heartsaver First Aid Only",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
-    // aha_course8: {
-    //     name: "AHA Heartsaver Bloodborne Pathogens",
-    //     price: 0.00,
-    //     descriptionFile: "schedule_folder/descriptions/ara/aha_coming_soon.html",
-    //     dates: [
-    //     ],
-    // },
+
   };
   
   
@@ -454,12 +254,7 @@ const courseDetails = {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('en-US', options);
   }
-  
-  
-  
-  
-  
-  
+
   
   fetch('schedule_folder/descriptions/description.html')
     .then(response => response.text())
@@ -469,9 +264,6 @@ const courseDetails = {
   
     })
     .catch(error => console.error("Error loading description:", error));
-  
-  
-  
   
     fetch('schedule_folder/scams.html')
     .then(response => response.text())
@@ -688,27 +480,6 @@ const courseDetails = {
   });
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   //OTHER JS COPY just for the heading
   
   jQuery(document).ready(function( $ ) {
@@ -918,10 +689,6 @@ const courseDetails = {
   });
   
   
-  
-  
-  
-  
     // JavaScript to handle mobile navigation toggle
   // JavaScript to handle mobile navigation toggle and submenu visibility
   function toggleNav() {
@@ -968,4 +735,3 @@ const courseDetails = {
   
     // Call the showBanner function on page load
     window.onload = showBanner2;
-  
