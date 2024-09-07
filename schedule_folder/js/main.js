@@ -272,7 +272,7 @@ cpr_blended_pediatric: {
   price: 90.00,
   descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
   dates: [
-    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:15" }
+    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" }
   ],
   
 },
