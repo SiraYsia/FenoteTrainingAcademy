@@ -15,51 +15,8 @@ const courseDetails = {
     price: 85.00,
     descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
     dates: [
-      { "start": "2024-08-17", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-18", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-19", "end": "", "startTime": "17:30", "endTime": "19:45" },
-      { "start": "2024-08-20", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-21", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-22", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-23", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-24", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-25", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-26", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-27", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-28", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-29", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-30", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-08-31", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-01", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-02", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-03", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-04", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-05", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-06", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-07", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-08", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-09", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-10", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-11", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-12", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-13", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-14", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-15", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-16", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-17", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-18", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-19", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-20", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-21", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-23", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-24", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-25", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-26", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-27", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-28", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-29", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-30", "end": "", "startTime": "15:00", "endTime": "17:15" }
+      { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "12:15" },
+      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:15" }
     ],
   },
   
@@ -97,15 +54,13 @@ const courseDetails = {
   
   hsi_adult_adult_cprw: {
     name: "HSI Adult CPR/AED",
-    price: 75.00,
+    price: 65.00,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_ault_cpr.html",
     dates: [
-        "None"
-  
+      { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "11:00" },
+      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" }
     ],
   },
-  
-  
   
   
   hsi_pediatric_cpr: {
