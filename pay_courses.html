@@ -254,6 +254,10 @@ document.head.appendChild(style);
         let redirectLink;
 
         switch (course) {
+            case 'HSI Adult CPR/AED':
+                redirectLink = courseSquareLinks['hsi_adult_adult_cprw'];
+                break;
+
             case 'Adult and Pediatric First Aid, CPR/AED or All ages':
                 redirectLink = courseSquareLinks['hsi_adult_pediatric'];
                 break;
@@ -316,7 +320,8 @@ document.head.appendChild(style);
         'virtual_firstaid': 'https://square.link/u/nzf6MeHE',
         'hsi_instructor_course' : 'https://square.link/u/tLf1uMHv',
         'arc_instructor_course' : 'https://square.link/u/KhV80T4W',
-        'classroom_adult_first_aid' : 'https://square.link/u/7xDYPl9g'
+        'classroom_adult_first_aid' : 'https://square.link/u/7xDYPl9g',
+        'hsi_adult_adult_cprw' :  'https://square.link/u/gotN99b4'
 
     };
 });
