@@ -57,92 +57,16 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-  
-      <!-- New Container for Logo and Company Name -->
-        <div id="logo">
-          <img src="img/clients/logo_ex.png" alt="Fenote Training Academy Logo">  
-          <h1>Fenote Training Academy</h1>
+  <div id="header"></div>
 
-        </div>
+  <script>
+      fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('header').innerHTML = data;
+      });
+  </script>
 
-      <nav id="nav-menu-container">
-
-        <ul class="nav-menu">
-          <li><a href="./">Home</a></li>
-
-          <li class="menu-has-children">
-            <a href="training">Training and Certification </a>
-            <ul>
-              <li><a href="./cpr">CPR</a></li>
-              <li><a href="./aed">AED</a></li>
-              <li><a href="./firstaid">First Aid</a></li>
-              <li><a href="./bls">BLS</a></li>
-              <li><a href="./phlebotomy">Phlebotomy</a></li>
-
-
-            </ul>
-          </li>
-          <li class="menu-has-children"><a href="./phlebotomy"> Phlebotomy Training </a>
-            <ul>
-              <li><a href="./phelebotomy_mobile">Mobile Phlebotomy Services</a></li>
-
-            </ul>
-          </li>
-          <li class="menu-has-children"><a href="./schedule"> Book Our Courses </a>
-            <ul>
-              <li><a href="./arc_courses">ARC Courses</a></li>
-              <li><a href="./hsi_courses">HSI Courses</a></li>
-              <li><a href="./arc_instructor_course">ARC Instructor Course</a></li>
-              <li><a href="./hsi_instructor_course.html">HSI Instructor Course</a></li>
-
-            </ul>
-          </li>
-          <li class="menu-has-children"><a href="./who_we_serve"> Who we serve </a>
-            <ul>
-              <li><a href="./corporations">Corporations</a></li>
-              <li><a href="./healthcare_workers">Health Care Workers</a></li>
-              <li><a href="./educators">Educators</a></li>
-              <li><a href="./individuals">Indviduals</a></li>
-              <li><a href="./scouts">Scouts</a></li>
-              <li><a href="./serving_child_care_providers">Child Care Providers</a></li>
-
-
-            </ul>
-          </li>
-
-
-          <li class="menu-has-children">
-            <a href="./consultancy"> Consultancy </a>
-            <ul>
-              <li><a href="./career">Health Care Career Developement</a></li>
-              <li><a href="./public_health"> Public Health/Epidomolgy</a></li>
-            </ul>
-          </li>
-
-<!-- 
-          <li class="menu-has-children">
-            <a> Marketing/Advisory </a>
-            <ul>
-              <li><a href="./child_care_provider"> Child Care Providers </a></li>
-              <li><a href="./child_care"> Parents seeking child care </a></li>
-            </ul>
-          </li> -->
-
-
-          <li class="menu-has-children"><a href="./aboutus"> About us </a>
-            <ul>
-              <li><a href="./testimonials">Testimonials</a></li>
-
-            </ul>
-          </li>          <li><a href="./contactus">Contact Us</a></li>
-
-        </ul>
-      </nav>
-  
-    </div>
-  </header>
 
   <!--==========================
     Intro Section
