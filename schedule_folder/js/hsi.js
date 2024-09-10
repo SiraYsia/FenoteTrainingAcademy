@@ -401,7 +401,7 @@ const courseDetails = {
         if (index === 0) {
           courseButton.style.color = "blue";
       }
-        if (index === 1) {
+        if (index === 1 || index ===5) {
             courseButton.style.color = "purple";
         }
         if (index === 18) {
