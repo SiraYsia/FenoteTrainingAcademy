@@ -43,10 +43,10 @@ const courseDetails = {
   
   hsi_adult_firstaid: {
     name: "HSI Adult First Aid",
-    price: 75.00,
+    price: 65.00,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_adult_firstaid.html",
     dates: [
-        "None"
+      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" }
   
     ],
   },
