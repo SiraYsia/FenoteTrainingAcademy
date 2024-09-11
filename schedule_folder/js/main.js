@@ -50,7 +50,7 @@ hsi_adult_firstaid: {
   price: 65.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_adult_firstaid.html",
   dates: [
-    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" }
+    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" }
 
   ],
 },
