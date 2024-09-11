@@ -316,6 +316,9 @@ document.head.appendChild(style);
             case 'HSI Adult First aid, CPR/AED':
                 redirectLink = courseSquareLinks['hsi_adult_adult_cpr']
                 break;
+            case 'HSI Adult First Aid':
+                redirectLink = courseSquareLinks['hsi_adult_firstaid'];
+                break;
             default:
                 //course not found
                 alert(`Course not found. Please try again. The name of the course is: ${course}`);
@@ -344,7 +347,9 @@ document.head.appendChild(style);
         'cpr_session_first_aid_classroom' : 'https://square.link/u/ePWSYPUL',
         'hsi_adult_adult_cpr' : 'https://square.link/u/iQ8SI9eh',
         'hsi_adult_pediatric_classroom' :'https://square.link/u/Mb8HeOVn', 
-        'hsi_adult_adult_cprw' :  'https://square.link/u/gotN99b4'
+        'hsi_adult_adult_cprw' :  'https://square.link/u/gotN99b4',
+        'hsi_adult_firstaid' : 'https://square.link/u/mN5ftsud',
+
     
     };
 });
