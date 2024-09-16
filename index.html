@@ -1,479 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fenote Training Academy CPR, First Aid, AED, BLS, Training</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="keywords" content="
-  Fenote Training Academy, Fenote Training, Fenote Academy, CPR training, CPR certification, CPR classes, CPR course, CPR instructor, CPR renewal, CPR recertification, CPR training near me, CPR certification near me, CPR classes near me, CPR training Maryland, CPR certification Maryland, CPR classes Maryland, CPR training Virginia, CPR certification Virginia, CPR classes Virginia, CPR training DC, CPR certification DC, CPR classes DC,
-  First Aid training, First Aid certification, First Aid classes, First Aid course, First Aid instructor, First Aid renewal, First Aid recertification, First Aid training near me, First Aid certification near me, First Aid classes near me, First Aid training Maryland, First Aid certification Maryland, First Aid classes Maryland, First Aid training Virginia, First Aid certification Virginia, First Aid classes Virginia, First Aid training DC, First Aid certification DC, First Aid classes DC,
-  AED training, AED certification, AED classes, AED course, AED instructor, AED renewal, AED recertification, AED training near me, AED certification near me, AED classes near me, AED training Maryland, AED certification Maryland, AED classes Maryland, AED training Virginia, AED certification Virginia, AED classes Virginia, AED training DC, AED certification DC, AED classes DC,
-  BLS training, BLS certification, BLS classes, BLS course, BLS instructor, BLS renewal, BLS recertification, BLS training near me, BLS certification near me, BLS classes near me, BLS training Maryland, BLS certification Maryland, BLS classes Maryland, BLS training Virginia, BLS certification Virginia, BLS classes Virginia, BLS training DC, BLS certification DC, BLS classes DC,
-  Healthcare provider CPR, healthcare provider training, healthcare CPR certification, healthcare First Aid training, healthcare BLS training, healthcare CPR classes, healthcare CPR course, healthcare CPR renewal, healthcare CPR recertification,
-  Emergency response training, emergency preparedness training, emergency CPR training, emergency First Aid training, emergency AED training, emergency BLS training,
-  American Red Cross CPR, American Heart Association CPR, American Health & Safety Institute CPR, Red Cross training, Heart Association training, Health & Safety Institute training,
-  Corporate CPR training, workplace First Aid training, professional CPR certification, industrial CPR training, occupational CPR classes, business AED training,
-  Teacher CPR training, educator First Aid training, school AED training, childcare provider CPR, babysitter CPR certification, pediatric CPR training, infant CPR classes,
-  Adult CPR training, child CPR training, infant CPR training, pediatric First Aid training, adult AED training, child AED training, infant AED training,
-  Hands-only CPR, compression-only CPR, traditional CPR, CPR techniques, CPR methods, CPR guidelines, CPR skills,
-  Silver Spring MD, Bethesda MD, Baltimore MD, Frederick MD, Rockville MD, Gaithersburg MD, Bowie MD, Hagerstown MD, Annapolis MD, College Park MD, Laurel MD, Greenbelt MD, Takoma Park MD, Maryland cities,
-  Montgomery County MD, Prince George's County MD, Baltimore County MD, Anne Arundel County MD, Howard County MD, Frederick County MD, Harford County MD, Carroll County MD, Washington County MD, Charles County MD, St. Mary's County MD, Allegany County MD, Calvert County MD, Maryland counties,
-  Washington DC, Arlington VA, Alexandria VA, Fairfax VA, Falls Church VA, Reston VA, Vienna VA, McLean VA, Tysons VA, Virginia cities,
-  CPR instructor training, First Aid instructor training, AED instructor training, BLS instructor training, instructor certification, instructor renewal, instructor recertification,
-  Advanced life support training, ALS training, pediatric advanced life support, PALS training, advanced First Aid, wilderness First Aid, tactical First Aid, tactical medical training,
-  Firefighter CPR, EMS CPR, paramedic CPR, police CPR, law enforcement CPR, tactical CPR,
-  Emergency medical responder training, EMR training, ACLS training, advanced cardiac life support, cardiac arrest response, stroke response, trauma response,
-  Stop the Bleed training, bleeding control training, bleeding management training, bleeding control certification,
-  Local CPR classes, local First Aid classes, local AED classes, local BLS classes, nearby CPR training, nearby First Aid training, nearby AED training, nearby BLS training,
-  On-site CPR training, on-site First Aid training, on-site AED training, on-site BLS training, workplace CPR training, corporate First Aid training, office AED training,
-  Community CPR training, public CPR training, group CPR classes, group First Aid classes, private CPR classes, private First Aid classes, customized CPR training, customized First Aid training,
-  Certified CPR training, certified First Aid training, accredited CPR courses, accredited First Aid courses, reputable CPR training, reputable First Aid training,
-  ">
-  <meta name="description" content="Fenote Training Academy offers CPR, First Aid, AED, BLS training services in Maryland, Virginia, and DC. Learn life-saving skills with certified instructors.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenote Training Academy - Medical Courses & Life-Saving Skills</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #4c7297;
+    }
+    
+        .hero {
+            background-image: url('/img/intro-carousel/cpr.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(24, 33, 162, 0.5); /* Light purple background */
+            filter: contrast(70%); /* Adjust the percentage as needed */        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: #f8f9fa;
+        }
+        .certification-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .certification-logos img {
+            max-height: 60px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .certification-logos img:hover {
+            transform: scale(1.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,123,255,0.4);
+        }
+        #services {
+            background-color: #ffffff;
+            padding: 5rem 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: #333;
+        }
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+        .service-card .card-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .service-card .card-text {
+            color: #666;
+        }
   
-    <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="img/clients/logo_ex.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
-
-</head>
+        #why-choose-us h2 {
+      color: white;
+    }
 
 
-<body>
-  <!--==========================
-    Header
-  ============================-->
-  <div id="header"></div>
-
-  <script>
-      fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('header').innerHTML = data;
-      });
-  </script>
-
-
-  <!--==========================
-    Intro Section
-  ============================-->
-
-
-
-
-
-  <section id="intro">
-
-    <div class="intro-content">
-      <h2>CPR, AED, FIRST AID, BLS, Phlebotomy</h2>
-      <h5><strong> We teach Medical courses and life saving skills for all those who need it! </strong> </h5>
-      <div>
-        <div class="certified-logos">
-          <pre>         </pre> <img src="img/intro-carousel/phil.png" alt="Safety Training"  style="max-width: 50%; max-height: 110px;"> <pre>         </pre>
-
-          <pre>     </pre><img src="img/clients/red_cross.png" alt="American Red Cross Certified" style="max-width: 50%; max-height: 110px;"> <pre>         </pre>
-
-          <img src="img/clients/certified2.png" alt="American Heart Association Certified"> <pre>         </pre>
-          <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 70px; margin-left: 11px;" alt="HSI"> <pre>         </pre><br>
-
-
-
-      </div>
-    </div>
-
-    <div id="intro-carousel" class="owl-carousel" >
-    </div>
-
-  </section>
-
-<br> 
-<br>
-<section id="prover-training">
-  <div class="container">
-    <div class="section-header">
-      <br>
-      <h2>Our Major Trainings and Services:</h2>
-      <p class="intro">
-        <h4>1. Medical Laboratory Assistant Training</h4>
-        <h4>2. Phlebotomy Training</h4>
-        <h4>3. Medical Coding and Billing</h4>
-        <h4>4. Pharmacy Technician</h4>
-        <h4>5. CPR, First Aid, AED, and BLS Training</h4>
-        <h4>6. First Aid, CPR, AED Instructor Training</h4>
-        <h4>7. BLS Instructor Training</h4>
-        <h4>8. Mobile Phlebotomy Services</h4>
-        <h4>9. Public Health Consultancy Services</h4>
-      </p>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<br> <br>
-
-
-<!--==========================
-  Services Section
-============================-->
-<section id="services">
-  <div class="container">
-    <div class="section-header">
-      <p> </p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight">
-          <div class="icon"><i class="fa fa-user-md"></i></div>
-          <h4 class="title"> Medical Laboratory Assistant Training</a></h4>
-          <p class="description">Our Medical Laboratory Assistant Training combines online learning with in-person practice. You'll gain essential lab skills like specimen handling and phlebotomy through interactive online modules and hands-on sessions. This flexible course prepares you for real-world lab work with practical experience.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight">
-          <div class="icon"><i class="fa fa-user-md"></i></div>
-          <h4 class="title">Phlebotomy Training</a></h4>
-          <p class="description">Acquire the skills needed for Phlebotomy. Prepare for the National Phlebotomy Exam and future careers with Fenote Training Academy's accelerated phlebotomy course, combining flexible online learning and hands-on in-person training by expert instructors.</p>
-        </div>
-      </div>
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight">
-          <div class="icon"><i class="fa fa-heartbeat"></i></div>
-          <h4 class="title">CPR</a></h4>
-          <p class="description">Master the life-saving skill of Cardiopulmonary Resuscitation (CPR). Our courses teach the proper techniques to perform CPR and assist individuals experiencing cardiac emergencies. Training for Adults, children and infants.</p>
-        </div>
-      </div>
+    .service-item {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft">
-          <div class="icon"><i class="fa fa-medkit"></i></div>
-          <h4 class="title">First Aid</a></h4>
-          <p class="description">Learn essential first aid techniques. Be prepared to provide immediate assistance in emergency situations. Our courses cover a range of scenarios to ensure you're ready to act when needed. Training for Adults, children and infants.</p>
-        </div>
-      </div>
+    .service-item:hover {
+        transform: translateY(-5px);
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-          <div class="icon"><i class="fa fa-bolt"></i></div>
-          <h4 class="title">AED</a></h4>
-          <p class="description">Understand the use of Automated External Defibrillators (AEDs). Gain the skills to respond effectively in sudden cardiac arrest situations. Our training ensures you can confidently use AEDs to save lives. Training for Adults, children and infants.</p>
-        </div>
-      </div>
+    .service-item i {
+        font-size: 3em;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight">
-          <div class="icon"><i class="fa fa-user-md"></i></div>
-          <h4 class="title"><a href="./bls">Basic Life Support (BLS)</a></h4>
-          <p class="description">Acquire the skills needed for Basic Life Support (BLS). Our training program covers essential techniques to support individuals experiencing life-threatening emergencies, including CPR and more. Training for Adults, children and infants.</p>
-        </div>
-      </div>
+    /* Why Choose Us Section Styles */
+    #why-choose-us {
+        background-color: var(--secondary-color);
+        color: rgb(106, 255, 255);
+        padding: 60px 0;
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight">
-          <div class="icon"><i class="fa fa-heartbeat"></i></div>
-          <h4 class="title">First Aid, CPR, AED Instructor Training</a></h4>
-          <p class="description">Our First Aid, CPR, and AED Instructor Class is designed to equip you with the skills to teach these essential courses. This training is provided by Fenote Training Academy through the American Red Cross and will prepare you to deliver high-quality instruction in life-saving techniques.</p>
-        </div>
-      </div>
+    .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-          <div class="icon"><i class="fa fa-bolt"></i></div>
-          <h4 class="title">BLS Instructor Training</a></h4>
-          <p class="description">Certification program for individuals to become instructors in Basic Life Support (BLS) training.</p>
-        </div>
-      </div>
+    .reason-item {
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft">
-          <div class="icon"><i class="fa fa-user-md"></i></div>
-          <h4 class="title">Mobile Phlebotomy Services</a></h4>
-          <p class="description">Mobile phlebotomy services provide blood draws and health assessments at locations such as homes, offices, event spaces, skilled nursing facilities, and research organizations. These services are performed by trained mobile phlebotomists, bringing laboratory testing directly to you.</p>
-        </div>
-      </div>
+    .reason-item i {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: var(--accent-color);
+    }
     
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft">
-          <div class="icon"><i class="fa fa-user-md"></i></div>
-          <h4 class="title">Public Health Consultancy Services</a></h4>
-          <p class="description">Expert advice and strategic planning on public health initiatives, program development, and health policy to improve community health outcomes.</p>
-        </div>
-      </div>
-    </div> 
-
-  </div>
-</section>
-<br> <br><br> <br>
-
-
-
-
-<section id="why-choose-us" class="wow fadeIn">
-  <div class="container">
-    <div class="section-header">
-      <h2>Why Choose Fenote Training Academy?</h2>
-      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.4em; color: #1a1a1a; text-align: center; margin-top: 20px; margin-bottom: 20px; font-weight: 600; line-height: 1.5;">We have the best training organization in CPR, AED, First Aid, BLS, Phlebotomy in Silver Spring, Maryland.</p>
-    </div>
-
-    <div class="row">
-      <!-- Add your unique selling points here -->
-      <div class="col-lg-4">
-        <div class="icon-box">
-          <i class="ion-ios-checkmark-outline"></i>
-          <h4 class="title">Certified Instructors</h4>
-          <p class="description">Learn from certified American Health & Safety Institute, American Red Cross and American Heart Association instructors with a wealth of expertise.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-          <i class="ion-ios-people-outline"></i>
-          <h4 class="title">Tailored Training</h4>
-          <p class="description">Tailored training solutions for corporations, healthcare workers, educators, and more.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-          <i class="ion-ios-stopwatch-outline"></i>
-          <h4 class="title">Interactive Courses</h4>
-          <p class="description">Engaging courses with real-time feedback, hands-on training, and practical scenarios.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<br>
-<section id="available_courses">
-  <div class="classes-info">
-  <h3><b> Available Classes </b></h3>
-  <p><strong>For Individuals:</strong> First Aid, CPR, AED, BLS/CPR for Healthcare, ALS/PALS, Babysitting & Childcare, Instructor Training, and Phlebotomy Training.</p>
-  <p><strong>For Organizations:</strong> Training for Organizations, Workplace Safety (First Aid/CPR/AED), Healthcare Professionals (BLS/ALS/PALS), First Responders (Fire, EMS), AEDs.</p>
-  <p>For more information and to book your courses, please visit our <a href="./schedule">schedule</a> page.</p>
-</div>
-</section>
-
-<section id="locations">
-  <div class="container">
-    <div class="section-header">
-      <h2>Our Locations</h2>
-      <p>Fenote Training Academy provides services near these areas.</p>
-
-    </div>
-    <div class="location-columns">
-      <div class="location-column">
-        <h3>Maryland Cities</h3>
-        <p> Silver Spring, Bethesda, Chevy Chase, Martin's Additions, Kensington, Langley Park, Takoma Park,
-          Adelphi, Hillandale, Beltsville, Bladensburg, Cheverly, College Park, Greenbelt, Hyattsville,
-          Lanham, Landover, Landover Hills, New Carrollton, Riverdale, Berwyn Heights, Laurel,
-          Upper Marlboro, Largo, Maryland City, Odenton, Bowie, Crofton, Gambrills, Annapolis
-          Junction, Jessup, Savage, Fort Meade, Columbia, Clarksville, Fulton, Scaggsville, Highland,
-          Burtonsville, Spencerville, North Laurel, West Laruel, Ashton, Sandy Spring, Olney,
-          Brookeville, Laytonsville  </p>
-      </div>
-      <div class="location-column">
-        <h3>Maryland Counties</h3>
-        <p>Allegany County, Anne Arundel County, Baltimore County, Calvert County, Caroline County,
-          Carroll County, Cecil County, Charles County, Dorchester County, Frederick County, Garrett
-          County, Harford County, Howard County, Kent County, Montgomery County, Prince
-          George's County, Queen Anne's County, St. Mary's County, Somerset County, Talbot
-          County, Washington County, Wicomico County, Worcester County  </p>
-      </div>
-
-      <div class="location-column">
-        <h3> MD, DC and Virginia</h3>
-        <p>Maryland, Washington DC, Arlington, VA, Alexandria, VA, Fairfax, VA, Falls Church, VA, Reston, VA, Vienna, VA, McLean, VA, Tysons, VA </p>
-
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
  
+
+       
+  #available_courses {
+      padding: 60px 0;
+      background-color: var(--light-color);
+  }
   
-  <footer id="footer">
-    <!-- Load the footer content using jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+  }
+  
+  .course-item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+  }
+  
+  .course-item i {
+      font-size: 3em;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+  }
+  
+  .cta {
+      text-align: ce
+  }
+
+
+      
+  #why-choose-us h2 {
+      color: white;
+    }
+
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    
+    .service-item {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .service-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .service-item i {
+        font-size: 3em;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+    
+    /* Why Choose Us Section Styles */
+    #why-choose-us {
+        background-color: var(--secondary-color);
+        color: rgb(106, 255, 255);
+        padding: 60px 0;
+    }
+    
+    .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    
+    .reason-item {
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+    
+    .reason-item i {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: var(--accent-color);
+    }
+    
+    /* Locations Section Styles */
+    #locations {
+        padding: 60px 0;
+        background-color: var(--light-color);
+    }
+
+
+  
+    .location-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .location-column {
+        flex-basis: calc(33.333% - 20px);
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    @media (max-width: 768px) {
+        .location-column {
+            flex-basis: 100%;
+        }
+    }
+
+    
+  #available_courses {
+      padding: 60px 0;
+      background-color: var(--light-color);
+  }
+  
+  .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+  }
+  
+  .course-item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+  }
+  
+  .course-item i {
+      font-size: 3em;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+  }
+  
+  .cta {
+      text-align: ce
+  }
+
+
+  .btn {
+    display:flexbox;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff; /* Blue color for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+
+
+    </style>
+
+    
+</head>
+<body>
+
+    <div id="header2"></div>
+
     <script>
-      $(document).ready(function () {
-        // Load footer content
-        $('#footer').load('footer.html');
-      });
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header2').innerHTML = data;
+        });
     </script>
-  </footer>
+  
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="mb-4">Fenote Training Academy</h1>
+            <h2 class="mb-4"> Medical courses and life saving skills for all  </h2>
+            <div class="certification-logos mb-4">
+                <img src="/img/intro-carousel/hsi.png" alt="HSI Certification" class="img-fluid">
+                <img src="/img/clients/certified2.png" alt="Certification 2" class="img-fluid">
+                <img src="/img/clients/red_cross.png" alt="Red Cross Certification" class="img-fluid">
+                <img src="/img/intro-carousel/phil.png" alt="Phil Certification" class="img-fluid">
+            </div>
+            <a href="#services" class="btn btn-primary btn-lg">Discover Our Programs</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Our Expert Training Programs</h2>
+    
+                <ul class="nav nav-tabs" id="serviceTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#tab-content1" role="tab" aria-controls="tab-content1" aria-selected="true">Medical Training</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#tab-content2" role="tab" aria-controls="tab-content2" aria-selected="false">Emergency Training</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#tab-content3" role="tab" aria-controls="tab-content3" aria-selected="false">Instructor Training</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab4" data-bs-toggle="tab" href="#tab-content4" role="tab" aria-controls="tab-content4" aria-selected="false">Other Services</a>
+                    </li>
+                </ul>
+    
+                <div class="tab-content mt-4" id="serviceTabsContent">
+                    <!-- Medical Training Tab -->
+                    <div class="tab-pane fade show active" id="tab-content1" role="tabpanel" aria-labelledby="tab1">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-flask service-icon"></i>
+                                        <h3 class="card-title">Medical Laboratory Assistant Training</h3>
+                                        <p class="card-text">This course combines online learning with in-person practice to teach essential lab skills, including specimen handling and phlebotomy. Gain practical experience for real-world lab work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-syringe service-icon"></i>
+                                        <h3 class="card-title">Phlebotomy Training</h3>
+                                        <p class="card-text">Prepare for the National Phlebotomy Exam and a future career with our flexible, hands-on course led by expert instructors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Emergency Training Tab -->
+                    <div class="tab-pane fade" id="tab-content2" role="tabpanel" aria-labelledby="tab2">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-heartbeat service-icon"></i>
+                                        <h3 class="card-title">CPR</h3>
+                                        <p class="card-text">Learn life-saving CPR techniques for adults, children, and infants, preparing you to assist in cardiac emergencies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-briefcase-medical service-icon"></i>
+                                        <h3 class="card-title">First Aid</h3>
+                                        <p class="card-text">Master first aid skills to provide immediate assistance in emergencies. Training covers various scenarios for all ages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-heart service-icon"></i>
+                                        <h3 class="card-title">AED</h3>
+                                        <p class="card-text">Gain confidence using Automated External Defibrillators (AEDs) to respond to sudden cardiac arrests.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-lungs service-icon"></i>
+                                        <h3 class="card-title">Basic Life Support (BLS)</h3>
+                                        <p class="card-text">Learn essential techniques, including CPR, to support individuals in life-threatening emergencies. Training for all ages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Instructor Training Tab -->
+                    <div class="tab-pane fade" id="tab-content3" role="tabpanel" aria-labelledby="tab3">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-chalkboard-teacher service-icon"></i>
+                                        <h3 class="card-title">First Aid, CPR, AED Instructor Training</h3>
+                                        <p class="card-text">Get certified to teach First Aid, CPR, and AED courses through Fenote Training Academy's American Red Cross program.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-user-md service-icon"></i>
+                                        <h3 class="card-title">BLS Instructor Training</h3>
+                                        <p class="card-text">Become a certified instructor in Basic Life Support (BLS).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Other Services Tab -->
+                    <div class="tab-pane fade" id="tab-content4" role="tabpanel" aria-labelledby="tab4">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-ambulance service-icon"></i>
+                                        <h3 class="card-title">Mobile Phlebotomy Services</h3>
+                                        <p class="card-text">We provide mobile phlebotomy and health assessments at homes, offices, and other locations for convenient, on-site testing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 service-card">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fas fa-hospital-user service-icon"></i>
+                                        <h3 class="card-title">Public Health Consultancy Services</h3>
+                                        <p class="card-text">Receive expert guidance on public health strategies, program development, and policy planning to improve community health.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
 
 
 
+
+
+    <section id="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Fenote Training Academy?</h2>
+                <p>We have the best training organization in CPR, AED, First Aid, BLS, Phlebotomy in Silver Spring, Maryland.</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-item">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certified Instructors</h4>
+                    <p>Learn from certified instructors with a wealth of expertise.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Tailored Training</h4>
+                    <p>Customized solutions for various industries and professions.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-hand-holding-medical"></i>
+                    <h4>Interactive Courses</h4>
+                    <p>Engage in hands-on training with real-time feedback.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <section id="available_courses">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Available Courses</h2>
+            <p>Explore our diverse range of training courses tailored for both individuals and organizations.</p>
+          </div>
+      
+          <div class="courses-grid">
+            <div class="course-item">
+              <i class="fas fa-user-md"></i>
+              <h4>For Individuals</h4>
+              <p>First Aid, CPR, AED, BLS/CPR for Healthcare, ALS/PALS, Babysitting & Childcare, Instructor Training, and Phlebotomy Training.</p>
+            </div>
+            <div class="course-item">
+              <i class="fas fa-building"></i>
+              <h4>For Organizations</h4>
+              <p> Workplace Safety (First Aid/CPR/AED), Healthcare Professionals (BLS/ALS/PALS), First Responders (Fire, EMS), and AEDs.</p>
+            </div>
+          </div>
+
+          <div class="cta">
+            <a href="./schedule" class="btn">Book Your Training</a>
+          </div>
+          
+        </div>
+      </section>
+      
+      
+      <section id="locations">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Locations</h2>
+            <p>Fenote Training Academy provides services near these areas.</p>
+      
+          </div>
+          <div class="location-columns">
+            <div class="location-column">
+              <h3>Maryland Cities</h3>
+              <p> Silver Spring, Bethesda, Chevy Chase, Martin's Additions, Kensington, Langley Park, Takoma Park,
+                Adelphi, Hillandale, Beltsville, Bladensburg, Cheverly, College Park, Greenbelt, Hyattsville,
+                Lanham, Landover, Landover Hills, New Carrollton, Riverdale, Berwyn Heights, Laurel,
+                Upper Marlboro, Largo, Maryland City, Odenton, Bowie, Crofton, Gambrills, Annapolis
+                Junction, Jessup, Savage, Fort Meade, Columbia, Clarksville, Fulton, Scaggsville, Highland,
+                Burtonsville, Spencerville, North Laurel, West Laruel, Ashton, Sandy Spring, Olney,
+                Brookeville, Laytonsville  </p>
+            </div>
+            <div class="location-column">
+              <h3>Maryland Counties</h3>
+              <p>Allegany County, Anne Arundel County, Baltimore County, Calvert County, Caroline County,
+                Carroll County, Cecil County, Charles County, Dorchester County, Frederick County, Garrett
+                County, Harford County, Howard County, Kent County, Montgomery County, Prince
+                George's County, Queen Anne's County, St. Mary's County, Somerset County, Talbot
+                County, Washington County, Wicomico County, Worcester County  </p>
+            </div>
+      
+            <div class="location-column">
+              <h3> MD, DC and Virginia</h3>
+              <p>Maryland, Washington DC, Arlington, VA, Alexandria, VA, Fairfax, VA, Falls Church, VA, Reston, VA, Vienna, VA, McLean, VA, Tysons, VA </p>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
   
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-</body>
-</html>
-
-<style>
 
 
-.section-header p.intro {
-  font-size: 1.2em;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.course-details {
-  margin-top: 30px;
-}
-
-.course-details h3 {
-  font-size: 1.8em;
-  color: #0056b3;
-  margin-bottom: 10px;
-}
-
-.course-details p {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.course-details a {
-  font-weight: bold;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.course-details a:hover {
-  text-decoration: underline;
-}
-
-.classes-info {
-  margin-top: 30px;
-}
-
-.classes-info h2 {
-  font-size: 1.9em;
-  color: rgb(179, 0, 45);
-  font-weight: 4002;
-  margin-bottom: 10px;
-}
-
-.classes-info p {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.classes-info strong {
-  font-weight: bold;
-}
-
-.classes-info a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.classes-info a:hover {
-  text-decoration: underline;
-}
-
-#available_courses {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-}
-
-.classes-info {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#available_courses h3 {
-  font-size: 1.9em;
-  color: #003366;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.classes-info p {
-  font-size: 1.2em;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.classes-info strong {
-  color: #0056b3;
-  font-weight: bold;
-}
-
-.classes-info a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.classes-info a:hover {
-  text-decoration: underline;
-}
-
-
-</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <footer id="footer">
+        <!-- Load the footer content using jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            // Load footer content
+            $('#footer').load('footer.html');
+          });
+        </script>
+      </footer>
+    
+    
+    
+      
+    
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+    
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+    
+    
+    
+      
+    </body>
+    </html>
+    
