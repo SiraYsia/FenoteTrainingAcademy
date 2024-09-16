@@ -131,9 +131,7 @@
     
     <h1 style="text-align: center; color: rgb(107, 107, 255); font-size: 24px;">Course Selection</h1> 
     <div class="container">
-        <div class="section" id="description-section">
-            <!-- Content will be loaded here by JavaScript -->
-        </div>
+
         <div class="section" id="payment-breakdown-section">
             <h2>Payment Breakdown</h2>
             <!-- Payment breakdown content -->
@@ -152,11 +150,11 @@
                 </div>
                 <div class="total">
                     <span class="bold">Total Price:</span>
-                    <span class="price">$838.00</span>
+                    <span class="price">$938.00</span>
                 </div>
                 <div>
                     <span class="bold">Total price without service fee:</span>
-                    <span class="price">$818.00</span>
+                    <span class="price">$918.00</span>
                 </div>
             </div>
         </div>
@@ -183,13 +181,6 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('schedule_folder/descriptions/phelebotomy.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('description-section').innerHTML += data;
-                });
-        });
 
         function loadCancellationInfo() {
             const cancellationInfoDiv = document.getElementById("cancellation-info");
