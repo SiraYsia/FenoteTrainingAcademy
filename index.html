@@ -9,348 +9,6 @@
 
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        
-    :root {
-        --primary-color: #3498db;
-        --secondary-color: #2c3e50;
-        --accent-color: #e74c3c;
-        --light-color: #ecf0f1;
-        --dark-color: #4c7297;
-    }
-    
-        .hero {
-            background-image: url('/img/intro-carousel/cpr.jpeg');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(24, 33, 162, 0.5); /* Light purple background */
-            filter: contrast(70%); /* Adjust the percentage as needed */        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            max-width: 800px;
-            padding: 2rem;
-            background-color: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        }
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .hero h2 {
-            font-size: 1.8rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-            color: #f8f9fa;
-        }
-        .certification-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-        }
-        .certification-logos img {
-            max-height: 60px;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-        .certification-logos img:hover {
-            transform: scale(1.1);
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba(0,123,255,0.4);
-        }
-        #services {
-            background-color: #ffffff;
-            padding: 5rem 0;
-        }
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            text-align: center;
-            color: #333;
-        }
-        .service-card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            color: #007bff;
-        }
-        .service-card .card-title {
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        .service-card .card-text {
-            color: #666;
-        }
-  
-        #why-choose-us h2 {
-      color: white;
-    }
-
-
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-    }
-    
-    .service-item {
-        background-color: white;
-        border-radius: 8px;
-        padding: 30px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .service-item:hover {
-        transform: translateY(-5px);
-    }
-    
-    .service-item i {
-        font-size: 3em;
-        color: var(--primary-color);
-        margin-bottom: 20px;
-    }
-    
-    /* Why Choose Us Section Styles */
-    #why-choose-us {
-        background-color: var(--secondary-color);
-        color: rgb(106, 255, 255);
-        padding: 60px 0;
-    }
-    
-    .reasons-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-    }
-    
-    .reason-item {
-        text-align: center;
-        padding: 20px;
-        color: white;
-    }
-    
-    .reason-item i {
-        font-size: 3em;
-        margin-bottom: 20px;
-        color: var(--accent-color);
-    }
-    
- 
-
-       
-  #available_courses {
-      padding: 60px 0;
-      background-color: var(--light-color);
-  }
-  
-  .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
-  }
-  
-  .course-item {
-      background-color: white;
-      border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: center;
-  }
-  
-  .course-item i {
-      font-size: 3em;
-      color: var(--primary-color);
-      margin-bottom: 20px;
-  }
-  
-  .cta {
-      text-align: ce
-  }
-
-
-      
-  #why-choose-us h2 {
-      color: white;
-    }
-
-
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-    }
-    
-    .service-item {
-        background-color: white;
-        border-radius: 8px;
-        padding: 30px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .service-item:hover {
-        transform: translateY(-5px);
-    }
-    
-    .service-item i {
-        font-size: 3em;
-        color: var(--primary-color);
-        margin-bottom: 20px;
-    }
-    
-    /* Why Choose Us Section Styles */
-    #why-choose-us {
-        background-color: var(--secondary-color);
-        color: rgb(106, 255, 255);
-        padding: 60px 0;
-    }
-    
-    .reasons-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-    }
-    
-    .reason-item {
-        text-align: center;
-        padding: 20px;
-        color: white;
-    }
-    
-    .reason-item i {
-        font-size: 3em;
-        margin-bottom: 20px;
-        color: var(--accent-color);
-    }
-    
-    /* Locations Section Styles */
-    #locations {
-        padding: 60px 0;
-        background-color: var(--light-color);
-    }
-
-
-  
-    .location-columns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .location-column {
-        flex-basis: calc(33.333% - 20px);
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    
-    @media (max-width: 768px) {
-        .location-column {
-            flex-basis: 100%;
-        }
-    }
-
-    
-  #available_courses {
-      padding: 60px 0;
-      background-color: var(--light-color);
-  }
-  
-  .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
-  }
-  
-  .course-item {
-      background-color: white;
-      border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: center;
-  }
-  
-  .course-item i {
-      font-size: 3em;
-      color: var(--primary-color);
-      margin-bottom: 20px;
-  }
-  
-  .cta {
-      text-align: ce
-  }
-
-
-  .btn {
-    display:flexbox;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    background-color: #007bff; /* Blue color for the button */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  .btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-  }
-
-
-    </style>
 
     
 </head>
@@ -577,9 +235,10 @@
             </div>
           </div>
 
-          <div class="cta">
-            <a href="./schedule" class="btn">Book Your Training</a>
+          <div class="button-container">
+            <a href=".schedule" class="btn">Book Your Training</a>
           </div>
+
           
         </div>
       </section>
@@ -641,16 +300,29 @@
     
     
       
-    
-      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    
-    
-      <!-- Template Main Javascript File -->
-      <script src="js/main.js"></script>
-    
-    
-    
-      
+  <!-- JavaScript Librsries -->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <!-- Template Main Javascript File -->
+  <script src="schedule_folder/js/main.js"></script>
+
     </body>
     </html>
     
