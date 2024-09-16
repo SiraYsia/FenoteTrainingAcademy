@@ -3,44 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Selection</title>
+    <title>Course Selection - Fenote Training Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-size: 14px;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3a5a7a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20%;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        .header-text {
+            font-size: 2em;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 10px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
         .section {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #payment-breakdown-section {
+            background-color: #e6f3ff;
+        }
+
+        #cancellation-info {
+            background-color: #fff3f1;
         }
         .section h2 {
-            text-align: center;
-            color: #333;
-            font-size: 20px;
-            margin-bottom: 15px;
+            color: #3a5a7a;
+            border-bottom: 2px solid #3a5a7a;
+            padding-bottom: 10px;
+            margin-top: 0;
         }
         .payment-breakdown div {
             display: flex;
             justify-content: space-between;
-            padding: 5px 0;
-            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            border-bottom: 1px solid #bdd7f3;
         }
         .payment-breakdown .total {
-            border-top: 2px solid #eee;
+            border-top: 2px solid #3a5a7a;
             margin-top: 15px;
-            font-size: 16px;
-            color: #383838;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #3a5a7a;
         }
         .payment-breakdown .price {
-            color: #000000;
             font-weight: bold;
         }
         .payment-options-section ol {
@@ -50,147 +82,129 @@
             margin-bottom: 15px;
         }
         .payment-options-section ol a {
-            color: blue;
+            color: #3a5a7a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .payment-options-section ol a:hover {
+            text-decoration: underline;
         }
         .button-container {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin-top: 30px;
         }
         .button {
-            padding: 15px 25px;
+            padding: 15px 30px;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button.confirm-button {
             background-color: #4CAF50;
             color: white;
-            cursor: pointer;
-            font-size: 14px;
         }
         .button.back-button {
             background-color: #f44336;
+            color: white;
         }
-        .header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            padding: 10px;
+        .button:hover {
+            opacity: 0.9;
         }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-            border-radius: 50%; /* Optional: round the image */
-        }
-
-        .text {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        /* Ensure no content overlaps */
-        body {
-            margin: 0;
-            padding: 50px 0 0 0; /* Adjust padding to fit header height */
-        }
-
         #cancellation-info {
-            max-height: 150px;
+            max-height: 200px;
             overflow: auto;
-            margin-top: 20px;
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: #fff;
+            margin-top: 30px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: left;
         }
-
         .agreement-container {
             margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
         }
-
         .agreement-container label {
-            margin-left: 5px;
+            margin-left: 10px;
+            color: #555;
         }
-
     </style>
 </head>
 <body>
-
-    <div class="header">
+    <header class="header">
         <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
-        <div class="text">Fenote Training Academy</div>
-    </div>
+        <span class="header-text">Fenote Training Academy</span>
+    </header>
     
-    <h1 style="text-align: center; color: rgb(107, 107, 255); font-size: 24px;">  </h1> 
     <div class="container">
-
         <div class="section" id="payment-breakdown-section">
             <h2>Payment Breakdown</h2>
-            <!-- Payment breakdown content -->
             <div class="payment-breakdown">
                 <div>
-                    <span class="bold">Course Price:</span>
+                    <span>Course Price:</span>
                     <span class="price">$900.00</span>
                 </div>
                 <div>
-                    <span class="bold">Service Fee:</span>
+                    <span>Service Fee:</span>
                     <span class="price">$20.00</span>
                 </div>
                 <div>
-                    <span class="bold">Tax (3%):</span>
+                    <span>Tax (3%):</span>
                     <span class="price">$18.00</span>
                 </div>
                 <div class="total">
-                    <span class="bold">Total Price:</span>
+                    <span>Total Price:</span>
                     <span class="price">$938.00</span>
                 </div>
                 <div>
-                    <span class="bold">Total price without service fee:</span>
+                    <span>Total price without service fee:</span>
                     <span class="price">$918.00</span>
                 </div>
             </div>
         </div>
+        
         <div class="section payment-options-section">
             <h2>Payment Options</h2>
             <ol>
-                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay $918. Zelle account: <strong>(310)-988-0673</strong>. If you are in need of assistance please call us or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</li>
-                <li>If you prefer to pay with a credit card or debit card (with the service fee), click the green button below. 
+                <li>For <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> payments (without service fee):
+                    <ul>
+                        <li>Fill out this <a href="https://form.jotform.com/240596634009055" target="_blank">form</a></li>
+                        <li>Pay $918 to Zelle account: <strong>(310)-988-0673</strong></li>
+                        <li>Need help? Email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a></li>
+                    </ul>
+                </li>
+                <li>For credit or debit card payments (with service fee), use the green button below.</li>
             </ol>
         </div>
+        
+        <div class="section" id="cancellation-info">
+            <h2>Cancellation Policy</h2>
+            <!-- Cancellation information will be displayed here -->
+        </div>
+        
+        <div class="agreement-container">
+            <input type="checkbox" id="agreementCheckbox">
+            <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
+        </div>
+        
         <div class="button-container">
-            <button class="button confirm-button" id="payButton">Pay</button>
+            <button class="button confirm-button" id="payButton">Proceed to Payment</button>
             <button class="button back-button" onclick="window.location.href='./phlebotomy'">Return to Schedule</button>
         </div>
     </div>
 
-    <!-- Cancellation Information -->
-    <div id="cancellation-info">
-        <!-- Cancellation information will be displayed here -->
-    </div>
-    <div class="agreement-container">
-        <input type="checkbox" id="agreementCheckbox">
-        <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
-    </div>
-
     <script>
-
         function loadCancellationInfo() {
             const cancellationInfoDiv = document.getElementById("cancellation-info");
-
-            // Fetch cancellation.html content
             fetch('cancelation.html')
                 .then(response => response.text())
                 .then(html => {
-                    // Set the fetched HTML as the inner HTML of the cancellation-info div
-                    cancellationInfoDiv.innerHTML = html;
+                    cancellationInfoDiv.innerHTML += html;
                 })
                 .catch(error => {
                     console.error('Error fetching cancellation information:', error);
@@ -201,16 +215,12 @@
 
         document.getElementById('payButton').addEventListener('click', function() {
             const agreementCheckbox = document.getElementById('agreementCheckbox');
-
             if (!agreementCheckbox.checked) {
                 alert('You must agree to the cancellation policy before proceeding with payment.');
                 return;
             }
-
-            // Redirect to payment page
             window.location.href = 'https://square.link/u/3wVo8Vvj';
         });
     </script>
-
 </body>
 </html>

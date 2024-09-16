@@ -2302,10 +2302,10 @@ body {
   box-shadow: 0 0 20px rgba(255, 247, 247, 0.2);
   }
   .hero h2 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  color: #f8f9fa;
+  color: rgb(111, 255, 0);
   }
   .certification-logos {
   display: flex;
@@ -2547,4 +2547,36 @@ body {
     .hero-content {
         display: none;
     }
+}
+
+.nav-tabs {
+  border-bottom: none;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.nav-tabs .nav-item {
+  margin: 5px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 20px;
+  color: #555;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-tabs .nav-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(51, 51, 255);
+  color: #fff;
 }

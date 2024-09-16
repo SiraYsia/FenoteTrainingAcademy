@@ -266,7 +266,7 @@ const courseDetails = {
     courseButtonsContainer.style.flexDirection = "column";
     courseButtonsContainer.style.width = "100%"; // Adjust the width as needed
     
-  
+
     function toggleCourseDetails(course) {
         const courseDetail = courseDetails[course];
         const descriptionDiv = document.createElement("div");
@@ -297,8 +297,10 @@ const courseDetails = {
                   // Skip dates that have already passed
                   return;
               }
+              console.log(courseDate)
     
                 if (isNaN(courseDate)) {
+
                     // If date is invalid, set button text to "Please contact us" and add a click event to redirect to the contact us page
                     const dateButton = document.createElement("button");
                     dateButton.innerHTML = "Please contact us to schedule a class.";
@@ -315,7 +317,7 @@ const courseDetails = {
     
                     dateButton.addEventListener("click", () => {
                         // Redirect to the contact us page
-                        window.location.href = "./contactus"; // Replace with the actual URL of your contact us page
+                        window.location.href = "./contactus"; 
                     });
     
                     datesDiv.appendChild(dateButton);
@@ -334,18 +336,17 @@ const courseDetails = {
     
                     dateButton.innerHTML = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
     
-                    // Apply inline styles to date buttons for an elegant look
                     dateButton.style.backgroundColor = "transparent";
                     dateButton.style.color = "#333";
                     dateButton.style.padding = "8px 12px";
-                    dateButton.style.margin = "5px 0"; // Adjust margin to separate buttons vertically
+                    dateButton.style.margin = "5px 0"; 
                     dateButton.style.cursor = "pointer";
-                    dateButton.style.border = "1px solid #ddd"; // Add a subtle border
+                    dateButton.style.border = "1px solid #ddd"; 
                     dateButton.style.borderRadius = "3px";
-                    dateButton.style.display = "block"; // Make each button take the full width
-                    dateButton.style.width = "100%"; // Make each button take the full width
-                    dateButton.style.textAlign = "left"; // Align text to the left
-                    dateButton.style.color = "red"; // Set the text color to red
+                    dateButton.style.display = "block"; 
+                    dateButton.style.width = "100%"; 
+                    dateButton.style.textAlign = "left"; 
+                    dateButton.style.color = "red"; 
     
                     dateButton.addEventListener("click", () => {
                         // Call redirectToConfirmation when the button is clicked
@@ -359,45 +360,42 @@ const courseDetails = {
             courseDetail.container.style.display = isHidden ? "block" : "none";
   
             if (!isHidden) {
-                courseDetail.container.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)"; // Add a subtle shadow
-                courseDetail.container.style.borderRadius = "0"; // Make the container square
-                courseDetail.container.style.backgroundColor = "#f9f9f9";
-                courseDetail.container.style.marginTop = "10px"; // Add margin to separate containers
-                courseDetail.container.style.padding = "15px"; // Add padding to the container
-  
-                courseDetail.container.innerHTML = "";
-                courseDetail.container.appendChild(descriptionDiv);
-  
-                // Apply inline styles to description inside the container
-                descriptionDiv.style.fontSize = "16px";
-                descriptionDiv.style.color = "#333";
-                descriptionDiv.style.margin = "0 20px"; // Add margin to the left and right
-                descriptionDiv.style.marginBottom = "10px";
-                descriptionDiv.style.textAlign = "justify"; // Justify text
-  
-                courseDetail.container.appendChild(datesDiv);
+              courseDetail.container.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)"; 
+              courseDetail.container.style.borderRadius = "0"; 
+              courseDetail.container.style.backgroundColor = "#f9f9f9";
+              courseDetail.container.style.marginTop = "10px"; 
+              courseDetail.container.style.padding = "15px"; 
+
+              courseDetail.container.innerHTML = "";
+              courseDetail.container.appendChild(descriptionDiv);
+
+              descriptionDiv.style.fontSize = "16px";
+              descriptionDiv.style.color = "#333";
+              descriptionDiv.style.margin = "0 20px"; 
+              descriptionDiv.style.marginBottom = "10px";
+              descriptionDiv.style.textAlign = "justify"; 
+
+              courseDetail.container.appendChild(datesDiv);
   
         }
     }
   
-  
-    Object.keys(courseDetails).forEach((course, index) => {
+  Object.keys(courseDetails).forEach((course, index) => {
         const courseButton = document.createElement("button");
         courseButton.innerHTML = courseDetails[course].name;
-  
-        // Apply inline styles to course buttons for an elegant look
+
         courseButton.style.backgroundColor = "transparent";
         courseButton.style.color = "#333";
         courseButton.style.padding = "10px 20px";
-        courseButton.style.margin = "5px 0"; // Adjust margin to separate buttons vertically
+        courseButton.style.margin = "5px 0"; 
         courseButton.style.cursor = "pointer";
-        courseButton.style.border = "1px solid #ddd"; // Add a subtle border
+        courseButton.style.border = "1px solid #ddd"; 
         courseButton.style.borderRadius = "0px";
         courseButton.style.transition = "background-color 0.3s";
-        courseButton.style.textAlign = "left"; // Align text to the left
-        courseButton.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)"; // Add a subtle grey shadow
+        courseButton.style.textAlign = "left"; 
+        courseButton.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)"; 
         courseButton.style.fontWeight = "bold";
-  
+
         if (index === 0) {
           courseButton.style.color = "blue";
       }
@@ -435,23 +433,7 @@ const courseDetails = {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   //OTHER JS COPY just for the heading
