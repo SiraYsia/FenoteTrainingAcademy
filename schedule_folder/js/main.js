@@ -321,7 +321,7 @@ bls_classroom: {
 
 babysitter_classroom: {
   name: " Babysitter Training And Pediatric First Aid/CPR",
-  price: 150.00,
+  price: 200.00,
   descriptionFile: "schedule_folder/descriptions/ara/5.babysitter_classroom.html",
   dates: [
     "None"
