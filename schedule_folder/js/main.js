@@ -18,7 +18,14 @@ hsi_adult_pediatric: {
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
   dates: [
     { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "12:15" },
-    { "start": "2024-09-22", "end": "", "startTime": "15:00", "endTime": "17:15" }
+    { "start": "2024-09-22", "end": "", "startTime": "15:00", "endTime": "17:15" },
+    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-10-06", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-10-13", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-10-20", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-10-27", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
   ],
 },
 
@@ -222,13 +229,28 @@ amr_course: {
   ],
 }, 
 
+bls_blended: {
+  name: "ARC Basic Life Support-BL R.21",
+  price: 65.00,
+  descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
+  dates: [
+    { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" }
+
+  ],
+},
 
 cpr_blended_pediatric: {
   name: "ARC Adult And Pediatric First Aid/CPR/AED-BL-R.21 - BLENDED",
   price: 90.00,
   descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_pediatric.html",
   dates: [
-    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" }
+    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-10-06", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-10-13", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-10-20", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-10-27", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
   ],
   
 },
@@ -296,17 +318,6 @@ cpr_sessions_adult: {
 
 
 
-
-
-bls_blended: {
-  name: "ARC Basic Life Support-BL R.21",
-  price: 65.00,
-  descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
-  dates: [
-    { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" }
-
-  ],
-},
 bls_classroom: {
   name: "Basic Life Support-R.21 - CLASSROOM",
   price: 85.00,
@@ -596,13 +607,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       if (index === 1 || index === 5) {
           courseButton.style.color = "purple";
-      }
+    }
       if (index === 18) {
         courseButton.style.color = "red";
     }
+      if (index === 19 || index === 20) {
+          courseButton.style.color = "purple";
 
-    if (index === 24) {
-      courseButton.style.color = "purple";
   }
       if (index === 34) {
           courseButton.style.color = "blue";

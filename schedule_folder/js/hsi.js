@@ -16,7 +16,14 @@ const courseDetails = {
     descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
     dates: [
       { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-22", "end": "", "startTime": "15:00", "endTime": "17:15" }
+      { "start": "2024-09-22", "end": "", "startTime": "15:00", "endTime": "17:15" },
+      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-10-06", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2024-10-13", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2024-10-20", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2024-10-27", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
     ],
   },
   
