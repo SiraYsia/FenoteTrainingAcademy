@@ -64,11 +64,13 @@ const courseDetails = {
   
   hsi_adult_adult_cprw: {
     name: "HSI Adult CPR/AED",
-    price: 65.00,
+    price: 90.00,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_ault_cpr.html",
     dates: [
       { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "11:00" },
-      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" }
+      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" },
+      { "start": "2024-10-21", "end": "", "startTime": "17:00", "endTime": "20:00" }
+
     ],
   },
   
