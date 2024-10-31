@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection - Fenote Training Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="img/clients/logo_ex.png" rel="icon">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3a5a7a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20%;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        .header-text {
+            font-size: 2em;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        #payment-breakdown-section {
+            background-color: #e6f3ff;
+        }
+
+        #cancellation-info {
+            background-color: #fff3f1;
+        }
+        .section h2 {
+            color: #3a5a7a;
+            border-bottom: 2px solid #3a5a7a;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .payment-breakdown div {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #bdd7f3;
+        }
+        .payment-breakdown .total {
+            border-top: 2px solid #3a5a7a;
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #3a5a7a;
+        }
+        .payment-breakdown .price {
+            font-weight: bold;
+        }
+        .payment-options-section ol {
+            padding-left: 20px;
+        }
+        .payment-options-section ol li {
+            margin-bottom: 15px;
+        }
+        .payment-options-section ol a {
+            color: #3a5a7a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .payment-options-section ol a:hover {
+            text-decoration: underline;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button.confirm-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .button.back-button {
+            background-color: #f44336;
+            color: white;
+        }
+        .button:hover {
+            opacity: 0.9;
+        }
+        #cancellation-info {
+            max-height: 200px;
+            overflow: auto;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        .agreement-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .agreement-container label {
+            margin-left: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
+        <span class="header-text">Fenote Training Academy</span>
+    </header>
+    
+    <div class="container">
+        <div class="section" id="payment-breakdown-section">
+            <h2>Payment Breakdown</h2>
+            <div class="payment-breakdown">
+                <div>
+                    <span>Course Price:</span>
+                    <span class="price">$800.00</span>
+                </div>
+                <div>
+                    <span>Service Fee:</span>
+                    <span class="price">$30.00</span>
+                </div>
+                <div>
+                    <span>Tax (3%):</span>
+                    <span class="price">$24.00</span>
+                </div>
+                <div class="total">
+                    <span>Total Price:</span>
+                    <span class="price">$854.00</span>
+                </div>
+                <div>
+                    <span>Total price without service fee:</span>
+                    <span class="price">$824.00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section payment-options-section">
+            <h2>Payment Options</h2>
+            <ol>
+                <li>For <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> payments (without service fee):
+                    <ul>
+                        <li>Fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScKTpPGn2-diXRK3YnIrCXKiBkn3Ndrh-SxD8t63-KU1WOnmQ/viewform?" target="_blank">form</a></li>
+                        <li>Pay $824 to Zelle account: <strong>(310)-988-0673</strong></li>
+                        <li>Need help? Email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a></li>
+                    </ul>
+                </li>
+                <li>For credit or debit card payments (with service fee), use the green button below.</li>
+                <li>If you need more payment options or installment contact us.</li>
+
+            </ol>
+        </div>
+       
+        <div class="section payment-options-section">
+            <h2>CANCELLATION AND REFUND POLICY</h2>
+
+            <h3>Refund Policy:</h3>
+
+            <p>Refunds will not be issued after 24 hours of the payment or starting the online portion of the training.
+            Fenote Training Academy reserves the right to classes due to natural disasters, extreme weather conditions, MTA suspension, building shutdowns, or other uncontrollable causes without the possibility of a refund. In such cases, rescheduling without penalty or holding credit without expiration is allowed.<p>
+
+            <h3>Rescheduling Policy:</h3>
+            
+            To reschedule, contact us at ftrainingacademy12@hotmail.com, providing proof of attempted communication. Rescheduling is allowed once per course within 90 days of the original class date. You may only reschedule once for each course you registered for. The rescheduled class must take place within 30 days of the original class date.
+            
+            <h3>Rescheduling Notice:</h3>
+            
+            <p>72 hours in advance or more: No fee; one reschedules permitted.
+            24-48 hours before the course: 24-48 hours before the day of the course: If you contact us within 24 hours to 48 hours before the start time of your class, an additional 10% fee will apply for all classes. .
+            24 hours or less: Rescheduling not allowed; considered a NO SHOW (refer to NO SHOW policy).
+            Rescheduling more than once is not permitted, except for extreme weather conditions resulting in MTA or DOE suspensions.
+            If you wish to reschedule the course for a second time, and if the administrative team considers and approves your reason for an extension, you will be required to pay 10% of the price.<p>
+
+            <h3>Lateness Policy:</h3>
+            
+            <p>You will be considered a NO SHOW if you do not attend class and fail to notify us at least 24 hours in advance. No refunds or credits will be issued, and you'll need to pay and reschedule the class.<p>
+            
+            <h3>No Show Policy:</h3>
+            
+            <p>You will be considered a NO SHOW if you do not attend class and fail to notify us at least 24 hours in advance. No refunds or credits will be issued, and you'll need to pay and reschedule the class.<p>
+            
+            <h3>Blended Courses:</h3>
+            
+            <p>Blended Courses (Half in-person / half online) REQUIRES every student to take an online course BEFORE the scheduled class date. If you fail to do the online part, you will not be allowed to sit for the skills session and will NOT receive a refund or be allowed to reschedule.<p>
+            
+            <h3>Replacement Card/Misprinted Card:</h3>
+            
+            <p>To replace a certification card, contact ftrainingacademy12@hotmail.com. You are responsible for the correct spelling of your own name when you register for a course. If you misspelled your name, you would have to pay the replacement card fee in order to obtain another card.</p>
+            
+            <h3>Payment Policy:</h3>
+            
+            <p>Accepted: Zelle, ACH, Electronic Check, Visa, MasterCard, Discover, American Express.<p>
+            
+            <h3>Credit Card Chargeback/Dispute:</h3>
+            
+            <p>If a charge is placed in dispute by you (or the cardholder if it is not your credit card) because you (or the cardholder) do not recognize/recall this charge, you will be responsible for a processing fee of $25.00 in addition to the original charges.</p>
+            
+            <h3>Privacy Policy:</h3>
+            
+            </p>Your privacy is very important to us. Any information we gathered from you will only be used within Fenote Training Academy or companies Fenote Training Academy is associated with. We do not store any credit card and payment information. The only information stored will be your name, mailing/ billing address, phone number, and email. Your information will never be sold to outside vendors. Only our partners (e.g. squareup.com, mail carriers) have access to your information in order to complete your transaction.</p>
+           
+            <h3>Liability Policy:</h3>
+            
+            </p>Fenote Training Academy or companies Fenote Training Academy is associated with is not responsible for any injuries during the duration of the course, including the skills practice. If any part of the course will interfere and/or affect a medical condition that you have, you will alert the instructor to avoid possible injury. Instructors are not responsible for any injury, loss, or damage of any kind sustained by any person before, during and/or after the class, including injury, loss or damage which might be caused by the negligence of Fenote Training Academy or companies Fenote Training Academy is associated with and/or instructors that Fenote Training Academy or companies Fenote Training Academy is associated with supplies either as an employee and/or a sub-contractor</p>
+        </div>
+        
+        <div class="agreement-container">
+            <input type="checkbox" id="agreementCheckbox">
+            <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
+        </div>
+        
+        <div class="button-container">
+            <button class="button confirm-button" id="payButton">Proceed to Payment</button>
+            <button class="button back-button" onclick="window.location.href='./serving_child_care_providers.html'">Return to Course</button>
+        </div>
+    </div>
+
+    <script>
+        function loadCancellationInfo() {
+            const cancellationInfoDiv = document.getElementById("cancellation-info");
+            fetch('cancelation.html')
+                .then(response => response.text())
+                .then(html => {
+                    cancellationInfoDiv.innerHTML += html;
+                })
+                .catch(error => {
+                    console.error('Error fetching cancellation information:', error);
+                });
+        }
+
+        loadCancellationInfo();
+
+        document.getElementById('payButton').addEventListener('click', function() {
+            const agreementCheckbox = document.getElementById('agreementCheckbox');
+            if (!agreementCheckbox.checked) {
+                alert('You must agree to the cancellation policy before proceeding with payment.');
+                return;
+            }
+            window.location.href = 'https://square.link/u/aRBVKaBE';
+        });
+    </script>
+</body>
+</html>
