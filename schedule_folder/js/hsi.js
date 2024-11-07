@@ -35,10 +35,12 @@ const courseDetails = {
 
   hsi_adult_pediatric_classroom: {
     name: "HSI Adult and Pediatric First Aid, CPR/AED or All ages - Classroom",
-    price: 85.00,
+    price: 90.00,
     descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
     dates: [
-      { "start": "2024-08-19", "end": "", "startTime": "15:00", "endTime": "18:15" }
+      { "start": "2024-08-19", "end": "", "startTime": "15:00", "endTime": "18:15" },
+      { "start": "2024-11-16", "end": "", "startTime": "15:00", "endTime": "18:15" }
+
     ],
   },
   
