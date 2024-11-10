@@ -241,7 +241,8 @@ bls_blended: {
   price: 65.00,
   descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
   dates: [
-    { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" }
+    { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" }
 
   ],
 },
