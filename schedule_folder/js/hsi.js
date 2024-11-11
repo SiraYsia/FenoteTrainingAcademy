@@ -40,6 +40,7 @@ const courseDetails = {
     dates: [
       { "start": "2024-08-19", "end": "", "startTime": "15:00", "endTime": "18:15" },
       { "start": "2024-11-16", "end": "", "startTime": "15:00", "endTime": "18:15" }
+    
 
     ],
   },
