@@ -28,7 +28,6 @@ hsi_adult_pediatric: {
     { "start": "2024-10-27", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
     { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
-
   ],
 },
 
@@ -38,9 +37,8 @@ hsi_adult_pediatric_classroom: {
   price: 90.00,
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
   dates: [
-    { "start": "2024-08-19", "end": "", "startTime": "15:00", "endTime": "18:15" },
-    { "start": "2024-11-16", "end": "", "startTime": "15:00", "endTime": "18:15" }
-
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
   ],
 },
 
@@ -50,8 +48,8 @@ hsi_adult_adult_cpr: {
   price: 85.00,
   descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
   dates: [
-    { "start": "2024-08-19", "end": "", "startTime": "09:00", "endTime": "11:45" },
-    { "start": "2024-10-19", "end": "", "startTime": "15:00", "endTime": "17:00" }
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
 
   ],
@@ -75,8 +73,8 @@ hsi_adult_adult_cprw: {
   price: 90.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_ault_cpr.html",
   dates: [
-    { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "11:00" },
-    { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" }
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
   ],
 },
 
@@ -88,7 +86,8 @@ hsi_pediatric_cpr: {
   price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
   dates: [
-      "None"
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
   ],
 },
@@ -109,7 +108,8 @@ hsi_pediatric_aed_cpr: {
   price: 75.00,
   descriptionFile: "schedule_folder/descriptions/hsi/hsi_pediatric_cpr.html",
   dates: [
-      "None"
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
   ],
 },
@@ -291,6 +291,27 @@ cpr_blended_adult: {
   descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
   dates: [
     "None"
+  ],
+},
+
+arc_pediactric_cpr: {
+  name: "ARC Pediatric CPR/AED",
+  price: 75.00,
+  descriptionFile: "schedule_folder/descriptions/ara/arc_pediactric_cpr.html",
+  dates: [
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
+  ],
+},
+
+arc_pediatric: {
+  name: "ARC Pediatric First Aid, CPR/AED",
+  price: 75.00,
+  descriptionFile: "schedule_folder/descriptions/ara/arc_pediatric.html",
+  dates: [
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
   ],
 },
 

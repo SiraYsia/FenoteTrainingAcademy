@@ -43,7 +43,8 @@ const courseDetails = {
     price: 95.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_first_aid.html",
     dates: [
-      "None"
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
     ],
   },
   
@@ -53,10 +54,33 @@ const courseDetails = {
     price: 70.00,
     descriptionFile: "schedule_folder/descriptions/ara/1.cpr_blended_adult.html",
     dates: [
-      "None"
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
     ],
   },
+  
+  arc_pediactric_cpr: {
+    name: "ARC Pediatric CPR/AED",
+    price: 75.00,
+    descriptionFile: "schedule_folder/descriptions/ara/arc_pediactric_cpr.html",
+    dates: [
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
+    ],
+  },
+
+  arc_pediatric: {
+    name: "ARC Pediatric First Aid, CPR/AED",
+    price: 75.00,
+    descriptionFile: "schedule_folder/descriptions/ara/arc_pediatric.html",
+    dates: [
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
+  
+    ],
+  },
+  
   
   
   cpr_session_first_aid_classroom: {
@@ -64,7 +88,8 @@ const courseDetails = {
     price: 85.00,
     descriptionFile: "schedule_folder/descriptions/ara/temp.cpr_sessions_first_aid.html",
     dates: [
-      { start: "2024-08-19", end: "", startTime: "09:00", endTime: "11:15" }
+    { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
     ],
     
   },
@@ -75,7 +100,7 @@ const courseDetails = {
     price: 77.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_pediatric.html",
     dates: [
-        "None"
+      "None"
     ],
     
   },
@@ -88,7 +113,7 @@ const courseDetails = {
     price: 37.00,
     descriptionFile: "schedule_folder/descriptions/ara/3.cpr_sessions_adult.html",
     dates: [
-        "None"
+      "None"
     ],
     
   },
@@ -420,7 +445,7 @@ const courseDetails = {
   
       // Apply color coding
       if (index === 0) courseName.style.color = "blue";
-      if (index === 1 || index === 5) courseName.style.color = "purple";
+      if (index === 1) courseName.style.color = "purple";
       if (index === 18) courseName.style.color = "red";
       if (index === 19 || index === 20) courseName.style.color = "purple";
       if (index === 34) courseName.style.color = "blue";
