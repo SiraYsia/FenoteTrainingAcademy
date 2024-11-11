@@ -38,8 +38,8 @@ const courseDetails = {
     price: 90.00,
     descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
     dates: [
-      { "start": "2024-08-19", "end": "", "startTime": "15:00", "endTime": "18:15" },
-      { "start": "2024-11-16", "end": "", "startTime": "15:00", "endTime": "18:15" }
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
     
 
     ],
@@ -52,7 +52,9 @@ const courseDetails = {
     descriptionFile: "schedule_folder/descriptions/hsi/3.adult_first_aid.html",
     dates: [
       { "start": "2024-08-19", "end": "", "startTime": "09:00", "endTime": "11:45" },
-      { "start": "2024-10-19", "end": "", "startTime": "15:00", "endTime": "17:00" }
+      { "start": "2024-10-19", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
   
     ],
@@ -76,7 +78,9 @@ const courseDetails = {
     dates: [
       { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "11:00" },
       { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "11:00" },
-      { "start": "2024-10-21", "end": "", "startTime": "17:00", "endTime": "20:00" }
+      { "start": "2024-10-21", "end": "", "startTime": "17:00", "endTime": "20:00" },
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
     ],
   },
@@ -87,7 +91,8 @@ const courseDetails = {
     price: 75.00,
     descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
     dates: [
-        "None"
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
   
     ],
   },
@@ -108,8 +113,8 @@ const courseDetails = {
     price: 75.00,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_pediatric_cpr.html",
     dates: [
-        "None"
-  
+      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
+      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
     ],
   },
   
