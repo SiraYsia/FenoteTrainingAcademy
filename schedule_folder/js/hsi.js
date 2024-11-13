@@ -73,7 +73,7 @@ const courseDetails = {
   
   hsi_adult_adult_cprw: {
     name: "HSI Adult CPR/AED",
-    price: 90.00,
+    price: 80.00,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_ault_cpr.html",
     dates: [
       { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "11:00" },
@@ -88,7 +88,7 @@ const courseDetails = {
   
   hsi_pediatric_cpr: {
     name: "HSI Pediatric First Aid, CPR/AED",
-    price: 75.00,
+    price: 85.00,
     descriptionFile: "schedule_folder/descriptions/hsi/8.pediatric.html",
     dates: [
       { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
@@ -99,7 +99,7 @@ const courseDetails = {
   
   hsi_ped_firstaid: {
     name: "HSI Pediatric First Aid ",
-    price: 75.00,
+    price: 65.00,
     descriptionFile: "schedule_folder/descriptions/hsi/10.pediatric_firstaid.html",
     dates: [
         "None"
@@ -110,7 +110,7 @@ const courseDetails = {
   //cant find exact description
   hsi_pediatric_aed_cpr: {
     name: "HSI Pediatric CPR/AED",
-    price: 75.00,
+    price: 80.00,
     descriptionFile: "schedule_folder/descriptions/hsi/hsi_pediatric_cpr.html",
     dates: [
       { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
