@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Fenote Training Acadamey | American Red Cross Instructor Course </title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta name="description" content="Fenote Training Academy offers CPR, First Aid, AED, BLS training services in Maryland, Virginia, and DC. Learn life-saving skills with certified instructors.">
+      <!-- Favicons -->
+      <link href="img/clients/logo_ex.png" rel="icon">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+      <!-- Bootstrap CSS File -->
+      <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Libraries CSS Files -->
+      <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+      <!-- Main Stylesheet File -->
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!--==========================
+         Header
+         ============================-->
+      <div id="header"></div>
+      <script>
+         fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('header').innerHTML = data;
+         });
+      </script>
+      <!--==========================
+         Intro Section
+         ============================-->
+      <section id="intro">
+         <div class="intro-content">
+            <h2> Basic Life Support (BLS) Instructor Course</h2>
+            <h3 style="font-family: Arial, sans-serif; font-size: 1.75em; color: #ffffff; text-align: center; margin-top: 20px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid #000000; padding-bottom: 10px;">American Red Cross</h3>
+            <h5><strong> Instructor : Dr. Melesse Semegne </strong> </h5>
+            <div>
+            </div>
+         </div>
+      </section>
+      <br> 
+      <br>
+      <!-- Delete this Again-->
+      <br>
+      <section id="prover-training">
+         <div class="container">
+            <div class="section-header">
+               <h2> Basic Life Support (BLS) Instructor Course - ARC</h2>
+               <p>Price: $345.00</p>
+               <p>Capacity: 1–12 participants</p>
+               <p>Duration: 6 hours</p>
+               <p>Format: Blended (Online + Classroom Instructor-Led)</p>
+               <br>
+            </div>
+         </div>
+    <section id="prover-training">
+            <div class="container">
+               <div class="section-header">
+                  <h2>Course Description</h2>
+                  <p>This American Red Cross BLS Instructor Course is designed for individuals aiming to become certified BLS instructors. It combines online and in-person training components to deliver a comprehensive learning experience.</p>
+                  <br>
+               </div>
+            </div>
+        <section id="prover-training">
+                <div class="container">
+                   <div class="section-header">
+                      <h2>Course Requirements</h2>
+                      <h3>Prerequisites:</h3>
+                      <p>Current certification in Basic Life Support (BLS) or equivalent.</p>
+                      <p>Completion of the online course (approximately 1 hour and 30 minutes) prior to attending the in-person session.</p>
+                      <p>Online course access will be provided upon full registration and payment.</p>
+                      <br>
+                      <h3>Registration Status:</h3>
+                      <p>Registrants will remain in pending status until proof of current BLS certification is verified.</p>
+                      <br>
+                   </div>
+                </div>
+                <section id="prover-training">
+                    <div class="container">
+                       <div class="section-header">
+                          <h2>Intended Audience</h2>
+                          <p>This course is tailored for:</p>
+                          <br>
+                          <ul>
+                            <li>Medical Personnel:
+                            Physicians, nurses, nurse practitioners, physician assistants, dentists, pharmacists, physical therapists, nurse assistants, and students pursuing these professions.</li>
+                            <li>Public Safety Personnel and Responders:
+                            Paramedics, advanced EMTs, EMTs, firefighters, law enforcement officers, emergency medical responders (EMRs), and students preparing for these roles.</li>
+                          </ul>                          
+                          <br>
+                       </div>
+                    </div>
+                    <section id="prover-training">
+                        <div class="container">
+                           <div class="section-header">
+                              <h2>Course Purpose</h2>
+                              <p>The BLS Instructor Course equips participants with the skills and knowledge to recognize and respond to life-threatening emergencies, including:</p>
+                              <br>
+                              <ul>
+                                <li>Respiratory arrest or failure</li>
+                                <li>Cardiac arrest</li>
+                                <li>Airway obstruction</li>
+                                <li>Opioid overdose</li>
+                                <li>Other critical injuries or illnesses</li>
+                              </ul>                          
+                              <br>
+                              <p>Emphasis is placed on delivering high-quality care, integrating critical thinking and psychomotor skills, and ensuring optimal patient outcomes.</p>
+                           </div>
+                        </div>
+      </section>
+      <div id="instructor_dates_container" style="
+         padding: 20px;
+         background-color: #ffffff;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         ">
+         <h1 style="
+            font-size: 32px;
+            color: #840000;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            ">Select a Date</h1>
+         <div id="course-buttons-container" style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            "></div>
+      </div>
+      <script>
+         const courseDetails = {
+             instructor_course: {
+                 name: "Basic Life Support (BLS) Instructor Class",
+                 price: 345.0,
+                 descriptionFile: "schedule_folder/descriptions/bls_instructor_course.html",
+                 "dates": [
+                 ]
+                 }
+             };
+         
+         const courseButtonsContainer = document.getElementById("course-buttons-container");
+         
+         function displayCourseDates(course) {
+                     const courseDetail = courseDetails[course];
+                     const datesDiv = document.createElement("div");
+                     datesDiv.style.width = "100%";
+                   
+                     let hasValidDates = false; // Flag to track if we have valid dates
+                   
+                     courseDetail.dates.forEach(dateObj => {
+                         const courseDate = new Date(dateObj.start);
+                   
+                         if (courseDate < new Date()) {
+                             // Skip dates that have already passed
+                             return;
+                         }
+                   
+                         hasValidDates = true; // Set the flag to true if a valid date is found
+                   
+                         const startTime = dateObj.startTime;
+                         const endTime = dateObj.endTime;
+                   
+                         const options = { timeZone: 'America/New_York' };
+                         const formattedDate = getFormattedDateInET(courseDate);
+                         const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
+                         const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
+                   
+                         const dateButton = document.createElement("button");
+                         dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+                   
+                         dateButton.classList.add("date-button");
+                   
+                         dateButton.addEventListener("click", () => {
+                             redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+                         });
+                   
+                         datesDiv.appendChild(dateButton);
+                     });
+                   
+                if (!hasValidDates) {
+                    // If no valid dates, add a button with "Please contact us"
+                    const contactButton = document.createElement("button");
+                    contactButton.textContent = "Please contact us to schedule a class.";
+                    contactButton.classList.add("date-button");
+                    contactButton.addEventListener("click", () => {
+                        window.location.href = "/contactus"; // Update this URL to your actual contacts page URL
+                    });
+                    datesDiv.appendChild(contactButton);
+                }
+              
+                // Clear previous content and append new dates
+                courseButtonsContainer.innerHTML = "";
+                courseButtonsContainer.appendChild(datesDiv);
+              }
+              
+         
+         
+         function redirectToConfirmation(course, date, startTime, endTime) {
+             const selectedCourse = courseDetails[course];
+             const confirmationDetails = {
+                 course: selectedCourse.name,
+                 price: selectedCourse.price.toFixed(2),
+                 date: date,
+                 startTime: startTime,
+                 endTime: endTime,
+             };
+         
+             // Read the course description file content
+             fetch(selectedCourse.descriptionFile)
+                 .then(response => response.text())
+                 .then(description => {
+                     // Redirect to confirmation page with selected course details and description as query parameters
+                     const queryString = Object.entries(confirmationDetails)
+                         .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+                         .join("&");
+         
+                     // Include the course description in the query parameters
+                     const fullQueryString = `${queryString}&description=${encodeURIComponent(description)}`;
+         
+                     window.location.href = `confirmation.html?${fullQueryString}`;
+                 })
+                 .catch(error => console.error('Error fetching course description:', error));
+         }
+         
+         // Initial call to display dates when the page loads
+         displayCourseDates('instructor_course');
+         
+         function getFormattedDateInET(dateString) {
+             // Parse the input date string
+             const date = new Date(dateString);
+         
+             // Adjust for Eastern Time (New York) offset
+             const etOffset = -5 * 60; // Eastern Time offset in minutes
+             date.setMinutes(date.getMinutes() - etOffset);
+         
+             // Format the adjusted date
+             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+             return date.toLocaleDateString('en-US', options);
+         }
+      </script>
+      <br>
+      <br>
+      <br>
+      <section id="osha-courses">
+         <div class="container">
+            <div class="section-header">
+               <h2>OSHA APPROVED COURSE</h2>
+               <p>Our courses are certified and recognized by the Occupational Safety and Health Administration (OSHA).</p>
+            </div>
+            <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> 
+            <pre>         </pre>
+            <div class="certified-logos">
+               <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" style="max-width: 100%; max-height: 160px;"> 
+               <pre>         </pre>
+               <img src="img/clients/certified2.png" alt="AHA"> 
+               <pre>         </pre>
+               <br>
+               <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 50px; margin-left: 11px;" alt="HSI"> 
+               <pre>         </pre>
+               <br>
+               <br>
+               <img src="img/intro-carousel/medicfirstaid.png" style= "max-width: 100%;" alt="HSI">
+               <img src="img/clients/certified3.png" alt="Safety Training"> 
+               <pre>                   </pre>
+               <br>
+            </div>
+         </div>
+      </section>
+      <br>
+      <br>
+      <footer id="footer">
+         <!-- Load the footer content using jQuery -->
+         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+         <script>
+            $(document).ready(function () {
+              // Load footer content
+              $('#footer').load('footer.html');
+            });
+         </script>
+      </footer>
+   </body>
+   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+   <!-- JavaScript Libraries -->
+   <script src="lib/jquery/jquery.min.js"></script>
+   <script src="lib/jquery/jquery-migrate.min.js"></script>
+   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/superfish/hoverIntent.js"></script>
+   <script src="lib/superfish/superfish.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+   <script src="lib/sticky/sticky.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+   <!-- Contact Form JavaScript File -->
+   <script src="contactform/contactform.js"></script>
+   <!-- Template Main Javascript File -->
+   <script src="js/main.js"></script>
+   </body>
+</html>
