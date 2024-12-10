@@ -38,7 +38,8 @@ hsi_adult_pediatric_classroom: {
   descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
   dates: [
     { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
-    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
+    { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2024-12-14", "end": "", "startTime": "11:00", "endTime": "13:00" }
   ],
 },
 
