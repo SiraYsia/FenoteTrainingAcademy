@@ -15,17 +15,12 @@ const courseDetails = {
     price: 80.00,
     descriptionFile: "schedule_folder/descriptions/hsi/all_ages.html",
     dates: [
-      { "start": "2024-09-14", "end": "", "startTime": "10:00", "endTime": "12:15" },
-      { "start": "2024-09-22", "end": "", "startTime": "15:00", "endTime": "17:15" },
-      { "start": "2024-09-22", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-10-06", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2024-10-13", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2024-10-19", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2024-10-20", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2024-10-27", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
+      { "start": "2025-01-04", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-11", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-18", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-25", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-02-08", "end": "", "startTime": "15:00", "endTime": "17:00" },
 
 
 
@@ -221,269 +216,259 @@ const courseDetails = {
   
   
   };
-  
-  
   function getFormattedDateInET(dateString) {
-    // Parse the input date string
     const date = new Date(dateString);
-  
-    // Adjust for Eastern Time (New York) offset
-    const etOffset = -5 * 60; // Eastern Time offset in minutes
+    const etOffset = -5 * 60;
     date.setMinutes(date.getMinutes() - etOffset);
-  
-    // Format the adjusted date
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('en-US', options);
-  }
-  
-  
-  fetch('schedule_folder/descriptions/description.html')
+}
+
+// Load description and scams content
+fetch('schedule_folder/descriptions/description.html')
     .then(response => response.text())
     .then(descriptionHtml => {
         document.getElementById("description").innerHTML = descriptionHtml;
-  
-  
     })
     .catch(error => console.error("Error loading description:", error));
-  
-  
 
-    fetch('schedule_folder/scams.html')
+fetch('schedule_folder/scams.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('scams').innerHTML = html;
     })
     .catch(error => console.error('Error fetching scams.html:', error));
-  
-  
-    function redirectToConfirmation(course, date, startTime, endTime) {
-      const selectedCourse = courseDetails[course];
-      const confirmationDetails = {
-          course: selectedCourse.name,
-          price: selectedCourse.price.toFixed(2),
-          date: date,
-          startTime: startTime,
-          endTime: endTime,
-      };
-  
-      // Read the course description file content
-      fetch(selectedCourse.descriptionFile)
-          .then(response => response.text())
-          .then(description => {
-              // Redirect to confirmation page with selected course details and description as query parameters
-              const queryString = Object.entries(confirmationDetails)
-                  .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
-                  .join("&");
-  
-              // Include the course description in the query parameters
-              const fullQueryString = `${queryString}&description=${encodeURIComponent(description)}`;
-  
-              window.location.href = `confirmation.html?${fullQueryString}`;
-          })
-          .catch(error => console.error('Error fetching course description:', error));
-  }
-    
-  
+
+function redirectToConfirmation(course, date, startTime, endTime) {
+    const selectedCourse = courseDetails[course];
+    const confirmationDetails = {
+        course: selectedCourse.name,
+        price: selectedCourse.price.toFixed(2),
+        date: date,
+        startTime: startTime,
+        endTime: endTime,
+    };
+
+    fetch(selectedCourse.descriptionFile)
+        .then(response => response.text())
+        .then(description => {
+            const queryString = Object.entries(confirmationDetails)
+                .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+                .join("&");
+            const fullQueryString = `${queryString}&description=${encodeURIComponent(description)}`;
+            window.location.href = `confirmation.html?${fullQueryString}`;
+        })
+        .catch(error => console.error('Error fetching course description:', error));
+}
+
+// Helper function to create contact button
+function createContactButton() {
+    const dateButton = document.createElement("button");
+    dateButton.innerHTML = "Please contact us to schedule a class.";
+    dateButton.style.backgroundColor = "transparent";
+    dateButton.style.color = "red";
+    dateButton.style.padding = "8px 12px";
+    dateButton.style.margin = "5px 0";
+    dateButton.style.cursor = "pointer";
+    dateButton.style.border = "1px solid #ddd";
+    dateButton.style.borderRadius = "3px";
+    dateButton.style.display = "block";
+    dateButton.style.width = "100%";
+    dateButton.style.textAlign = "left";
+
+    dateButton.addEventListener("click", () => {
+        window.location.href = "./contactus";
+    });
+
+    return dateButton;
+}
 
 document.addEventListener("DOMContentLoaded", function () {
-  const courseButtonsContainer = document.getElementById("course-buttons-container");
+    const courseButtonsContainer = document.getElementById("course-buttons-container");
+    courseButtonsContainer.style.display = "flex";
+    courseButtonsContainer.style.flexDirection = "column";
+    courseButtonsContainer.style.width = "100%";
 
-  courseButtonsContainer.style.display = "flex";
-  courseButtonsContainer.style.flexDirection = "column";
-  courseButtonsContainer.style.width = "100%"; 
+    let currentOpenContainer = null;
 
-  // Keep track of currently open container
-  let currentOpenContainer = null;
+    function toggleCourseDetails(course, courseContainer) {
+        const courseDetail = courseDetails[course];
+        
+        if (currentOpenContainer === courseContainer && courseContainer.style.display === "block") {
+            courseContainer.style.display = "none";
+            currentOpenContainer = null;
+            return;
+        }
 
-  function toggleCourseDetails(course, courseContainer) {
-    const courseDetail = courseDetails[course];
-    
-    // If clicking the same container that's open, close it
-    if (currentOpenContainer === courseContainer && courseContainer.style.display === "block") {
-      courseContainer.style.display = "none";
-      currentOpenContainer = null;
-      return;
+        if (currentOpenContainer) {
+            currentOpenContainer.style.display = "none";
+        }
+
+        courseContainer.innerHTML = "";
+        const descriptionDiv = document.createElement("div");
+        const datesDiv = document.createElement("div");
+
+        fetch(courseDetail.descriptionFile)
+            .then(response => response.text())
+            .then(descriptionHtml => {
+                descriptionDiv.innerHTML = descriptionHtml;
+            })
+            .catch(error => console.error("Error loading description:", error));
+
+        // Handle dates
+        const now = new Date();
+        let hasValidFutureDates = false;
+
+        if (courseDetail.dates === "None" || !Array.isArray(courseDetail.dates) || courseDetail.dates.length === 0) {
+            datesDiv.appendChild(createContactButton());
+        } else {
+            // Check for valid future dates
+            courseDetail.dates.forEach(dateObj => {
+                if (dateObj !== "None") {
+                    const dateTimeString = `${dateObj.start}T${dateObj.startTime}`;
+                    const courseDate = new Date(dateTimeString);
+                    if (!isNaN(courseDate) && courseDate > now) {
+                        hasValidFutureDates = true;
+                    }
+                }
+            });
+
+            if (!hasValidFutureDates) {
+                datesDiv.appendChild(createContactButton());
+            } else {
+                // Show valid future dates
+                courseDetail.dates.forEach(dateObj => {
+                    if (dateObj === "None") return;
+
+                    const dateTimeString = `${dateObj.start}T${dateObj.startTime}`;
+                    const courseDate = new Date(dateTimeString);
+
+                    if (!isNaN(courseDate) && courseDate > now) {
+                        const startTime = dateObj.startTime;
+                        const endTime = dateObj.endTime;
+
+                        const options = { timeZone: 'America/New_York' };
+                        const formattedDate = getFormattedDateInET(courseDate);
+                        const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
+                        const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
+
+                        const dateButton = document.createElement("button");
+                        dateButton.innerHTML = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+                        dateButton.style.backgroundColor = "lightgreen";
+                        dateButton.style.color = "red";
+                        dateButton.style.padding = "8px 12px";
+                        dateButton.style.margin = "5px 0";
+                        dateButton.style.cursor = "pointer";
+                        dateButton.style.border = "1px solid #ddd";
+                        dateButton.style.borderRadius = "3px";
+                        dateButton.style.display = "block";
+                        dateButton.style.width = "100%";
+                        dateButton.style.textAlign = "left";
+
+                        dateButton.addEventListener("click", () => {
+                            redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+                        });
+
+                        datesDiv.appendChild(dateButton);
+                    }
+                });
+            }
+        }
+
+        // Style container
+        courseContainer.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+        courseContainer.style.borderRadius = "0";
+        courseContainer.style.backgroundColor = "#f9f9f9";
+        courseContainer.style.marginTop = "10px";
+        courseContainer.style.padding = "15px";
+
+        // Add content
+        courseContainer.appendChild(descriptionDiv);
+        descriptionDiv.style.fontSize = "16px";
+        descriptionDiv.style.color = "#333";
+        descriptionDiv.style.margin = "0 20px";
+        descriptionDiv.style.marginBottom = "10px";
+        descriptionDiv.style.textAlign = "justify";
+
+        courseContainer.appendChild(datesDiv);
+        courseContainer.style.display = "block";
+        currentOpenContainer = courseContainer;
     }
 
-    // Close previously open container
-    if (currentOpenContainer) {
-      currentOpenContainer.style.display = "none";
-    }
+    // Create course buttons
+    Object.keys(courseDetails).forEach((course, index) => {
+        const courseButton = document.createElement("button");
+        
+        const buttonContent = document.createElement("div");
+        buttonContent.style.display = "flex";
+        buttonContent.style.justifyContent = "space-between";
+        buttonContent.style.alignItems = "center";
+        buttonContent.style.width = "100%";
 
-    // Clear and populate the container
-    courseContainer.innerHTML = "";
-    
-    const descriptionDiv = document.createElement("div");
-    const datesDiv = document.createElement("div");
+        const courseName = document.createElement("span");
+        courseName.innerHTML = courseDetails[course].name;
 
-    // Fetch and set description
-    fetch(courseDetail.descriptionFile)
-      .then(response => response.text())
-      .then(descriptionHtml => {
-        descriptionDiv.innerHTML = descriptionHtml;
-      })
-      .catch(error => console.error("Error loading description:", error));
+        const priceWithDollar = "$" + courseDetails[course].price;
+        const priceTag = document.createElement("span");
+        if (index === 0 || index === 18) {
+            priceTag.innerHTML = "";
+        } else {
+            priceTag.innerHTML = priceWithDollar || "";
+        }
+        
+        priceTag.style.backgroundColor = "#4CAF50";
+        priceTag.style.color = "white";
+        priceTag.style.padding = "4px 8px";
+        priceTag.style.borderRadius = "4px";
+        priceTag.style.marginLeft = "10px";
+        priceTag.style.fontSize = "0.9em";
+        priceTag.style.fontWeight = "bold";
+        priceTag.style.width = "50px";
 
-    // Add dates
-    courseDetail.dates.forEach(dateObj => {
-      const dateTimeString = `${dateObj.start}T${dateObj.startTime}`;
-      const courseDate = new Date(dateTimeString);
-      const now = new Date();
+        buttonContent.appendChild(courseName);
+        buttonContent.appendChild(priceTag);
+        courseButton.appendChild(buttonContent);
 
-      if (now > courseDate) {
-        return;
-      }
+        courseButton.style.backgroundColor = "transparent";
+        courseButton.style.color = "#333";
+        courseButton.style.padding = "10px 20px";
+        courseButton.style.margin = "5px 0";
+        courseButton.style.cursor = "pointer";
+        courseButton.style.border = "1px solid #ddd";
+        courseButton.style.borderRadius = "0px";
+        courseButton.style.transition = "background-color 0.3s";
+        courseButton.style.textAlign = "left";
+        courseButton.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        courseButton.style.fontWeight = "bold";
+        courseButton.style.width = "100%";
 
-      if (isNaN(courseDate)) {
-        const dateButton = document.createElement("button");
-        dateButton.innerHTML = "Please contact us to schedule a class.";
-        dateButton.style.backgroundColor = "transparent";
-        dateButton.style.color = "red";
-        dateButton.style.padding = "8px 12px";
-        dateButton.style.margin = "5px 0";
-        dateButton.style.cursor = "pointer";
-        dateButton.style.border = "1px solid #ddd";
-        dateButton.style.borderRadius = "3px";
-        dateButton.style.display = "block";
-        dateButton.style.width = "100%";
-        dateButton.style.textAlign = "left";
+        // Apply color coding
+        if (index === 0) courseName.style.color = "blue";
+        if (index === 1 || index === 5) courseName.style.color = "purple";
+        if (index === 18) courseName.style.color = "red";
+        if (index === 19 || index === 20) courseName.style.color = "purple";
+        if (index === 34) courseName.style.color = "blue";
 
-        dateButton.addEventListener("click", () => {
-          window.location.href = "./contactus";
+        const container = document.createElement("div");
+        container.style.display = "none";
+        courseDetails[course].container = container;
+
+        courseButton.addEventListener("mouseenter", () => {
+            courseButton.style.backgroundColor = "#f2f2f2";
         });
 
-        datesDiv.appendChild(dateButton);
-      } else {
-        const startTime = dateObj.startTime;
-        const endTime = dateObj.endTime;
-
-        const options = { timeZone: 'America/New_York' };
-        const formattedDate = getFormattedDateInET(courseDate);
-        const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
-        const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
-
-        const dateButton = document.createElement("button");
-        dateButton.innerHTML = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
-        dateButton.style.backgroundColor = "transparent";
-        dateButton.style.color = "red";
-        dateButton.style.padding = "8px 12px";
-        dateButton.style.margin = "5px 0";
-        dateButton.style.cursor = "pointer";
-        dateButton.style.border = "1px solid #ddd";
-        dateButton.style.borderRadius = "3px";
-        dateButton.style.display = "block";
-        dateButton.style.width = "100%";
-        dateButton.style.textAlign = "left";
-        dateButton.style.backgroundColor = "lightgreen";
-        dateButton.style.color = "red";
-
-        dateButton.addEventListener("click", () => {
-          redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+        courseButton.addEventListener("mouseleave", () => {
+            courseButton.style.backgroundColor = "transparent";
         });
 
-        datesDiv.appendChild(dateButton);
-      }
+        courseButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            toggleCourseDetails(course, container);
+        });
+
+        courseButtonsContainer.appendChild(courseButton);
+        courseButtonsContainer.appendChild(container);
     });
-
-    // Style and show container
-    courseContainer.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
-    courseContainer.style.borderRadius = "0";
-    courseContainer.style.backgroundColor = "#f9f9f9";
-    courseContainer.style.marginTop = "10px";
-    courseContainer.style.padding = "15px";
-
-    // Add content
-    courseContainer.appendChild(descriptionDiv);
-    descriptionDiv.style.fontSize = "16px";
-    descriptionDiv.style.color = "#333";
-    descriptionDiv.style.margin = "0 20px";
-    descriptionDiv.style.marginBottom = "10px";
-    descriptionDiv.style.textAlign = "justify";
-
-    courseContainer.appendChild(datesDiv);
-    courseContainer.style.display = "block";
-
-    // Update current open container
-    currentOpenContainer = courseContainer;
-  }
-
-  Object.keys(courseDetails).forEach((course, index) => {
-    const courseButton = document.createElement("button");
-    
-    // Create a container for course name and price
-    const buttonContent = document.createElement("div");
-    buttonContent.style.display = "flex";
-    buttonContent.style.justifyContent = "space-between";
-    buttonContent.style.alignItems = "center";
-    buttonContent.style.width = "100%";
-
-    // Course name span
-    const courseName = document.createElement("span");
-    courseName.innerHTML = courseDetails[course].name;
-
-
-    // Price tag span
-    const priceWithDollar = "$" + courseDetails[course].price;
-    const priceTag = document.createElement("span");
-    if (index === 0 || index === 18) {
-      priceTag.innerHTML = "";
-    } else {
-      priceTag.innerHTML = priceWithDollar || "";
-    }
-    priceTag.style.backgroundColor = "#4CAF50"; 
-    priceTag.style.color = "white";
-    priceTag.style.padding = "4px 8px";
-    priceTag.style.borderRadius = "4px";
-    priceTag.style.marginLeft = "10px";
-    priceTag.style.fontSize = "0.9em";
-    priceTag.style.fontWeight = "bold";
-    priceTag.style.width = "50px";
-
-    // Add both elements to button content
-    buttonContent.appendChild(courseName);
-    buttonContent.appendChild(priceTag);
-    courseButton.appendChild(buttonContent);
-
-    courseButton.style.backgroundColor = "transparent";
-    courseButton.style.color = "#333";
-    courseButton.style.padding = "10px 20px";
-    courseButton.style.margin = "5px 0";
-    courseButton.style.cursor = "pointer";
-    courseButton.style.border = "1px solid #ddd";
-    courseButton.style.borderRadius = "0px";
-    courseButton.style.transition = "background-color 0.3s";
-    courseButton.style.textAlign = "left";
-    courseButton.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
-    courseButton.style.fontWeight = "bold";
-    courseButton.style.width = "100%";
-
-    // Apply color coding
-    if (index === 0) courseName.style.color = "blue";
-    if (index === 1 || index === 5) courseName.style.color = "purple";
-    if (index === 18) courseName.style.color = "red";
-    if (index === 19 || index === 20) courseName.style.color = "purple";
-    if (index === 34) courseName.style.color = "blue";
-
-    const container = document.createElement("div");
-    container.style.display = "none";
-    courseDetails[course].container = container;
-
-    courseButton.addEventListener("mouseenter", () => {
-      courseButton.style.backgroundColor = "#f2f2f2";
-    });
-
-    courseButton.addEventListener("mouseleave", () => {
-      courseButton.style.backgroundColor = "transparent";
-    });
-
-    courseButton.addEventListener("click", (event) => {
-      event.preventDefault();
-      toggleCourseDetails(course, container);
-    });
-
-    courseButtonsContainer.appendChild(courseButton);
-    courseButtonsContainer.appendChild(container);
-  });
 });
   
   

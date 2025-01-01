@@ -20,6 +20,111 @@
       <!-- Main Stylesheet File -->
       <link href="css/style.css" rel="stylesheet">
    </head>
+
+
+
+
+   <style>
+    .course-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .section-block {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* Course Info Section */
+    .course-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .course-header h2 {
+        color: #2a4c7d;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .course-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .detail-item {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 6px;
+        border-left: 4px solid #2a4c7d;
+    }
+
+    /* Content Sections */
+    .content-section {
+        margin-bottom: 2.5rem;
+    }
+
+    .content-section h3 {
+        color: #2a4c7d;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #eaeaea;
+    }
+
+    .content-section p {
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    /* Lists */
+    .content-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .list-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .list-item {
+        background-color: #f8f9fa;
+        padding: 1rem 1.5rem;
+        border-radius: 6px;
+        border-left: 4px solid #2a4c7d;
+        line-height: 1.6;
+    }
+
+    /* Status Box */
+    .status-box {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        border-radius: 6px;
+        border-left: 4px solid #2a4c7d;
+    }
+
+    @media (max-width: 768px) {
+        .course-container {
+            padding: 1rem;
+        }
+        
+        .section-block {
+            padding: 1.5rem;
+        }
+    }
+  </style>
+  
+
    <body>
       <!--==========================
          Header
@@ -45,75 +150,84 @@
          </div>
       </section>
       <br> 
-      <br>
-      <!-- Delete this Again-->
-      <br>
-      <section id="prover-training">
-         <div class="container">
-            <div class="section-header">
-               <h2> Basic Life Support (BLS) Instructor Course - ARC</h2>
-               <p>Price: $345.00</p>
-               <p>Capacity: 1–12 participants</p>
-               <p>Duration: 6 hours</p>
-               <p>Format: Blended (Online + Classroom Instructor-Led)</p>
-               <br>
-            </div>
+
+
+      <div class="course-container">
+         <!-- Course Info Section -->
+         <div class="section-block">
+             <div class="course-header">
+                 <h2><strong> Basic Life Support (BLS) Instructor Course - ARC</strong></h2>
+                 <br>
+             </div>
+             <div class="course-details">
+                 <div class="detail-item">
+                     <strong>Price:</strong> $345.00
+                 </div>
+                 <div class="detail-item">
+                     <strong>Capacity:</strong> 1–12 participants
+                 </div>
+                 <div class="detail-item">
+                     <strong>Duration:</strong> 6 hours
+                 </div>
+                 <div class="detail-item">
+                     <strong>Format:</strong> Blended (Online + Classroom)
+                 </div>
+             </div>
          </div>
-    <section id="prover-training">
-            <div class="container">
-               <div class="section-header">
-                  <h2>Course Description</h2>
-                  <p>This American Red Cross BLS Instructor Course is designed for individuals aiming to become certified BLS instructors. It combines online and in-person training components to deliver a comprehensive learning experience.</p>
-                  <br>
-               </div>
-            </div>
-        <section id="prover-training">
-                <div class="container">
-                   <div class="section-header">
-                      <h2>Course Requirements</h2>
-                      <h3>Prerequisites:</h3>
-                      <p>Current certification in Basic Life Support (BLS) or equivalent.</p>
-                      <p>Completion of the online course (approximately 1 hour and 30 minutes) prior to attending the in-person session.</p>
-                      <p>Online course access will be provided upon full registration and payment.</p>
-                      <br>
-                      <h3>Registration Status:</h3>
-                      <p>Registrants will remain in pending status until proof of current BLS certification is verified.</p>
-                      <br>
-                   </div>
-                </div>
-                <section id="prover-training">
-                    <div class="container">
-                       <div class="section-header">
-                          <h2>Intended Audience</h2>
-                          <p>This course is tailored for:</p>
-                          <br>
-                          <ul>
-                            <li>Medical Personnel:
-                            Physicians, nurses, nurse practitioners, physician assistants, dentists, pharmacists, physical therapists, nurse assistants, and students pursuing these professions.</li>
-                            <li>Public Safety Personnel and Responders:
-                            Paramedics, advanced EMTs, EMTs, firefighters, law enforcement officers, emergency medical responders (EMRs), and students preparing for these roles.</li>
-                          </ul>                          
-                          <br>
-                       </div>
-                    </div>
-                    <section id="prover-training">
-                        <div class="container">
-                           <div class="section-header">
-                              <h2>Course Purpose</h2>
-                              <p>The BLS Instructor Course equips participants with the skills and knowledge to recognize and respond to life-threatening emergencies, including:</p>
-                              <br>
-                              <ul>
-                                <li>Respiratory arrest or failure</li>
-                                <li>Cardiac arrest</li>
-                                <li>Airway obstruction</li>
-                                <li>Opioid overdose</li>
-                                <li>Other critical injuries or illnesses</li>
-                              </ul>                          
-                              <br>
-                              <p>Emphasis is placed on delivering high-quality care, integrating critical thinking and psychomotor skills, and ensuring optimal patient outcomes.</p>
-                           </div>
-                        </div>
-      </section>
+     
+         <!-- Course Description -->
+         <div class="section-block">
+             <div class="content-section">
+                 <p>This American Red Cross BLS Instructor Course is designed for individuals aiming to become certified BLS instructors. It combines online and in-person training components to deliver a comprehensive learning experience.</p>
+             </div>
+     
+             <!-- Prerequisites -->
+             <div class="content-section">
+                 <h3>Prerequisites</h3>
+                 <p>Current certification in Basic Life Support (BLS) or equivalent.</p>
+                 <p>Completion of the online course (approximately 1 hour and 30 minutes) prior to attending the in-person session.</p>
+                 <p>Online course access will be provided upon full registration and payment.</p>
+                 
+                 <div class="status-box">
+                     <h3>Registration Status</h3>
+                     <p>Registrants will remain in pending status until proof of current BLS certification is verified.</p>
+                 </div>
+             </div>
+     
+             <!-- Target Audience -->
+             <div class="content-section">
+                 <h3>This course is tailored for</h3>
+                 <ul class="content-list">
+                     <li class="list-item">
+                         <strong>Medical Personnel:</strong> Physicians, nurses, nurse practitioners, physician assistants, dentists, pharmacists, physical therapists, nurse assistants, and students pursuing these professions.
+                     </li>
+                     <li class="list-item">
+                         <strong>Public Safety Personnel and Responders:</strong> Paramedics, advanced EMTs, EMTs, firefighters, law enforcement officers, emergency medical responders (EMRs), and students preparing for these roles.
+                     </li>
+                 </ul>
+             </div>
+     
+             <!-- Course Coverage -->
+             <div class="content-section">
+                 <h3>Course Coverage</h3>
+                 <p>The BLS Instructor Course equips participants with the skills and knowledge to recognize and respond to life-threatening emergencies, including:</p>
+                 <ul class="content-list list-grid">
+                     <li class="list-item">Respiratory arrest or failure</li>
+                     <li class="list-item">Cardiac arrest</li>
+                     <li class="list-item">Airway obstruction</li>
+                     <li class="list-item">Opioid overdose</li>
+                     <li class="list-item">Other critical injuries or illnesses</li>
+                 </ul>
+                 
+                 <div class="status-box">
+                     <p>Emphasis is placed on delivering high-quality care, integrating critical thinking and psychomotor skills, and ensuring optimal patient outcomes.</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
       <div id="instructor_dates_container" style="
          padding: 20px;
          background-color: #ffffff;
@@ -186,10 +300,10 @@
                 if (!hasValidDates) {
                     // If no valid dates, add a button with "Please contact us"
                     const contactButton = document.createElement("button");
-                    contactButton.textContent = "Please contact us to schedule a class.";
+                    contactButton.textContent = "     Please  contact us to schedule a class.     ";
                     contactButton.classList.add("date-button");
                     contactButton.addEventListener("click", () => {
-                        window.location.href = "/contactus"; // Update this URL to your actual contacts page URL
+                        window.location.href = "/contactus"; 
                     });
                     datesDiv.appendChild(contactButton);
                 }

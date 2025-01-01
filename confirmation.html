@@ -15,15 +15,50 @@
             background-color: #f7ffff;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
+
+        .header {
+            background-color: #3a5a7a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed; /* Fix the header to the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .main-content {
+            padding-top: 120px; 
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20%;
+            margin-right: 15px;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+
+        .header-text {
+            font-size: 2em;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+
 
         h1 {
             color: #333;
             margin-top: 30px;
             font-size: 32px;
+            text-align: center; /* Add this to center the text */
+            width: 100%; /* Ensure full width */
+            margin-bottom: 30px; /* Add some bottom margin for spacing */
         }
-
         #confirmation-details {
             max-width: 600px;
             margin: 20px auto;
@@ -118,21 +153,6 @@
             margin-left: 5px;
         }
 
-        .header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin-right: 10px;
-            border-radius: 50%; 
-        }
 
         .text {
             font-size: 1.2em;
@@ -145,6 +165,63 @@
             padding: 50px 0 0 0; /* Adjust padding to fit header height */
         }
 
+       
+
+        @media screen and (max-width: 768px) {
+        .header {
+            padding: 10px 0;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .header-text {
+            font-size: 1.2em;
+        }
+
+        .container {
+            padding: 100px 15px 30px;
+        }
+
+        .payment-options-section {
+            padding: 20px;
+        }
+
+        .button-container {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+
+    /* Extra small devices */
+    @media screen and (max-width: 480px) {
+        .header-text {
+            font-size: 1em;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .payment-options-section h2 {
+            font-size: 20px;
+        }
+
+        .payment-options-section p,
+        .payment-options-section li {
+            font-size: 14px;
+        }
+    }
+
     </style>
 </head>
 
@@ -154,10 +231,13 @@
     <br>
     <br>
 
-    <div class="header">
+    <header class="header">
         <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
-        <div class="text">Fenote Training Academy</div>
-    </div>
+        <span class="header-text">Fenote Training Academy</span>
+    </header>
+    <br>
+    <br>
+
     <h1>Confirm Course Selection</h1>
     <div id="description">
         <!-- Course description will be displayed here -->

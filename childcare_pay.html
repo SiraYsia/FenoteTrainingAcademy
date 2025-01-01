@@ -16,25 +16,31 @@
             margin: 0;
             padding: 0;
         }
+
         .header {
             background-color: #3a5a7a;
             color: white;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
         .logo {
             width: 80px;
             height: 80px;
             border-radius: 20%;
             margin-right: 15px;
             vertical-align: middle;
+            object-fit: cover;
         }
+
         .header-text {
             font-size: 2em;
             font-weight: bold;
             display: inline-block;
             vertical-align: middle;
         }
+
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -43,60 +49,65 @@
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
+
         .section {
-            margin-bottom: 30px;
             padding: 20px;
             border-radius: 8px;
         }
-        #payment-breakdown-section {
-            background-color: #e6f3ff;
-        }
 
-        #cancellation-info {
-            background-color: #fff3f1;
-        }
-        
         .section h2 {
             color: #3a5a7a;
             border-bottom: 2px solid #3a5a7a;
             padding-bottom: 10px;
             margin-top: 0;
         }
-        .payment-breakdown div {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #bdd7f3;
+
+        .payment-options-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .payment-breakdown .total {
-            border-top: 2px solid #3a5a7a;
-            margin-top: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #3a5a7a;
-        }
-        .payment-breakdown .price {
-            font-weight: bold;
-        }
+
         .payment-options-section ol {
             padding-left: 20px;
+            margin-bottom: 20px;
         }
+
         .payment-options-section ol li {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-        .payment-options-section ol a {
+
+        .payment-options-section ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .payment-options-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .payment-options-section a {
             color: #3a5a7a;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
-        .payment-options-section ol a:hover {
+
+        .payment-options-section a:hover {
             text-decoration: underline;
+            color: #2c4459;
         }
+
         .button-container {
+            max-width: 800px;
+            margin: 20px auto 40px;
+            padding: 0 20px;
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+            gap: 20px;
         }
+
         .button {
             padding: 15px 30px;
             border: none;
@@ -104,85 +115,55 @@
             cursor: pointer;
             font-size: 1em;
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            flex: 1;
+            text-align: center;
         }
+
         .button.confirm-button {
             background-color: #4CAF50;
             color: white;
         }
+
         .button.back-button {
             background-color: #f44336;
             color: white;
         }
+
         .button:hover {
             opacity: 0.9;
-        }
-        #cancellation-info {
-            max-height: 200px;
-            overflow: auto;
-            margin-top: 30px;
-            padding: 20px;
-        }
-        .agreement-container {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .agreement-container label {
-            margin-left: 10px;
-            color: #555;
+            transform: translateY(-2px);
         }
 
-        .policy-container {
-            background-color: #f5e4e4;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .button:active {
+            transform: translateY(0);
         }
 
-        .policy-content {
-            max-height: 350px;
-            overflow-y: auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 6px;
-        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
 
-        .policy-content::-webkit-scrollbar {
-            width: 8px;
-        }
+            .button-container {
+                flex-direction: column;
+                margin: 20px;
+            }
 
-        .policy-content::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
+            .button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
 
-        .policy-content::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 4px;
-        }
+            .header-text {
+                font-size: 1.5em;
+            }
 
-        .policy-content::-webkit-scrollbar-thumb:hover {
-            background: #555;
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
         }
-
-        .policy-content h3 {
-            color: #3a5a7a;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .policy-content p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
     </style>
 </head>
 <body>
@@ -190,34 +171,8 @@
         <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
         <span class="header-text">Fenote Training Academy</span>
     </header>
-    
+
     <div class="container">
-        <div class="section" id="payment-breakdown-section">
-            <h2>Payment</h2>
-            <div class="payment-breakdown">
-                <div>
-                    <span>Course Price:</span>
-                    <span class="price">$800.00</span>
-                </div>
-                <div>
-                    <span>Service Fee:</span>
-                    <span class="price">$30.00</span>
-                </div>
-                <div>
-                    <span>Tax (3%):</span>
-                    <span class="price">$24.00</span>
-                </div>
-                <div class="total">
-                    <span>Total Price:</span>
-                    <span class="price">$854.00</span>
-                </div>
-                <div>
-                    <span>Total price without service fee:</span>
-                    <span class="price">$824.00</span>
-                </div>
-            </div>
-        </div>
-        
         <div class="section payment-options-section">
             <h2>Payment Options</h2>
             <ol>
@@ -230,67 +185,17 @@
                 </li>
                 <li>For credit or debit card payments (with service fee), use the green button below.</li>
                 <li>If you need more payment options or installment contact us.</li>
-
             </ol>
-        </div>
-       
-        <div class="section payment-options-section">
-            <div class="policy-container">
-                <div class="policy-content">
-
-            <h2>CORE OF KNOWLEDGE ASSESSMENT</h2>
-
-            <p> As mandated by the Maryland State Department of Education-Office of Child Care (OCC), all Core of Knowledge classes conclude with an assessment. This assessment may take the form of an activity, group project, homework, or a written test. To obtain a Core of Knowledge certificate, participants must achieve a score of 75% or higher. A score of 74% or below will not qualify for a certificate. Students can schedule a retake of the test, but if they do not pass the second assessment, they will need to retake the entire class (payment is required). Core of Knowledge certificates fulfill licensing and Maryland childcare credential training requirements established by OCC. Participants must remain in class until the end; leaving early and missing the assessment will prevent the issuance of a certificate. Additionally, attendance at all sessions is required for multi-part classes to be eligible for the assessment.<p>
-
-            <h2>CANCELATIONS/REFUNDS/CREDITS</h2>
-
-            <p>Refunds are not available for missed classes or late arrivals. Cancellations must be made via email or phone (please leave a message if necessary) at least 24 hours before the training. All classes will start and end on time. If you arrive after the registrar has taken attendance, it will be recorded as a missed class.<p>
-            
-            <p>If a student needs to cancel a class, a refund or credit for a future class may be issued, provided the cancellation is received at least 24 hours in advance. A $15 cancellation fee and processing fee will be deducted from any refund requested. If a student prefers a credit for a future class, the cancellation fee will not apply. Please note that missed classes, including late arrivals or early departures, will not be eligible for refunds or credits.<p>
-            
-            <h2>DUPLICATE CERTIFICATES</h2>
-
-            <p>All certificates will be emailed within 10 business days after class completion. If you lose your certificate, a $15 administrative fee will apply for issuing a duplicate.<p>     
-            
-            <h2>CLASS CANCELATIONS</h2>
-
-            <p>Class schedules are arranged in advance, but there are occasions when cancellations may occur. Classes will be canceled if Montgomery County Public Schools are closed due to inclement weather or if evening or weekend activities are canceled for similar reasons or other emergencies. Additionally, classes may be canceled due to low enrollment or other administrative factors. You will be notified by email if a class is canceled, and you can also call 240-863-2331 to check the status of a class. If we do cancel a class, we will make every effort to reschedule or provide a substitute session.<p> 
-            </div>
-            </div>
-        </div>
-        
-        <div class="agreement-container">
-            <input type="checkbox" id="agreementCheckbox">
-            <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
-        </div>
-        
-        <div class="button-container">
-            <button class="button confirm-button" id="payButton">Proceed to Payment</button>
-            <button class="button back-button" onclick="window.location.href='./serving_child_care_providers.html'">Return to Course</button>
         </div>
     </div>
 
+    <div class="button-container">
+        <button class="button confirm-button" id="payButton">Pay with Card</button>
+        <button class="button back-button" onclick="window.location.href='./confirmation_childcare_course.html'">Back</button>
+    </div>
+
     <script>
-        function loadCancellationInfo() {
-            const cancellationInfoDiv = document.getElementById("cancellation-info");
-            fetch('cancelation.html')
-                .then(response => response.text())
-                .then(html => {
-                    cancellationInfoDiv.innerHTML += html;
-                })
-                .catch(error => {
-                    console.error('Error fetching cancellation information:', error);
-                });
-        }
-
-        loadCancellationInfo();
-
         document.getElementById('payButton').addEventListener('click', function() {
-            const agreementCheckbox = document.getElementById('agreementCheckbox');
-            if (!agreementCheckbox.checked) {
-                alert('You must agree to the cancellation policy before proceeding with payment.');
-                return;
-            }
             window.location.href = 'https://square.link/u/aRBVKaBE';
         });
     </script>
