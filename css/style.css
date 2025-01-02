@@ -1446,6 +1446,8 @@ body {
   border: 2px solid #ccc;
   margin: 10px 0;
   }
+
+  
   header {
   background-color: rgba(49, 101, 204, 1);
   box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
@@ -1463,7 +1465,7 @@ body {
   align-items: center;
   }
   #logo h1 {
-  font-size: 14px;
+  font-size: 20px;
   margin: 0;
   color: #ffffff;
   font-weight: bold;
