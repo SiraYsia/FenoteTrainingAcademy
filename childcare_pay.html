@@ -50,18 +50,6 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
 
-        .section {
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .section h2 {
-            color: #3a5a7a;
-            border-bottom: 2px solid #3a5a7a;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
         .payment-options-section {
             background-color: #fff;
             padding: 20px;
@@ -69,34 +57,27 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .payment-options-section ol {
-            padding-left: 20px;
+        .payment-options-section h2 {
+            color: #333;
+            margin-top: 0;
             margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .payment-options-section ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin: 0;
         }
 
         .payment-options-section ol li {
             margin-bottom: 20px;
-        }
-
-        .payment-options-section ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        .payment-options-section ul li {
-            margin-bottom: 10px;
+            padding-left: 10px;
         }
 
         .payment-options-section a {
-            color: #3a5a7a;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .payment-options-section a:hover {
+            color: #0066cc;
             text-decoration: underline;
-            color: #2c4459;
         }
 
         .button-container {
@@ -130,15 +111,6 @@
             color: white;
         }
 
-        .button:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-        }
-
-        .button:active {
-            transform: translateY(0);
-        }
-
         @media (max-width: 600px) {
             .container {
                 margin: 20px;
@@ -154,15 +126,6 @@
                 width: 100%;
                 margin-bottom: 10px;
             }
-
-            .header-text {
-                font-size: 1.5em;
-            }
-
-            .logo {
-                width: 60px;
-                height: 60px;
-            }
         }
     </style>
 </head>
@@ -173,18 +136,11 @@
     </header>
 
     <div class="container">
-        <div class="section payment-options-section">
+        <div class="payment-options-section">
             <h2>Payment Options</h2>
             <ol>
-                <li>For <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> payments (without service fee):
-                    <ul>
-                        <li>Fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScKTpPGn2-diXRK3YnIrCXKiBkn3Ndrh-SxD8t63-KU1WOnmQ/viewform?" target="_blank">form</a></li>
-                        <li>Pay $824 to Zelle account: <strong>(310)-988-0673</strong></li>
-                        <li>Need help? Email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a></li>
-                    </ul>
-                </li>
-                <li>For credit or debit card payments (with service fee), use the green button below.</li>
-                <li>If you need more payment options or installment contact us.</li>
+                <li>If you'd like to pay with either <b> Zelle, ACH, or eCheck </b> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay <span id="confirm_amount"><b> $824 </b></span>. Zelle account: <b> 310-988-0673 </b> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</li>
+                <li>If you prefer to pay with a credit card or debit card (with the service fee) click the green button below.</li>
             </ol>
         </div>
     </div>
