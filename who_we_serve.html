@@ -113,136 +113,329 @@
   Our Services Section
 ============================-->
 <br>
-<br>
-<br> 
+ 
 
-<section id="who-we-serve">
+<style>
+  #who-we-serve {
+      padding: 80px 20px;
+      background-color: white;
+  }
+  
+  #who-we-serve .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  #who-we-serve .section-header {
+      margin-bottom: 60px;
+      text-align: center;
+  }
+  
+  #who-we-serve .section-header h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #1a2634;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 30px;
+      letter-spacing: 1px;
+  }
+  
+  /* Decorative lines */
+  #who-we-serve .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #1a2634;
+  }
+  
+  #who-we-serve .section-header h2::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background-color: #3498db;
+  }
+  
+  #who-we-serve .section-header p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #505965;
+      max-width: 800px;
+      margin: 0 auto 15px;
+  }
+  
+
+  
+  .profession-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .category-title {
+      color: #3498db;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .profession-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+  
+  .profession-item {
+      background: white;
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #505965;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+  }
+  
+  .profession-item:hover {
+      background: #3498db;
+      color: white;
+      transform: translateY(-2px);
+  }
+  
+  
+  @media (max-width: 768px) {
+      #who-we-serve {
+          padding: 60px 15px;
+      }
+  
+      #who-we-serve .section-header h2 {
+          font-size: 30px;
+      }
+  
+      .profession-grid {
+          grid-template-columns: 1fr;
+      }
+  }
+
+    .profession-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+  }
+
+  .profession-category {
+      width: calc(33.333% - 25px); /* For 3 items per row with gap */
+      min-width: 300px;
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      transition: all 0.3s ease;
+  }
+
+  /* Rest of the styles remain the same */
+
+  @media (max-width: 1024px) {
+      .profession-category {
+          width: calc(50% - 25px); /* 2 items per row for tablets */
+      }
+  }
+
+  @media (max-width: 768px) {
+      .profession-category {
+          width: 100%; /* Full width for mobile */
+      }
+  }
+  </style>
+  
+  <section id="who-we-serve">
+      <div class="container">
+          <div class="section-header">
+              <h2>WHO WE SERVE</h2>
+              <p>The community can obtain CPR, First Aid, and AED training at our training facility, Fenote Training Academy, particularly if they are minorities and have language challenges.</p>
+              <p>We offer CPR training on an individual or institutional basis to:</p>
+          </div>
+  
+          <div class="profession-grid">
+              <!-- Healthcare Category -->
+              <div class="profession-category">
+                  <h3 class="category-title">Healthcare Professionals</h3>
+                  <div class="profession-list">
+                      <span class="profession-item">Health care professionals</span>
+                      <span class="profession-item">Physical Therapists</span>
+                      <span class="profession-item">Medical Office Personnel</span>
+                      <span class="profession-item">Paramedics</span>
+                  </div>
+              </div>
+  
+              <!-- Childcare & Education -->
+              <div class="profession-category">
+                  <h3 class="category-title">Childcare & Education</h3>
+                  <div class="profession-list">
+                      <span class="profession-item">Child care providers</span>
+                      <span class="profession-item">Educators</span>
+                      <span class="profession-item">Babysitters</span>
+                      <span class="profession-item">Foster care</span>
+                  </div>
+              </div>
+  
+              <!-- Sports & Recreation -->
+              <div class="profession-category">
+                  <h3 class="category-title">Sports & Recreation</h3>
+                  <div class="profession-list">
+                      <span class="profession-item">GYM staff</span>
+                      <span class="profession-item">Life guards</span>
+                      <span class="profession-item">Swim Instructors</span>
+                      <span class="profession-item">Personal Trainers</span>
+                      <span class="profession-item">Coaches/Referees</span>
+                      <span class="profession-item">Scouts</span>
+                  </div>
+              </div>
+  
+              <!-- Specialized Care -->
+              <div class="profession-category">
+                  <h3 class="category-title">Specialized Care</h3>
+                  <div class="profession-list">
+                      <span class="profession-item">Special Needs Care Providers</span>
+                      <span class="profession-item">Elderly Care Providers</span>
+                      <span class="profession-item">Caregivers</span>
+                      <span class="profession-item">Social Workers</span>
+                  </div>
+              </div>
+  
+              <!-- Safety & Security -->
+              <div class="profession-category">
+                  <h3 class="category-title">Safety & Security</h3>
+                  <div class="profession-list">
+                      <span class="profession-item">Security guards</span>
+                      <span class="profession-item">Construction workers</span>
+                      <span class="profession-item">Electricians</span>
+                      <span class="profession-item">Jail and Prison Staff</span>
+                  </div>
+              </div>
+  
+              <!-- Travel & Outdoors -->
+              <div class="profession-category">
+                  <h3 class="category-title">Travel & Outdoors</h3>
+                  <div class="profession-list">
+                      <span class="profession-item">Flight Attendants</span>
+                      <span class="profession-item">Tour/Adventure Guides</span>
+                      <span class="profession-item">Park Rangers</span>
+                      <span class="profession-item">Outdoor Guides</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+<section class="services-section">
   <div class="container">
-    <div class="section-header">
-      <h2>Who We Serve</h2>
-      <p>The community can obtain CPR, First Aid, and AED training at our training facility, Fenote Training Academy, particularly if they are minorities and have language challenges.</p>
-      <p>We offer CPR training on an individual or institutional basis to:</p>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <ul>
-          <li>Child care providers</li>
-          <li>Caregivers</li>
-          <li>Security guards</li>
-          <li>Scouts</li>
-          <li>GYM staff</li>
-          <li>Life guards</li>
-          <li>Electricians</li>
-          <li>Babysitters</li>
-          <li>Construction workers</li>
-          <li>Foster care</li>
-          <li>Paramedics</li>
-          <li>Health care professionals</li>
-          <li>Educators</li>
+      <div class="section-title">
+          <h2>Our Services</h2>
+      </div>
+      
+      <!-- First Row - Always 4 items -->
+      <div class="row g-4 mb-4">
+          <!-- Corporations -->
+          <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                  <div class="service-image-wrapper">
+                      <img src="img/intro-carousel/healthcare.jpeg" alt="Corporations Image" class="service-image">
+                  </div>
+                  <div class="service-content">
+                      <h3 class="service-title">Corporations</h3>
+                      <p class="service-description">Tailored training solutions to meet the specific needs of corporations. Ensure your team is prepared for emergencies.</p>
+                      <a href="./corporations" class="service-link">Learn More</a>
+                  </div>
+              </div>
+          </div>
 
-        </ul>
+          <!-- Health Care Workers -->
+          <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                  <div class="service-image-wrapper">
+                      <img src="img/intro-carousel/heallthcare3.jpeg" alt="Health Care Workers Image" class="service-image">
+                  </div>
+                  <div class="service-content">
+                      <h3 class="service-title">Health Care Workers</h3>
+                      <p class="service-description">Specialized training for healthcare professionals, ensuring they have the skills needed in critical situations.</p>
+                      <a href="./healthcare_workers" class="service-link">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Educators -->
+          <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                  <div class="service-image-wrapper">
+                      <img src="img/intro-carousel/healthcare2.jpeg" alt="Educators Image" class="service-image">
+                  </div>
+                  <div class="service-content">
+                      <h3 class="service-title">Educators</h3>
+                      <p class="service-description">Equip educators with life-saving skills. Training options designed for teachers and educational staff.</p>
+                      <a href="./educators" class="service-link">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Scouts -->
+          <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                  <div class="service-image-wrapper">
+                      <img src="img/intro-carousel/scouts.jpeg" alt="Scouts Image" class="service-image">
+                  </div>
+                  <div class="service-content">
+                      <h3 class="service-title">Scouts</h3>
+                      <p class="service-description">Learn critical lifesaving skills and earn merit badges.</p>
+                      <a href="./scouts" class="service-link">Learn More</a>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="col-md-6">
-        <ul>
-          <li>Physical Therapists</li>
-          <li>Residence Assistants and Staff Members</li>
-          <li>Tour/Adventure/Outdoor Guides</li>
-          <li>Park Rangers</li>
-          <li>Flight Attendants</li>
-          <li>Jail and Prison Staff</li>
-          <li>Swim Instructors</li>
-          <li>Medical Office Personnel</li>
-          <li>Social Workers</li>
-          <li>Animal Control Officers/Veterinarian Technicians</li>
-          <li>Special Needs/Elderly/Companion Care Providers</li>
-          <li>Coaches/Referees</li>
-          <li>Personal Trainers or Fitness professionals</li>
-        </ul>
+
+      <!-- Second Row - Centered remaining items -->
+      <div class="row g-4 justify-content-center">
+          <!-- Individuals -->
+          <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                  <div class="service-image-wrapper">
+                      <img src="img/intro-carousel/cpr_icon.jpg" alt="Individuals Image" class="service-image">
+                  </div>
+                  <div class="service-content">
+                      <h3 class="service-title">Individuals</h3>
+                      <p class="service-description">Equip yourself with essential skills and knowledge for various situations.</p>
+                      <a href="./individuals" class="service-link">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Child Care Providers -->
+          <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                  <div class="service-image-wrapper">
+                      <img src="img/intro-carousel/children.jpg" alt="Child Care Providers Image" class="service-image">
+                  </div>
+                  <div class="service-content">
+                      <h3 class="service-title">Child Care Providers</h3>
+                      <p class="service-description">Get certified in CPR, First Aid, BLS, and AED to ensure the safety of children in your care. Explore our tailored programs.</p>
+                      <a href="./serving_child_care_providers" class="service-link">Learn More</a>
+                  </div>
+              </div>
+          </div>
       </div>
-  </div>
   </div>
 </section>
-<br>
-<br>
-
-      <!-- Service 2: Individuals -->
-
-      <section id="our-services">
-        <div class="container">
-          <div class="section-header">
-            <h2><strong>Our Services</strong></h2>
-            <span class="section-divider"></span>
-          </div>
-      
-          <div class="row">
-      
-            <!-- Service 1: Corporations -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-box wow fadeInUp">
-                <img src="img/intro-carousel/healthcare.jpeg" alt="Corporations Image" class="service-image">
-                <h4 class="service-title">Corporations</h4>
-                <p class="service-description">Tailored training solutions to meet the specific needs of corporations. Ensure your team is prepared for emergencies.</p>
-                <a href="./corporations" class="btn-learn-more">Learn More</a>
-              </div>
-            </div>
-      
-            <!-- Service 2: Health Care Workers -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
-                <img src="img/intro-carousel/heallthcare3.jpeg" alt="Health Care Workers Image" class="service-image">
-                <h4 class="service-title">Health Care Workers</h4>
-                <p class="service-description">Specialized training for healthcare professionals, ensuring they have the skills needed in critical situations.</p>
-                <a href="./healthcare_workers" class="btn-learn-more">Learn More</a>
-              </div>
-            </div>
-      
-            <!-- Service 3: Educators -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                <img src="img/intro-carousel/healthcare2.jpeg" alt="Educators Image" class="service-image">
-                <h4 class="service-title">Educators</h4>
-                <p class="service-description">Equip educators with life-saving skills. Training options designed for teachers and educational staff.</p>
-                <a href="./educators" class="btn-learn-more">Learn More</a>
-              </div>
-            </div>
-      
-            <!-- Service 4: Scouts -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-box wow fadeInUp" data-wow-delay="0.1s">
-                <img src="img/intro-carousel/scouts.jpeg" alt="Scouts Image" class="service-image">
-                <h4 class="service-title">Scouts</h4>
-                <p class="service-description">Learn critical lifesaving skills and earn merit badges.</p>
-                <a href="./scouts" class="btn-learn-more">Learn More</a>
-              </div>
-            </div>
-      
-            <!-- Service 5: Individuals -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-                <img src="img/intro-carousel/cpr_icon.jpg" alt="Individuals Image" class="service-image">
-                <h4 class="service-title">Individuals</h4>
-                <p class="service-description"> Equip yourself with essential skills and knowledge for various situations.</p>
-                <a href="./individuals" class="btn-learn-more">Learn More</a>
-              </div>
-            </div>
-      
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-box wow fadeInUp" data-wow-delay="0.3s">
-              <img src="img/intro-carousel/children.jpg" alt="Individuals Image" class="service-image">
-              <h4 class="service-title">Child Care Providers</h4>
-              <p class="service-description">Get certified in CPR, First Aid, BLS, and AED to ensure the safety of children in your care. Explore our tailored programs for child care providers.</p>
-              <a href="./serving_child_care_providers" class="btn-learn-more">Learn More</a>
-            </div>
-          </div>
-    
-        </div>
-        
-        </div>
-
-      </section>
-  
-  
 
 
 
