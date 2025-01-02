@@ -90,73 +90,212 @@
 
 <br> 
 <br>
-
-  <section id="prover-training">
-    <div class="container">
-      <div class="section-header">
-        <h2>About Us</h2>
-        
-        <p> <b> Mission Statement:  </b><br><br>
-          <p> At Fenote Training Academy, our mission is to empower individuals with the knowledge and skills necessary to save lives and thrive in healthcare and public health settings. Through accredited, high-quality, hands-on training, we provide services that meet the evolving demands of the industry. We are dedicated to fostering professional growth, ensuring excellence in patient care, and enhancing the health and safety of communities through education and consultancy.
-
-            <br>
-            <br>
-          <p>          </p>
-          <br>
-          <p>
-            Additionally, through collaborations with the American Health and Safety Institute (HSI), American Red Cross (ARC), and The American Heart Association (AHA), we provide accredited certification programs in CPR, First Aid, BLS, and Instructor Training, ensuring individuals are fully equipped with life-saving skills to make a meaningful impact in their careers and communities.
-          </p>
-
-          </p>
-         </div>
-    </div>
-    </section>
-
-    <br>
-        <br>
-
-    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; color: #1a1a1a; text-align: center; margin-top: 20px; margin-bottom: 20px; font-weight: 600; line-height: 1.5;">Meet the experts behind the top CPR, AED, First Aid, BLS training in Silver Spring, Maryland.</p>
-
-    <section id="about" class="wow fadeInUp">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 about-img text-center">
-              <img src="img/melesse.jpeg">
-              <br>
-              <br>
-              <h4 style="font-family: Raleway, sans-serif; color: #333; font-style: italic;">
-                  Melesse Semegne (Ph.D)
-              </h4>
-          
-              <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #1a1919;"><strong> President,CEO and Lead Instructor 
-                <br> Public Health Professor, Medical Technologist (AMT),  Epidemiologist and Global Health Expert.  
-              </strong></p>
-          
-
-          </div>
-          
+<style>
+  /* Clean About Section Styling */
+  #bls-training {
+      padding: 80px 20px;
+      background-color: white;
+  }
   
-            <div class="col-lg-6 content">
-              <h2>Meet Our Certified Instructors</h2>
-              <br>
-              <h3>Our certified American Health and Safety Institute , American Medical Technologists (AMT), National Phlebotomy  Association (NPA) and American Red Cross instructors bring a wealth of expertise to our training programs , ensuring that you receive instruction of the highest caliber. With a dedication to safety and excellence, our instructors combine years of valuable experience with a passion for teaching. By enrolling in our courses, you not only benefit from the prestige of learning from a certified professional but also gain practical, hands-on experience. </h3>
-
-            </div>
-          </div>
+  .container {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
   
-        </div>
-      </section><!-- #about -->
+  .section-header {
+      margin-bottom: 60px;
+      text-align: center;
+  }
+  
+  .section-header h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #1a2634;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 30px;
+      letter-spacing: 1px;
+  }
+  
+  .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #1a2634;
+  }
+  
+  .section-header h2::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background-color: #3498db;
+  }
+  
+  .mission-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2634;
+      margin-bottom: 30px;
+      text-align: left;
+  }
+  
+  .mission-text {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #505965;
+      margin-bottom: 30px;
+  }
+  
+  /* Team Section */
+  .team-intro {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 20px;
+      color: #1a2634;
+      font-weight: 600;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  .team-section {
+      padding: 60px 0;
+      background-color: #f8fafc;
+  }
+  
+  .team-grid {
+      display: flex;
+      align-items: flex-start;
+      gap: 60px;
+  }
+  
+  .profile-column {
+      flex: 1;
+      text-align: center;
+  }
+  
+  .profile-image {
+      max-width: 400px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+  }
+  
+  .profile-name {
+      font-size: 24px;
+      color: #1a2634;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-style: italic;
+  }
+  
+  .profile-title {
+      font-size: 16px;
+      color: #505965;
+      line-height: 1.6;
+      font-weight: 600;
+  }
+  
+  .content-column {
+      flex: 1;
+  }
+  
+  .content-column h2 {
+      font-size: 32px;
+      color: #1a2634;
+      margin-bottom: 30px;
+      font-weight: 700;
+  }
+  
+  .content-column h3 {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #505965;
+      font-weight: normal;
+  }
+  
+  @media (max-width: 992px) {
+      .team-grid {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .profile-image {
+          max-width: 300px;
+      }
+  
+      .content-column h2 {
+          text-align: center;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .container {
+          padding: 0 20px;
+      }
+  
+      .team-intro {
+          font-size: 18px;
+          padding: 30px 20px;
+      }
+  }
+  </style>
+  
+  <!-- Mission Section -->
+  <section id="bls-training">
+      <div class="container">
+          <div class="section-header">
+              <h2>ABOUT US</h2>
+              <div class="mission-title">Mission Statement</div>
+              <div class="mission-text">
+                  At Fenote Training Academy, our mission is to empower individuals with the knowledge and skills necessary to save lives and thrive in healthcare and public health settings. Through accredited, high-quality, hands-on training, we provide services that meet the evolving demands of the industry. We are dedicated to fostering professional growth, ensuring excellence in patient care, and enhancing the health and safety of communities through education and consultancy.
+              </div>
+              <div class="mission-text">
+                  Additionally, through collaborations with the American Health and Safety Institute (HSI), American Red Cross (ARC), and The American Heart Association (AHA), we provide accredited certification programs in CPR, First Aid, BLS, and Instructor Training, ensuring individuals are fully equipped with life-saving skills to make a meaningful impact in their careers and communities.
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <div class="team-intro">
+      Meet the experts behind the top CPR, AED, First Aid, BLS training in Silver Spring, Maryland.
+  </div>
+  
+  <section class="team-section">
+      <div class="container">
+          <div class="team-grid">
+              <div class="profile-column">
+                  <img src="img/melesse.jpeg" alt="Melesse Semegne" class="profile-image">
+                  <div class="profile-name">Melesse Semegne (Ph.D)</div>
+                  <div class="profile-title">
+                      President, CEO and Lead Instructor
+                      <br>
+                      Public Health Professor, Medical Technologist (AMT), 
+                      <br>
+                      Epidemiologist and Global Health Expert
+                  </div>
+              </div>
+  
+              <div class="content-column">
+                  <h2>Meet Our Certified Instructors</h2>
+                  <h3>
+                      Our certified American Health and Safety Institute, American Medical Technologists (AMT), National Phlebotomy Association (NPA) and American Red Cross instructors bring a wealth of expertise to our training programs, ensuring that you receive instruction of the highest caliber. With a dedication to safety and excellence, our instructors combine years of valuable experience with a passion for teaching. By enrolling in our courses, you not only benefit from the prestige of learning from a certified professional but also gain practical, hands-on experience.
+                  </h3>
+              </div>
+          </div>
+      </div>
+  </section>
 
-      <br>
-      <br>
-      <!-- <div class="banner-container" id="bannerContainer">
-        <span class="close-button" onclick="closeBanner()">&times;</span>
-        
-        <a id="banner-link" href="./schedule">
-          <img class="banner-image" src="img/banner.png" alt="Special Promotion Banner" onclick="redirectToSchedule()">
-        </a>
-        </div>
-     -->
+  <br>
+  <br>      <br>
+  <br>
 
     <footer id="footer">
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
