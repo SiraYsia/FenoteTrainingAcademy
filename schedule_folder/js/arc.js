@@ -13,10 +13,12 @@ const courseDetails = {
     price: 65.00,
     descriptionFile: "schedule_folder/descriptions/ara/4.bls_blended.html",
     dates: [
-      { "start": "2024-10-05", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" }
-
-
+      { "start": "2025-01-04", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-11", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-18", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-25", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-02-08", "end": "", "startTime": "15:00", "endTime": "17:00" },
+  
     ],
   },
 

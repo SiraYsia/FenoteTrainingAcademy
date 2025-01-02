@@ -33,9 +33,12 @@ const courseDetails = {
     price: 80.00,
     descriptionFile: "schedule_folder/descriptions/hsi/all_ages_classroom.html",
     dates: [
-      { "start": "2024-11-16", "end": "", "startTime": "10:00", "endTime": "12:00" },
-      { "start": "2024-11-23", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2024-12-14", "end": "", "startTime": "11:00", "endTime": "13:00" }
+      { "start": "2025-01-04", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-11", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-18", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-25", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-02-08", "end": "", "startTime": "15:00", "endTime": "17:00" },
+  
     
 
     ],
@@ -176,8 +179,12 @@ const courseDetails = {
     price: 85.00,
     descriptionFile: "schedule_folder/descriptions/hsi/2.bls.html",
     dates: [
-        "None"
-  
+      { "start": "2025-01-04", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-11", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-18", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-01-25", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-02-08", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    
     ],
   },
   
