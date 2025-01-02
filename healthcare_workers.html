@@ -91,53 +91,346 @@
 
 <br> 
 <br>
+<style>
+/* Logo grid specific styles */
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
 
-  <section id="osha-courses">
+/* Individual logo sizing */
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Red Cross logo */
+.logo-red-cross {
+    height: 160px;
+    width: auto;
+}
+
+/* AHA logo */
+.logo-aha {
+    height: 100px;
+    width: auto;
+}
+
+/* HSI logo */
+.logo-hsi {
+    height: 50px;
+    width: auto;
+}
+
+/* Medic First Aid logo */
+.logo-medic {
+    height: 70px;
+    width: auto;
+}
+
+/* Safety Training logo */
+.logo-safety {
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-grid {
+        gap: 20px;
+    }
+    
+    .logo-red-cross {
+        height: 140px;
+    }
+    
+    .logo-aha {
+        height: 80px;
+    }
+    
+    .logo-hsi {
+        height: 40px;
+    }
+    
+    .logo-medic {
+        height: 60px;
+    }
+    
+    .logo-safety {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-grid {
+        gap: 15px;
+    }
+    
+    .logo-red-cross {
+        height: 120px;
+    }
+    
+    .logo-aha {
+        height: 70px;
+    }
+    
+    .logo-hsi {
+        height: 35px;
+    }
+    
+    .logo-medic {
+        height: 50px;
+    }
+    
+    .logo-safety {
+        height: 70px;
+    }
+}
+</style>
+
+<section id="certification-courses">
     <div class="container">
-      <div class="section-header">
-        <h2> BASIC LIFE SUPPORT COURSES</h2>
-      </div>
+        <div class="section-header">
+            <h2>OSHA APPROVED COURSES</h2>
+            <p>Explore our certified courses recognized by the Occupational Safety and Health Administration (OSHA).</p>
+        </div>
 
-      <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
-
-
-      <div class="certified-logos">
-        <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
-
-        <img src="img/clients/certified2.png" alt="AHA"> <pre>         </pre> <br>
-        <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 50px; margin-left: 11px;" alt="HSI"> <pre>         </pre><br>
-  
-        <br>
-        <img src="img/intro-carousel/medicfirstaid.png" style= "max-width: 100%;" alt="HSI">
-        <img src="img/clients/certified3.png" alt="Safety Training"> <pre>                   </pre><br>
-  
-  
-      </div>
+        <div class="logo-grid">
+            <div class="logo-item">
+                <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" class="logo-red-cross">
+            </div>
+            <div class="logo-item">
+                <img src="img/clients/certified2.png" alt="AHA" class="logo-aha">
+            </div>
+            <div class="logo-item">
+                <img src="img/intro-carousel/hsi.png" alt="HSI" class="logo-hsi">
+            </div>
+            <div class="logo-item">
+                <img src="img/intro-carousel/medicfirstaid.png" alt="Medic First Aid" class="logo-medic">
+            </div>
+            <div class="logo-item">
+                <img src="img/clients/certified3.png" alt="Safety Training" class="logo-safety">
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-<!--==========================
-  CORPORATIONS Section
-============================-->
-<section id="healthcare-workers">
-    <div class="container">
+<!-- Healthcare Workers Section -->
+<section id="bls-training">
+  <div class="container">
       <div class="section-header">
-        <h2>Health Care Workers</h2>
-        <p>Healthcare professionals in VA, DC, and MD are mandated to renew their Basic Life Support (BLS) certification every two years. At Fenote Training Academy, our BLS courses are designed to make the learning experience engaging by incorporating various scenarios and delving into different CPR techniques in each course cycle. Participants receive hands-on training using state-of-the-art equipment that provides real-time feedback, ensuring proficiency in these crucial, life-saving skills.</p>
+          <h2>HEALTHCARE WORKERS</h2>
+          <p>Healthcare professionals in VA, DC, and MD are mandated to renew their Basic Life Support (BLS) certification every two years. At Fenote Training Academy, our BLS courses are designed to make the learning experience engaging by incorporating various scenarios and delving into different CPR techniques in each course cycle.</p>
       </div>
-  
-  
-      <p>Additionally, our comprehensive First Aid/CPR/AED course includes valuable training, and we offer a bundled package with the BLS course for a more comprehensive certification.</p>
-  
-      <p>We bring the training to you!  Fenote Training Academy extends its services beyond its classrooms. We can conduct group classes at your facility, utilizing your on-site equipment and facilities as part of the training. This ensures that personnel become familiar with their specific resources, enhancing the overall learning experience.</p>
-    </div>
-  </section>
-  
-  
-<br>
 
-<br>
+      <div class="content-block">
+          <h3>Advanced Training Equipment</h3>
+          <p>Participants receive hands-on training using state-of-the-art equipment that provides real-time feedback, ensuring proficiency in these crucial, life-saving skills.</p>
+      </div>
 
+      <div class="content-block">
+          <h3>Comprehensive Certification</h3>
+          <p>Additionally, our comprehensive First Aid/CPR/AED course includes valuable training, and we offer a bundled package with the BLS course for a more comprehensive certification.</p>
+      </div>
+
+      <div class="content-block">
+          <h3>On-Site Training Available</h3>
+          <p>We bring the training to you! Fenote Training Academy extends its services beyond its classrooms. We can conduct group classes at your facility, utilizing your on-site equipment and facilities as part of the training. This ensures that personnel become familiar with their specific resources, enhancing the overall learning experience.</p>
+      </div>
+
+      <div class="button-container">
+          <a href="./schedule" class="enroll-button">Schedule Healthcare Training</a>
+      </div>
+  </div>
+</section>
+
+
+
+<style>
+
+.section-header h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2D3748;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+/* Black line */
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #2D3748;
+}
+
+/* Blue line */
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: #4299E1;
+}
+
+/* Subtitle styling */
+.section-header p {
+    font-size: 20px;
+    color: #b70000;
+    line-height: 1.5;
+}
+  /* Unique styling for sections without affecting logos */
+  #bls-training {
+      padding: 80px 20px;
+      background-color: white;
+  }
+  
+  #bls-training .container {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+  
+  #bls-training .section-header {
+      margin-bottom: 60px;
+      text-align: center;
+  }
+  
+  #bls-training .section-header h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #1a2634;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 30px;
+      letter-spacing: 1px;
+  }
+  
+  /* Refined decorative lines */
+  #bls-training .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #1a2634;
+  }
+  
+  #bls-training .section-header h2::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background-color: #3498db;
+  }
+  
+  #bls-training .section-header p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #505965;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  #bls-training .content-block {
+      margin-bottom: 40px;
+      padding: 0 20px;
+  }
+  
+  #bls-training .content-block h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2634;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 12px;
+  }
+  
+  #bls-training .content-block h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: #3498db;
+  }
+  
+  #bls-training .content-block p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #505965;
+      margin-bottom: 20px;
+  }
+  
+  #bls-training .button-container {
+      text-align: center;
+      margin-top: 50px;
+  }
+  
+  #bls-training .enroll-button {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+      letter-spacing: 0.5px;
+  }
+  
+  #bls-training .enroll-button:hover {
+      background-color: #2980b9;
+  }
+  
+  /* Links within content */
+  #bls-training .content-block a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  
+  #bls-training .content-block a:hover {
+      color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+      #bls-training {
+          padding: 60px 15px;
+      }
+  
+      #bls-training .section-header h2 {
+          font-size: 30px;
+      }
+  
+      #bls-training .section-header {
+          margin-bottom: 40px;
+      }
+  
+      #bls-training .content-block {
+          padding: 0 10px;
+      }
+  }
+  </style>
 
 
 

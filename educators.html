@@ -93,50 +93,353 @@
 <br> 
 <br>
 
-  <section id="osha-courses">
-    <div class="container">
-      <div class="section-header">
-        <h2> ADULT/PEDIATRIC FIRST AID / CPR / AED / DAY CARE   </h2>
-      </div>
-      <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+<style>
+    .section-header h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2D3748;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 30px;
+}
 
-      <div class="certified-logos">
-        <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+/* Black line */
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #2D3748;
+}
 
-        <img src="img/clients/certified2.png" alt="AHA"> <pre>         </pre> <br>
-        <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 50px; margin-left: 11px;" alt="HSI"> <pre>         </pre><br>
+/* Blue line */
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: #4299E1;
+}
+
+/* Subtitle styling */
+.section-header p {
+    font-size: 20px;
+    color: #b70000;
+    line-height: 1.5;
+}
+  /* Logo grid specific styles */
+  .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+  }
   
-        <br>
-        <img src="img/intro-carousel/medicfirstaid.png" style= "max-width: 100%;" alt="HSI">
-        <img src="img/clients/certified3.png" alt="Safety Training"> <pre>                   </pre><br>
+  /* Individual logo sizing */
+  .logo-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
   
+  /* Red Cross logo */
+  .logo-red-cross {
+      height: 160px;
+      width: auto;
+  }
   
+  /* AHA logo */
+  .logo-aha {
+      height: 100px;
+      width: auto;
+  }
+  
+  /* HSI logo */
+  .logo-hsi {
+      height: 50px;
+      width: auto;
+  }
+  
+  /* Medic First Aid logo */
+  .logo-medic {
+      height: 70px;
+      width: auto;
+  }
+  
+  /* Safety Training logo */
+  .logo-safety {
+      height: 100px;
+      width: auto;
+  }
+  
+  @media (max-width: 768px) {
+      .logo-grid {
+          gap: 20px;
+      }
+      
+      .logo-red-cross {
+          height: 140px;
+      }
+      
+      .logo-aha {
+          height: 80px;
+      }
+      
+      .logo-hsi {
+          height: 40px;
+      }
+      
+      .logo-medic {
+          height: 60px;
+      }
+      
+      .logo-safety {
+          height: 80px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .logo-grid {
+          gap: 15px;
+      }
+      
+      .logo-red-cross {
+          height: 120px;
+      }
+      
+      .logo-aha {
+          height: 70px;
+      }
+      
+      .logo-hsi {
+          height: 35px;
+      }
+      
+      .logo-medic {
+          height: 50px;
+      }
+      
+      .logo-safety {
+          height: 70px;
+      }
+  }
+  </style>
+  
+  <section id="certification-courses">
+      <div class="container">
+          <div class="section-header">
+              <h2>OSHA APPROVED COURSES</h2>
+              <p>Explore our certified courses recognized by the Occupational Safety and Health Administration (OSHA).</p>
+          </div>
+  
+          <div class="logo-grid">
+              <div class="logo-item">
+                  <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" class="logo-red-cross">
+              </div>
+              <div class="logo-item">
+                  <img src="img/clients/certified2.png" alt="AHA" class="logo-aha">
+              </div>
+              <div class="logo-item">
+                  <img src="img/intro-carousel/hsi.png" alt="HSI" class="logo-hsi">
+              </div>
+              <div class="logo-item">
+                  <img src="img/intro-carousel/medicfirstaid.png" alt="Medic First Aid" class="logo-medic">
+              </div>
+              <div class="logo-item">
+                  <img src="img/clients/certified3.png" alt="Safety Training" class="logo-safety">
+              </div>
+          </div>
       </div>
-    </div>
   </section>
 
-<!--==========================
-  CORPORATIONS Section
-============================-->
-<section id="educators">
-    <div class="container">
+<!-- Educators Section -->
+<section id="bls-training">
+  <div class="container">
       <div class="section-header">
-        <h2>EDUCATORS</h2>
-        <p>Achieve certification in emergency intervention, earn Continuing Education Units (CEUs), and stay compliant with our Health & Safety Institute (HSI), American Heart Association (AHA), and American Red Cross-certified Adult and Pediatric First Aid/CPR/AED course. Aligned with mandatory CEU requirements nationwide, our engaging curriculum features hands-on training (mandatory in VA) and real-life scenarios, providing participants with specific education tailored to the educational environment. We consistently update our curriculum, ensuring each class brings variety and insights, transforming recertification into an opportunity to acquire new and vital information.</p>
+          <h2>EDUCATORS</h2>
+          <p>Achieve certification in emergency intervention, earn Continuing Education Units (CEUs), and stay compliant with our Health & Safety Institute (HSI), American Heart Association (AHA), and American Red Cross-certified Adult and Pediatric First Aid/CPR/AED course. Aligned with mandatory CEU requirements nationwide, our engaging curriculum features hands-on training (mandatory in VA) and real-life scenarios, providing participants with specific education tailored to the educational environment.</p>
       </div>
-    
-      <p>We extend our instruction to corporate groups, assisting in regulatory compliance or enhancing emergency preparedness, with available group discounts that may also contribute to lower insurance premiums.</p>
-  
-      <p>We bring the training to you!Fenote Training Academy doesn't just offer courses in its classrooms; we also come to your school to conduct group classes. This includes utilizing on-site equipment and facilities as part of the training, allowing educators to be familiar with their specific resources.</p>
-  
-    </div>
-  </section>
+
+      <div class="content-block">
+          <h3>Updated Curriculum</h3>
+          <p>We consistently update our curriculum, ensuring each class brings variety and insights, transforming recertification into an opportunity to acquire new and vital information.</p>
+      </div>
+
+      <div class="content-block">
+          <h3>Corporate Training</h3>
+          <p>We extend our instruction to corporate groups, assisting in regulatory compliance or enhancing emergency preparedness, with available group discounts that may also contribute to lower insurance premiums.</p>
+      </div>
+
+      <div class="content-block">
+          <h3>On-Site Training</h3>
+          <p>We bring the training to you! Fenote Training Academy doesn't just offer courses in its classrooms; we also come to your school to conduct group classes. This includes utilizing on-site equipment and facilities as part of the training, allowing educators to be familiar with their specific resources.</p>
+      </div>
+
+      <div class="button-container">
+          <a href="./schedule" class="enroll-button">Schedule Educator Training</a>
+      </div>
+  </div>
+</section>
   
   
 <br>
 <br>
 
 
+
+
+
+
+
+<style>
+  /* Unique styling for sections without affecting logos */
+  #bls-training {
+      padding: 80px 20px;
+      background-color: white;
+  }
+  
+  #bls-training .container {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+  
+  #bls-training .section-header {
+      margin-bottom: 60px;
+      text-align: center;
+  }
+  
+  #bls-training .section-header h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #1a2634;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 30px;
+      letter-spacing: 1px;
+  }
+  
+  /* Refined decorative lines */
+  #bls-training .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #1a2634;
+  }
+  
+  #bls-training .section-header h2::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background-color: #3498db;
+  }
+  
+  #bls-training .section-header p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #505965;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  #bls-training .content-block {
+      margin-bottom: 40px;
+      padding: 0 20px;
+  }
+  
+  #bls-training .content-block h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2634;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 12px;
+  }
+  
+  #bls-training .content-block h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: #3498db;
+  }
+  
+  #bls-training .content-block p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #505965;
+      margin-bottom: 20px;
+  }
+  
+  #bls-training .button-container {
+      text-align: center;
+      margin-top: 50px;
+  }
+  
+  #bls-training .enroll-button {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+      letter-spacing: 0.5px;
+  }
+  
+  #bls-training .enroll-button:hover {
+      background-color: #2980b9;
+  }
+  
+  /* Links within content */
+  #bls-training .content-block a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  
+  #bls-training .content-block a:hover {
+      color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+      #bls-training {
+          padding: 60px 15px;
+      }
+  
+      #bls-training .section-header h2 {
+          font-size: 30px;
+      }
+  
+      #bls-training .section-header {
+          margin-bottom: 40px;
+      }
+  
+      #bls-training .content-block {
+          padding: 0 10px;
+      }
+  }
+  </style>
 
  
 

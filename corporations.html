@@ -91,98 +91,375 @@
 <br> 
 <br>
 
-  <section id="osha-courses">
-    <div class="container">
-      <div class="section-header">
-        <h2>OSHA APPROVED COURSES</h2>
-        <p>Explore our certified courses recognized by the Occupational Safety and Health Administration (OSHA).</p>
-      </div>
 
-      <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+<style>
 
-      <div class="certified-logos">
-        <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" style="max-width: 100%; max-height: 160px;"> <pre>         </pre>
+.section-header h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2D3748;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 30px;
+}
 
-        <img src="img/clients/certified2.png" alt="AHA"> <pre>         </pre> <br>
-        <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 50px; margin-left: 11px;" alt="HSI"> <pre>         </pre><br>
+/* Black line */
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #2D3748;
+}
+
+/* Blue line */
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: #4299E1;
+}
+
+/* Subtitle styling */
+.section-header p {
+    font-size: 20px;
+    color: #b70000;
+    line-height: 1.5;
+}
+  /* Logo grid specific styles */
+  .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+  }
   
-        <br>
-        <img src="img/intro-carousel/medicfirstaid.png" style= "max-width: 100%;" alt="HSI">
-        <img src="img/clients/certified3.png" alt="Safety Training"> <pre>                   </pre><br>
+  /* Individual logo sizing */
+  .logo-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
   
+  /* Red Cross logo */
+  .logo-red-cross {
+      height: 160px;
+      width: auto;
+  }
   
-      </div>
-
+  /* AHA logo */
+  .logo-aha {
+      height: 100px;
+      width: auto;
+  }
+  
+  /* HSI logo */
+  .logo-hsi {
+      height: 50px;
+      width: auto;
+  }
+  
+  /* Medic First Aid logo */
+  .logo-medic {
+      height: 70px;
+      width: auto;
+  }
+  
+  /* Safety Training logo */
+  .logo-safety {
+      height: 100px;
+      width: auto;
+  }
+  
+  @media (max-width: 768px) {
+      .logo-grid {
+          gap: 20px;
+      }
       
-    </div>
+      .logo-red-cross {
+          height: 140px;
+      }
+      
+      .logo-aha {
+          height: 80px;
+      }
+      
+      .logo-hsi {
+          height: 40px;
+      }
+      
+      .logo-medic {
+          height: 60px;
+      }
+      
+      .logo-safety {
+          height: 80px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .logo-grid {
+          gap: 15px;
+      }
+      
+      .logo-red-cross {
+          height: 120px;
+      }
+      
+      .logo-aha {
+          height: 70px;
+      }
+      
+      .logo-hsi {
+          height: 35px;
+      }
+      
+      .logo-medic {
+          height: 50px;
+      }
+      
+      .logo-safety {
+          height: 70px;
+      }
+  }
+  </style>
+  
+  <section id="certification-courses">
+      <div class="container">
+          <div class="section-header">
+              <h2>OSHA APPROVED COURSES</h2>
+              <p>Explore our certified courses recognized by the Occupational Safety and Health Administration (OSHA).</p>
+          </div>
+  
+          <div class="logo-grid">
+              <div class="logo-item">
+                  <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" class="logo-red-cross">
+              </div>
+              <div class="logo-item">
+                  <img src="img/clients/certified2.png" alt="AHA" class="logo-aha">
+              </div>
+              <div class="logo-item">
+                  <img src="img/intro-carousel/hsi.png" alt="HSI" class="logo-hsi">
+              </div>
+              <div class="logo-item">
+                  <img src="img/intro-carousel/medicfirstaid.png" alt="Medic First Aid" class="logo-medic">
+              </div>
+              <div class="logo-item">
+                  <img src="img/clients/certified3.png" alt="Safety Training" class="logo-safety">
+              </div>
+          </div>
+      </div>
   </section>
 
-<!--==========================
-  CORPORATIONS Section
-============================-->
-<section id="corporations">
-    <div class="container">
+
+  <style>
+    /* Unique styling for sections without affecting logos */
+    #bls-training {
+        padding: 80px 20px;
+        background-color: white;
+    }
+    
+    #bls-training .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #bls-training .section-header {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    
+    #bls-training .section-header h2 {
+        font-size: 36px;
+        font-weight: 800;
+        color: #1a2634;
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 30px;
+        letter-spacing: 1px;
+    }
+    
+    /* Refined decorative lines */
+    #bls-training .section-header h2::after {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: #1a2634;
+    }
+    
+    #bls-training .section-header h2::before {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 3px;
+        background-color: #3498db;
+    }
+    
+    #bls-training .section-header p {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #505965;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    #bls-training .content-block {
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    
+    #bls-training .content-block h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #1a2634;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 12px;
+    }
+    
+    #bls-training .content-block h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: #3498db;
+    }
+    
+    #bls-training .content-block p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #505965;
+        margin-bottom: 20px;
+    }
+    
+    #bls-training .button-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    #bls-training .enroll-button {
+        display: inline-block;
+        padding: 14px 32px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
+        letter-spacing: 0.5px;
+    }
+    
+    #bls-training .enroll-button:hover {
+        background-color: #2980b9;
+    }
+    
+    /* Links within content */
+    #bls-training .content-block a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    #bls-training .content-block a:hover {
+        color: #2980b9;
+    }
+    
+    @media (max-width: 768px) {
+        #bls-training {
+            padding: 60px 15px;
+        }
+    
+        #bls-training .section-header h2 {
+            font-size: 30px;
+        }
+    
+        #bls-training .section-header {
+            margin-bottom: 40px;
+        }
+    
+        #bls-training .content-block {
+            padding: 0 10px;
+        }
+    }
+    </style>
+
+  <!-- Corporations Section -->
+<section id="bls-training">
+  <div class="container">
       <div class="section-header">
-        <h2>CORPORATIONS</h2>
-        <p>Ensure OSHA and state compliance with our group classes and discounted group rates.</p>
+          <h2>CORPORATIONS</h2>
+          <p>Ensure OSHA and state compliance with our group classes and discounted group rates.</p>
       </div>
-  
-      <div class="corporations-info">
-        <p>Experience OSHA-approved courses tailored for professions requiring certification in First Aid/CPR/AED. These courses fulfill OSHA's recommendation for appropriate first aid training at every workplace.</p>
-  
-        <p>We offer specialized instruction for corporate groups, addressing regulatory compliance and emergency preparedness. Take advantage of group discounts that may also contribute to lowering insurance premiums.</p>
-  
-        <p><strong>Emergency Medical Responder:</strong> Investing in certification and training ensures your employees are prepared for unforeseen events. Our courses are not only available in classrooms but can also be conducted on-site for a more practical learning experience. <a href="./contactus">Contact us</a> to learn more.</p>
-  
+
+      <div class="content-block">
+          <h3>OSHA-Approved Training</h3>
+          <p>Experience OSHA-approved courses tailored for professions requiring certification in First Aid/CPR/AED. These courses fulfill OSHA's recommendation for appropriate first aid training at every workplace.</p>
       </div>
-    </div>
-  </section>
 
-  <br>
-  <br>
-  
-  <section id="recreation-centers">
-    <div class="container">
-        <div class="section-header">
-            <h2>RECREATION CENTERS</h2>
-            <p>Enhance safety and preparedness at your facility with our comprehensive training programs.</p>
-        </div>
+      <div class="content-block">
+          <h3>Corporate Solutions</h3>
+          <p>We offer specialized instruction for corporate groups, addressing regulatory compliance and emergency preparedness. Take advantage of group discounts that may also contribute to lowering insurance premiums.</p>
+      </div>
 
-        <div class="recreation-centers-info">
-            <p>Our courses are designed to equip staff at recreation centers with essential skills in First Aid/CPR/AED. These programs are aligned with industry standards and help ensure the safety of your members and visitors.</p>
+      <div class="content-block">
+          <h3>Emergency Medical Response</h3>
+          <p>Investing in certification and training ensures your employees are prepared for unforeseen events. Our courses are not only available in classrooms but can also be conducted on-site for a more practical learning experience. <a href="./contactus">Contact us</a> to learn more.</p>
+      </div>
 
-            <p>We offer customizable training sessions that can be tailored to the specific needs of your facility. Whether it's a swimming pool, gym, or community center, our courses will help your team respond effectively to emergencies.</p>
-
-            <p><strong>Recreation Center Training:</strong> Our on-site and classroom options provide flexibility to accommodate your schedule. Invest in the safety of your staff and members by choosing our expert-led training programs. <a href="./contactus">Contact us</a> to find out more.</p>
-        </div>
-    </div>
+      <div class="button-container">
+          <a href="./schedule" class="enroll-button">Schedule Corporate Training</a>
+      </div>
+  </div>
 </section>
-<br>
-<br>
 
-  <!--==========================
-    STOP THE BLEED Section
-  ============================-->
-  <!-- <section id="stop-the-bleed">
-    <div class="container">
+<!-- Recreation Centers Section -->
+<section id="bls-training">
+  <div class="container">
       <div class="section-header">
-        <h2>STOP THE BLEED</h2>
-        <p>Enroll in our free Stop the Bleed course led by experienced EMS personnel. Learn essential life-saving interventions and bleeding control methods.</p>
+          <h2>RECREATION CENTERS</h2>
+          <p>Enhance safety and preparedness at your facility with our comprehensive training programs.</p>
       </div>
-      #update
 
-  
-      <div class="stop-the-bleed-info">
-        <p>This course was developed in response to the U.S. Department of Homeland Security and the Hartford Consensus, aiming to enhance survival rates during active shooter and mass casualty events.</p>
-  
-        <p><strong>Emergency Medical Responder:</strong> In critical situations, bystanders play a crucial role. Gain knowledge about scene safety, various bleeding types, applying pressure, and using a tourniquet.</p>
+      <div class="content-block">
+          <h3>Essential Safety Training</h3>
+          <p>Our courses are designed to equip staff at recreation centers with essential skills in First Aid/CPR/AED. These programs are aligned with industry standards and help ensure the safety of your members and visitors.</p>
       </div>
-    </div>
-  </section>
-  -->
 
+      <div class="content-block">
+          <h3>Customized Programs</h3>
+          <p>We offer customizable training sessions that can be tailored to the specific needs of your facility. Whether it's a swimming pool, gym, or community center, our courses will help your team respond effectively to emergencies.</p>
+      </div>
 
+      <div class="content-block">
+          <h3>Flexible Training Options</h3>
+          <p>Our on-site and classroom options provide flexibility to accommodate your schedule. Invest in the safety of your staff and members by choosing our expert-led training programs. <a href="./contactus">Contact us</a> to find out more.</p>
+      </div>
 
+      <div class="button-container">
+          <a href="./schedule" class="enroll-button">Schedule Facility Training</a>
+      </div>
+  </div>
+</section>
   
 
       <footer id="footer">
