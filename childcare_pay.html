@@ -41,6 +41,64 @@
             vertical-align: middle;
         }
 
+        /* Progress Steps */
+        .progress-steps {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background-color: #3a5a7a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .step-text {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .step.active .step-number {
+            background-color: #4CAF50;
+        }
+
+        .step.active .step-text {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* Main content and form styles */
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Payment Options Container */
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -48,6 +106,7 @@
             background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: none;
         }
 
         .payment-options-section {
@@ -81,11 +140,9 @@
         }
 
         .button-container {
-            max-width: 800px;
-            margin: 20px auto 40px;
-            padding: 0 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            margin-top: 30px;
             gap: 20px;
         }
 
@@ -97,7 +154,7 @@
             font-size: 1em;
             font-weight: bold;
             transition: all 0.3s ease;
-            flex: 1;
+            width: 200px;
             text-align: center;
         }
 
@@ -111,20 +168,45 @@
             color: white;
         }
 
+        .button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
         @media (max-width: 600px) {
-            .container {
-                margin: 20px;
-                padding: 15px;
+            .progress-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step {
+                margin: 10px 0;
+            }
+
+            .main-content {
+                padding: 10px;
             }
 
             .button-container {
                 flex-direction: column;
-                margin: 20px;
             }
 
             .button {
                 width: 100%;
                 margin-bottom: 10px;
+            }
+
+            .header-text {
+                font-size: 1.5em;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
             }
         }
     </style>
@@ -135,25 +217,67 @@
         <span class="header-text">Fenote Training Academy</span>
     </header>
 
-    <div class="container">
-        <div class="payment-options-section">
-            <h2>Payment Options</h2>
-            <ol>
-                <li>If you'd like to pay with either <b> Zelle, ACH, or eCheck </b> (without service fee), first fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay <span id="confirm_amount"><b> $824 </b></span>. Zelle account: <b> 310-988-0673 </b> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</li>
-                <li>If you prefer to pay with a credit card or debit card (with the service fee), first fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then click the green button below. </li>
-                <li>If you need more payment options or installment contact us. </li>
-            </ol>
+    <!-- Progress Steps -->
+    <div class="progress-steps">
+        <div class="step active">
+            <div class="step-number">1</div>
+            <div class="step-text">Registration</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-text">Payment Options</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-text">Complete Payment</div>
         </div>
     </div>
 
-    <div class="button-container">
-        <button class="button confirm-button" id="payButton">Pay with Card</button>
-        <button class="button back-button" onclick="window.location.href='./confirmation_childcare_course.html'">Back</button>
-    </div>
+    <main class="main-content">
+        <!-- Step 1: Registration Form -->
+        <div class="form-container" id="registration-section">
+            <script type="text/javascript" src="https://form.jotform.com/jsform/240596634009055"></script>
+        </div>
+
+        <!-- Step 2: Payment Options -->
+        <div class="container" id="payment-options-section">
+            <div class="payment-options-section">
+                <h2>Payment Options</h2>
+                <ol>
+                    <li>If you'd like to pay with either <b> Zelle </b> (without service fee), pay <span id="confirm_amount"><b> $824</b></span>. Zelle account: <b> 310-988-0673. </b> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</li>
+                    <li>If you prefer to pay with a credit card or debit card (with the service fee) click the green button below. </li>
+                    <li>If you need more payment options or installment contact us. </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button back-button" onclick="window.location.href='./confirmation_childcare_course.html'">Back</button>
+            <button class="button confirm-button" id="continueButton">Continue</button>
+        </div>
+    </main>
 
     <script>
-        document.getElementById('payButton').addEventListener('click', function() {
-            window.location.href = 'https://square.link/u/aRBVKaBE';
+        let currentStep = 1;
+        const continueButton = document.getElementById('continueButton');
+        const registrationSection = document.getElementById('registration-section');
+        const paymentSection = document.getElementById('payment-options-section');
+        const steps = document.querySelectorAll('.step');
+
+        continueButton.addEventListener('click', function() {
+            if (currentStep === 1) {
+                // Move to payment options
+                registrationSection.style.display = 'none';
+                paymentSection.style.display = 'block';
+                steps[1].classList.add('active');
+                currentStep = 2;
+                continueButton.textContent = 'Pay with Card';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (currentStep === 2) {
+                // Move to final payment step
+                steps[2].classList.add('active');
+                window.location.href = 'https://square.link/u/aRBVKaBE';
+            }
         });
     </script>
 </body>
