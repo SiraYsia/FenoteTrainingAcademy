@@ -1,180 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Confirmation</title>
+    <title>Course Selection - Fenote Training Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="img/clients/logo_ex.png" rel="icon">
-
-
+    
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+        }
+
+        .header {
+            background-color: #3a5a7a;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            color: #333;
-        }
-        #confirm_ammount {
-             display: inline;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-
-        h1 {
-            font-size: 32px;
-            margin-top: 30px;
-            color: #3498db;
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20%;
+            margin-right: 15px;
+            vertical-align: middle;
+            object-fit: cover;
         }
 
+        .header-text {
+            font-size: 2em;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Progress Steps */
+        .progress-steps {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background-color: #3a5a7a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .step-text {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .step.active .step-number {
+            background-color: #4CAF50;
+        }
+
+        .step.active .step-text {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* Main content and form styles */
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Payment Options Container */
         .container {
             max-width: 800px;
-            margin: 0 auto;
-        }
-
-        #confirmation-details {
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
             border-radius: 8px;
-            text-align: left;
-            margin-top: 20px;
-        }
-
-        #confirmation-details h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        #confirmation-details p {
-            margin: 10px 0;
-            color: #232323;
-            font-size: 16px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: none;
         }
 
         .payment-options-section {
             background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             border-radius: 8px;
-            text-align: left;
-            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .payment-options-section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #303030;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2em;
         }
 
-        .payment-options-section p {
-            margin: 10px 0;
-            color: #292929;
-            font-size: 16px;
+        .payment-options-section ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin: 0;
         }
 
-        #please-note {
-            color: red;
-            font-weight: bold;
+        .payment-options-section ol li {
+            margin-bottom: 20px;
+            padding-left: 10px;
         }
 
+        .payment-options-section a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        
         .button-container {
-            margin-top: 20px;
             display: flex;
             justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
         }
 
         .button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin: 0 10px;
-            color: #fff;
-        }
-
-        .confirm-button {
-            background-color: #4CAF50;
-        }
-
-        .back-button {
-            background-color: #3498db;
-        }
-
-                .header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-            border-radius: 50%; /* Optional: round the image */
-        }
-
-        .text {
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: bold;
+            transition: all 0.3s ease;
+            width: 200px;
+            text-align: center;
         }
 
-        /* Ensure no content overlaps */
-        body {
-            margin: 0;
-            padding: 50px 0 0 0; /* Adjust padding to fit header height */
+        .button.confirm-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button.back-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .progress-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step {
+                margin: 10px 0;
+            }
+
+            .main-content {
+                padding: 10px;
+            }
+
+            .button-container {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .header-text {
+                font-size: 1.5em;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
         }
     </style>
 </head>
-
 <body>
-    <br>
-    <br>
-    <br>
+    <header class="header">
+        <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
+        <span class="header-text">Fenote Training Academy</span>
+    </header>
 
-    <div class="container">
-        <div class="header">
-            <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
-            <div class="text">Fenote Training Academy</div>
+    <!-- Progress Steps -->
+    <div class="progress-steps">
+        <div class="step active">
+            <div class="step-number">1</div>
+            <div class="step-text">Registration</div>
         </div>
-
-        <div class="payment-options-section">
-            <h2>Payment Options</h2>
-            <ol>
-                <li>If you'd like to pay with either <strong>Zelle</strong>, <strong>ACH</strong>, or <strong>eCheck</strong> (without service fee), first, fill out this form <a href="https://form.jotform.com/240596634009055">here</a>, then pay <div id = "confirm_ammount"> </div>. Zelle account: <strong>310-988-0673. </strong> If you are in need of assistance please call us 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</p>
-                </li>
-                <br>
-                <li>If you prefer to pay with a credit card or debit card (with the service fee) click the green button below. 
-                </li>
-            </ol>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-text">Payment Options</div>
         </div>
-        
-        <div class="button-container">
-            <button class="button confirm-button">Pay</button>
-            <button class="button back-button">Return to Schedule</button>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-text">Complete Payment</div>
         </div>
-        
     </div>
-</body>
 
-<br>
-<br>
-<br>
+    <main class="main-content">
+        <!-- Step 1: Registration Form -->
+        <div class="form-container" id="registration-section">
+            <div class="form-note" style="background-color: #f8f9fa; padding: 15px; border-left: 4px solid rgb(255, 0, 0); margin-bottom: 20px;">
+                <p style="margin: 0; color: #333;"><strong>Important:</strong> Please complete all required fields and click the "Submit" button in the form before clicking on "Continue."</p>
+            </div>
+            <iframe 
+                width="100%" 
+                height="600px" 
+                src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__UBr3FtUNzlKSjU1VDMxSEdaUVdESENaTlVUN1hGRC4u&embed=true" 
+                frameborder="0" 
+                style="border: none; max-width:100%; max-height:100vh" 
+                allowfullscreen 
+                webkitallowfullscreen 
+                mozallowfullscreen 
+                msallowfullscreen>
+            </iframe>
+        </div>
+        <!-- Step 2: Payment Options -->
+        <div class="container" id="payment-options-section">
+            <div class="payment-options-section">
+                <h2>Payment Options</h2>
+                <ol>
+                    <li>If you'd like to pay with <b> Zelle </b> (without service fee), pay <span id="confirm_amount"><b> </b></span>. Zelle account: <b> 310-988-0673. </b> If you are in need of assistance please call us at 310-988-0673 or email us at <a href="mailto:ftrainingacademy12@hotmail.com">ftrainingacademy12@hotmail.com</a>.</li>
+                    <li>If you prefer to pay with a credit card or debit card (with the service fee) click the green button below. </li>
+                    <li>If you need more payment options or installment contact us. </li>
+                </ol>
+            </div>
+        </div>
 
-</html>
+        </div>
 
+        <div class="button-container">
+            <button class="button back-button" onclick="history.back()">Back</button>
+            <button class="button confirm-button" id="continueButton">Continue</button>
+        </div>
+    </main>
 
 <script>
 
 
-
 window.addEventListener('load', function() {
+    let currentStep = 1;
+    const registrationSection = document.getElementById('registration-section');
+    const paymentSection = document.getElementById('payment-options-section');
+    const actionButton = document.querySelector(".confirm-button");
+    const steps = document.querySelectorAll('.step');  // Get all step elements
+
+    // Function to update the active step
+    function updateActiveStep(stepNumber) {
+        steps.forEach((step, index) => {
+            if (index + 1 <= stepNumber) {
+                step.classList.add('active');
+            } else {
+                step.classList.remove('active');
+            }
+        });
+    }
+
     // Function to parse query parameters from the URL
     function getQueryParameters() {
         const queryString = window.location.search.substring(1);
@@ -188,69 +306,37 @@ window.addEventListener('load', function() {
 
     // Function to display confirmation details
     function displayConfirmationDetails() {
-        const confirmationDetailsDiv = document.getElementById("confirmation-details");
         const parameters = getQueryParameters();
-
-        console.log("HERE");
-        console.log(parameters);
-
-        const formattedDate = parameters.date;
-        const formattedStartTime = parameters.startTime;
-        const formattedEndTime = parameters.endTime;
-
-        const serviceFee =  0.0375 * parseFloat(parameters.price);
+        const serviceFee = 0.0375 * parseFloat(parameters.price);
         const taxRate = 0.03;
-        const taxAmount = taxRate *  parseFloat(parameters.price);
+        const taxAmount = taxRate * parseFloat(parameters.price);
         const totalPrice = parseFloat(parameters.price) + serviceFee;
-        const totalPriceWithoutProcessingFee = totalPrice  + taxAmount - serviceFee ;
-        console.log("HERE");
-        console.log(parameters);
-
-     
-     
-     
-     
-     const confirm_ammount = document.getElementById("confirm_ammount");
-     confirm_ammount.innerHTML = "<strong>$" + totalPriceWithoutProcessingFee.toFixed(2) + "</strong>";
-
-
-// Add the CSS for the fadeInUp animation
-const style = document.createElement('style');
-style.innerHTML = `
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        const totalPriceWithoutProcessingFee = totalPrice + taxAmount - serviceFee;
+        
+        const confirm_amount = document.getElementById("confirm_amount");
+        if (confirm_amount) {
+            confirm_amount.innerHTML = "<strong>$" + totalPriceWithoutProcessingFee.toFixed(2) + "</strong>";
         }
     }
-`;
-document.head.appendChild(style);
 
-
-
-
-    }
-    // Initial display of confirmation details and cancellation information
     displayConfirmationDetails();
 
-    document.querySelector(".back-button").addEventListener("click", function() {
-        // Redirect to schedule.html
-        window.location.href = "./schedule";
+    // Single event listener for the action button
+    actionButton.addEventListener("click", function() {
+        if (currentStep === 1) {
+            registrationSection.style.display = 'none';
+            paymentSection.style.display = 'block';
+            currentStep = 2;
+            updateActiveStep(currentStep);
+            this.style.backgroundColor = "#4CAF50";  // Keep the green color
+            this.textContent = 'Pay with Card';
+        } else if (currentStep === 2 && this.textContent === 'Pay with Card') {
+            currentStep = 3;
+            updateActiveStep(currentStep);
+            const parameters = getQueryParameters();
+            handleConfirmAndPay(parameters.course);
+        }
     });
-
-    // Add event listener for "Confirm and Pay" button click
-    document.querySelector(".confirm-button").addEventListener("click", function() {
-        console.log("clicked on other options")
-        const parameters = getQueryParameters();
-        handleConfirmAndPay(parameters.course);
-
-    });
-
-
 
     // Function to handle "Confirm and Pay" button click
     function handleConfirmAndPay(course) {
@@ -378,6 +464,6 @@ document.head.appendChild(style);
 
 
 
-
-
 </script>
+</body>
+</html>
