@@ -166,10 +166,9 @@ document.head.appendChild(style);
     
     
     document.querySelector(".back-button").addEventListener("click", function() {
-        // Redirect to schedule.html
-        window.location.href = "./schedule";
+        // Use history.back() instead of redirect
+        window.history.back();
     });
-
 
 
     // Add event listener for "Confirm and Pay" button click

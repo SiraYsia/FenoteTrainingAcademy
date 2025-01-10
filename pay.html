@@ -141,7 +141,7 @@
         
         <div class="button-container">
             <button class="button confirm-button">Pay</button>
-            <button class="button back-button">Return to Schedule</button>
+            <button class="button back-button">Back</button>
         </div>
     </div>
 
@@ -212,8 +212,8 @@ document.head.appendChild(style);
     displayConfirmationDetails();
 
     document.querySelector(".back-button").addEventListener("click", function() {
-        // Redirect to schedule.html
-        window.location.href = "./schedule";
+    // Use history.back() instead of redirect
+        window.history.back();
     });
 
     // Add event listener for "Confirm and Pay" button click
