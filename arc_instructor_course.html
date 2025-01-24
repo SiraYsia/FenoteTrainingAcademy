@@ -118,62 +118,54 @@
          const courseButtonsContainer = document.getElementById("course-buttons-container");
          
          function displayCourseDates(course) {
-                     const courseDetail = courseDetails[course];
-                     const datesDiv = document.createElement("div");
-                     datesDiv.style.width = "100%";
-                   
-                     let hasValidDates = false; // Flag to track if we have valid dates
-                   
-                     courseDetail.dates.forEach(dateObj => {
-                         const courseDate = new Date(dateObj.start);
-                   
-                         if (courseDate < new Date()) {
-                             // Skip dates that have already passed
-                             return;
-                         }
-                   
-                         hasValidDates = true; // Set the flag to true if a valid date is found
-                   
-                         const startTime = dateObj.startTime;
-                         const endTime = dateObj.endTime;
-                   
-                         const options = { timeZone: 'America/New_York' };
-                         const formattedDate = getFormattedDateInET(courseDate);
-                         const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-                        const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-                        const dateButton = document.createElement("button");
-                        dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+            const courseDetail = courseDetails[course];
+            const datesDiv = document.createElement("div");
+            datesDiv.style.width = "100%";
 
-                         dateButton.classList.add("date-button");
-                   
-                         dateButton.addEventListener("click", () => {
-                             redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
-                         });
-                   
-                         datesDiv.appendChild(dateButton);
-                     });
-                   
-                if (!hasValidDates) {
-                    // If no valid dates, add a button with "Please contact us"
-                    const contactButton = document.createElement("button");
-                    contactButton.textContent = "Please contact us to schedule a class.";
-                    contactButton.classList.add("date-button");
-                    contactButton.addEventListener("click", () => {
-                        window.location.href = "/contactus"; // Update this URL to your actual contacts page URL
-                    });
-                    datesDiv.appendChild(contactButton);
-                }
-              
-                // Clear previous content and append new dates
-                courseButtonsContainer.innerHTML = "";
-                courseButtonsContainer.appendChild(datesDiv);
-              }
-              
+            let hasValidDates = false; // Flag to track if we have valid dates
 
+            courseDetail.dates.forEach(dateObj => {
+               const courseDate = new Date(dateObj.start);
 
+               if (courseDate < new Date()) {
+                     // Skip dates that have already passed
+                     return;
+               }
 
+               hasValidDates = true; // Set the flag to true if a valid date is found
 
-              
+               const formattedDate = getFormattedDateInET(courseDate);
+               const formattedStartTime = dateObj.startTime;
+               const formattedEndTime = dateObj.endTime;
+
+               const dateButton = document.createElement("button");
+               dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+
+               dateButton.classList.add("date-button");
+
+               dateButton.addEventListener("click", () => {
+                     redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+               });
+
+               datesDiv.appendChild(dateButton);
+            });
+
+            if (!hasValidDates) {
+               // If no valid dates, add a button with "Please contact us"
+               const contactButton = document.createElement("button");
+               contactButton.textContent = "Please contact us to schedule a class.";
+               contactButton.classList.add("date-button");
+               contactButton.addEventListener("click", () => {
+                     window.location.href = "/contactus"; // Update this URL to your actual contacts page URL
+               });
+               datesDiv.appendChild(contactButton);
+            }
+
+            // Clear previous content and append new dates
+            courseButtonsContainer.innerHTML = "";
+            courseButtonsContainer.appendChild(datesDiv);
+         }
+                     
          
          
          function redirectToConfirmation(course, date, startTime, endTime) {
