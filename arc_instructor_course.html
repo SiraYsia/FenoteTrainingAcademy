@@ -88,7 +88,7 @@
       <script>
          const courseDetails = {
              instructor_course: {
-                 name: "ARC First Aid, CPR, AED Instructor Class",
+                 name: "First Aid, CPR, AED Instructor Class",
                  price: 305.0,
                  descriptionFile: "schedule_folder/descriptions/instructor_course.html",
                  "dates": [
@@ -139,12 +139,11 @@
                    
                          const options = { timeZone: 'America/New_York' };
                          const formattedDate = getFormattedDateInET(courseDate);
-                         const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', options);
-                         const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', options);
-                   
-                         const dateButton = document.createElement("button");
-                         dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
-                   
+                         const formattedStartTime = new Date(`2000-01-01T${startTime}`).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+                        const formattedEndTime = new Date(`2000-01-01T${endTime}`).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+                        const dateButton = document.createElement("button");
+                        dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+
                          dateButton.classList.add("date-button");
                    
                          dateButton.addEventListener("click", () => {
@@ -203,17 +202,10 @@
          displayCourseDates('instructor_course');
          
          function getFormattedDateInET(dateString) {
-             // Parse the input date string
-             const date = new Date(dateString);
-         
-             // Adjust for Eastern Time (New York) offset
-             const etOffset = -5 * 60; // Eastern Time offset in minutes
-             date.setMinutes(date.getMinutes() - etOffset);
-         
-             // Format the adjusted date
-             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-             return date.toLocaleDateString('en-US', options);
-         }
+               const date = new Date(dateString);
+               const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+               return date.toLocaleDateString('en-US', options);
+               }
       </script>
       <br>
       <br>
