@@ -405,13 +405,6 @@ cpr2_virtual:{
 
 },
 
-
-
-
-
-
-
-
 cpr_classroom_pediatric: {
   name: " Adult And Pediatric First Aid/CPR/AED-R.21 - CLASSROOM",
   price: 110.00,

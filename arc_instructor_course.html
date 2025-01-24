@@ -202,10 +202,12 @@
          displayCourseDates('instructor_course');
          
          function getFormattedDateInET(dateString) {
-               const date = new Date(dateString);
-               const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-               return date.toLocaleDateString('en-US', options);
-               }
+            const date = new Date(dateString);
+            const etOffset = -5 * 60;
+            date.setMinutes(date.getMinutes() - etOffset);
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+}
       </script>
       <br>
       <br>
