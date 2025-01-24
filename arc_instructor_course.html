@@ -94,62 +94,82 @@
                  "dates": [
                      { "start": "2025-1-25", "end": "", "startTime": "10:00", "endTime": "15:30" }
 
+
                  ]
                  }
              };
          
          const courseButtonsContainer = document.getElementById("course-buttons-container");
          
-         function displayCourseDates(course) {
-            const courseDetail = courseDetails[course];
-            const datesDiv = document.createElement("div");
-            datesDiv.style.width = "100%";
+// Replace your existing displayCourseDates function with this updated version
+function displayCourseDates(course) {
+    const courseDetail = courseDetails[course];
+    const datesDiv = document.createElement("div");
+    datesDiv.style.width = "100%";
+    
+    let hasValidDates = false;
+    
+    courseDetail.dates.forEach(dateObj => {
+        // Create date object and ensure it's treated as UTC
+        const [year, month, day] = dateObj.start.split('-').map(num => parseInt(num));
+        const courseDate = new Date(Date.UTC(year, month - 1, day));
+        
+        if (courseDate < new Date()) {
+            return;
+        }
+        
+        hasValidDates = true;
+        
+        // Format the date using Intl.DateTimeFormat for consistency across devices
+        const dateFormatter = new Intl.DateTimeFormat('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timeZone: 'America/New_York'
+        });
+        
+        // Format the times using Intl.DateTimeFormat
+        const timeFormatter = new Intl.DateTimeFormat('en-US', {
+            hour: 'numeric',
+            minute: 'numeric',
+            hour12: true,
+            timeZone: 'America/New_York'
+        });
+        
+        // Create time strings
+        const startTimeDate = new Date(`2000-01-01T${dateObj.startTime}`);
+        const endTimeDate = new Date(`2000-01-01T${dateObj.endTime}`);
+        
+        const formattedDate = dateFormatter.format(courseDate);
+        const formattedStartTime = timeFormatter.format(startTimeDate);
+        const formattedEndTime = timeFormatter.format(endTimeDate);
+        
+        const dateButton = document.createElement("button");
+        dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
+        dateButton.classList.add("date-button");
+        
+        dateButton.addEventListener("click", () => {
+            redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
+        });
+        
+        datesDiv.appendChild(dateButton);
+    });
+    
+    if (!hasValidDates) {
+        const contactButton = document.createElement("button");
+        contactButton.textContent = "Please contact us to schedule a class.";
+        contactButton.classList.add("date-button");
+        contactButton.addEventListener("click", () => {
+            window.location.href = "/contactus";
+        });
+        datesDiv.appendChild(contactButton);
+    }
+    
+    courseButtonsContainer.innerHTML = "";
+    courseButtonsContainer.appendChild(datesDiv);
+}
 
-            let hasValidDates = false; // Flag to track if we have valid dates
-
-            courseDetail.dates.forEach(dateObj => {
-               const courseDate = new Date(dateObj.start);
-
-               if (courseDate < new Date()) {
-                     // Skip dates that have already passed
-                     return;
-               }
-
-               hasValidDates = true; // Set the flag to true if a valid date is found
-
-               const formattedDate = getFormattedDateInET(courseDate);
-               const formattedStartTime = dateObj.startTime;
-               const formattedEndTime = dateObj.endTime;
-
-               const dateButton = document.createElement("button");
-               dateButton.textContent = `${formattedDate} (${formattedStartTime} - ${formattedEndTime})`;
-
-               dateButton.classList.add("date-button");
-
-               dateButton.addEventListener("click", () => {
-                     redirectToConfirmation(course, formattedDate, formattedStartTime, formattedEndTime);
-               });
-
-               datesDiv.appendChild(dateButton);
-            });
-
-            if (!hasValidDates) {
-               // If no valid dates, add a button with "Please contact us"
-               const contactButton = document.createElement("button");
-               contactButton.textContent = "Please contact us to schedule a class.";
-               contactButton.classList.add("date-button");
-               contactButton.addEventListener("click", () => {
-                     window.location.href = "/contactus"; // Update this URL to your actual contacts page URL
-               });
-               datesDiv.appendChild(contactButton);
-            }
-
-            // Clear previous content and append new dates
-            courseButtonsContainer.innerHTML = "";
-            courseButtonsContainer.appendChild(datesDiv);
-         }
-                     
-         
          
          function redirectToConfirmation(course, date, startTime, endTime) {
              const selectedCourse = courseDetails[course];
@@ -182,12 +202,17 @@
          displayCourseDates('instructor_course');
          
          function getFormattedDateInET(dateString) {
-            const date = new Date(dateString);
-            const etOffset = -5 * 60;
-            date.setMinutes(date.getMinutes() - etOffset);
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            return date.toLocaleDateString('en-US', options);
-}
+             // Parse the input date string
+             const date = new Date(dateString);
+         
+             // Adjust for Eastern Time (New York) offset
+             const etOffset = -5 * 60; // Eastern Time offset in minutes
+             date.setMinutes(date.getMinutes() - etOffset);
+         
+             // Format the adjusted date
+             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+             return date.toLocaleDateString('en-US', options);
+         }
       </script>
       <br>
       <br>
