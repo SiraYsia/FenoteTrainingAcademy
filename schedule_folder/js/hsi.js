@@ -28,6 +28,9 @@ const courseDetails = {
   },
   
 
+
+
+
   hsi_adult_pediatric_classroom: {
     name: "HSI Adult and Pediatric First Aid, CPR/AED or All ages - Classroom",
     price: 90.00,
@@ -58,6 +61,28 @@ const courseDetails = {
   
     ],
   },  
+  
+
+  hsi_emergency: {
+    name: "Emergency and Fire Preparedness",
+    price: 'TBD',
+    descriptionFile: "schedule_folder/descriptions/hsi/emrgency.html",
+    dates: [
+      "None"
+  
+  
+    ],
+  },
+  
+  hsi_fire_exten: {
+    name: "Fire Extinguisher Safety",
+    price: 'TBD',
+    descriptionFile: "schedule_folder/descriptions/hsi/fire_extinguisher_safety.html",
+    dates: [
+      "None"
+  
+    ],
+  },
   
   hsi_adult_firstaid: {
     name: "HSI Adult First Aid",
@@ -451,10 +476,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Apply color coding
         if (index === 0) courseName.style.color = "blue";
-        if (index === 1 || index === 5) courseName.style.color = "purple";
-        if (index === 18) courseName.style.color = "red";
-        if (index === 19 || index === 20) courseName.style.color = "purple";
-        if (index === 34) courseName.style.color = "blue";
+        if (index === 1 || index === 7) courseName.style.color = "purple";
+        if (index === 20) courseName.style.color = "red";
+        if (index === 21|| index === 22) courseName.style.color = "purple";
+        if (index === 36) courseName.style.color = "blue";
 
         const container = document.createElement("div");
         container.style.display = "none";

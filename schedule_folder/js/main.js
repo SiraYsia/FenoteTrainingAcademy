@@ -54,8 +54,26 @@ hsi_adult_adult_cpr: {
 
   ],
 },
-//cant find exact description
+hsi_emergency: {
+  name: "Emergency and Fire Preparedness",
+  price: 'TBD',
+  descriptionFile: "schedule_folder/descriptions/hsi/emrgency.html",
+  dates: [
+    "None"
 
+
+  ],
+},
+
+hsi_fire_exten: {
+  name: "Fire Extinguisher Safety",
+  price: 'TBD',
+  descriptionFile: "schedule_folder/descriptions/hsi/fire_extinguisher_safety.html",
+  dates: [
+    "None"
+
+  ],
+},
 
 hsi_adult_firstaid: {
   name: "HSI Adult First Aid",
@@ -414,6 +432,8 @@ cpr_classroom_pediatric: {
 
   ],
 },
+
+
 
 cpr_classroom_first_aid: {
   name: "Adult First Aid/CPR/AED-R.21 - CLASSROOM",
