@@ -73,26 +73,62 @@
             <div class="container">
                 <h2 class="section-title">Our Major Training Programs and Services</h2>
 
-    
-                <ul class="nav nav-tabs" id="serviceTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="tab2" data-bs-toggle="tab" href="#tab-content2" role="tab" aria-controls="tab-content2" aria-selected="true">CPR, First Aid, AED, and BLS Training</a>
-                    </li>
-
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#tab-content3" role="tab" aria-controls="tab-content3" aria-selected="false">Instructor Training</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab5" data-bs-toggle="tab" href="#tab-content5" role="tab" aria-controls="tab-content5" aria-selected="false">Childcare Training</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab6" data-bs-toggle="tab" href="#tab-content6" role="tab" aria-controls="tab-content4" aria-selected="false">Fire Safety Training</a>
-                    </li>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab4" data-bs-toggle="tab" href="#tab-content4" role="tab" aria-controls="tab-content4" aria-selected="false">Consultancy and Services</a>
-                    </li>
-                </ul>
+                <style>
+                    .nav-tabs {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 10px;
+                        border-bottom: none;
+                        padding: 0 15px;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+                    
+                    .nav-item {
+                        margin: 0;
+                    }
+                    
+                    .nav-link {
+                        border-radius: 20px !important;
+                        padding: 8px 20px !important;
+                        text-align: center;
+                        border: 1px solid #dee2e6;
+                        background: white;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .nav-link.active {
+                        background-color: #2673f9 !important;
+                        color: white !important;
+                        border-color: #2673f9 !important;
+                    }
+                    
+                    .nav-link:hover:not(.active) {
+                        background-color: #f8f9fa;
+                        border-color: #dee2e6;
+                    }
+                    </style>
+                    
+                    <ul class="nav nav-tabs" id="serviceTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="tab2" data-bs-toggle="tab" href="#tab-content2" role="tab" aria-controls="tab-content2" aria-selected="true">CPR, First Aid, AED, and BLS Training</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#tab-content3" role="tab" aria-controls="tab-content3" aria-selected="false">Instructor Training</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="tab4" data-bs-toggle="tab" href="#tab-content4" role="tab" aria-controls="tab-content4" aria-selected="false">Consultancy and Services</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="tab5" data-bs-toggle="tab" href="#tab-content5" role="tab" aria-controls="tab-content5" aria-selected="false">Childcare Training</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="tab6" data-bs-toggle="tab" href="#tab-content6" role="tab" aria-controls="tab-content6" aria-selected="false">Fire Safety Training</a>
+                        </li>
+                    </ul>
                 
                 <div class="tab-content mt-4" id="serviceTabsContent">
                     <div class="tab-pane fade show active" id="tab-content2" role="tabpanel" aria-labelledby="tab2">
@@ -231,10 +267,9 @@
                     </div>
                 </div>
                     <h5 style="text-align: center; margin-top: 100px;">
-                        <p style="font-size: 1.5rem; font-weight: 600;">Please click the button below for Childcare & Development Training</p>
-                        <a href="./serving_child_care_providers" 
+                        <a href="./schedule" 
         style="display: inline-block; background: #2673f9; color: white; padding: 1rem 2rem; border-radius: 20px; font-size: 1.5rem; text-decoration: none; font-weight: 600; margin-top: 1.5rem; transition: all 0.3s ease;">
-                            Childcare Training
+                            Book Your Training
                         </a>
                         </h5>
                                
@@ -250,7 +285,7 @@
     <section id="why-choose-us">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose Fenote Training Academy?</h2>
+                <h2>Why Choose Fenote Training Academy?</h2><br><br>
                 <p style="color: white;">We have the best training organization in CPR, AED, First Aid, and BLS in Silver Spring, Maryland.</p>
             </div>                
             <div class="reasons-grid">
@@ -282,7 +317,7 @@
       <section id="available_courses">
         <div class="container">
           <div class="section-header">
-            <h2>Our Available Courses</h2>
+            <h2>Our Available Courses</h2><br><br>
             <p>Explore our diverse range of training courses tailored for both individuals and organizations.</p>
           </div>
       
@@ -313,7 +348,7 @@ style="display: inline-block; background: #2673f9; color: white; padding: 1rem 2
       <section id="locations">
         <div class="container">
           <div class="section-header">
-            <h2>Our Locations</h2>
+            <h2>Our Locations</h2><br><br>
             <p>Fenote Training Academy provides services near these areas.</p>
       
           </div>

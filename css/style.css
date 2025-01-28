@@ -433,27 +433,8 @@ body {
   -webkit-transition-property: opacity;
   transition-property: opacity;
   }
-  .section-header {
-  margin-bottom: 30px;
-  }
-  .section-header h2 {
-  font-size: 32px;
-  color: #1e1e1e;
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-  padding-bottom: 20px;
-  }
-  .section-header h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #000000;
-  bottom: 0;
-  left: 0;
-  }
+ 
+
   .section-header p {
   padding: 0;
   margin: 0;
@@ -2857,5 +2838,87 @@ body {
   
   .section-title h2 {
       font-size: 2rem;
+  }
+}
+
+
+#other_courses {
+  position: absolute;
+  width: 250px;
+  left: 20px;
+  top: 250px;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e4e8;
+}
+
+#instructor-title,
+#childcare-title {
+  color: #1f497d;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+#instructor-title::after,
+#childcare-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(to right, #1f497d, #3d69b0);
+  border-radius: 2px;
+}
+
+#arc-instructor,
+#bls-instructor,
+#hsi-instructor,
+#childcare-courses {
+  color: #bd0000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid transparent;
+}
+
+#arc-instructor:hover,
+#bls-instructor:hover,
+#hsi-instructor:hover,
+#childcare-courses:hover {
+  background-color: #fff;
+  border-color: #e0e4e8;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: #940000;
+}
+
+/* Keep existing media queries */
+@media screen and (min-width: 1024px) {
+  #other_courses {
+      transform: scale(0.9);
+      transform-origin: top left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #other_courses {
+      position: relative;
+      width: 100%;
+      left: auto;
+      top: auto;
+      margin: 20px auto;
+      transform: none;
   }
 }

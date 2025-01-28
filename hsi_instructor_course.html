@@ -78,7 +78,7 @@
          <div class="container">
             <div class="section-header">
                <h2> HSI First Aid, CPR, AED Instructor Class </h2>
-               <p>At Fenote Training Academy, our First Aid, CPR, and AED Instructor Course is designed to equip you with the skills and knowledge needed to teach these essential life-saving techniques. This bleneded course will prepare you to instruct the Health & Safety Institute First Aid, CPR, and AED programs.
+               <p style="color: black;">At Fenote Training Academy, our First Aid, CPR, and AED Instructor Course is designed to equip you with the skills and knowledge needed to teach these essential life-saving techniques. This bleneded course will prepare you to instruct the Health & Safety Institute First Aid, CPR, and AED programs.
                   To enroll in this instructor course, participants must hold a current CPR/AED certification (or a higher level) from the Health & Safety Institute        . Additionally, participants must be at least 16 years old by the final day of the course. The training spans approximately 5.5 hours, ensuring a comprehensive learning experience.
                   Upon registering, you will receive access to the online portion of the course materials within 24 hours.
                   Please note that fees may apply for appointment cancellations or rescheduling. For further details, kindly refer to our terms and conditions.
@@ -232,31 +232,178 @@
       <br>
       <br>
       <br>
-      <section id="osha-courses">
-         <div class="container">
-            <div class="section-header">
-               <h2>OSHA APPROVED COURSE</h2>
-               <p>Our courses are certified and recognized by the Occupational Safety and Health Administration (OSHA).</p>
-            </div>
-            <img id = "mie" src="img/clients/red_cross.png" alt="Certified Logo 1" style="max-width: 100%; max-height: 160px;"> 
-            <pre>         </pre>
-            <div class="certified-logos">
-               <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" style="max-width: 100%; max-height: 160px;"> 
-               <pre>         </pre>
-               <img src="img/clients/certified2.png" alt="AHA"> 
-               <pre>         </pre>
-               <br>
-               <img src="img/intro-carousel/hsi.png" style= "max-width: 100%; max-height: 50px; margin-left: 11px;" alt="HSI"> 
-               <pre>         </pre>
-               <br>
-               <br>
-               <img src="img/intro-carousel/medicfirstaid.png" style= "max-width: 100%;" alt="HSI">
-               <img src="img/clients/certified3.png" alt="Safety Training"> 
-               <pre>                   </pre>
-               <br>
-            </div>
-         </div>
-      </section>
+
+
+
+      <style>
+         .section-header h2 {
+     font-size: 42px;
+     font-weight: 800;
+     color: #2D3748;
+     text-transform: uppercase;
+     margin-bottom: 50px;
+     position: relative;
+     padding-bottom: 30px;
+ }
+ 
+ /* Black line */
+ .section-header h2::after {
+     content: '';
+     position: absolute;
+     bottom: 15px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 80px;
+     height: 2px;
+     background-color: #2D3748;
+ }
+ 
+ /* Blue line */
+ .section-header h2::before {
+     content: '';
+     position: absolute;
+     bottom: 8px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 120px;
+     height: 2px;
+     background-color: #4299E1;
+ }
+ 
+ /* Subtitle styling */
+ .section-header p {
+     font-size: 20px;
+     color: #b70000;
+     line-height: 1.5;
+ }
+ 
+         /* Logo grid specific styles */
+         .logo-grid {
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: center;
+             gap: 30px;
+             margin: 40px 0;
+         }
+         
+         /* Individual logo sizing */
+         .logo-item {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+         }
+         
+         /* Red Cross logo */
+         .logo-red-cross {
+             height: 160px;
+             width: auto;
+         }
+         
+         /* AHA logo */
+         .logo-aha {
+             height: 100px;
+             width: auto;
+         }
+         
+         /* HSI logo */
+         .logo-hsi {
+             height: 50px;
+             width: auto;
+         }
+         
+         /* Medic First Aid logo */
+         .logo-medic {
+             height: 70px;
+             width: auto;
+         }
+         
+         /* Safety Training logo */
+         .logo-safety {
+             height: 100px;
+             width: auto;
+         }
+         
+         @media (max-width: 768px) {
+             .logo-grid {
+                 gap: 20px;
+             }
+             
+             .logo-red-cross {
+                 height: 140px;
+             }
+             
+             .logo-aha {
+                 height: 80px;
+             }
+             
+             .logo-hsi {
+                 height: 40px;
+             }
+             
+             .logo-medic {
+                 height: 60px;
+             }
+             
+             .logo-safety {
+                 height: 80px;
+             }
+         }
+         
+         @media (max-width: 480px) {
+             .logo-grid {
+                 gap: 15px;
+             }
+             
+             .logo-red-cross {
+                 height: 120px;
+             }
+             
+             .logo-aha {
+                 height: 70px;
+             }
+             
+             .logo-hsi {
+                 height: 35px;
+             }
+             
+             .logo-medic {
+                 height: 50px;
+             }
+             
+             .logo-safety {
+                 height: 70px;
+             }
+         }
+         </style>
+         <section id="certification-courses">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>OSHA APPROVED COURSES</h2>
+                     <p>Our certified courses are recognized by the Occupational Safety and Health Administration (OSHA).</p>
+                 </div>
+         
+                 <div class="logo-grid">
+                     <div class="logo-item">
+                         <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" class="logo-red-cross">
+                     </div>
+                     <div class="logo-item">
+                         <img src="img/clients/certified2.png" alt="AHA" class="logo-aha">
+                     </div>
+                     <div class="logo-item">
+                         <img src="img/intro-carousel/hsi.png" alt="HSI" class="logo-hsi">
+                     </div>
+                     <div class="logo-item">
+                         <img src="img/intro-carousel/medicfirstaid.png" alt="Medic First Aid" class="logo-medic">
+                     </div>
+                     <div class="logo-item">
+                         <img src="img/clients/certified3.png" alt="Safety Training" class="logo-safety">
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
       <br>
       <br>
       <footer id="footer">

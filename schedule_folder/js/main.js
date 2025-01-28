@@ -480,6 +480,15 @@ fetch('schedule_folder/scams.html')
   })
   .catch(error => console.error('Error fetching scams.html:', error));
 
+
+  fetch('schedule_folder/other_courses.html')
+  .then(response => response.text())
+  .then(html => {
+      document.getElementById('other_courses').innerHTML = html;
+  })
+  .catch(error => console.error('Error fetching scams.html:', error));
+
+
 function redirectToConfirmation(course, date, startTime, endTime) {
   const selectedCourse = courseDetails[course];
   const confirmationDetails = {
@@ -625,11 +634,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Add content
       courseContainer.appendChild(descriptionDiv);
-      descriptionDiv.style.fontSize = "16px";
-      descriptionDiv.style.color = "#333";
-      descriptionDiv.style.margin = "0 20px";
-      descriptionDiv.style.marginBottom = "10px";
-      descriptionDiv.style.textAlign = "justify";
+      descriptionDiv.style.cssText = `
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+      padding: 15px;
+      line-height: 1.5;
+      text-align: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+  `;
 
       courseContainer.appendChild(datesDiv);
       courseContainer.style.display = "block";
