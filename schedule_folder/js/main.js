@@ -666,7 +666,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const priceWithDollar = "$" + courseDetails[course].price;
       const priceTag = document.createElement("span");
-      if (index === 0 || index === 18) {
+      if (index === 0 || index === 20) {
           priceTag.innerHTML = "";
       } else {
           priceTag.innerHTML = priceWithDollar || "";
@@ -699,11 +699,44 @@ document.addEventListener("DOMContentLoaded", function () {
       courseButton.style.width = "100%";
 
       // Apply color coding
-      if (index === 0) courseName.style.color = "blue";
       if (index === 1 || index === 5) courseName.style.color = "purple";
-      if (index === 18) courseName.style.color = "red";
       if (index === 19 || index === 20) courseName.style.color = "purple";
       if (index === 34) courseName.style.color = "blue";
+
+
+      if (course === 'hsi_course') {
+        courseButton.style.backgroundColor = "#f0f7ff"; 
+        courseButton.style.borderLeft = "5px solid #0056b3";  
+        courseButton.style.fontWeight = "bold";
+        courseButton.style.fontSize = "1.2em";
+        courseButton.style.marginTop = "20px";
+        courseButton.style.padding = "15px 20px";
+        courseName.style.color = "#0056b3";  // Dark blue text
+    } 
+    else if (course === 'amr_course') {
+        courseButton.style.backgroundColor = "#fff0f0";  
+        courseButton.style.borderLeft = "5px solid #dc3545"; 
+        courseButton.style.fontWeight = "bold";
+        courseButton.style.fontSize = "1.2em";
+        courseButton.style.marginTop = "20px";
+        courseButton.style.padding = "15px 20px";
+        courseName.style.color = "#dc3545";  
+    }
+    
+    // For hover effects on regular course buttons
+    courseButton.addEventListener("mouseenter", () => {
+        if (course !== 'hsi_course' && course !== 'amr_course') {
+            courseButton.style.backgroundColor = "#f2f2f2";
+        }
+    });
+    
+    courseButton.addEventListener("mouseleave", () => {
+        if (course !== 'hsi_course' && course !== 'amr_course') {
+            courseButton.style.backgroundColor = "transparent";
+        }
+    });
+
+
 
       const container = document.createElement("div");
       container.style.display = "none";
@@ -726,6 +759,7 @@ document.addEventListener("DOMContentLoaded", function () {
       courseButtonsContainer.appendChild(container);
   });
 });
+
 
 
 
