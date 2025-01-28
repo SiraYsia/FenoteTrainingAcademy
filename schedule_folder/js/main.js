@@ -712,6 +712,9 @@ document.addEventListener("DOMContentLoaded", function () {
         courseButton.style.marginTop = "20px";
         courseButton.style.padding = "15px 20px";
         courseName.style.color = "#0056b3";  // Dark blue text
+        courseButton.style.pointerEvents = "none"; 
+
+
     } 
     else if (course === 'amr_course') {
         courseButton.style.backgroundColor = "#fff0f0";  
@@ -721,6 +724,8 @@ document.addEventListener("DOMContentLoaded", function () {
         courseButton.style.marginTop = "20px";
         courseButton.style.padding = "15px 20px";
         courseName.style.color = "#dc3545";  
+        courseButton.style.pointerEvents = "none"; 
+
     }
     
     // For hover effects on regular course buttons

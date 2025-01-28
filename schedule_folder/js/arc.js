@@ -443,6 +443,45 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index === 19 || index === 20) courseName.style.color = "purple";
         if (index === 34) courseName.style.color = "blue";
 
+
+
+
+
+
+      if (course === 'hsi_course') {
+        courseButton.style.backgroundColor = "#f0f7ff"; 
+        courseButton.style.borderLeft = "5px solid #0056b3";  
+        courseButton.style.fontWeight = "bold";
+        courseButton.style.fontSize = "1.2em";
+        courseButton.style.marginTop = "20px";
+        courseButton.style.padding = "15px 20px";
+        courseName.style.color = "#0056b3";  // Dark blue text
+        courseButton.style.pointerEvents = "none"; 
+
+
+    } 
+    else if (course === 'amr_course') {
+        courseButton.style.backgroundColor = "#fff0f0";  
+        courseButton.style.borderLeft = "5px solid #dc3545"; 
+        courseButton.style.fontWeight = "bold";
+        courseButton.style.fontSize = "1.2em";
+        courseButton.style.marginTop = "20px";
+        courseButton.style.padding = "15px 20px";
+        courseName.style.color = "#dc3545";  
+        courseButton.style.pointerEvents = "none"; 
+
+    }
+    
+    // For hover effects on regular course buttons
+    courseButton.addEventListener("mouseenter", () => {
+        if (course !== 'hsi_course' && course !== 'amr_course') {
+            courseButton.style.backgroundColor = "#f2f2f2";
+        }
+    });
+
+
+
+    
         const container = document.createElement("div");
         container.style.display = "none";
         courseDetails[course].container = container;
@@ -464,13 +503,6 @@ document.addEventListener("DOMContentLoaded", function () {
         courseButtonsContainer.appendChild(container);
     });
 });
-
-
-
-
-
-
-
 
 
 
