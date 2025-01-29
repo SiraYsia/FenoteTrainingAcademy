@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="img/clients/logo_ex.png" rel="icon">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <meta name="description" content="Fenote Training Academy offers CPR, First Aid, AED, BLS training services in Maryland, Virginia, and DC. Learn life-saving skills with certified instructors.">
 
@@ -41,34 +42,6 @@
 
 
  <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-
-.hero-image {
-    position: relative;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transform: perspective(1000px) rotateY(-5deg);
-    transition: transform 0.3s ease;
-}
-
-.hero-image:hover {
-    transform: perspective(1000px) rotateY(0deg);
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 .container {
@@ -254,130 +227,139 @@
 }
 
 
+/* Hero Section - Fixed Scaling */
+#intro_child_care {
 
 
-@media (max-width: 480px) {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: url("img/intro-carousel/serving_childcareproviders.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#intro_child_care::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 33, 162, 0.5);
+    filter: contrast(70%);
+}
+
+#intro_child_care .intro-content {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+#intro_child_care .intro-content h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+#intro_child_care .intro-content h5 {
+    color: rgb(218, 230, 0);
+    max-width: 800px;
+    font-weight: 500;
+
+    font-size: 18px;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 30px;
+}
+
+/* Stats Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stats-grid {
+    margin-top: -40px;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    position: relative;
+    z-index: 11;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #intro_child_care .intro-content h2 {
+        font-size: 30px;
+    }
+
+    #intro_child_care .intro-content h5 {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        margin-top: -30px;
+        gap: 1rem;
     }
 
-    .module-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .hero-image {
-        height: 250px;
+    .stat-card {
+        padding: 1.5rem;
     }
 }
 
-.hero-section {
-    background: linear-gradient(135deg, #8fbcff 0%, rgb(187, 194, 255) 60%, #d8ecff 100%);
-    padding: 2rem 1rem;
-    position: relative;
-    overflow: hidden;
-    min-height: 400px;
-}
-
-
-
-.hero-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: relative;
-    z-index: 2;
-    padding: 1rem;
-}
-
-
-
-/* Tablet Styles */
-@media (min-width: 768px) {
-    .hero-section {
-        padding: 3rem 2rem;
+@media (max-width: 480px) {
+    #intro_child_care .intro-content h2 {
+        font-size: 24px;
     }
 
-    .hero-container {
-        flex-direction: row;
-        align-items: center;
+    #intro_child_care .intro-content h5 {
+        font-size: 14px;
+        padding: 10px 15px;
     }
 
-
-    .hero-content h1 {
-        font-size: 2.5rem;
+    .stat-card {
+        padding: 1rem;
     }
-
-    .hero-content p {
-        font-size: 1.125rem;
-    }
-
-    .hero-image {
-        flex: 0.8;
-        height: 400px;
-    }
-    .hero-image-mobile {
-        display: none;
-    }
-
-    
-    .hero-content {
-    width: 100%;
-    text-align: center;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.95); /* Increased opacity for better visibility */
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-}
-.hero-content-mobile {
-    display: none;
-}
-.hero-content h1 {
-    font-size: 1.75rem; /* Smaller font size for mobile */
-    font-weight: 700;
-    color: rgb(48, 0, 0);
-    line-height: 1.3;
-    margin-bottom: 1rem;
-}
-.hero-register-button {
-    margin-top: 2rem;
-    background: #2673f9;
-    border: 2px solid white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hero-register-button:hover {
-    background: #005387;
-    border-color: #e2e8f0;
-}
-    
-}   
 
-
-
-    </style>
+</style>
 
 
 
 </head>
 <body>
-    <section class="hero-section">
-        <div class="hero-pattern"></div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Core of Knowledge Training in Child Care and Development</h1>
-                <p>A comprehensive, virtual training program designed to elevate childcare providers through expert-led instruction and practical application.</p>
-                <!-- <a href="./confirmation_childcare_course.html" class="register-button hero-register-button">
-                    Register Now
-                </a> -->
-            </div>
-            <div class="hero-image">
-                <img src="img/intro-carousel/serving_childcareproviders.jpg" alt="Child Care Training" loading="lazy">
-            </div>
+    <section id="intro_child_care">
+        <div class="intro-content">
+            <h2>Core of Knowledge Training in Child Care and Development</h2>
+            <h5>A comprehensive, virtual training program designed to elevate childcare providers through expert-led instruction and practical application</h5>
         </div>
     </section>
 
@@ -387,15 +369,15 @@
         
     
     
-    <div class="container"> 
+    <div class="container">
         <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">6 (Each 4 Hours)</div>
-                <div class="stat-label">Core Modules</div>
-            </div>
             <div class="stat-card">
                 <div class="stat-number">24</div>
                 <div class="stat-label">Training Hours</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Core Modules</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">100%</div>
@@ -407,17 +389,17 @@
             </div>
         </div>
 
+        <br> <br>
+        <br> <br>
 
 
         <section class="section">
             <h2 class="section-title">Program Features</h2>
-            <p>We are dedicated to supporting all child care providers trainees who face language barriers, helping them successfully complete their courses. Our goal is to provide assistance to trainees who may struggle with language limitations, ensuring they have the resources and guidance needed to understand course material, participate fully, and achieve success in their studies. We are committed to making education accessible to all child care providers trainees, regardless of their language proficiency, so they can reach their academic goals with confidence.</p>
-            <br> 
             <div class="program-features">
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
                     <h3 class="feature-title">Bilingual Support</h3>
-                    <p>Complete course content available in English/Amharic with real-time interpretation during virtual sessions.</p>
+                    <p>Complete course content available in English and Amharic with real-time interpretation during virtual sessions.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💻</div>
@@ -432,6 +414,8 @@
             </div>
         </section>
 
+        <br> <br>
+        <br> 
         <section class="section">
             <h2 class="section-title">Training Modules</h2>
             <div class="modules-list">
@@ -507,7 +491,7 @@
             <div class="schedule-content">
                 <h2 class="section-title"> Registration Details</h2>
                 <p>Each core knowledge training will take place over two days each month, with each session lasting 2 hours. Quizzes will be administered after each session, and a final assessment will be conducted during the final week.</p>
-                <h3 class="module-title"> Click "Register Now" to enroll in the 6 Core Knowledge Training Package (CDV, CUR, HSN, SPN, PRO, COM). </h3>
+                <h3 class="module-title"> Click "Register Now" to enroll in the Core Knowledge Training Package (CDV, CUR, HSN, SPN, PRO, COM). </h3>
                 <a href="./confirmation_childcare_course" class="register-button" style="font-size: 1.2em;">
                     Register Now
                 </a>             
@@ -518,7 +502,7 @@
     <br> <br>
 
     <style>
-        .section-header h2 {
+    .section-header h2 {
     font-size: 42px;
     font-weight: 800;
     color: #2D3748;
