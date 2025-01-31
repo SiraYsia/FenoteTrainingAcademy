@@ -1,731 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title> Fenote Training Acadamey | Core of Knowledge Training in Child Care and Development </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="img/clients/logo_ex.png" rel="icon">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <meta name="description" content="Fenote Training Academy offers CPR, First Aid, AED, BLS training services in Maryland, Virginia, and DC. Learn life-saving skills with certified instructors.">
-
-  <!-- Favicons -->
-  <link href="img/clients/logo_ex.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-</head>
-
-
-<body>
-  <!--==========================
-    Header
-  ============================-->
-  <div id="header"></div>
-
-  <script>
-      fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('header').innerHTML = data;
-      });
-  </script>
-
-
- <style>
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.stats-grid {
-    margin-top: -40px;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    position: relative;
-    z-index: 3;
-}
-
-.stat-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2C5282;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    
-    color: #4A5568;
-    font-weight: 500;
-}
-
-.section {
-    padding: 2rem 0;
-}
-
-.section-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #2D3748;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.program-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.feature-card {
-    background: #F7FAFC;
-    padding: 1.5rem;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    border: 1px solid #E2E8F0;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.feature-icon {
-    width: 60px;
-    height: 60px;
-    background: #2C5282;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    color: white;
-    font-size: 24px;
-}
-
-.feature-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #2D3748;
-}
-
-.modules-list {
-    max-width: 970px;
-    margin: 0 auto;
-}
-
-.module-card {
-    background: white;
-    border: 1px solid #E2E8F0;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-
-}
-
-.module-card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-color: #4299E1;
-}
-
-.module-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.module-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2D3748;
-}
-
-.module-hours {
-    background: #EBF4FF;
-    color: #2C5282;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.module-content {
-    color: #4A5568;
-    line-height: 1.7;
-    border-top: 1px solid #E2E8F0;
-    padding-top: 1rem;
-    margin-top: 1rem;
-}
-
-.schedule-section {
-    background: #F7FAFC;
-    padding: 2rem 0;
-    margin: 2rem 0;
-}
-
-.schedule-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.register-button {
-    display: inline-block;
-    background: #2673f9;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 20px; 
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.register-button:hover {
-    background: #005387;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.section + .section {
-    padding-top: 1rem;
-}
-
-
-/* Hero Section - Fixed Scaling */
-#intro_child_care {
-
-
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background: url("img/intro-carousel/serving_childcareproviders.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-#intro_child_care::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(24, 33, 162, 0.5);
-    filter: contrast(70%);
-}
-
-#intro_child_care .intro-content {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-}
-
-#intro_child_care .intro-content h2 {
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    max-width: 800px;
-}
-
-#intro_child_care .intro-content h5 {
-    color: rgb(218, 230, 0);
-    max-width: 800px;
-    font-weight: 500;
-
-    font-size: 18px;
-    line-height: 1.6;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px 25px;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    margin-bottom: 30px;
-}
-
-/* Stats Section */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.stats-grid {
-    margin-top: -40px;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    position: relative;
-    z-index: 11;
-}
-
-.stat-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    #intro_child_care .intro-content h2 {
-        font-size: 30px;
-    }
-
-    #intro_child_care .intro-content h5 {
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: -30px;
-        gap: 1rem;
-    }
-
-    .stat-card {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    #intro_child_care .intro-content h2 {
-        font-size: 24px;
-    }
-
-    #intro_child_care .intro-content h5 {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    .stat-card {
-        padding: 1rem;
-    }
-}
-
-
-</style>
-
-
-
-</head>
-<body>
-    <section id="intro_child_care">
-        <div class="intro-content">
-            <h2>Core of Knowledge Training in Child Care and Development</h2>
-            <h5>A comprehensive, virtual training program designed to elevate childcare providers through expert-led instruction and practical application</h5>
-        </div>
-    </section>
-
-
-
-
-        
-    
-    
-    <div class="container"> 
-        <div class="stats-grid">
+   <head>
+      <meta charset="UTF-8">
+      <title> Fenote Training Acadamey | Core of Knowledge Training in Child Care and Development </title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <link href="img/clients/logo_ex.png" rel="icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="description" content="Fenote Training Academy offers CPR, First Aid, AED, BLS training services in Maryland, Virginia, and DC. Learn life-saving skills with certified instructors.">
+      <!-- Favicons -->
+      <link href="img/clients/logo_ex.png" rel="icon">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+      <!-- Bootstrap CSS File -->
+      <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Main Stylesheet File -->
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!--==========================
+         Header
+         ============================-->
+      <div id="header"></div>
+      <script>
+         fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('header').innerHTML = data;
+         });
+      </script>
+      <style>
+         .section-header h2 {
+         font-size: 42px;
+         font-weight: 800;
+         color: #2D3748;
+         text-transform: uppercase;
+         margin-bottom: 50px;
+         position: relative;
+         padding-bottom: 30px;
+         }
+         /* Black line */
+         .section-header h2::after {
+         content: '';
+         position: absolute;
+         bottom: 15px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 80px;
+         height: 2px;
+         background-color: #2D3748;
+         }
+         /* Blue line */
+         .section-header h2::before {
+         content: '';
+         position: absolute;
+         bottom: 8px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 120px;
+         height: 2px;
+         background-color: #4299E1;
+         }
+         /* Subtitle styling */
+         .section-header p {
+         font-size: 20px;
+         color: #b70000;
+         line-height: 1.5;
+         }
+         /* Logo grid specific styles */
+         .logo-grid {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         gap: 30px;
+         margin: 40px 0;
+         }
+         /* Individual logo sizing */
+         .logo-item {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         /* Red Cross logo */
+         .logo-red-cross {
+         height: 160px;
+         width: auto;
+         }
+         /* AHA logo */
+         .logo-aha {
+         height: 100px;
+         width: auto;
+         }
+         /* HSI logo */
+         .logo-hsi {
+         height: 50px;
+         width: auto;
+         }
+         /* Medic First Aid logo */
+         .logo-medic {
+         height: 70px;
+         width: auto;
+         }
+         /* Safety Training logo */
+         .logo-safety {
+         height: 100px;
+         width: auto;
+         }
+         @media (max-width: 768px) {
+         .logo-grid {
+         gap: 20px;
+         }
+         .logo-red-cross {
+         height: 140px;
+         }
+         .logo-aha {
+         height: 80px;
+         }
+         .logo-hsi {
+         height: 40px;
+         }
+         .logo-medic {
+         height: 60px;
+         }
+         .logo-safety {
+         height: 80px;
+         }
+         }
+         @media (max-width: 480px) {
+         .logo-grid {
+         gap: 15px;
+         }
+         .logo-red-cross {
+         height: 120px;
+         }
+         .logo-aha {
+         height: 70px;
+         }
+         .logo-hsi {
+         height: 35px;
+         }
+         .logo-medic {
+         height: 50px;
+         }
+         .logo-safety {
+         height: 70px;
+         }
+         }
+         .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+         }
+         .stats-grid {
+         margin-top: -40px;
+         margin-bottom: 2rem;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 1.5rem;
+         position: relative;
+         z-index: 3;
+         }
+         .stat-card {
+         background: white;
+         padding: 2rem;
+         border-radius: 10px;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+         text-align: center;
+         transition: transform 0.3s ease;
+         }
+         .stat-card:hover {
+         transform: translateY(-5px);
+         }
+         .stat-number {
+         font-size: 2.5rem;
+         font-weight: 700;
+         color: #2C5282;
+         margin-bottom: 0.5rem;
+         }
+         .stat-label {
+         color: #4A5568;
+         font-weight: 500;
+         }
+         .section {
+         padding: 2rem 0;
+         }
+         .section-title {
+         font-size: 2.4rem;
+         font-weight: 700;
+         color: #2D3748;
+         margin-bottom: 2rem;
+         text-align: center;
+         }
+         .program-features {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 2rem;
+         margin: 2rem 0;
+         }
+         .feature-card {
+         background: #F7FAFC;
+         padding: 1.5rem;
+         border-radius: 10px;
+         transition: transform 0.3s ease;
+         border: 1px solid #E2E8F0;
+         }
+         .feature-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+         }
+         .feature-icon {
+         width: 60px;
+         height: 60px;
+         background: #2C5282;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 1rem;
+         color: white;
+         font-size: 24px;
+         }
+         .feature-title {
+         font-size: 1.25rem;
+         font-weight: 600;
+         margin-bottom: 1rem;
+         color: #2D3748;
+         }
+         .modules-list {
+         max-width: 970px;
+         margin: 0 auto;
+         }
+         .module-card {
+         background: white;
+         border: 1px solid #E2E8F0;
+         border-radius: 10px;
+         padding: 1.5rem;
+         margin-bottom: 1rem;
+         transition: all 0.3s ease;
+         }
+         .module-card:hover {
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+         border-color: #4299E1;
+         }
+         .module-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .module-title {
+         font-size: 1.25rem;
+         font-weight: 600;
+         color: #2D3748;
+         }
+         .module-hours {
+         background: #EBF4FF;
+         color: #2C5282;
+         padding: 0.5rem 1rem;
+         border-radius: 20px;
+         font-size: 0.875rem;
+         font-weight: 500;
+         }
+         .module-content {
+         color: #4A5568;
+         line-height: 1.7;
+         border-top: 1px solid #E2E8F0;
+         padding-top: 1rem;
+         margin-top: 1rem;
+         }
+         .schedule-section {
+         background: #F7FAFC;
+         padding: 2rem 0;
+         margin: 2rem 0;
+         }
+         .schedule-content {
+         max-width: 800px;
+         margin: 0 auto;
+         text-align: center;
+         padding: 2rem;
+         background: white;
+         border-radius: 20px;
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+         }
+         .register-button {
+         display: inline-block;
+         background: #2673f9;
+         color: white;
+         padding: 1rem 2rem;
+         border-radius: 20px; 
+         font-size: 1.5rem;
+         text-decoration: none;
+         font-weight: 600;
+         margin-top: 1.5rem;
+         transition: all 0.3s ease;
+         }
+         .register-button:hover {
+         background: #005387;
+         color: white;
+         transform: translateY(-2px);
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+         }
+         .section + .section {
+         padding-top: 1rem;
+         }
+         /* Hero Section - Fixed Scaling */
+         #intro_child_care {
+         width: 100%;
+         height: 80vh;
+         position: relative;
+         background: url("img/intro-carousel/serving_childcareproviders.jpg");
+         background-size: cover;
+         background-position: center;
+         }
+         #intro_child_care::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(24, 33, 162, 0.5);
+         filter: contrast(70%);
+         }
+         #intro_child_care .intro-content {
+         position: absolute;
+         bottom: 0;
+         top: 0;
+         left: 0;
+         right: 0;
+         z-index: 10;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         text-align: center;
+         padding: 20px;
+         }
+         #intro_child_care .intro-content h2 {
+         color: #ffffff;
+         font-size: 40px;
+         font-weight: 700;
+         margin-bottom: 20px;
+         max-width: 800px;
+         }
+         #intro_child_care .intro-content h5 {
+         color: rgb(218, 230, 0);
+         max-width: 800px;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 1.6;
+         background: rgba(255, 255, 255, 0.1);
+         padding: 15px 25px;
+         border-radius: 8px;
+         backdrop-filter: blur(5px);
+         margin-bottom: 30px;
+         }
+         /* Stats Section */
+         .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+         }
+         .stats-grid {
+         margin-top: -40px;
+         margin-bottom: 2rem;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 1.5rem;
+         position: relative;
+         z-index: 11;
+         }
+         .stat-card {
+         background: white;
+         padding: 2rem;
+         border-radius: 10px;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+         text-align: center;
+         }
+         /* Media Queries */
+         @media (max-width: 768px) {
+         #intro_child_care .intro-content h2 {
+         font-size: 30px;
+         }
+         #intro_child_care .intro-content h5 {
+         font-size: 16px;
+         padding: 12px 20px;
+         }
+         .stats-grid {
+         grid-template-columns: repeat(2, 1fr);
+         margin-top: -30px;
+         gap: 1rem;
+         }
+         .stat-card {
+         padding: 1.5rem;
+         }
+         }
+         @media (max-width: 480px) {
+         #intro_child_care .intro-content h2 {
+         font-size: 24px;
+         }
+         #intro_child_care .intro-content h5 {
+         font-size: 14px;
+         padding: 10px 15px;
+         }
+         .stat-card {
+         padding: 1rem;
+         }
+         }
+      </style>
+      </head>
+      <body>
+         <section id="intro_child_care">
+            <div class="intro-content">
+               <h2>Core of Knowledge Training in Child Care and Development</h2>
+               <h5>A comprehensive, virtual training program designed to elevate childcare providers through expert-led instruction and practical application</h5>
+            </div>
+         </section>
+         <div class="container">
+         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">6</div>
-                <div class="stat-label"> Core Modules - (Each 4 Hours)</div>
-                
+               <div class="stat-number">6</div>
+               <div class="stat-label"> Core Modules - (Each 4 Hours)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">24</div>
-                <div class="stat-label">Training Hours</div>
+               <div class="stat-number">24</div>
+               <div class="stat-label">Training Hours</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Virtual Access</div>
+               <div class="stat-number">100%</div>
+               <div class="stat-label">Virtual Access</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">2</div>
-                <div class="stat-label">Languages</div>
+               <div class="stat-number">2</div>
+               <div class="stat-label">Languages</div>
             </div>
-        </div>
-
-
-        <section class="section">
+         </div>
+         <section class="section">
             <h2 class="section-title">Program Features</h2>
             <p>We are dedicated to supporting all child care providers trainees who face language barriers, helping them successfully complete their courses. Our goal is to provide assistance to trainees who may struggle with language limitations, ensuring they have the resources and guidance needed to understand course material, participate fully, and achieve success in their studies. We are committed to making education accessible to all child care providers trainees, regardless of their language proficiency, so they can reach their goals with confidence.</p>
             <div class="program-features">
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3 class="feature-title">Bilingual Support</h3>
-                    <p>Complete course content available in English/Amharic with real-time interpretation during virtual sessions.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💻</div>
-                    <h3 class="feature-title">Interactive Learning</h3>
-                    <p>Engaging virtual sessions with multimedia presentations and downloadable resources for practical application.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Continuous Assessment</h3>
-                    <p>Regular quizzes and comprehensive evaluations to ensure knowledge retention and understanding.</p>
-                </div>
+               <div class="feature-card">
+                  <div class="feature-icon">🌍</div>
+                  <h3 class="feature-title">Bilingual Support</h3>
+                  <p>Complete course content available in English/Amharic with real-time interpretation during virtual sessions.</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">💻</div>
+                  <h3 class="feature-title">Interactive Learning</h3>
+                  <p>Engaging virtual sessions with multimedia presentations and downloadable resources for practical application.</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">📊</div>
+                  <h3 class="feature-title">Continuous Assessment</h3>
+                  <p>Regular quizzes and comprehensive evaluations to ensure knowledge retention and understanding.</p>
+               </div>
             </div>
-        </section>
-        
-
-        <section class="section">
+         </section>
+         <section class="section">
             <h2 class="section-title">Training Modules</h2>
             <div class="modules-list">
-                <div class="module-card">
-                    <div class="module-header">
-                        <h3 class="module-title">Family Child Care Module 1: Child Development (CDV)</h3>
-                        <span class="module-hours">4 Hours</span>
-                    </div>
-                    <div class="module-content">
-                        This training equips childcare providers with essential knowledge and strategies to support children's overall development. By understanding milestones, exploring developmental theories, implementing holistic strategies, and recognizing the role of play, participants will be empowered to create nurturing and effective learning environments for children.
-                        <p>    </p>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <h3 class="module-title">Family Child Care Module 2: Curriculum (CUR)</h3>
-                        <span class="module-hours">4 Hours</span>
-                    </div>
-                    <div class="module-content">
-                        This training will focus on two key areas: designing developmentally appropriate curricula and maintaining safe, healthy environments that support children's well-being and learning. Participants will acquire skills to foster children's growth and development effectively.
-                        <p>    </p>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <h3 class="module-title">Family Child Care Module 3: Health, Safety & Nutrition (HSN)</h3>
-                        <span class="module-hours">4 Hours</span>
-                    </div>
-                    <div class="module-content">
-                        Participants will learn essential components of creating a safe and healthy childcare environment. This includes recognizing signs of illness, emergency preparedness, and effective meal planning, empowering providers to support children's health and safety.
-                        <p>    </p>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <h3 class="module-title">Family Child Care Module 4: Special Needs (SPN)</h3>
-                        <span class="module-hours">4 Hours</span>
-                    </div>
-                    <div class="module-content">
-                        This training provides insights into typical and atypical developmental patterns, ADA compliance, and inclusive practices to support all children. Participants will be equipped to create supportive environments for children with diverse needs.
-                        <p>    </p>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <h3 class="module-title">Family Child Care Module 5: Professionalism (PRO)</h3>
-                        <span class="module-hours">4 Hours</span>
-                    </div>
-                    <div class="module-content">
-                        Focused on self-employed childcare business essentials, this training covers MSDE compliance, contract and policy development, and basic business practices, providing tools for operating a successful and compliant childcare business.
-                        <p>    </p>
-                    </div>
-                </div>
-
-                <div class="module-card">
-                    <div class="module-header">
-                        <h3 class="module-title">Family Child Care Module 6: Community (COM)</h3>
-                        <span class="module-hours">4 Hours</span>
-                    </div>
-                    <div class="module-content">
-                        This training emphasizes building family partnerships and community ties. Participants will learn about cultural influences, community resources, and strategies to create a cohesive, supportive early childhood environment.
-                        <p>    </p>
-                    </div>
-                </div>
+               <div class="module-card">
+                  <div class="module-header">
+                     <h3 class="module-title">Family Child Care Module 1: Child Development (CDV)</h3>
+                     <span class="module-hours">4 Hours</span>
+                  </div>
+                  <div class="module-content">
+                     This training equips childcare providers with essential knowledge and strategies to support children's overall development. By understanding milestones, exploring developmental theories, implementing holistic strategies, and recognizing the role of play, participants will be empowered to create nurturing and effective learning environments for children.
+                     <p>    </p>
+                  </div>
+               </div>
+               <div class="module-card">
+                  <div class="module-header">
+                     <h3 class="module-title">Family Child Care Module 2: Curriculum (CUR)</h3>
+                     <span class="module-hours">4 Hours</span>
+                  </div>
+                  <div class="module-content">
+                     This training will focus on two key areas: designing developmentally appropriate curricula and maintaining safe, healthy environments that support children's well-being and learning. Participants will acquire skills to foster children's growth and development effectively.
+                     <p>    </p>
+                  </div>
+               </div>
+               <div class="module-card">
+                  <div class="module-header">
+                     <h3 class="module-title">Family Child Care Module 3: Health, Safety & Nutrition (HSN)</h3>
+                     <span class="module-hours">4 Hours</span>
+                  </div>
+                  <div class="module-content">
+                     Participants will learn essential components of creating a safe and healthy childcare environment. This includes recognizing signs of illness, emergency preparedness, and effective meal planning, empowering providers to support children's health and safety.
+                     <p>    </p>
+                  </div>
+               </div>
+               <div class="module-card">
+                  <div class="module-header">
+                     <h3 class="module-title">Family Child Care Module 4: Special Needs (SPN)</h3>
+                     <span class="module-hours">4 Hours</span>
+                  </div>
+                  <div class="module-content">
+                     This training provides insights into typical and atypical developmental patterns, ADA compliance, and inclusive practices to support all children. Participants will be equipped to create supportive environments for children with diverse needs.
+                     <p>    </p>
+                  </div>
+               </div>
+               <div class="module-card">
+                  <div class="module-header">
+                     <h3 class="module-title">Family Child Care Module 5: Professionalism (PRO)</h3>
+                     <span class="module-hours">4 Hours</span>
+                  </div>
+                  <div class="module-content">
+                     Focused on self-employed childcare business essentials, this training covers MSDE compliance, contract and policy development, and basic business practices, providing tools for operating a successful and compliant childcare business.
+                     <p>    </p>
+                  </div>
+               </div>
+               <div class="module-card">
+                  <div class="module-header">
+                     <h3 class="module-title">Family Child Care Module 6: Community (COM)</h3>
+                     <span class="module-hours">4 Hours</span>
+                  </div>
+                  <div class="module-content">
+                     This training emphasizes building family partnerships and community ties. Participants will learn about cultural influences, community resources, and strategies to create a cohesive, supportive early childhood environment.
+                     <p>    </p>
+                  </div>
+               </div>
             </div>
-        </section>
-
-        <section class="schedule-section">
+         </section>
+         <section class="schedule-section">
             <div class="schedule-content">
-                <h2 class="section-title"> Core Of Knowledge Assessment                </h2>
-                <p>As mandated by the Maryland State Department of Education-Office of Child Care (OCC), all Core of Knowledge classes conclude with an assessment. This assessment may take the form of an activity, group project, homework, or a written test. To obtain a Core of Knowledge certificate, participants must achieve a score of 75% or higher. A score of 74% or below will not qualify for a certificate. Students can schedule a retake of the test, but if they do not pass the second assessment, they will need to retake the entire class (payment is required). Core of Knowledge certificates fulfill licensing and Maryland childcare credential training requirements established by OCC. Participants must remain in class until the end; leaving early and missing the assessment will prevent the issuance of a certificate. Additionally, attendance at all sessions is required for multi-part classes to be eligible for the assessment.</p>
-        </section>
-    </div>
-
-        <section class="schedule-section">
+               <h2 class="section-title"> Core Of Knowledge Assessment                </h2>
+               <p>As mandated by the Maryland State Department of Education-Office of Child Care (OCC), all Core of Knowledge classes conclude with an assessment. This assessment may take the form of an activity, group project, homework, or a written test. To obtain a Core of Knowledge certificate, participants must achieve a score of 75% or higher. A score of 74% or below will not qualify for a certificate. Students can schedule a retake of the test, but if they do not pass the second assessment, they will need to retake the entire class (payment is required). Core of Knowledge certificates fulfill licensing and Maryland childcare credential training requirements established by OCC. Participants must remain in class until the end; leaving early and missing the assessment will prevent the issuance of a certificate. Additionally, attendance at all sessions is required for multi-part classes to be eligible for the assessment.</p>
+         </section>
+         </div>
+         <section class="schedule-section">
             <div class="schedule-content">
-                <h2 class="section-title"> Registration Details</h2>
-                <p>Each core knowledge training will take place over two days each month, with each session lasting 2 hours. Quizzes will be administered after each session, and a final assessment will be conducted during the final week.</p>
-                <h3 class="module-title"> Click "Register Now" to enroll in the 6 Core Knowledge Training Package (CDV, CUR, HSN, SPN, PRO, COM). </h3>
-                <a href="./confirmation_childcare_course" class="register-button" style="font-size: 1.2em;">
-                    Register Now
-                </a>             
-        </section>
-    </div>
-
-    <br> <br>
-    <br> <br>
-
-    <style>
-    .section-header h2 {
-    font-size: 42px;
-    font-weight: 800;
-    color: #2D3748;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    position: relative;
-    padding-bottom: 30px;
-}
-
-/* Black line */
-.section-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 2px;
-    background-color: #2D3748;
-}
-
-/* Blue line */
-.section-header h2::before {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 2px;
-    background-color: #4299E1;
-}
-
-/* Subtitle styling */
-.section-header p {
-    font-size: 20px;
-    color: #b70000;
-    line-height: 1.5;
-}
-
-        /* Logo grid specific styles */
-        .logo-grid {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        /* Individual logo sizing */
-        .logo-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        /* Red Cross logo */
-        .logo-red-cross {
-            height: 160px;
-            width: auto;
-        }
-        
-        /* AHA logo */
-        .logo-aha {
-            height: 100px;
-            width: auto;
-        }
-        
-        /* HSI logo */
-        .logo-hsi {
-            height: 50px;
-            width: auto;
-        }
-        
-        /* Medic First Aid logo */
-        .logo-medic {
-            height: 70px;
-            width: auto;
-        }
-        
-        /* Safety Training logo */
-        .logo-safety {
-            height: 100px;
-            width: auto;
-        }
-        
-        @media (max-width: 768px) {
-            .logo-grid {
-                gap: 20px;
-            }
-            
-            .logo-red-cross {
-                height: 140px;
-            }
-            
-            .logo-aha {
-                height: 80px;
-            }
-            
-            .logo-hsi {
-                height: 40px;
-            }
-            
-            .logo-medic {
-                height: 60px;
-            }
-            
-            .logo-safety {
-                height: 80px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .logo-grid {
-                gap: 15px;
-            }
-            
-            .logo-red-cross {
-                height: 120px;
-            }
-            
-            .logo-aha {
-                height: 70px;
-            }
-            
-            .logo-hsi {
-                height: 35px;
-            }
-            
-            .logo-medic {
-                height: 50px;
-            }
-            
-            .logo-safety {
-                height: 70px;
-            }
-        }
-
-
-        </style>
-        <section id="certification-courses">
+               <h2 class="section-title"> Registration Details</h2>
+               <p>Each core knowledge training will take place over two days each month, with each session lasting 2 hours. Quizzes will be administered after each session, and a final assessment will be conducted during the final week.</p>
+               <h3 class="module-title"> Click "Register Now" to enroll in the 6 Core Knowledge Training Package (CDV, CUR, HSN, SPN, PRO, COM). </h3>
+               <a href="./confirmation_childcare_course" class="register-button" style="font-size: 1.2em;">
+               Register Now
+               </a>             
+         </section>
+         </div>
+         <section id="certification-courses">
             <div class="container">
-                <p style="font-size: 24px; font-weight: bold; color: red;">
-                </p>                
+               <p style="font-size: 24px; font-weight: bold; color: red;">
+               </p>
             </div>
-        
-                <div class="logo-grid">
-                    <div class="logo-item">
-                        <img src="img/DofE.jpeg" alt="Department of Education" style="max-width: 80%; max-height: 135px;"> <pre>         </pre>
-                    </div>
-                    <div class="logo-item">
-                        <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" class="logo-red-cross">
-                    </div>
-                    <div class="logo-item">
-                        <img src="img/clients/certified2.png" alt="AHA" class="logo-aha">
-                    </div>
-                    <div class="logo-item">
-                        <img src="img/intro-carousel/hsi.png" alt="HSI" class="logo-hsi">
-                    </div>
-                    <div class="logo-item">
-                        <img src="img/intro-carousel/medicfirstaid.png" alt="Medic First Aid" class="logo-medic">
-
-                </div>
+            <div class="logo-grid">
+               <div class="logo-item">
+                  <img src="img/DofE.jpeg" alt="Department of Education" style="max-width: 80%; max-height: 135px;">
+               </div>
+               <div class="logo-item">
+                  <img src="img/clients/red_cross.png" alt="Certified by American Red Cross" class="logo-red-cross">
+               </div>
+               <div class="logo-item">
+                  <img src="img/clients/certified2.png" alt="AHA" class="logo-aha">
+               </div>
+               <div class="logo-item">
+                  <img src="img/intro-carousel/hsi.png" alt="HSI" class="logo-hsi">
+               </div>
+               <div class="logo-item">
+                  <img src="img/intro-carousel/medicfirstaid.png" alt="Medic First Aid" class="logo-medic">
+               </div>
             </div>
-        </section>
-
-        
-    <script>
-        document.querySelectorAll('.module-card').forEach(card => {
-            card.addEventListener('click', () => {
-                const content = card.querySelector('.module-content');
-                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+         </section>
+         <script>
+            document.querySelectorAll('.module-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const content = card.querySelector('.module-content');
+                    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                });
             });
-        });
-    </script>
-
-
-<br>
-
-
-<br> <br>
-
-
-      <footer id="footer">
-        <!-- Load the footer content using jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script>
-          $(document).ready(function () {
-            // Load footer content
-            $('#footer').load('footer.html');
-          });
-        </script>
-      </footer>
-        
-    
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-</body>
+         </script>
+         <br>
+         <br> <br>
+         <footer id="footer">
+            <!-- Load the footer content using jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script>
+               $(document).ready(function () {
+                 // Load footer content
+                 $('#footer').load('footer.html');
+               });
+            </script>
+         </footer>
+         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+         <!-- JavaScript Libraries -->
+         <script src="lib/jquery/jquery.min.js"></script>
+         <script src="lib/jquery/jquery-migrate.min.js"></script>
+         <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+         <script src="lib/easing/easing.min.js"></script>
+         <script src="lib/superfish/hoverIntent.js"></script>
+         <script src="lib/superfish/superfish.min.js"></script>
+         <script src="lib/wow/wow.min.js"></script>
+         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+         <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+         <script src="lib/sticky/sticky.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+         <!-- Contact Form JavaScript File -->
+         <script src="contactform/contactform.js"></script>
+         <!-- Template Main Javascript File -->
+         <script src="js/main.js"></script>
+   </body>
 </html>
