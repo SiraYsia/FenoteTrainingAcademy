@@ -22,6 +22,8 @@ hsi_adult_pediatric: {
     { "start": "2025-01-18", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2025-01-25", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2025-02-08", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-02-15", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
 
 
   ],
