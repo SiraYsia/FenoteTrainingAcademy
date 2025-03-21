@@ -2922,3 +2922,228 @@ body {
       transform: none;
   }
 }
+
+
+
+
+/* ChildCare */
+@media (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding: 10px 0;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 13px;
+    min-width: auto;
+    flex: 0 0 auto;
+  }
+  
+  .section:first-of-type .section-title {
+    font-size: 30px;
+  }
+  
+  .section:first-of-type .section-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    gap: 6px;
+  }
+  
+  .nav-link {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+  
+  .section:first-of-type .section-title {
+    font-size: 24px;
+  }
+  
+  .section:first-of-type .section-subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  #pre-service .section-subtitle,
+  #additional-trainings .section-subtitle,
+  #certifications .section-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .preservice-course .course-title,
+  .additional-course .course-title {
+    font-size: 18px;
+  }
+  
+  .preservice-course .course-description,
+  .additional-course .course-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .benefit-title {
+    font-size: 15px;
+  }
+  
+  .benefit-info p {
+    font-size: 13px;
+  }
+  
+  .feature-heading {
+    font-size: 15px;
+  }
+  
+  .feature-block p {
+    font-size: 13px;
+  }
+  
+  .preservice-course .course-content,
+  .additional-course .course-content {
+    padding: 20px;
+  }
+  
+  .preservice-course .course-header,
+  .additional-course .course-header {
+    padding: 15px;
+  }
+  
+  .benefit-item,
+  .feature-block {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+  
+  #pre-service .section-subtitle,
+  #additional-trainings .section-subtitle,
+  #certifications .section-subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .preservice-course .course-title,
+  .additional-course .course-title {
+    font-size: 16px;
+  }
+  
+  .preservice-course .course-description,
+  .additional-course .course-description {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .preservice-course .course-hours,
+  .additional-course .course-hours {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+  
+  .pre-register-btn,
+  .additional-course .register-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  
+  .benefit-title {
+    font-size: 14px;
+  }
+  
+  .benefit-info p {
+    font-size: 12px;
+  }
+  
+  .feature-heading {
+    font-size: 14px;
+  }
+  
+  .feature-block p {
+    font-size: 12px;
+  }
+  
+  .benefit-icon,
+  .feature-icon {
+    font-size: 20px;
+  }
+  
+  .preservice-course .course-content,
+  .additional-course .course-content {
+    padding: 15px;
+  }
+  
+  .preservice-course .course-header,
+  .additional-course .course-header {
+    padding: 12px;
+  }
+  
+  .benefit-item,
+  .feature-block {
+    padding: 12px;
+  }
+}
+
+.section .section-header .section-title {
+  font-size: 36px;
+}
+
+.section .section-header .section-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 100%;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .section .section-header .section-title {
+    font-size: 30px !important;
+  }
+  
+  .section .section-header .section-subtitle {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 30px !important;
+    padding: 0 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .section .section-header .section-title {
+    font-size: 24px !important;
+  }
+  
+  .section .section-header .section-subtitle {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 25px !important;
+  }
+}
