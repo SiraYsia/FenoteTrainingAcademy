@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenote Training Academy - Community Health Worker Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .bg-light-blue {
+            background-color: #e6f3ff;
+        }
+        .icon-box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+            transition: all 0.3s ease-in-out;
+            border-radius: 8px;
+            z-index: 1;
+        }
+        .icon-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+            bottom: 0;
+            left: calc(50% - 25px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        .card {
+            border: none;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>
+
+    <main>
+        <section class="bg-light-blue py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4">Community Health Worker Training Program</h1>
+                        <p class="lead">A Community Health Worker (CHW) is a frontline public health professional and a trusted member of the community. They build strong, supportive relationships with individuals and serve as a vital link between patients and the health and social services available to them. By focusing on each person's unique needs beyond the hospital or clinic, CHWs play a key role in helping patients achieve their health goals and improve overall well-being.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/community_health_worker.jpg" alt="Community Health Worker" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Can a CHW Help Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">How Can a CHW Help?</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="icon-box">
+                            <i class="fas fa-hands-helping icon"></i>
+                            <p>In collaboration with primary care providers, our Community Health Worker (CHW) supports patients in reaching their health goals and navigating their care plans. A CHW offers educational resources, shares helpful tools such as support groups or wellness apps, and connects patients to additional programs when needed. Acting as an accountability partner, the CHW helps individuals develop the skills to manage chronic conditions, mental health challenges, substance use, addiction, and other specific health concerns. Additionally, our CHW assists patients in accessing both health-related and social services for which they may be eligible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Population a CHW Serves Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="section-title">Population a CHW Serves</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-users feature-icon text-gradient"></i>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">SD Medicaid patients</li>
+                                    <li class="list-group-item">Individuals with barriers to health or social service supports</li>
+                                    <li class="list-group-item">Individuals struggling with chronic disease self-management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Services Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Health Services a CHW Offers</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="icon-box">
+                            <i class="fas fa-heartbeat icon"></i>
+                            <ul>
+                                <li>Health promotion and coaching</li>
+                                <li>Lifestyle and social assistance</li>
+                                <li>Financial aid and assistance programs</li>
+                                <li>Health system navigation</li>
+                                <li>Referrals to healthcare professionals</li>
+                                <li>Health Education</li>
+                                <li>Prescription medication affordability assistance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="icon-box">
+                            <i class="fas fa-home icon"></i>
+                            <h3>Social Services a CHW Can Help Navigate</h3>
+                            <ul>
+                                <li>Housing</li>
+                                <li>Home assistive devices</li>
+                                <li>Food</li>
+                                <li>State benefits</li>
+                                <li>Daycare</li>
+                                <li>Employment</li>
+                                <li>Transportation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You'll Learn Section -->
+        <section class="bg-gradient text-black py-5">
+            <div class="container">
+                <h2 class="section-title text-black">What You'll Learn</h2>
+                <ul>
+                    <li>Core Competencies for Community Health Workers</li>
+                    <li>Health Education and Promotion for Community Health Workers (CHWs)</li>
+                    <li>Advocacy and Outreach for Community Health Workers (CHWs)</li>
+                    <li>Care Coordination and Case Management for Community Health Workers (CHWs)</li>
+                    <li>Public Health Concepts and Health Systems for Community Health Workers (CHWs)</li>
+                    <li>Teaching and Behavior Change Methods for Community Health Workers (CHWs)</li>
+                    <li>Ethics and Professionalism in Community Health Work</li>
+                    <li>Crisis Intervention for Community Health Workers</li>
+                    <li>Substance Use and Harm Reduction for Community Health Workers</li>
+                    <li>Technology and Health Literacy for Community Health Workers</li>
+                    <li>Practical Experience and Fieldwork</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Enrollment Prerequisites Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="section-title">Enrollment Prerequisites</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <i class="fas fa-graduation-cap text-primary me-3 fa-2x"></i>
+                                        <span>A High School Diploma or GED</span>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <i class="fas fa-laptop text-primary me-3 fa-2x"></i>
+                                        <span>Access to a web browser with an internet connection</span>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <i class="fas fa-file-signature text-primary me-3 fa-2x"></i>
+                                        <span>Completion of course registration and payment</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Externships Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Externships</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="fas fa-hospital-user text-primary me-3 fa-3x"></i>
+                                    <p class="card-text mb-0">
+                                        Fenote Training Academy does not guarantee externships. Securing and completing an externship is the learner's responsibility and may require additional steps, such as a background check and successful completion of a Fenote Training Academy course. However, Fenote Training Academy will assist you in finding externships and provide recommendations for opportunities in Maryland, D.C., and Virginia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="button-container">
+            <a href="./contactus.html" class="btn-send-message">Please contact us to register!</a>
+        </div>
+        <br>
+        <br>
+    </main>
+
+    <footer id="footer">
+        <!-- Load the footer content using jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Load footer content
+                $('#footer').load('footer.html');
+            });
+        </script>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          
+    <!-- JavaScript Libraries -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="schedule_folder/js/main.js"></script>
+</body>
+</html>
