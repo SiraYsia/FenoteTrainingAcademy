@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection - Fenote Training Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="img/clients/logo_ex.png" rel="icon">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #3a5a7a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20%;
+            margin-right: 15px;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+
+        .header-text {
+            font-size: 2em;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .assessment-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .assessment-info h2 {
+            color: #3a5a7a;
+            border-bottom: 2px solid #3a5a7a;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #payment-breakdown-section {
+            background-color: #e6f3ff;
+        }
+
+        .payment-breakdown div {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #bdd7f3;
+        }
+
+        .payment-breakdown .total {
+            border-top: 2px solid #3a5a7a;
+            margin-top: 15px;
+            padding-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #3a5a7a;
+        }
+
+        .payment-breakdown .price {
+            font-weight: bold;
+        }
+
+        .policy-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .policy-content {
+            max-height: 350px;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+        }
+
+        .policy-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .policy-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .policy-content::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .policy-content::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .policy-content h2 {
+            color: #3a5a7a;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3a5a7a;
+        }
+
+        .policy-content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .agreement-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .agreement-container label {
+            margin-left: 10px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .agreement-container input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button.confirm-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button.back-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 10px;
+            }
+
+            .button-container {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .header-text {
+                font-size: 1.5em;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="img/clients/logo.jpg" alt="Fenote Training Academy" class="logo">
+        <span class="header-text">Fenote Training Academy</span>
+    </header>
+
+    <main class="main-content">
+
+
+        <div class="container">
+            <section class="section" id="payment-breakdown-section">
+                <h2>Payment Details</h2>
+                <div class="payment-breakdown">
+                    <div>
+                        <span>Course Price:</span>
+                        <span class="price">$190.00</span>
+                    </div>
+                    <div>
+                        <span>Service Fee:</span>
+                        <span class="price">$15.00</span>
+                    </div>
+                    <div>
+                        <span>Tax (3%):</span>
+                        <span class="price">$5.70</span>
+                    </div>
+                    <div class="total">
+                        <span>Total Price:</span>
+                        <span class="price">$210.70</span>
+                    </div>
+
+                </div>
+            </section>
+            
+            <p style="font-size: 18px; font-weight: bold;">Payment Options Available (see next page).</p>
+
+            <section class="policy-container">
+                <div class="policy-content">
+                    <h2>CANCELATIONS/REFUNDS/CREDITS</h2>
+                    <p>Refunds are not available for missed classes or late arrivals. Cancellations must be made via email or phone (please leave a message if necessary) at least 24 hours before the training. All classes will start and end on time. If you arrive after the registrar has taken attendance, it will be recorded as a missed class.</p>
+                    
+                    <p>If a student needs to cancel a class, a refund or credit for a future class may be issued, provided the cancellation is received at least 24 hours in advance. A $15 cancellation fee and processing fee will be deducted from any refund requested. If a student prefers a credit for a future class, the cancellation fee will not apply. Please note that missed classes, including late arrivals or early departures, will not be eligible for refunds or credits.</p>
+                    
+                    <h2>DUPLICATE CERTIFICATES</h2>
+                    <p>All certificates will be emailed within 10 business days after class completion. If you lose your certificate, a $15 administrative fee will apply for issuing a duplicate.</p>     
+                    
+                    <h2>CLASS CANCELATIONS</h2>
+                    <p>Class schedules are arranged in advance, but there are occasions when cancellations may occur. Classes will be canceled if Montgomery County Public Schools are closed due to inclement weather or if evening or weekend activities are canceled for similar reasons or other emergencies. Additionally, classes may be canceled due to low enrollment or other administrative factors. You will be notified by email if a class is canceled, and you can also call 240-863-2331 to check the status of a class. If we do cancel a class, we will make every effort to reschedule or provide a substitute session.</p>
+                </div>
+            </section>
+            
+            <div class="agreement-container">
+                <input type="checkbox" id="agreementCheckbox">
+                <label for="agreementCheckbox">I agree to the cancellation terms and policies.</label>
+            </div>
+            
+            <div class="button-container">
+                <button class="button confirm-button" id="payButton">Proceed to Payment</button>
+                <button class="button back-button" onclick="window.location.href='./serving_child_care_providers'">Return to Course</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('payButton').addEventListener('click', function() {
+            const agreementCheckbox = document.getElementById('agreementCheckbox');
+            if (!agreementCheckbox.checked) {
+                alert('You must agree to the cancellation policy before proceeding with payment.');
+                return;
+            }
+            window.location.href = '45_hour_child_growth_development_pay.html';
+        });
+        // test
+    </script>
+</body>
+</html>
