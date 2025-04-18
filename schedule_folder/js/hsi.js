@@ -29,7 +29,13 @@ const courseDetails = {
       { "start": "2025-04-05", "end": "", "startTime": "15:00", "endTime": "17:00" },
       { "start": "2025-04-12", "end": "", "startTime": "15:00", "endTime": "17:00" },
       { "start": "2025-04-19", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" }
+      { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-05-10", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-05-17", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-05-24", "end": "", "startTime": "15:00", "endTime": "17:00" }
+
+
+
 
 
 
@@ -66,7 +72,10 @@ const courseDetails = {
       { "start": "2025-04-05", "end": "", "startTime": "15:00", "endTime": "17:00" },
       { "start": "2025-04-12", "end": "", "startTime": "15:00", "endTime": "17:00" },
       { "start": "2025-04-19", "end": "", "startTime": "15:00", "endTime": "17:00" },
-      { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" }
+      { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-05-10", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-05-17", "end": "", "startTime": "15:00", "endTime": "17:00" },
+      { "start": "2025-05-24", "end": "", "startTime": "15:00", "endTime": "17:00" }
   
     
 

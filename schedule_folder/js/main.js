@@ -28,7 +28,10 @@ hsi_adult_pediatric: {
     { "start": "2025-03-22", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2025-03-29", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2025-04-19", "end": "", "startTime": "15:00", "endTime": "17:00" },
-    { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" }
+    { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-05-10", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-05-17", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-05-24", "end": "", "startTime": "15:00", "endTime": "17:00" }
 
 
 
@@ -53,7 +56,10 @@ hsi_adult_pediatric_classroom: {
     { "start": "2025-03-22", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2025-03-29", "end": "", "startTime": "15:00", "endTime": "17:00" },
     { "start": "2025-04-19", "end": "", "startTime": "15:00", "endTime": "17:00" },
-    { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" }
+    { "start": "2025-04-26", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-05-10", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-05-17", "end": "", "startTime": "15:00", "endTime": "17:00" },
+    { "start": "2025-05-24", "end": "", "startTime": "15:00", "endTime": "17:00" }
   ],
 },
 
