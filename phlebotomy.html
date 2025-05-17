@@ -220,8 +220,10 @@
   
 
 <div class="button-container">
-
-  <a href="https://form.jotform.com/240367803384055" class="btn-send-message">Please contact us to register!</a>
+  <a href="phlebotomy_pay.html" class="register-btn" aria-label="Register for the Phlebotomy course">
+    Click here to Register!
+  </a>
+</div>
 </div>
 <br>
 <br>
@@ -274,6 +276,36 @@
 <style>
 
 
+
+.button-container {
+  text-align: center;                 /* center the button */
+  margin: 2rem 0;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  background: #0074d9;                /* blue base */
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+  background: #005fa3;                /* slightly darker on hover */
+}
+
+.register-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
 
 /* Section header styles */
 .section-header h2 {
