@@ -6,68 +6,330 @@
     <title>Fenote Training Academy - Community Health Worker Training</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .bg-light-blue {
-            background-color: #e6f3ff;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
         }
+
+        .bg-light-blue {
+            background: linear-gradient(135deg, #f8fbff 0%, #e8f4fd 100%);
+            position: relative;
+            padding: 80px 0;
+        }
+
+        .bg-light-blue::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff" opacity="0.1"><polygon points="0,0 1000,0 1000,100 0,80"></polygon></svg>');
+            pointer-events: none;
+        }
+
+        .display-4 {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            color: #4a5568;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .img-fluid {
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: translateY(-5px);
+        }
+
         .icon-box {
-            padding: 30px;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            height: 100%;
             position: relative;
             overflow: hidden;
-            background: #fff;
-            box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-            transition: all 0.3s ease-in-out;
-            border-radius: 8px;
-            z-index: 1;
         }
+
+        .icon-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .icon-box:hover::before {
+            opacity: 1;
+        }
+
         .icon-box:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
         }
 
         .icon {
-            font-size: 40px;
-            color: #007bff;
-            margin-bottom: 15px;
+            font-size: 48px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            display: block;
         }
+
+        .icon-box h3 {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .icon-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .icon-box li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 28px;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .icon-box li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .icon-box li:hover {
+            color: #2d3748;
+        }
+
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
             position: relative;
             padding-bottom: 20px;
         }
+
         .section-title::after {
             content: '';
             position: absolute;
             display: block;
-            width: 50px;
-            height: 3px;
-            background: #007bff;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
             bottom: 0;
-            left: calc(50% - 25px);
+            left: calc(50% - 40px);
+            border-radius: 2px;
         }
-        .feature-icon {
-            font-size: 3rem;
-            color: #007bff;
+
+        .program-details {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 60px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .program-details h3 {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .program-details p {
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .program-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .program-details li {
+            padding: 10px 0;
+            position: relative;
+            padding-left: 30px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .program-details li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .competency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 2rem 0;
+        }
+
+        .competency-item {
+            background: #f7fafc;
+            padding: 18px 24px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            font-weight: 500;
+            color: #2d3748;
+            transition: all 0.3s ease;
+        }
+
+        .competency-item:hover {
+            background: #edf2f7;
+            transform: translateX(4px);
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .btn-send-message {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-send-message::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .btn-send-message:hover::before {
+            left: 100%;
+        }
+
+        .btn-send-message:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            border: 1px solid #667eea30;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h4 {
+            color: #667eea;
+            font-weight: 600;
             margin-bottom: 1rem;
         }
-        .card {
-            border: none;
-            transition: all 0.3s;
-            margin-bottom: 30px;
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .display-4 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .program-details {
+                padding: 30px 25px;
+                margin: 40px 0;
+            }
+            
+            .competency-grid {
+                grid-template-columns: 1fr;
+            }
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        /* Subtle animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        .bg-gradient {
-            background: linear-gradient(135deg, #007bff, #00c6ff);
+
+        .animate-on-scroll {
+            animation: fadeInUp 0.6s ease-out;
         }
-        .text-gradient {
-            background: linear-gradient(135deg, #007bff, #00c6ff);
-            -webkit-text-fill-color: transparent;
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a6fd8;
         }
     </style>
 </head>
@@ -83,11 +345,11 @@
     </script>
 
     <main>
-        <section class="bg-light-blue py-5">
+        <section class="bg-light-blue">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h1 class="display-4 fw-bold mb-4">Community Health Worker Training Program</h1>
+                        <h1 class="section-title4"> <strong>Community Health Worker Training Program </strong></h1>
                         <p class="lead">A Community Health Worker (CHW) is a frontline public health professional and a trusted member of the community. They build strong, supportive relationships with individuals and serve as a vital link between patients and the health and social services available to them. By focusing on each person's unique needs beyond the hospital or clinic, CHWs play a key role in helping patients achieve their health goals and improve overall well-being.</p>
                     </div>
                     <div class="col-lg-6">
@@ -98,79 +360,104 @@
         </section>
 
         <!-- Health Services Section -->
-                <section class="py-5">
-                    <div class="container">
-                        <h2 class="section-title">Services a Community Health Worker Offers</h2>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="icon-box">
-                                    <i class="fas fa-heartbeat icon"></i>
-                                    <ul>
-                                        <li>Health promotion and coaching</li>
-                                        <li>Lifestyle and social assistance</li>
-                                        <li>Financial aid and assistance programs</li>
-                                        <li>Health system navigation</li>
-                                        <li>Referrals to healthcare professionals</li>
-                                        <li>Health Education</li>
-                                        <li>Prescription medication affordability assistance</li>
-                                    </ul>
-                                </div>
+        <section class="py-5" style="background: #ffffff;">
+            <div class="container">
+                <h2 class="section-title">Services a Community Health Worker Offers</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="icon-box">
+                            <i class="fas fa-heartbeat icon"></i>
+                            <h3>Health & Wellness Services</h3>
+                            <ul>
+                                <li>Health promotion and coaching</li>
+                                <li>Lifestyle and social assistance</li>
+                                <li>Financial aid and assistance programs</li>
+                                <li>Health system navigation</li>
+                                <li>Referrals to healthcare professionals</li>
+                                <li>Health Education</li>
+                                <li>Prescription medication affordability assistance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="icon-box">
+                            <i class="fas fa-home icon"></i>
+                            <h3>Social Services a CHW Can Help Navigate</h3>
+                            <ul>
+                                <li>Housing assistance and resources</li>
+                                <li>Home assistive devices</li>
+                                <li>Food security programs</li>
+                                <li>State benefits enrollment</li>
+                                <li>Daycare and childcare services</li>
+                                <li>Employment opportunities</li>
+                                <li>Transportation solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: #f8fbff; padding: 80px 0;">
+            <div class="container">
+                <div class="program-details">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="highlight-box mb-4">
+                                <h4><i class="fas fa-certificate" style="margin-right: 8px;"></i>Maryland Department of Health Accredited Program</h4>
+                                <p style="margin: 0; color: #4a5568;">The Community Health Worker (CHW) Training Program at Fenote Training Academy is accredited by the Maryland Department of Health and offered through the Academy's Department of Population Health.</p>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="icon-box">
-                                    <i class="fas fa-home icon"></i>
-                                    <h3>Social Services a CHW Can Help Navigate</h3>
-                                    <ul>
-                                        <li>Housing</li>
-                                        <li>Home assistive devices</li>
-                                        <li>Food</li>
-                                        <li>State benefits</li>
-                                        <li>Daycare</li>
-                                        <li>Employment</li>
-                                        <li>Transportation</li>
-                                    </ul>
+                            
+                            <p>This comprehensive program includes <strong>145 hours</strong> of online and live virtual instruction, completed over a <strong>14–15 week period</strong>. The training includes:</p>
+                            
+                            <ul>
+                                <li>Weekly modules featuring pre-recorded lectures, PowerPoint presentations, and downloadable handouts for flexible learning</li>
+                                <li>Weekly online discussion</li>
+                                <li>A 40-hour in-person field practicum to apply skills in real-world settings</li>
+                            </ul>
+                            
+                            <h3>The curriculum is designed to meet the nine core CHW competencies:</h3>
+                            <div class="competency-grid">
+                                <div class="competency-item">Advocacy and community capacity-building</div>
+                                <div class="competency-item">Effective oral and written communication</div>
+                                <div class="competency-item">Cultural competency</div>
+                                <div class="competency-item">Ethics and confidentiality</div>
+                                <div class="competency-item">Local resources and system navigation</div>
+                                <div class="competency-item">Care coordination and support</div>
+                                <div class="competency-item">Health education and behavior change</div>
+                                <div class="competency-item">Outreach methods and strategies</div>
+                                <div class="competency-item">Public health concepts and health literacy</div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="highlight-box">
+                                        <h4>To earn certification, participants must:</h4>
+                                        <ul>
+                                            <li>Complete all module activities</li>
+                                            <li>Pass a final knowledge assessment</li>
+                                            <li>Deliver a case study presentation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="highlight-box">
+                                        <h4>Enrollment Prerequisites:</h4>
+                                        <p>Participants must be 18 years or older and possess a high school diploma or GED. <strong>No previous healthcare experience is required.</strong></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section>
-                    <div style="padding-left: 50px; padding-right: 50px;">
-                        <p>The Community Health Worker (CHW) Training Program at Fenote Training Academy is accredited by the Maryland Department of Health and offered through the Academy’s Department of Population Health.</p>
-                        <p>This comprehensive program includes 145 hours of online and live virtual instruction, completed over a 14–15 week period. The training includes:</p>
-                        <ul>
-                            <li>Weekly modules featuring pre-recorded lectures, PowerPoint presentations, and downloadable handouts for flexible learning</li>
-                            <li>Weekly online discussion</li>
-                            <li>A 40-hour in-person field practicum to apply skills in real-world settings</li>
-                        </ul>
-                        <p><strong>The curriculum is designed to meet the nine core CHW competencies:</strong></p>
-                        <ul>
-                            <li>Advocacy and community capacity-building</li>
-                            <li>Effective oral and written communication</li>
-                            <li>Cultural competency</li>
-                            <li>Ethics and confidentiality </li>
-                            <li>Local resources and system navigation</li>
-                            <li>Care coordination and support</li>
-                            <li>Health education and behavior change</li>
-                            <li>Outreach methods and strategies</li>
-                            <li>Public health concepts and health literacy</li>
-                        </ul>
-                    </ul>
-                    <p><strong>To earn certification, participants must:</strong></p>
-                    <ul>
-                        <li>Complete all module activities</li>
-                        <li>Pass a final knowledge assessment</li>
-                        <li>Deliver a case study presentation</li>
-                    </ul>
-                    <p><strong>Enrollment Prerequisites:</strong></p>
-                    <p>Participants must be 18 years or older and possess a high school diploma or GED. No previous healthcare experience is required.</p
-                    </div>
-                </section>
-                                    
+                </div>
+            </div>
+        </section>
 
         <div class="button-container">
-            <a href="https://forms.gle/6tXzMuUSR3daX5oN8" class="btn-send-message">Click Here to Register!</a>
+            <a href="community_health_worker_training_pay.html" class="btn-send-message">
+                <i class="fas fa-user-plus" style="margin-right: 8px;"></i>
+                Click Here to Register!
+            </a>
         </div>
         <br>
         <br>
@@ -210,5 +497,27 @@
 
     <!-- Template Main Javascript File -->
     <script src="schedule_folder/js/main.js"></script>
+
+    <script>
+        // Simple scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.icon-box, .program-details, .competency-item');
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
